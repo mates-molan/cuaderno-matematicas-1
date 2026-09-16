@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>Cuaderno Matemáticas I — IES Ricardo Ortega</title>
+
+  <!-- KaTeX para renderizado matemático nítido -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Estilos modulares desacoplados -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Barra Superior de Navegación -->
+  <nav class="top-nav">
+    <div class="container">
+      <div class="top-nav-inner">
+        <a href="#" class="brand" onclick="switchMainView('al-dia')">
+          <span class="brand-icon">🏛️</span>
+          <div class="brand-text">
+            <h1>Cuaderno Matemáticas I</h1>
+            <p>1.º Bachillerato Ciencias • IES Ricardo Ortega</p>
+          </div>
+        </a>
+
+        <div class="view-switcher">
+          <button class="view-btn active" id="btn-view-al-dia" onclick="switchMainView('al-dia')">
+            <span>⚡</span>
+            <span>Al Día (Última Clase)</span>
+          </button>
+          <button class="view-btn" id="btn-view-temario" onclick="switchMainView('temario')">
+            <span>📚</span>
+            <span>Temario</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- ========================================================================= -->
+    <!-- VISTA 1: AL DÍA (ÚLTIMA CLASE / EJERCICIOS DE HOY) -->
+    <!-- ========================================================================= -->
+    <section class="view-container active" id="view-al-dia">
+
+      <!-- Hero Banner: Última clase impartida -->
+      <article class="hero-last-class">
+        <div class="hero-badge-row">
+          <span class="badge-today">
+            <span>🔴</span>
+            <span>ÚLTIMA CLASE EN EL AULA</span>
+          </span>
+          <span class="badge-date" id="heroFecha">Cargando fecha...</span>
+        </div>
+
+        <h2 class="hero-title" id="heroTituloSesion">Cargando sesión...</h2>
+        <p class="hero-subtitle">
+          <span id="heroTemaNombre">Tema 1: Herramientas del Álgebra</span> • 
+          <span id="heroReferencia">📖 Apuntes</span>
+        </p>
+
+        <div class="hero-action-bar">
+          <div class="homework-notice" onclick="irASemanaActual()" style="cursor: pointer;" title="Hacer clic para ir a los problemas semanales de libreta">
+            <span>📌</span>
+            <span><strong>Tarea semanal en libreta:</strong> Ejercicios P-01 a P-04 (Ejercicios 1 a 4 de la Hoja). <span style="text-decoration: underline; font-weight: 700; color: #7e22ce; margin-left: 6px;">Ver semana →</span></span>
+          </div>
+
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf" target="_blank" class="btn-action-primary">
+              <span>📘</span>
+              <span>Apuntes Oficiales (PDF)</span>
+            </a>
+            <a href="pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf" target="_blank" download="Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf" class="btn-action-purple">
+              <span>📥</span>
+              <span>Hoja de Ejercicios (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Encabezado de los Ejercicios de Hoy -->
+      <div class="section-heading">
+        <h3 class="section-title">
+          <span>✍️</span>
+          <span>Los dos Ejercicios Trabajados en Pizarra</span>
+        </h3>
+        <span style="font-size: 0.95rem; color: var(--text-muted);">Haz clic en cada ejercicio para desplegar su desarrollo y notas de aula</span>
+      </div>
+
+      <div id="heroEjerciciosContainer">
+        <!-- Renderizado dinámico por app.js -->
+      </div>
+
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- VISTA 2: TEMARIO (TEMAS ACTIVOS) -->
+    <!-- ========================================================================= -->
+    <section class="view-container" id="view-temario">
+
+      <!-- Cuadrícula General de Temas -->
+      <div id="temario-grid-view">
+        <div class="section-heading" style="margin-bottom: 22px;">
+          <div>
+            <h3 class="section-title">
+              <span>📚</span>
+              <span>Temario de Matemáticas I</span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="temas-grid" id="temasGridContainer">
+          <!-- Renderizado dinámico de temas activos por app.js -->
+        </div>
+      </div>
+
+      <!-- Detalle del Tema Seleccionado -->
+      <div id="temario-detail-view" style="display: none;">
+        <button class="btn-back-temas" onclick="showTemarioGrid()">
+          <span>←</span>
+          <span>Volver al Temario</span>
+        </button>
+
+        <section class="tema-detail-hub">
+          <div class="tema-detail-header">
+            <div>
+              <span class="badge-today" id="temaDetailBadge" style="background: var(--blue-bg); color: var(--blue-text); margin-bottom: 6px; display: inline-block;">TEMA EN CURSO</span>
+              <h2 class="hero-title" id="temaDetailTitle" style="font-size: 1.6rem; margin-bottom: 4px;">Tema 1: Herramientas del Álgebra</h2>
+              <p id="temaDetailSub" style="color: var(--text-muted); font-size: 0.95rem;">1 sesión impartida • 1.ª Evaluación</p>
+            </div>
+            <div id="temaDetailActions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <!-- Botones dinámicos de apuntes y ejercicios -->
+            </div>
+          </div>
+
+          <!-- Sub-Pestañas del Tema -->
+          <nav class="tema-subtabs">
+            <button class="subtab-btn active" onclick="switchSubTab('pizarra-diario', this)">
+              <span>📅</span>
+              <span>Diario de Pizarra</span>
+            </button>
+            <button class="subtab-btn" onclick="switchSubTab('semana-hoja', this)">
+              <span>📝</span>
+              <span>Ejercicios de la Semana (Libreta)</span>
+            </button>
+            <button class="subtab-btn" onclick="switchSubTab('comprueba-tema', this)">
+              <span>🚦</span>
+              <span>Comprueba lo que sabes</span>
+            </button>
+          </nav>
+
+          <!-- Subtab 1: Diario de Pizarra -->
+          <div class="subtab-panel active" id="subtab-pizarra-diario">
+            <p style="color: var(--text-muted); margin-bottom: 18px; font-size: 0.98rem;">
+              Haz clic en cada sesión para desplegar u ocultar los ejercicios explicados en la pizarra ese día:
+            </p>
+            <div id="diarioPizarraAcordeon">
+              <!-- Renderizado dinámico -->
+            </div>
+          </div>
+
+          <!-- Subtab 2: Ejercicios de la Semana (Libreta) -->
+          <div class="subtab-panel" id="subtab-semana-hoja">
+            <div id="hojaDownloadBannerContainer">
+              <!-- Banner dinámico con botón de descarga del PDF de ejercicios -->
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 18px;">
+              Historial de problemas para trabajo autónomo en libreta, organizados por semanas lectivas. Si vas al día o necesitas recuperar ejercicios de semanas anteriores si vas atrasado, despliega la semana que desees trabajar:
+            </p>
+            <div id="temaEjerciciosSemanaContainer">
+              <!-- Renderizado dinámico -->
+            </div>
+          </div>
+
+          <!-- Subtab 3: Comprueba lo que sabes (Semáforo DUA) -->
+          <div class="subtab-panel" id="subtab-comprueba-tema">
+            <p style="color: var(--text-muted); margin-bottom: 18px;">
+              Guía oficial de autoevaluación semafórica con los <strong>criterios evaluables</strong> de examen, organizados en bloques temáticos plegados. Marca tu nivel de dominio (tus valoraciones se guardan automáticamente en tu dispositivo):
+            </p>
+            <div id="temaCompruebaContainer">
+              <!-- Renderizado dinámico -->
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Módulos de Datos Desacoplados -->
+  <script src="data/curso.js"></script>
+  <script src="data/temas/tema_01.js"></script>
+
+  <!-- Motor de la Aplicación -->
+  <script src="js/app.js"></script>
+</body>
+</html>
