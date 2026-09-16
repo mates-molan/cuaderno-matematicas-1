@@ -168,10 +168,9 @@ function renderTemaDetailHeader(temaId) {
       `;
     }
     if (ejerciciosUrl) {
-      const filename = ejerciciosUrl.split('/').pop();
       btnsHtml += `
-        <a href="${ejerciciosUrl}" target="_blank" download="${filename}" class="btn-action-purple">
-          <span>📥</span>
+        <a href="${ejerciciosUrl}" target="_blank" class="btn-action-purple">
+          <span>📄</span>
           <span>Hoja de Ejercicios (PDF)</span>
         </a>
       `;
@@ -282,9 +281,9 @@ function renderSemanaHoja(temaId = currentTemaId) {
               <p style="color: var(--text-muted); font-size: 0.88rem;">Documento completo en PDF (con soluciones finales) para imprimir o consultar.</p>
             </div>
           </div>
-          <a href="${t.ejercicios_pdf}" target="_blank" download="${filename}" class="btn-action-purple">
-            <span>📥</span>
-            <span>Descargar PDF de Ejercicios</span>
+          <a href="${t.ejercicios_pdf}" target="_blank" class="btn-action-purple">
+            <span>📄</span>
+            <span>Ver / Descargar PDF</span>
           </a>
         </div>
       `;
