@@ -93,7 +93,7 @@ window.TEMAS_DATA[1] = {
     },
     {
       "numero": 2,
-      "fecha": "Jueves 17 de Septiembre de 2026",
+      "fecha": "Viernes 18 de Septiembre de 2026",
       "titulo": "Operaciones con Intervalos y Extremos Compartidos",
       "ejercicios": [
         {
