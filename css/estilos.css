@@ -880,8 +880,6 @@
       background: #ffffff;
       border-top: 1px solid var(--border-soft);
       max-width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
     }
 
     /* Ejercicios de la semana plegados (acordeón) */
@@ -965,8 +963,6 @@
       background: #ffffff;
       border-top: 1px solid var(--border-soft);
       max-width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
     }
 
     .semana-id {
@@ -985,8 +981,6 @@
       margin: 6px 0 16px 0;
       line-height: 1.6;
       max-width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
     }
 
     .btn-toggle-sol {
@@ -1419,37 +1413,28 @@
     }
 
     /* Barras de desplazamiento sutiles para bloques matemáticos deslizables */
-    .pizarra-body::-webkit-scrollbar,
-    .ejercicio-body::-webkit-scrollbar,
-    .box-apartados::-webkit-scrollbar,
-    .semana-enunciado::-webkit-scrollbar,
     .grid-item-math::-webkit-scrollbar,
     .center-math::-webkit-scrollbar,
     .panel-sol-final::-webkit-scrollbar,
-    .katex-display::-webkit-scrollbar {
+    .katex-display::-webkit-scrollbar,
+    .apartados-slider-track::-webkit-scrollbar {
       height: 5px;
     }
 
-    .pizarra-body::-webkit-scrollbar-thumb,
-    .ejercicio-body::-webkit-scrollbar-thumb,
-    .box-apartados::-webkit-scrollbar-thumb,
-    .semana-enunciado::-webkit-scrollbar-thumb,
     .grid-item-math::-webkit-scrollbar-thumb,
     .center-math::-webkit-scrollbar-thumb,
     .panel-sol-final::-webkit-scrollbar-thumb,
-    .katex-display::-webkit-scrollbar-thumb {
+    .katex-display::-webkit-scrollbar-thumb,
+    .apartados-slider-track::-webkit-scrollbar-thumb {
       background: #cbd5e1;
       border-radius: 4px;
     }
 
-    .pizarra-body::-webkit-scrollbar-track,
-    .ejercicio-body::-webkit-scrollbar-track,
-    .box-apartados::-webkit-scrollbar-track,
-    .semana-enunciado::-webkit-scrollbar-track,
     .grid-item-math::-webkit-scrollbar-track,
     .center-math::-webkit-scrollbar-track,
     .panel-sol-final::-webkit-scrollbar-track,
-    .katex-display::-webkit-scrollbar-track {
+    .katex-display::-webkit-scrollbar-track,
+    .apartados-slider-track::-webkit-scrollbar-track {
       background: transparent;
     }
 
