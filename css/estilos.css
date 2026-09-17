@@ -337,6 +337,10 @@
       color: #334155;
       margin-bottom: 20px;
       line-height: 1.6;
+      width: 100%;
+      max-width: 100%;
+      word-break: break-word;
+      overflow-wrap: break-word;
     }
 
     .box-apartados {
@@ -345,9 +349,10 @@
       border-radius: 12px;
       padding: 22px 26px;
       margin-bottom: 18px;
+      width: 100%;
       max-width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
+      box-sizing: border-box;
     }
 
     .center-math {
@@ -358,9 +363,11 @@
       border: 1px solid #e2e8f0;
       border-radius: 10px;
       margin-bottom: 18px;
+      width: 100%;
       max-width: 100%;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      box-sizing: border-box;
     }
 
     /* CARRUSEL / SLIDER HORIZONTAL DE APARTADOS DESLIZABLES */
@@ -371,7 +378,10 @@
       padding: 16px 18px;
       margin: 14px 0 18px 0;
       position: relative;
+      width: 100%;
       max-width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
     }
 
     .apartados-slider-header {
@@ -431,12 +441,19 @@
       flex-direction: row;
       flex-wrap: nowrap;
       overflow-x: auto;
+      overflow-y: hidden;
       gap: 14px;
       padding: 6px 2px 14px 2px;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
       scroll-behavior: smooth;
       cursor: grab;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      overscroll-behavior-x: contain;
+      touch-action: pan-x pan-y;
     }
 
     .apartados-slider-track.dragging {
@@ -543,9 +560,11 @@
       border-radius: 0 10px 10px 0;
       font-size: 1rem;
       color: #475569;
+      width: 100%;
       max-width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      word-break: break-word;
     }
 
     .idea-box strong {
@@ -827,6 +846,9 @@
       border-radius: 14px;
       margin-bottom: 16px;
       overflow: hidden;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
       transition: border-color 0.2s, box-shadow 0.2s;
     }
 
@@ -848,6 +870,9 @@
       align-items: center;
       list-style: none;
       transition: background 0.15s;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .pizarra-summary::-webkit-details-marker {
@@ -879,7 +904,10 @@
       padding: 24px 28px;
       background: #ffffff;
       border-top: 1px solid var(--border-soft);
+      width: 100%;
       max-width: 100%;
+      overflow-x: hidden;
+      box-sizing: border-box;
     }
 
     /* Ejercicios de la semana plegados (acordeón) */
@@ -890,7 +918,9 @@
       margin-bottom: 16px;
       overflow: hidden;
       transition: border-color 0.2s, box-shadow 0.2s;
+      width: 100%;
       max-width: 100%;
+      box-sizing: border-box;
     }
 
     .ejercicio-accordion[open] {
@@ -912,6 +942,9 @@
       list-style: none;
       transition: background 0.15s;
       gap: 12px;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .ejercicio-summary::-webkit-details-marker {
@@ -962,7 +995,10 @@
       padding: 22px 26px;
       background: #ffffff;
       border-top: 1px solid var(--border-soft);
+      width: 100%;
       max-width: 100%;
+      overflow-x: hidden;
+      box-sizing: border-box;
     }
 
     .semana-id {
@@ -980,7 +1016,11 @@
       font-size: 1.25rem;
       margin: 6px 0 16px 0;
       line-height: 1.6;
+      width: 100%;
       max-width: 100%;
+      overflow-x: hidden;
+      word-break: break-word;
+      box-sizing: border-box;
     }
 
     .btn-toggle-sol {
