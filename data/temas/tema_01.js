@@ -162,6 +162,21 @@ window.TEMAS_DATA[1] = {
           "id": "P-01",
           "caso": "Clasificación Numérica Elemental (Ejercicio 1 de la Hoja)",
           "apartados_count": 12,
+          "instruccion": "Clasifica razonadamente cada número en el conjunto más restrictivo al que pertenece ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$) e indica su cadena completa de pertenencia e inclusión:",
+          "apartados": [
+            { "letra": "a)", "expresion": "15" },
+            { "letra": "b)", "expresion": "-28" },
+            { "letra": "c)", "expresion": "\\dfrac{54}{9}" },
+            { "letra": "d)", "expresion": "-\\dfrac{7}{4}" },
+            { "letra": "e)", "expresion": "0{,}625" },
+            { "letra": "f)", "expresion": "3{,}\\widehat{7}" },
+            { "letra": "g)", "expresion": "1{,}2\\widehat{45}" },
+            { "letra": "h)", "expresion": "\\sqrt{41}" },
+            { "letra": "i)", "expresion": "-\\dfrac{5\\pi}{3}" },
+            { "letra": "j)", "expresion": "\\sqrt{225}" },
+            { "letra": "k)", "expresion": "\\sqrt[3]{-64}" },
+            { "letra": "l)", "expresion": "2{,}5050050005\\dots" }
+          ],
           "enunciado": "Clasifica razonadamente cada número en el conjunto más restrictivo al que pertenece ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$) e indica su cadena completa de pertenencia e inclusión: $$a)\\; 15 \\qquad b)\\; -28 \\qquad c)\\; \\dfrac{54}{9} \\qquad d)\\; -\\dfrac{7}{4} \\qquad e)\\; 0{,}625 \\qquad f)\\; 3{,}\\widehat{7}$$ $$g)\\; 1{,}2\\widehat{45} \\qquad h)\\; \\sqrt{41} \\qquad i)\\; -\\dfrac{5\\pi}{3} \\qquad j)\\; \\sqrt{225} \\qquad k)\\; \\sqrt[3]{-64} \\qquad l)\\; 2{,}5050050005\\dots$$",
           "solucion": "a)\\; 15 \\in \\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}; \\quad b)\\; -28 \\in \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}; \\quad c)\\; \\dfrac{54}{9}=6 \\in \\mathbb{N} \\subset \\dots; \\quad d)\\; -\\dfrac{7}{4} = -1{,}75 \\in \\mathbb{Q} \\subset \\mathbb{R}; \\quad e)\\; 0{,}625 = \\dfrac{5}{8} \\in \\mathbb{Q}; \\quad f)\\; 3{,}\\widehat{7} = \\dfrac{34}{9} \\in \\mathbb{Q}; \\quad g)\\; 1{,}2\\widehat{45} = \\dfrac{137}{110} \\in \\mathbb{Q}; \\quad h)\\; \\sqrt{41} \\in \\mathbb{I} \\subset \\mathbb{R}; \\quad i)\\; -\\dfrac{5\\pi}{3} \\in \\mathbb{I} \\subset \\mathbb{R}; \\quad j)\\; \\sqrt{225} = 15 \\in \\mathbb{N}; \\quad k)\\; \\sqrt[3]{-64} = -4 \\in \\mathbb{Z} \\subset \\mathbb{Q}; \\quad l)\\; 2{,}5050050005\\dots \\in \\mathbb{I} \\subset \\mathbb{R}"
         },
@@ -169,6 +184,17 @@ window.TEMAS_DATA[1] = {
           "id": "P-02",
           "caso": "Clasificación Numérica con Operaciones Previas (Ejercicio 2 de la Hoja)",
           "apartados_count": 8,
+          "instruccion": "Opera y simplifica al máximo cada expresión antes de clasificar el resultado razonadamente en $\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}, \\mathbb{C}$:",
+          "apartados": [
+            { "letra": "a)", "expresion": "A = 0{,}\\widehat{3} + 0{,}\\widehat{6}" },
+            { "letra": "b)", "expresion": "B = \\sqrt[3]{-216} \\quad\\text{y}\\quad C = \\sqrt{-81}" },
+            { "letra": "c)", "expresion": "D = \\dfrac{\\sqrt{98} - \\sqrt{2}}{\\sqrt{8}}" },
+            { "letra": "d)", "expresion": "E = (\\sqrt{7} - \\sqrt{2})(\\sqrt{7} + \\sqrt{2})" },
+            { "letra": "e)", "expresion": "F = (3\\sqrt{2} - 1)^2" },
+            { "letra": "f)", "expresion": "G = \\dfrac{6\\pi - 2\\pi}{2\\pi}" },
+            { "letra": "g)", "expresion": "H = \\sqrt[4]{(-3)^4} \\quad\\text{y}\\quad K = (\\sqrt[4]{-3})^4" },
+            { "letra": "h)", "expresion": "L = 3{,}400400400400400\\dots" }
+          ],
           "enunciado": "Opera y simplifica al máximo cada expresión antes de clasificar el resultado razonadamente en $\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}, \\mathbb{C}$: $$a)\\; A = 0{,}\\widehat{3} + 0{,}\\widehat{6} \\qquad b)\\; B = \\sqrt[3]{-216} \\quad\\text{frente a}\\quad C = \\sqrt{-81} \\qquad c)\\; D = \\dfrac{\\sqrt{98} - \\sqrt{2}}{\\sqrt{8}}$$ $$d)\\; E = (\\sqrt{7} - \\sqrt{2})(\\sqrt{7} + \\sqrt{2}) \\qquad e)\\; F = (3\\sqrt{2} - 1)^2 \\qquad f)\\; G = \\dfrac{6\\pi - 2\\pi}{2\\pi}$$ $$g)\\; H = \\sqrt[4]{(-3)^4} \\quad\\text{frente a}\\quad K = (\\sqrt[4]{-3})^4 \\qquad h)\\; L = 3{,}400400400400400\\dots$$",
           "solucion": "a)\\; A = 1 \\in \\mathbb{N}; \\quad b)\\; B = -6 \\in \\mathbb{Z}, \\; C = 9i \\in \\mathbb{C} \\setminus \\mathbb{R}; \\quad c)\\; D = 3 \\in \\mathbb{N}; \\quad d)\\; E = 5 \\in \\mathbb{N}; \\quad e)\\; F = 19 - 6\\sqrt{2} \\in \\mathbb{I}; \\quad f)\\; G = 2 \\in \\mathbb{N}; \\quad g)\\; H = 3 \\in \\mathbb{N}; \\; K \\notin \\mathbb{R} \\text{ (en } \\mathbb{C}: K = -3\\text{)}; \\quad h)\\; L = 3{,}\\widehat{400} = \\dfrac{3397}{999} \\in \\mathbb{Q}"
         },
@@ -176,6 +202,15 @@ window.TEMAS_DATA[1] = {
           "id": "P-03",
           "caso": "Operaciones con Intervalos y Semirrectas (Ejercicio 3 de la Hoja)",
           "apartados_count": 6,
+          "instruccion": "Representa sobre rectas reales alineadas y calcula las siguientes operaciones, justificando de forma rigurosa si los extremos de los intervalos son abiertos o cerrados:",
+          "apartados": [
+            { "letra": "a)", "expresion": "[-4, 3) \\cap [1, 7] \\quad\\text{frente a}\\quad [-4, 3) \\cup [1, 7]" },
+            { "letra": "b)", "expresion": "[-4, 3) \\setminus [1, 7] \\quad\\text{y}\\quad [1, 7] \\setminus [-4, 3)" },
+            { "letra": "c)", "expresion": "(-\\infty, 2] \\cap (-1, 6) \\cap [0, +\\infty)" },
+            { "letra": "d)", "expresion": "(-\\infty, -2) \\cup [-2, 5]" },
+            { "letra": "e)", "expresion": "[-3, 2) \\cup (2, 6]" },
+            { "letra": "f)", "expresion": "([-5, 2] \\cap [0, 4]) \\cup (3, 7)" }
+          ],
           "enunciado": "Representa sobre rectas reales alineadas y calcula las siguientes operaciones, justificando de forma rigurosa si los extremos de los intervalos son abiertos o cerrados: $$a)\\; [-4, 3) \\cap [1, 7] \\quad\\text{frente a}\\quad [-4, 3) \\cup [1, 7] \\qquad b)\\; [-4, 3) \\setminus [1, 7] \\quad\\text{y}\\quad [1, 7] \\setminus [-4, 3)$$ $$c)\\; (-\\infty, 2] \\cap (-1, 6) \\cap [0, +\\infty) \\qquad d)\\; (-\\infty, -2) \\cup [-2, 5]$$ $$e)\\; [-3, 2) \\cup (2, 6] \\qquad f)\\; ([-5, 2] \\cap [0, 4]) \\cup (3, 7)$$",
           "solucion": "a)\\; [1, 3) \\quad\\text{y}\\quad [-4, 7]; \\quad b)\\; [-4, 1) \\quad\\text{y}\\quad [3, 7]; \\quad c)\\; [0, 2]; \\quad d)\\; (-\\infty, 5]; \\quad e)\\; [-3, 6] \\setminus \\{2\\}; \\quad f)\\; [0, 2] \\cup (3, 7)"
         },
@@ -183,6 +218,15 @@ window.TEMAS_DATA[1] = {
           "id": "P-04",
           "caso": "Complementarios y Operaciones Combinadas (Ejercicio 4 de la Hoja)",
           "apartados_count": 5,
+          "enunciado_base": "I = (-\\infty, 4] \\qquad J = (-3, 6) \\qquad K = [1, +\\infty)",
+          "instruccion": "Dados los conjuntos anteriores, calcula y expresa el resultado en forma de intervalo o unión disjunta de intervalos:",
+          "apartados": [
+            { "letra": "a)", "expresion": "I^c = \\mathbb{R} \\setminus I \\quad\\text{y}\\quad J^c = \\mathbb{R} \\setminus J" },
+            { "letra": "b)", "expresion": "(I \\cup K)^c = \\mathbb{R} \\setminus (I \\cup K)" },
+            { "letra": "c)", "expresion": "J \\setminus (I \\cap K)" },
+            { "letra": "d)", "expresion": "(I \\cap J)^c \\cap K" },
+            { "letra": "e)", "expresion": "(U \\cup V)^c \\quad\\text{siendo } U = (-\\infty, -2] \\quad\\text{y}\\quad V = [5, +\\infty)" }
+          ],
           "enunciado": "Dados los conjuntos $I = (-\\infty, 4]$, $J = (-3, 6)$ y $K = [1, +\\infty)$, calcula y expresa el resultado en forma de intervalo o unión disjunta de intervalos: $$a)\\; I^c = \\mathbb{R} \\setminus I \\quad\\text{y}\\quad J^c = \\mathbb{R} \\setminus J \\qquad b)\\; (I \\cup K)^c = \\mathbb{R} \\setminus (I \\cup K)$$ $$c)\\; J \\setminus (I \\cap K) \\qquad d)\\; (I \\cap J)^c \\cap K \\qquad e)\\; (U \\cup V)^c \\quad\\text{siendo } U = (-\\infty, -2] \\quad\\text{y}\\quad V = [5, +\\infty)$$",
           "solucion": "a)\\; I^c = (4, +\\infty), \\quad J^c = (-\\infty, -3] \\cup [6, +\\infty); \\quad b)\\; (I \\cup K)^c = \\emptyset; \\quad c)\\; J \\setminus (I \\cap K) = (-3, 1) \\cup (4, 6); \\quad d)\\; (I \\cap J)^c \\cap K = (4, +\\infty); \\quad e)\\; (U \\cup V)^c = (-2, 5)"
         }
@@ -194,6 +238,21 @@ window.TEMAS_DATA[1] = {
       "id": "P-01",
       "caso": "Clasificación Numérica Elemental (Ejercicio 1 de la Hoja)",
       "apartados_count": 12,
+      "instruccion": "Clasifica razonadamente cada número en el conjunto más restrictivo al que pertenece ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$) e indica su cadena completa de pertenencia e inclusión:",
+      "apartados": [
+        { "letra": "a)", "expresion": "15" },
+        { "letra": "b)", "expresion": "-28" },
+        { "letra": "c)", "expresion": "\\dfrac{54}{9}" },
+        { "letra": "d)", "expresion": "-\\dfrac{7}{4}" },
+        { "letra": "e)", "expresion": "0{,}625" },
+        { "letra": "f)", "expresion": "3{,}\\widehat{7}" },
+        { "letra": "g)", "expresion": "1{,}2\\widehat{45}" },
+        { "letra": "h)", "expresion": "\\sqrt{41}" },
+        { "letra": "i)", "expresion": "-\\dfrac{5\\pi}{3}" },
+        { "letra": "j)", "expresion": "\\sqrt{225}" },
+        { "letra": "k)", "expresion": "\\sqrt[3]{-64}" },
+        { "letra": "l)", "expresion": "2{,}5050050005\\dots" }
+      ],
       "enunciado": "Clasifica razonadamente cada número en el conjunto más restrictivo al que pertenece ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$) e indica su cadena completa de pertenencia e inclusión: $$a)\\; 15 \\qquad b)\\; -28 \\qquad c)\\; \\dfrac{54}{9} \\qquad d)\\; -\\dfrac{7}{4} \\qquad e)\\; 0{,}625 \\qquad f)\\; 3{,}\\widehat{7}$$ $$g)\\; 1{,}2\\widehat{45} \\qquad h)\\; \\sqrt{41} \\qquad i)\\; -\\dfrac{5\\pi}{3} \\qquad j)\\; \\sqrt{225} \\qquad k)\\; \\sqrt[3]{-64} \\qquad l)\\; 2{,}5050050005\\dots$$",
       "solucion": "a)\\; 15 \\in \\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}; \\quad b)\\; -28 \\in \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}; \\quad c)\\; \\dfrac{54}{9}=6 \\in \\mathbb{N} \\subset \\dots; \\quad d)\\; -\\dfrac{7}{4} = -1{,}75 \\in \\mathbb{Q} \\subset \\mathbb{R}; \\quad e)\\; 0{,}625 = \\dfrac{5}{8} \\in \\mathbb{Q}; \\quad f)\\; 3{,}\\widehat{7} = \\dfrac{34}{9} \\in \\mathbb{Q}; \\quad g)\\; 1{,}2\\widehat{45} = \\dfrac{137}{110} \\in \\mathbb{Q}; \\quad h)\\; \\sqrt{41} \\in \\mathbb{I} \\subset \\mathbb{R}; \\quad i)\\; -\\dfrac{5\\pi}{3} \\in \\mathbb{I} \\subset \\mathbb{R}; \\quad j)\\; \\sqrt{225} = 15 \\in \\mathbb{N}; \\quad k)\\; \\sqrt[3]{-64} = -4 \\in \\mathbb{Z} \\subset \\mathbb{Q}; \\quad l)\\; 2{,}5050050005\\dots \\in \\mathbb{I} \\subset \\mathbb{R}"
     },
@@ -201,6 +260,17 @@ window.TEMAS_DATA[1] = {
       "id": "P-02",
       "caso": "Clasificación Numérica con Operaciones Previas (Ejercicio 2 de la Hoja)",
       "apartados_count": 8,
+      "instruccion": "Opera y simplifica al máximo cada expresión antes de clasificar el resultado razonadamente en $\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}, \\mathbb{C}$:",
+      "apartados": [
+        { "letra": "a)", "expresion": "A = 0{,}\\widehat{3} + 0{,}\\widehat{6}" },
+        { "letra": "b)", "expresion": "B = \\sqrt[3]{-216} \\quad\\text{y}\\quad C = \\sqrt{-81}" },
+        { "letra": "c)", "expresion": "D = \\dfrac{\\sqrt{98} - \\sqrt{2}}{\\sqrt{8}}" },
+        { "letra": "d)", "expresion": "E = (\\sqrt{7} - \\sqrt{2})(\\sqrt{7} + \\sqrt{2})" },
+        { "letra": "e)", "expresion": "F = (3\\sqrt{2} - 1)^2" },
+        { "letra": "f)", "expresion": "G = \\dfrac{6\\pi - 2\\pi}{2\\pi}" },
+        { "letra": "g)", "expresion": "H = \\sqrt[4]{(-3)^4} \\quad\\text{y}\\quad K = (\\sqrt[4]{-3})^4" },
+        { "letra": "h)", "expresion": "L = 3{,}400400400400400\\dots" }
+      ],
       "enunciado": "Opera y simplifica al máximo cada expresión antes de clasificar el resultado razonadamente en $\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}, \\mathbb{C}$: $$a)\\; A = 0{,}\\widehat{3} + 0{,}\\widehat{6} \\qquad b)\\; B = \\sqrt[3]{-216} \\quad\\text{frente a}\\quad C = \\sqrt{-81} \\qquad c)\\; D = \\dfrac{\\sqrt{98} - \\sqrt{2}}{\\sqrt{8}}$$ $$d)\\; E = (\\sqrt{7} - \\sqrt{2})(\\sqrt{7} + \\sqrt{2}) \\qquad e)\\; F = (3\\sqrt{2} - 1)^2 \\qquad f)\\; G = \\dfrac{6\\pi - 2\\pi}{2\\pi}$$ $$g)\\; H = \\sqrt[4]{(-3)^4} \\quad\\text{frente a}\\quad K = (\\sqrt[4]{-3})^4 \\qquad h)\\; L = 3{,}400400400400400\\dots$$",
       "solucion": "a)\\; A = 1 \\in \\mathbb{N}; \\quad b)\\; B = -6 \\in \\mathbb{Z}, \\; C = 9i \\in \\mathbb{C} \\setminus \\mathbb{R}; \\quad c)\\; D = 3 \\in \\mathbb{N}; \\quad d)\\; E = 5 \\in \\mathbb{N}; \\quad e)\\; F = 19 - 6\\sqrt{2} \\in \\mathbb{I}; \\quad f)\\; G = 2 \\in \\mathbb{N}; \\quad g)\\; H = 3 \\in \\mathbb{N}; \\; K \\notin \\mathbb{R} \\text{ (en } \\mathbb{C}: K = -3\\text{)}; \\quad h)\\; L = 3{,}\\widehat{400} = \\dfrac{3397}{999} \\in \\mathbb{Q}"
     },
@@ -208,6 +278,15 @@ window.TEMAS_DATA[1] = {
       "id": "P-03",
       "caso": "Operaciones con Intervalos y Semirrectas (Ejercicio 3 de la Hoja)",
       "apartados_count": 6,
+      "instruccion": "Representa sobre rectas reales alineadas y calcula las siguientes operaciones, justificando de forma rigurosa si los extremos de los intervalos son abiertos o cerrados:",
+      "apartados": [
+        { "letra": "a)", "expresion": "[-4, 3) \\cap [1, 7] \\quad\\text{frente a}\\quad [-4, 3) \\cup [1, 7]" },
+        { "letra": "b)", "expresion": "[-4, 3) \\setminus [1, 7] \\quad\\text{y}\\quad [1, 7] \\setminus [-4, 3)" },
+        { "letra": "c)", "expresion": "(-\\infty, 2] \\cap (-1, 6) \\cap [0, +\\infty)" },
+        { "letra": "d)", "expresion": "(-\\infty, -2) \\cup [-2, 5]" },
+        { "letra": "e)", "expresion": "[-3, 2) \\cup (2, 6]" },
+        { "letra": "f)", "expresion": "([-5, 2] \\cap [0, 4]) \\cup (3, 7)" }
+      ],
       "enunciado": "Representa sobre rectas reales alineadas y calcula las siguientes operaciones, justificando de forma rigurosa si los extremos de los intervalos son abiertos o cerrados: $$a)\\; [-4, 3) \\cap [1, 7] \\quad\\text{frente a}\\quad [-4, 3) \\cup [1, 7] \\qquad b)\\; [-4, 3) \\setminus [1, 7] \\quad\\text{y}\\quad [1, 7] \\setminus [-4, 3)$$ $$c)\\; (-\\infty, 2] \\cap (-1, 6) \\cap [0, +\\infty) \\qquad d)\\; (-\\infty, -2) \\cup [-2, 5]$$ $$e)\\; [-3, 2) \\cup (2, 6] \\qquad f)\\; ([-5, 2] \\cap [0, 4]) \\cup (3, 7)$$",
       "solucion": "a)\\; [1, 3) \\quad\\text{y}\\quad [-4, 7]; \\quad b)\\; [-4, 1) \\quad\\text{y}\\quad [3, 7]; \\quad c)\\; [0, 2]; \\quad d)\\; (-\\infty, 5]; \\quad e)\\; [-3, 6] \\setminus \\{2\\}; \\quad f)\\; [0, 2] \\cup (3, 7)"
     },
@@ -215,6 +294,15 @@ window.TEMAS_DATA[1] = {
       "id": "P-04",
       "caso": "Complementarios y Operaciones Combinadas (Ejercicio 4 de la Hoja)",
       "apartados_count": 5,
+      "enunciado_base": "I = (-\\infty, 4] \\qquad J = (-3, 6) \\qquad K = [1, +\\infty)",
+      "instruccion": "Dados los conjuntos anteriores, calcula y expresa el resultado en forma de intervalo o unión disjunta de intervalos:",
+      "apartados": [
+        { "letra": "a)", "expresion": "I^c = \\mathbb{R} \\setminus I \\quad\\text{y}\\quad J^c = \\mathbb{R} \\setminus J" },
+        { "letra": "b)", "expresion": "(I \\cup K)^c = \\mathbb{R} \\setminus (I \\cup K)" },
+        { "letra": "c)", "expresion": "J \\setminus (I \\cap K)" },
+        { "letra": "d)", "expresion": "(I \\cap J)^c \\cap K" },
+        { "letra": "e)", "expresion": "(U \\cup V)^c \\quad\\text{siendo } U = (-\\infty, -2] \\quad\\text{y}\\quad V = [5, +\\infty)" }
+      ],
       "enunciado": "Dados los conjuntos $I = (-\\infty, 4]$, $J = (-3, 6)$ y $K = [1, +\\infty)$, calcula y expresa el resultado en forma de intervalo o unión disjunta de intervalos: $$a)\\; I^c = \\mathbb{R} \\setminus I \\quad\\text{y}\\quad J^c = \\mathbb{R} \\setminus J \\qquad b)\\; (I \\cup K)^c = \\mathbb{R} \\setminus (I \\cup K)$$ $$c)\\; J \\setminus (I \\cap K) \\qquad d)\\; (I \\cap J)^c \\cap K \\qquad e)\\; (U \\cup V)^c \\quad\\text{siendo } U = (-\\infty, -2] \\quad\\text{y}\\quad V = [5, +\\infty)$$",
       "solucion": "a)\\; I^c = (4, +\\infty), \\quad J^c = (-\\infty, -3] \\cup [6, +\\infty); \\quad b)\\; (I \\cup K)^c = \\emptyset; \\quad c)\\; J \\setminus (I \\cap K) = (-3, 1) \\cup (4, 6); \\quad d)\\; (I \\cap J)^c \\cap K = (4, +\\infty); \\quad e)\\; (U \\cup V)^c = (-2, 5)"
     }

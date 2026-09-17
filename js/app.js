@@ -5,6 +5,91 @@
 
 let currentTemaId = 1;
 
+// Renderizador de apartados en carrusel / slider horizontal deslizable (izquierda ↔ derecha)
+function renderApartadosSlider(apartados, enunciadoBase = null) {
+  if (!apartados || apartados.length === 0) return '';
+
+  let baseHtml = '';
+  if (enunciadoBase) {
+    baseHtml = `<div class="center-math">$${enunciadoBase}$</div>`;
+  }
+
+  let cardsHtml = '';
+  apartados.forEach(ap => {
+    cardsHtml += `
+      <div class="apartado-card">
+        <span class="apartado-badge">${ap.letra}</span>
+        <div class="apartado-math">$${ap.expresion}$</div>
+      </div>
+    `;
+  });
+
+  const num = apartados.length;
+  const hintText = num > 1 
+    ? `↔ Desliza los ${num} apartados (${apartados[0].letra} a ${apartados[num - 1].letra})`
+    : `Apartado ${apartados[0].letra}`;
+
+  return `
+    <div class="apartados-slider-wrapper">
+      ${baseHtml}
+      <div class="apartados-slider-header">
+        <span class="slider-hint">${hintText}</span>
+        <div class="slider-arrows">
+          <button type="button" class="btn-slider-arrow" onclick="slideTrack(this, -1)" title="Apartado anterior">‹</button>
+          <button type="button" class="btn-slider-arrow" onclick="slideTrack(this, 1)" title="Siguiente apartado">›</button>
+        </div>
+      </div>
+      <div class="apartados-slider-track">
+        ${cardsHtml}
+      </div>
+    </div>
+  `;
+}
+
+// Navegación con flechas del slider
+function slideTrack(btn, direction) {
+  const wrapper = btn.closest('.apartados-slider-wrapper');
+  if (!wrapper) return;
+  const track = wrapper.querySelector('.apartados-slider-track');
+  if (!track) return;
+  const card = track.querySelector('.apartado-card');
+  const cardWidth = card ? card.offsetWidth + 14 : 260;
+  track.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+}
+
+// Soporte táctil y de arrastre con ratón (drag-to-scroll) para ordenadores
+function initDragToScroll() {
+  document.querySelectorAll('.apartados-slider-track').forEach(track => {
+    if (track.dataset.dragInit) return;
+    track.dataset.dragInit = 'true';
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    track.addEventListener('mousedown', (e) => {
+      isDown = true;
+      track.classList.add('dragging');
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+    track.addEventListener('mouseleave', () => {
+      isDown = false;
+      track.classList.remove('dragging');
+    });
+    track.addEventListener('mouseup', () => {
+      isDown = false;
+      track.classList.remove('dragging');
+    });
+    track.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      track.scrollLeft = scrollLeft - walk;
+    });
+  });
+}
+
 // Renderizado Vista 1: Al Día (Última clase impartida)
 function renderAlDia() {
   const config = window.CURSO_CONFIG;
@@ -26,22 +111,9 @@ function renderAlDia() {
 
   let html = '';
   u.ejercicios_vistos.forEach(ex => {
-    let gridHtml = '';
+    let apartadosHtml = '';
     if (ex.apartados && ex.apartados.length > 0) {
-      gridHtml = '<div class="box-apartados">';
-      if (ex.enunciado_base) {
-        gridHtml += `<div class="center-math">$${ex.enunciado_base}$</div>`;
-      }
-      gridHtml += '<div class="grid-2">';
-      ex.apartados.forEach(ap => {
-        gridHtml += `
-          <div class="grid-item">
-            <span class="grid-item-label">${ap.letra}</span>
-            <span class="grid-item-math">$${ap.expresion}$</span>
-          </div>
-        `;
-      });
-      gridHtml += '</div></div>';
+      apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base);
     }
 
     html += `
@@ -56,7 +128,7 @@ function renderAlDia() {
         </summary>
         <div class="pizarra-body">
           <p class="exercise-instruction">${ex.instruccion}</p>
-          ${gridHtml}
+          ${apartadosHtml}
           ${ex.idea_clave ? `<div class="idea-box"><strong>💡 Idea clave para libreta:</strong> ${ex.idea_clave}</div>` : ''}
         </div>
       </details>
@@ -64,6 +136,7 @@ function renderAlDia() {
   });
 
   container.innerHTML = html;
+  initDragToScroll();
 }
 
 // Renderizado Cuadrícula de Temas (Vista Temario General: Temas Activos)
@@ -200,22 +273,9 @@ function renderDiarioPlegado(temaId = currentTemaId) {
   sesionesOrdenadas.forEach((s, idx) => {
     let ejerciciosHtml = '';
     s.ejercicios.forEach(ex => {
-      let gridHtml = '';
-      if (ex.apartados) {
-        gridHtml = '<div class="box-apartados">';
-        if (ex.enunciado_base) {
-          gridHtml += `<div class="center-math">$${ex.enunciado_base}$</div>`;
-        }
-        gridHtml += '<div class="grid-2">';
-        ex.apartados.forEach(ap => {
-          gridHtml += `
-            <div class="grid-item">
-              <span class="grid-item-label">${ap.letra}</span>
-              <span class="grid-item-math">$${ap.expresion}$</span>
-            </div>
-          `;
-        });
-        gridHtml += '</div></div>';
+      let apartadosHtml = '';
+      if (ex.apartados && ex.apartados.length > 0) {
+        apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base);
       }
 
       ejerciciosHtml += `
@@ -230,7 +290,7 @@ function renderDiarioPlegado(temaId = currentTemaId) {
           </summary>
           <div class="pizarra-body">
             <p class="exercise-instruction" style="font-size:1.15rem;">${ex.instruccion}</p>
-            ${gridHtml}
+            ${apartadosHtml}
             ${ex.idea_clave ? `<div class="idea-box"><strong>💡 Idea clave:</strong> ${ex.idea_clave}</div>` : ''}
           </div>
         </details>
@@ -258,6 +318,7 @@ function renderDiarioPlegado(temaId = currentTemaId) {
   });
 
   container.innerHTML = html;
+  initDragToScroll();
 }
 
 // Renderizado de Ejercicios de la Semana (Hoja de Trabajo Autónomo)
@@ -306,6 +367,17 @@ function renderSemanaHoja(temaId = currentTemaId) {
   t.semanas_ejercicios.forEach(sem => {
     let ejerciciosHtml = '';
     sem.ejercicios.forEach(p => {
+      let apartadosHtml = '';
+      if (p.apartados && p.apartados.length > 0) {
+        apartadosHtml = renderApartadosSlider(p.apartados, p.enunciado_base);
+      } else if (p.enunciado) {
+        apartadosHtml = `<div class="semana-enunciado">${p.enunciado}</div>`;
+      }
+
+      const instruccionText = p.instruccion 
+        ? `<p class="exercise-instruction" style="font-size:1.15rem; margin-bottom:12px;">${p.instruccion}</p>`
+        : '';
+
       ejerciciosHtml += `
         <details class="ejercicio-accordion" ontoggle="onAccordionToggle()">
           <summary class="ejercicio-summary">
@@ -319,7 +391,8 @@ function renderSemanaHoja(temaId = currentTemaId) {
             </div>
           </summary>
           <div class="ejercicio-body">
-            <div class="semana-enunciado">${p.enunciado}</div>
+            ${instruccionText}
+            ${apartadosHtml}
             <button class="btn-toggle-sol" onclick="toggleSol('${p.id}')">Ver soluciones finales</button>
             <div class="panel-sol-final" id="sol-${p.id}">
               <div style="font-weight: 800; margin-bottom: 6px;">Soluciones finales para contrastar:</div>
@@ -362,6 +435,7 @@ function renderSemanaHoja(temaId = currentTemaId) {
   });
 
   container.innerHTML = html;
+  initDragToScroll();
 }
 
 // Renderizado de la Autoevaluación Semafórica (Comprueba lo que sabes)
@@ -497,7 +571,10 @@ function toggleSol(id) {
 }
 
 function onAccordionToggle() {
-  setTimeout(renderMath, 50);
+  setTimeout(() => {
+    renderMath();
+    initDragToScroll();
+  }, 50);
 }
 
 // Navegación entre Vistas Principales (Al Día vs Temario)

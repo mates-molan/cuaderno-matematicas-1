@@ -363,6 +363,141 @@
       -webkit-overflow-scrolling: touch;
     }
 
+    /* CARRUSEL / SLIDER HORIZONTAL DE APARTADOS DESLIZABLES */
+    .apartados-slider-wrapper {
+      background: #faf8f5;
+      border: 1px solid #edebe8;
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 14px 0 18px 0;
+      position: relative;
+      max-width: 100%;
+    }
+
+    .apartados-slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .slider-hint {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #64748b;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .slider-arrows {
+      display: flex;
+      gap: 6px;
+    }
+
+    .btn-slider-arrow {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      color: #334155;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .btn-slider-arrow:hover {
+      background: #f1f5f9;
+      border-color: #94a3b8;
+      color: #0f172a;
+    }
+
+    .btn-slider-arrow:active {
+      transform: scale(0.95);
+      background: #e2e8f0;
+    }
+
+    .apartados-slider-track {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 14px;
+      padding: 6px 2px 14px 2px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+      cursor: grab;
+    }
+
+    .apartados-slider-track.dragging {
+      cursor: grabbing;
+      user-select: none;
+      scroll-behavior: auto;
+    }
+
+    .apartado-card {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      min-width: 220px;
+      max-width: 440px;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+
+    .apartado-card:hover {
+      border-color: var(--blue-border);
+      box-shadow: 0 4px 14px rgba(29, 78, 216, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .apartado-badge {
+      font-weight: 800;
+      color: var(--blue-text);
+      background: var(--blue-bg);
+      border: 1px solid var(--blue-border);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    .apartado-math {
+      white-space: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      flex: 1;
+      font-size: 1.3rem;
+      padding: 2px 0;
+    }
+
+    .box-apartados {
+      background: #faf8f5;
+      border: 1px solid #edebe8;
+      border-radius: 12px;
+      padding: 22px 26px;
+      margin-bottom: 18px;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1472,5 +1607,29 @@
       .subtab-btn {
         padding: 8px 12px;
         font-size: 0.9rem;
+      }
+      .apartados-slider-wrapper {
+        padding: 12px 8px;
+        border-radius: 10px;
+      }
+      .apartados-slider-track {
+        gap: 10px;
+        padding: 4px 2px 10px 2px;
+      }
+      .apartado-card {
+        min-width: 76vw;
+        max-width: 84vw;
+        padding: 12px 14px;
+        border-radius: 10px;
+      }
+      .apartado-math {
+        font-size: 1.15rem;
+      }
+      .apartado-badge {
+        font-size: 0.88rem;
+        padding: 3px 8px;
+      }
+      .slider-hint {
+        font-size: 0.78rem;
       }
     }
