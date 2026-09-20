@@ -26,7 +26,7 @@ function renderApartadosSlider(apartados, enunciadoBase = null) {
 
   const num = apartados.length;
   const hintText = num > 1 
-    ? `↔ Desliza los ${num} apartados (${apartados[0].letra} a ${apartados[num - 1].letra})`
+    ? `↔ Desliza los <strong>${num} apartados</strong> (${apartados[0].letra} a ${apartados[num - 1].letra})`
     : `Apartado ${apartados[0].letra}`;
 
   return `
@@ -35,8 +35,8 @@ function renderApartadosSlider(apartados, enunciadoBase = null) {
       <div class="apartados-slider-header">
         <span class="slider-hint">${hintText}</span>
         <div class="slider-arrows">
-          <button type="button" class="btn-slider-arrow" onclick="slideTrack(this, -1)" title="Apartado anterior">‹</button>
-          <button type="button" class="btn-slider-arrow" onclick="slideTrack(this, 1)" title="Siguiente apartado">›</button>
+          <button type="button" class="btn-slider-arrow" onclick="slideTrack(this, -1)" title="Apartado anterior" aria-label="Apartado anterior">‹</button>
+          <button type="button" class="btn-slider-arrow" onclick="slideTrack(this, 1)" title="Siguiente apartado" aria-label="Siguiente apartado">›</button>
         </div>
       </div>
       <div class="apartados-slider-track">
@@ -57,7 +57,7 @@ function slideTrack(btn, direction) {
   track.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
 }
 
-// Soporte táctil y de arrastre con ratón (drag-to-scroll) para ordenadores
+// Soporte táctil y de arrastre con ratón (drag-to-scroll) para ordenadores y pizarras interactivas
 function initDragToScroll() {
   document.querySelectorAll('.apartados-slider-track').forEach(track => {
     if (track.dataset.dragInit) return;
@@ -101,7 +101,7 @@ function renderAlDia() {
   const temaNombreEl = document.getElementById('heroTemaNombre');
   const refEl = document.getElementById('heroReferencia');
 
-  if (fechaEl) fechaEl.textContent = u.fecha;
+  if (fechaEl) fechaEl.innerHTML = `<span>🗓️</span> <span>${u.fecha}</span>`;
   if (tituloSesionEl) tituloSesionEl.textContent = u.titulo_sesion;
   if (temaNombreEl) temaNombreEl.textContent = u.tema_titulo;
   if (refEl) refEl.textContent = '📖 Apuntes: ' + u.referencia_apuntes;
@@ -116,20 +116,21 @@ function renderAlDia() {
       apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base);
     }
 
+    // Los ejercicios vienen plegados por defecto
     html += `
       <details class="pizarra-accordion" ontoggle="onAccordionToggle()">
         <summary class="pizarra-summary">
           <div class="pizarra-summary-left">
             <span class="badge-ref">Ejercicio ${ex.numero}</span>
-            <span>${ex.titulo}</span>
-            <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">(📖 Apuntes: ${ex.referencia})</span>
+            <span style="font-weight: 800;">${ex.titulo}</span>
+            <span class="badge-apuntes-ref">📖 Apuntes: ${ex.referencia}</span>
           </div>
           <span class="pizarra-toggle-icon">▼</span>
         </summary>
         <div class="pizarra-body">
-          <p class="exercise-instruction">${ex.instruccion}</p>
+          <div class="exercise-instruction">${ex.instruccion}</div>
           ${apartadosHtml}
-          ${ex.idea_clave ? `<div class="idea-box"><strong>💡 Idea clave para libreta:</strong> ${ex.idea_clave}</div>` : ''}
+          ${ex.idea_clave ? `<div class="idea-box"><strong>💡 Idea clave para tu libreta:</strong> ${ex.idea_clave}</div>` : ''}
         </div>
       </details>
     `;
@@ -171,7 +172,7 @@ function renderTemasGrid() {
       metaPillsHtml += '<span class="meta-pill">📥 Hoja de Ejercicios Lista</span>';
     }
     if (t.sesiones_impartidas > 0) {
-      metaPillsHtml += `<span class="meta-pill">📅 ${t.sesiones_impartidas} Sesión Impartida</span>`;
+      metaPillsHtml += `<span class="meta-pill">📅 ${t.sesiones_impartidas} Sesiones Impartidas</span>`;
     }
     if (t.total_ejercicios_libreta > 0) {
       metaPillsHtml += `<span class="meta-pill">📝 ${t.total_ejercicios_libreta} Ejercicios de Libreta</span>`;
@@ -260,7 +261,7 @@ function renderDiarioPlegado(temaId = currentTemaId) {
   const t = window.TEMAS_DATA && window.TEMAS_DATA[temaId];
   if (!t || !t.sesiones || t.sesiones.length === 0) {
     container.innerHTML = `
-      <div style="padding: 24px; background: #ffffff; border-radius: 12px; border: 1px solid var(--border-soft); text-align: center; color: var(--text-muted);">
+      <div style="padding: 24px; background: #ffffff; border-radius: 12px; border: 1.5px solid var(--border-soft); text-align: center; color: var(--text-muted);">
         <p style="font-size: 1.05rem;">📅 Las sesiones de pizarra para este tema se publicarán conforme se impartan en el aula.</p>
       </div>
     `;
@@ -279,17 +280,17 @@ function renderDiarioPlegado(temaId = currentTemaId) {
       }
 
       ejerciciosHtml += `
-        <details class="pizarra-accordion" ontoggle="onAccordionToggle()" style="margin-bottom: 12px;">
+        <details class="pizarra-accordion" ontoggle="onAccordionToggle()" style="margin-bottom: 14px;">
           <summary class="pizarra-summary">
             <div class="pizarra-summary-left">
               <span class="badge-ref">Ejercicio ${ex.numero}</span>
-              <span>${ex.titulo}</span>
-              <span style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">(${ex.referencia})</span>
+              <span style="font-weight: 800;">${ex.titulo}</span>
+              <span class="badge-apuntes-ref">📖 ${ex.referencia}</span>
             </div>
             <span class="pizarra-toggle-icon">▼</span>
           </summary>
           <div class="pizarra-body">
-            <p class="exercise-instruction" style="font-size:1.15rem;">${ex.instruccion}</p>
+            <div class="exercise-instruction">${ex.instruccion}</div>
             ${apartadosHtml}
             ${ex.idea_clave ? `<div class="idea-box"><strong>💡 Idea clave:</strong> ${ex.idea_clave}</div>` : ''}
           </div>
@@ -332,14 +333,13 @@ function renderSemanaHoja(temaId = currentTemaId) {
   // Banner superior de descarga
   if (bannerContainer) {
     if (t && t.ejercicios_pdf) {
-      const filename = t.ejercicios_pdf.split('/').pop();
       bannerContainer.innerHTML = `
         <div class="hoja-download-banner">
           <div class="hoja-download-info">
             <span class="hoja-download-icon">📑</span>
             <div>
-              <h4 style="font-size: 1.05rem; font-weight: 800; color: #0f172a;">Hoja de Ejercicios: Tema ${t.id}</h4>
-              <p style="color: var(--text-muted); font-size: 0.88rem;">Documento completo en PDF (con soluciones finales) para imprimir o consultar.</p>
+              <h4 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">Hoja de Ejercicios: Tema ${t.id}</h4>
+              <p style="color: var(--text-muted); font-size: 0.92rem;">Documento oficial completo en PDF con soluciones finales para contrastar tu trabajo.</p>
             </div>
           </div>
           <a href="${t.ejercicios_pdf}" target="_blank" class="btn-action-purple">
@@ -356,7 +356,7 @@ function renderSemanaHoja(temaId = currentTemaId) {
 
   if (!t || !t.semanas_ejercicios || t.semanas_ejercicios.length === 0) {
     container.innerHTML = `
-      <div style="padding: 24px; background: #ffffff; border-radius: 12px; border: 1px solid var(--border-soft); text-align: center; color: var(--text-muted);">
+      <div style="padding: 24px; background: #ffffff; border-radius: 12px; border: 1.5px solid var(--border-soft); text-align: center; color: var(--text-muted);">
         <p style="font-size: 1.05rem;">📝 Las hojas de trabajo para este tema se activarán al comenzar la unidad.</p>
       </div>
     `;
@@ -375,7 +375,7 @@ function renderSemanaHoja(temaId = currentTemaId) {
       }
 
       const instruccionText = p.instruccion 
-        ? `<p class="exercise-instruction" style="font-size:1.15rem; margin-bottom:12px;">${p.instruccion}</p>`
+        ? `<div class="exercise-instruction">${p.instruccion}</div>`
         : '';
 
       ejerciciosHtml += `
@@ -383,7 +383,7 @@ function renderSemanaHoja(temaId = currentTemaId) {
           <summary class="ejercicio-summary">
             <div class="ejercicio-summary-left">
               <span class="semana-id">${p.id}</span>
-              <span>${p.caso}</span>
+              <span style="font-weight: 700;">${p.caso}</span>
             </div>
             <div class="ejercicio-summary-right">
               <span class="ejercicio-badge-count">${p.apartados_count} apartados</span>
@@ -393,9 +393,12 @@ function renderSemanaHoja(temaId = currentTemaId) {
           <div class="ejercicio-body">
             ${instruccionText}
             ${apartadosHtml}
-            <button class="btn-toggle-sol" onclick="toggleSol('${p.id}')">Ver soluciones finales</button>
+            <button class="btn-toggle-sol" onclick="toggleSol('${p.id}')">
+              <span>🔍</span>
+              <span>Comprobar soluciones finales</span>
+            </button>
             <div class="panel-sol-final" id="sol-${p.id}">
-              <div style="font-weight: 800; margin-bottom: 6px;">Soluciones finales para contrastar:</div>
+              <div style="font-weight: 800; margin-bottom: 8px; color: #166534;">🎯 Soluciones finales para contrastar con tu libreta:</div>
               <div style="overflow-x: auto; line-height: 1.8;">
                 $${p.solucion}$
               </div>
@@ -405,7 +408,8 @@ function renderSemanaHoja(temaId = currentTemaId) {
       `;
     });
 
-    const estadoBadge = sem.estado === 'actual'
+    const esSemanaActual = (sem.estado === 'actual');
+    const estadoBadge = esSemanaActual
       ? '<span class="semana-badge-estado actual">🟢 En Curso</span>'
       : '<span class="semana-badge-estado anterior">⚪ Anterior</span>';
 
@@ -446,8 +450,8 @@ function renderComprueba(temaId = currentTemaId) {
   const t = window.TEMAS_DATA && window.TEMAS_DATA[temaId];
   if (!t || !t.comprueba || t.comprueba.length === 0) {
     container.innerHTML = `
-      <div style="padding: 24px; background: #ffffff; border-radius: 12px; border: 1px solid var(--border-soft); text-align: center; color: var(--text-muted);">
-        <p style="font-size: 1.05rem;">🚦 Los criterios evaluables de examen se cargarán al iniciar el tema.</p>
+      <div style="padding: 24px; background: #ffffff; border-radius: 12px; border: 1.5px solid var(--border-soft); text-align: center; color: var(--text-muted);">
+        <p style="font-size: 1.05rem;">🎯 Las preguntas de autoevaluación se activarán conforme avancemos en el tema.</p>
       </div>
     `;
     return;
@@ -488,8 +492,8 @@ function renderComprueba(temaId = currentTemaId) {
   let html = `
     <div class="comprueba-summary-card">
       <div class="summary-header">
-        <span class="summary-title">📊 Progreso de Preparación del Tema ${temaId}</span>
-        <span class="summary-score"><strong>${greenCount}</strong> de ${total} criterios dominados (${greenPct}%)</span>
+        <span class="summary-title">📊 Tu Radar de Confianza: Tema ${temaId}</span>
+        <span class="summary-score"><strong>${greenCount}</strong> de ${total} apartados dominados (${greenPct}%)</span>
       </div>
       <div class="summary-progress-bar">
         <div class="progress-fill green" style="width: ${greenPct}%;"></div>
@@ -497,10 +501,10 @@ function renderComprueba(temaId = currentTemaId) {
         <div class="progress-fill red" style="width: ${redPct}%;"></div>
       </div>
       <div class="summary-badges">
-        <span class="badge-pill green-pill">🟢 Dominados: ${greenCount}</span>
-        <span class="badge-pill yellow-pill">🟡 Con ayuda: ${yellowCount}</span>
-        <span class="badge-pill red-pill">🔴 Con dudas: ${redCount}</span>
-        <span class="badge-pill gray-pill">⚪ Por evaluar: ${unratedCount}</span>
+        <span class="badge-pill green-pill">🟢 Lo domino: ${greenCount}</span>
+        <span class="badge-pill yellow-pill">🟡 Con apuntes: ${yellowCount}</span>
+        <span class="badge-pill red-pill">🔴 Me cuesta: ${redCount}</span>
+        <span class="badge-pill gray-pill">⚪ Por mirar: ${unratedCount}</span>
       </div>
     </div>
   `;

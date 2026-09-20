@@ -18,7 +18,7 @@ window.CURSO_CONFIG = {
         "numero": 3,
         "titulo": "Diferencia entre Puntos Aislados, Intervalos y Semirrectas",
         "referencia": "Punto 1.2 (Págs. 2-3)",
-        "instruccion": "<span style=\"display:block; padding:10px 14px; background: #eff6ff; border-left: 4px solid #2563eb; border-radius: 6px; margin-bottom: 14px; font-size: 0.95rem; color: #1e3a8a; line-height: 1.5;\">👀 <strong>Ojo a los ejemplos:</strong> En clase el viernes me inventé los números sobre la marcha en la pizarra para explicar la teoría. Los que tenéis aquí son <em>otros diferentes</em> a los que copiasteis, pero os sirven exactamente para lo mismo: repasar y comprobar que tenéis clara la diferencia en vuestra libreta.</span>Diferencia razonadamente sobre la recta real entre un conjunto de puntos sueltos (aislados), un intervalo y una semirrecta, indicando su dibujo y si tienen finitos o infinitos números reales:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">👀</span><div class=\"nota-aula-content\"><strong>¡Tranqui con los números!</strong> En clase el viernes me inventé los ejemplos en la pizarra sobre la marcha. Los que tienes aquí son <em>números distintos</em> a los que copiaste, pero sirven exactamente para lo mismo: comprobar desde casa y con calma que tienes clarísima la diferencia en tu libreta. 🚀</div></div>Diferencia razonadamente sobre la recta real entre un conjunto de puntos sueltos (aislados), un intervalo y una semirrecta, indicando su dibujo y si tienen finitos o infinitos números reales:",
         "apartados": [
           {
             "letra": "a)",
@@ -51,7 +51,7 @@ window.CURSO_CONFIG = {
         "numero": 4,
         "titulo": "Operaciones con Intervalos, Semirrectas y Puntos Aislados",
         "referencia": "Punto 1.3 (Págs. 3-4)",
-        "instruccion": "<span style=\"display:block; padding:10px 14px; background: #eff6ff; border-left: 4px solid #2563eb; border-radius: 6px; margin-bottom: 14px; font-size: 0.95rem; color: #1e3a8a; line-height: 1.5;\">💡 <strong>Igual que en el ejercicio anterior:</strong> Los números que hicimos en la pizarra fueron improvisados en directo (esos ya los tenéis en vuestra libreta). Aquí os pongo otros distintos para que practiquéis cómo se unen, se cortan o se restan conjuntos de números, y cómo hallar el <strong>complementario</strong> (lo que llamamos en clase «coger el resto del mundo»).</span>Calcula de forma justificada aplicando el método de rectas reales alineadas las siguientes operaciones y complementarios ($A^c = \\mathbb{R} \\setminus A$):",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Misma jugada:</strong> En la pizarra improvisamos números en directo (esos ya los tienes en tu libreta). Aquí te dejamos una tanda limpia para entrenar cómo unir, cortar y restar intervalos, y cómo sacar el <strong>complementario</strong> (lo que llamamos «quedarte con el resto del mundo» 🌍). ¡Pruébalos y compara!</div></div>Calcula de forma justificada aplicando el método de rectas reales alineadas las siguientes operaciones y complementarios ($A^c = \\mathbb{R} \\setminus A$):",
         "apartados": [
           {
             "letra": "a)",
