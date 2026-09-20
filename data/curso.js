@@ -98,7 +98,7 @@ window.CURSO_CONFIG = {
             "expresion": "C^c \\quad\\text{siendo } C = \\{3\\} \\implies C^c = \\mathbb{R} \\setminus \\{3\\} = (-\\infty, 3) \\cup (3, +\\infty)"
           }
         ],
-        "idea_clave": "Unión ($\\cup$) es juntar todo; si hay solape se fusionan, si hay hueco quedan separados. Intersección ($\\cap$) es la zona común; si no se tocan es vacía ($\\emptyset$). El complementario $A^c = \\mathbb{R} \\setminus A$ es «coger el resto del mundo»: quedarse con toda la recta menos el conjunto, invirtiendo los extremos."
+        "idea_clave": "Unión ($\\cup$) es juntar todo; si hay solape se fusionan, si hay hueco quedan separados. Intersección ($\\cap$) es la zona común; si no se tocan es vacía ($\\emptyset$). Resta o diferencia ($A \\setminus B$) es quedarse con lo de $A$ quitándole lo que comparta con $B$. ¡Ojo a los extremos!: si el número restado entraba en el conjunto que quitas, se elimina y queda abierto; si no entraba, sobrevive cerrado. Ejemplos con intervalos: 1) $[1, 5] \\setminus [3, 7) = [1, 3)$ frente a $[3, 7) \\setminus [1, 5] = (5, 7)$. 2) $[-2, 6] \\setminus (1, 4) = [-2, 1] \\cup [4, 6]$ (quitar un abierto del interior parte el intervalo en dos y deja los bordes cerrados). El complementario $A^c = \\mathbb{R} \\setminus A$ es «coger el resto del mundo»: toda la recta menos el conjunto, invirtiendo los extremos."
       }
     ]
   },
