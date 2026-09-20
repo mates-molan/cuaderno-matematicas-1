@@ -165,22 +165,30 @@ window.TEMAS_DATA[1] = {
             },
             {
               "letra": "h)",
-              "expresion": "[-2, 5] \\setminus \\{2\\} = [-2, 2) \\cup (2, 5] \\quad\\text{y}\\quad [1, 6) \\setminus (3, +\\infty) = [1, 3]"
+              "expresion": "[1, 5] \\setminus [3, 7) = [1, 3) \\quad\\text{frente a}\\quad [3, 7) \\setminus [1, 5] = (5, 7)"
             },
             {
               "letra": "i)",
-              "expresion": "A^c \\quad\\text{siendo } A = [2, +\\infty) \\implies A^c = (-\\infty, 2)"
+              "expresion": "[-2, 6] \\setminus (1, 4) = [-2, 1] \\cup [4, 6] \\quad\\text{(quitar un abierto deja los bordes cerrados)}"
             },
             {
               "letra": "j)",
-              "expresion": "B^c \\quad\\text{siendo } B = (-1, 5] \\implies B^c = (-\\infty, -1] \\cup (5, +\\infty)"
+              "expresion": "[-2, 5] \\setminus \\{2\\} = [-2, 2) \\cup (2, 5] \\quad\\text{y}\\quad [1, 6) \\setminus (3, +\\infty) = [1, 3]"
             },
             {
               "letra": "k)",
+              "expresion": "A^c \\quad\\text{siendo } A = [2, +\\infty) \\implies A^c = (-\\infty, 2)"
+            },
+            {
+              "letra": "l)",
+              "expresion": "B^c \\quad\\text{siendo } B = (-1, 5] \\implies B^c = (-\\infty, -1] \\cup (5, +\\infty)"
+            },
+            {
+              "letra": "m)",
               "expresion": "C^c \\quad\\text{siendo } C = \\{3\\} \\implies C^c = \\mathbb{R} \\setminus \\{3\\} = (-\\infty, 3) \\cup (3, +\\infty)"
             }
           ],
-          "idea_clave": "Unión ($\\cup$) es juntar todo; si hay solape se fusionan, si hay hueco quedan separados. Intersección ($\\cap$) es la zona común; si no se tocan es vacía ($\\emptyset$). Resta o diferencia ($A \\setminus B$) es quedarse con lo de $A$ quitándole lo que comparta con $B$. ¡Ojo a los extremos!: si el número restado entraba en el conjunto que quitas, se elimina y queda abierto; si no entraba, sobrevive cerrado. Ejemplos con intervalos: 1) $[1, 5] \\setminus [3, 7) = [1, 3)$ frente a $[3, 7) \\setminus [1, 5] = (5, 7)$. 2) $[-2, 6] \\setminus (1, 4) = [-2, 1] \\cup [4, 6]$ (quitar un abierto del interior parte el intervalo en dos y deja los bordes cerrados). El complementario $A^c = \\mathbb{R} \\setminus A$ es «coger el resto del mundo»: toda la recta menos el conjunto, invirtiendo los extremos."
+          "idea_clave": "Unión ($\\cup$) es juntar todo; si hay solape se fusionan, si hay hueco quedan separados. Intersección ($\\cap$) es la zona común; si no se tocan es vacía ($\\emptyset$). Resta o diferencia ($A \\setminus B$) es quedarse con lo de $A$ quitándole lo que comparta con $B$: si el extremo pertenecía al conjunto restado se elimina y queda abierto; si no pertenecía, sobrevive cerrado. El complementario $A^c = \\mathbb{R} \\setminus A$ es «coger el resto del mundo»: toda la recta menos el conjunto, invirtiendo los extremos."
         }
       ]
     },
