@@ -6,7 +6,7 @@ window.TEMAS_DATA[1] = {
   "id": 1,
   "titulo": "Tema 1: Herramientas del Álgebra",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 3,
+  "sesiones_impartidas": 4,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "sesiones": [
@@ -248,6 +248,71 @@ window.TEMAS_DATA[1] = {
             }
           ],
           "idea_clave": "Prioridad de operaciones de conjuntos, complementarios con inversión de extremos (abierto ↔ cerrado) y extirpación de bloques cerrados dejando extremos abiertos."
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "fecha": "Martes 22 de Septiembre de 2026",
+      "titulo": "El Valor Absoluto: Longitudes, Zonas e Inecuaciones",
+      "ejercicios": [
+        {
+          "numero": 7,
+          "titulo": "Distancias en la Recta y Funciones a Trozos",
+          "referencia": "Punto 1.4 (Págs. 4-5)",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>La cinta métrica:</strong> El valor absoluto mide la longitud de la resta (la separación física respecto a un punto). Si la separación mide poco, vives dentro del pasillo; si mide mucho, te sales fuera.</div></div>Interpreta geométricamente como longitudes y separaciones en la recta real, y resuelve:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "|x| < 4 \\iff x \\in (-4, 4) \\quad\\text{(distancia al origen menor que 4)}"
+            },
+            {
+              "letra": "b)",
+              "expresion": "|x - 3| \\le 5 \\iff -5 \\le x - 3 \\le 5 \\iff x \\in [-2, 8] \\quad\\text{(pasillo centrado en 3)}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "|x + 2| > 3 \\iff x + 2 > 3 \\;\\text{o}\\; x + 2 < -3 \\iff x \\in (-\\infty, -5) \\cup (1, +\\infty)"
+            },
+            {
+              "letra": "d)",
+              "expresion": "f(x) = |2x - 6| = \\begin{cases} -2x + 6 & \\text{si } x < 3 \\\\ 2x - 6 & \\text{si } x \\ge 3 \\end{cases}"
+            },
+            {
+              "letra": "e)",
+              "expresion": "g(x) = |4 - 2x| = \\begin{cases} 4 - 2x & \\text{si } x < 2 \\\\ 2x - 4 & \\text{si } x \\ge 2 \\end{cases}"
+            }
+          ],
+          "idea_clave": "Para expresar $|ax + b|$ a trozos se busca su raíz y se prueba el signo a ambos lados para cambiarlo únicamente donde lo de dentro sea negativo."
+        },
+        {
+          "numero": 8,
+          "titulo": "Inecuaciones con Valor Absoluto (El Pasillo vs. Los Extremos)",
+          "referencia": "Punto 1.5 (Págs. 5-7)",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📦</span><div class=\"nota-aula-content\"><strong>El truco de la caja:</strong> Si $|📦| \\le r$, la caja vive dentro del pasillo central $[-r, r]$. Si $|📦| > r$, la caja vive fuera del pasillo a partir de $+r$ y $-r$. ¡Y ojo: una longitud jamás puede ser negativa!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de las zonas en la recta:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "|x - 1| \\le 4 \\iff -4 \\le x - 1 \\le 4 \\iff x \\in [-3, 5]"
+            },
+            {
+              "letra": "b)",
+              "expresion": "|2x - 5| \\le 7 \\iff -7 \\le 2x - 5 \\le 7 \\iff x \\in [-1, 6]"
+            },
+            {
+              "letra": "c)",
+              "expresion": "|x + 3| > 2 \\iff x + 3 > 2 \\;\\text{o}\\; x + 3 < -2 \\iff x \\in (-\\infty, -5) \\cup (-1, +\\infty)"
+            },
+            {
+              "letra": "d)",
+              "expresion": "|3x - 1| > 8 \\iff x \\in \\left(-\\infty, -\\dfrac{7}{3}\\right) \\cup (3, +\\infty)"
+            },
+            {
+              "letra": "e)",
+              "expresion": "|x - 4| \\le -2 \\implies \\emptyset \\quad\\text{frente a}\\quad |x + 1| \\ge -3 \\implies \\mathbb{R}"
+            }
+          ],
+          "idea_clave": "Si $|A| \\le r$, sándwich entre $-r$ y $+r$. Si $|A| > r$, dos alas hacia el exterior. Una longitud nunca puede ser menor o igual que un número negativo (conjunto vacío)."
         }
       ]
     }
