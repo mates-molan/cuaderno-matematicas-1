@@ -20,7 +20,7 @@ window.CURSO_CONFIG = {
         "numero": 7,
         "titulo": "El Valor Absoluto: Distancias en la Recta y Función a Trozos",
         "referencia": "Punto 1.4 (Págs. 4-5)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>La longitud de un objeto:</strong> Imagina que <strong>lo de dentro</strong> de las barras es un <strong>objeto</strong>: el valor absoluto mide simplemente <strong>su longitud</strong> (su tamaño físico sin signos). Cuando lo de dentro es una resta como $|x - a|$, mide la distancia que separa ambos números en la recta. Si esa distancia debe ser pequeña ($\\le$), te quedas cerca del centro; si debe ser grande ($>$), te alejas hacia los lados.</div></div>Interpreta geométricamente como distancias en la recta real y resuelve:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>La longitud de un objeto:</strong> Imagina que <strong>lo de dentro</strong> de las barras es un <strong>objeto</strong>: el valor absoluto mide simplemente <strong>su longitud</strong> (su tamaño físico sin signos). Si dentro solo está la $x$ ($|x|$), mide la distancia directa al origen ($|x| = |x - 0|$). Cuando lo de dentro es una resta como $|x - a|$, el centro se traslada al punto $a$ y mide la separación entre ambos en la recta. Si esa distancia debe ser pequeña ($\\le$), te quedas cerca del centro; si debe ser grande ($>$), te alejas hacia los lados.</div></div>Interpreta geométricamente como distancias en la recta real y resuelve:",
         "apartados": [
           {
             "letra": "a)",
@@ -36,14 +36,14 @@ window.CURSO_CONFIG = {
           },
           {
             "letra": "d)",
-            "expresion": "f(x) = |2x - 6| = \\begin{cases} -2x + 6 & \\text{si } x < 3 \\\\ 2x - 6 & \\text{si } x \\ge 3 \\end{cases}"
+            "expresion": "f(x) = |x| = \\begin{cases} -x & \\text{si } x < 0 \\\\ x & \\text{si } x \\ge 0 \\end{cases}"
           },
           {
             "letra": "e)",
-            "expresion": "g(x) = |4 - 2x| = \\begin{cases} 4 - 2x & \\text{si } x < 2 \\\\ 2x - 4 & \\text{si } x \\ge 2 \\end{cases}"
+            "expresion": "g(x) = |2x - 6| = \\begin{cases} -2x + 6 & \\text{si } x < 3 \\\\ 2x - 6 & \\text{si } x \\ge 3 \\end{cases}"
           }
         ],
-        "idea_clave": "Para expresar $|ax + b|$ a trozos se busca su raíz y se prueba el signo a ambos lados para cambiarlo únicamente donde lo de dentro sea negativo."
+        "idea_clave": "Para expresar $|ax + b|$ a trozos se busca su raíz y se prueba el signo a ambos lados para cambiarlo únicamente donde lo de dentro sea negativo. En $|x|$, la raíz elemental es el 0."
       },
       {
         "numero": 8,
