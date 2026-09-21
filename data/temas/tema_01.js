@@ -260,7 +260,7 @@ window.TEMAS_DATA[1] = {
           "numero": 7,
           "titulo": "El Valor Absoluto: Distancias en la Recta y Función a Trozos",
           "referencia": "Punto 1.4 (Págs. 4-5)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>La longitud de un objeto:</strong> Imagina que <strong>lo de dentro</strong> de las barras es un <strong>objeto</strong>: el valor absoluto mide simplemente <strong>su longitud</strong> (su tamaño físico sin signos). Si dentro solo está la $x$ ($|x|$), mide la distancia directa al origen ($|x| = |x - 0|$). Cuando lo de dentro es una resta como $|x - a|$, el centro se traslada al punto $a$ y mide la separación entre ambos en la recta. Si esa distancia debe ser pequeña ($\\le$), te quedas cerca del centro; si debe ser grande ($>$), te alejas hacia los lados.</div></div>Interpreta geométricamente como distancias en la recta real y resuelve:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>Distancia entre dos puntos:</strong> El valor absoluto mide la <strong>distancia entre dos puntos</strong> de la recta real. Si dentro solo está la $x$ ($|x|$), es la distancia entre $x$ y el origen $0$ ($|x - 0|$). Cuando hay una resta ($|x - a|$), mide la distancia entre $x$ y el punto $a$. Si te piden que la distancia sea pequeña ($\\le$), estás cerca del punto y te quedas en el tramo central; si te piden que sea grande ($>$), te alejas hacia los lados.</div></div>Interpreta geométricamente como distancias en la recta real y resuelve:",
           "apartados": [
             {
               "letra": "a)",
@@ -289,7 +289,7 @@ window.TEMAS_DATA[1] = {
           "numero": 8,
           "titulo": "Inecuaciones con Valor Absoluto (El Centro vs. Los Extremos)",
           "referencia": "Punto 1.5 (Págs. 5-7)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>El objeto y su tamaño:</strong> Piensa en <strong>lo de dentro</strong> como en un <strong>objeto</strong> y en las barras como la medida de <strong>su longitud</strong>. Si la longitud del objeto tiene que ser menor ($\\le r$), solo cabe si vive en el centro entre el negativo y el positivo ($-r \\le \\text{objeto} \\le r$). Si su longitud tiene que ser mayor ($> r$), se desborda y se escapa hacia los extremos. ¡Y sentido común: la longitud de un objeto jamás puede ser negativa!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de la longitud del objeto en la recta:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Distancia al origen en inecuaciones:</strong> Piensa que las barras miden la distancia de <strong>lo de dentro</strong> al cero. Si esa distancia debe ser menor ($\\le r$), lo de dentro no puede alejarse y queda atrapado en el centro entre el negativo y el positivo ($-r \\le \\dots \\le r$). Si la distancia debe ser mayor ($> r$), se aleja hacia los extremos. ¡Y sentido común: una distancia jamás puede ser negativa!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de las distancias en la recta:",
           "apartados": [
             {
               "letra": "a)",
@@ -312,7 +312,7 @@ window.TEMAS_DATA[1] = {
               "expresion": "|x - 4| \\le -2 \\implies \\emptyset \\quad\\text{frente a}\\quad |x + 1| \\ge -3 \\implies \\mathbb{R}"
             }
           ],
-          "idea_clave": "Lo de dentro es un objeto y las barras miden su longitud: si mide menos de r, vive en el centro (-r ≤ objeto ≤ r); si mide más, se escapa hacia los extremos. La longitud de un objeto jamás puede ser negativa."
+          "idea_clave": "El valor absoluto mide distancias: si la distancia es menor (≤ r), lo de dentro queda atrapado en el centro entre -r y +r; si es mayor (> r), se escapa hacia los extremos. Una distancia jamás puede dar negativo."
         }
       ]
     }
