@@ -20,27 +20,27 @@ window.CURSO_CONFIG = {
         "numero": 7,
         "titulo": "El Valor Absoluto: Distancias en la Recta y Función a Trozos",
         "referencia": "Punto 1.4 (Págs. 4-5)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>Longitud y distancia entre dos puntos:</strong> El valor absoluto mide el tamaño o <strong>longitud de lo de dentro</strong>. Si dentro solo está la $x$ ($|x|$), mide su longitud desde el origen: es la <strong>distancia entre $x$ y el $0$</strong> ($|x - 0|$). Cuando hay una resta ($|x - a|$), esa longitud representa la <strong>distancia entre dos puntos</strong>: cuánto se separa $x$ del punto $a$. Si esa distancia debe ser pequeña ($\\le$), estás cerca del punto y te quedas en el tramo central; si debe ser grande ($>$), te alejas hacia los lados.</div></div>Interpreta geométricamente como distancias en la recta real y resuelve:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>Longitud y distancia entre dos puntos:</strong> El valor absoluto mide el tamaño o <strong>longitud de lo de dentro</strong>. Si dentro solo está la $x$ ($|x|$), mide su longitud desde el origen: es la <strong>distancia entre $x$ y el $0$</strong> ($|x - 0|$). Cuando hay una resta ($|x - a|$), esa longitud representa la <strong>distancia entre dos puntos</strong>: cuánto se separa $x$ del punto $a$. Si esa distancia debe ser pequeña ($\\le$), estás cerca del punto y te quedas en el tramo central; si debe ser grande ($>$), te alejas hacia los lados.</div></div>Razona y resuelve pensando geométricamente sobre la recta real:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "|x| < 4 \\iff x \\in (-4, 4) \\quad\\text{(distancia al origen menor que 4)}"
+            "expresion": "\\text{¿Qué números distan menos de 4 unidades del origen? } |x| < 4 \\iff x \\in (-4, 4)"
           },
           {
             "letra": "b)",
-            "expresion": "|x - 3| \\le 5 \\iff -5 \\le x - 3 \\le 5 \\iff x \\in [-2, 8] \\quad\\text{(a distancia 5 del punto 3)}"
+            "expresion": "\\text{Puntos cuya distancia al } 3 \\text{ no supera 5: } |x - 3| \\le 5 \\iff x \\in [3-5, 3+5] = [-2, 8]"
           },
           {
             "letra": "c)",
-            "expresion": "|x + 2| > 3 \\iff x + 2 > 3 \\;\\text{o}\\; x + 2 < -3 \\iff x \\in (-\\infty, -5) \\cup (1, +\\infty)"
+            "expresion": "\\text{Puntos que se alejan más de 3 unidades del } -2: |x - (-2)| = |x + 2| > 3 \\iff x \\in (-\\infty, -5) \\cup (1, +\\infty)"
           },
           {
             "letra": "d)",
-            "expresion": "f(x) = |x| = \\begin{cases} -x & \\text{si } x < 0 \\\\ x & \\text{si } x \\ge 0 \\end{cases}"
+            "expresion": "\\text{¿Por qué si } x = -7 \\text{ se cambia el signo? } |-7| = -(-7) = 7 \\implies f(x) = |x| = \\begin{cases} -x & \\text{si } x < 0 \\\\ x & \\text{si } x \\ge 0 \\end{cases}"
           },
           {
             "letra": "e)",
-            "expresion": "g(x) = |2x - 6| = \\begin{cases} -2x + 6 & \\text{si } x < 3 \\\\ 2x - 6 & \\text{si } x \\ge 3 \\end{cases}"
+            "expresion": "\\text{¿En qué punto cambia de signo } 2x - 6? \\quad 2x - 6 = 0 \\implies x = 3 \\implies g(x) = |2x - 6| = \\begin{cases} -2x + 6 & \\text{si } x < 3 \\\\ 2x - 6 & \\text{si } x \\ge 3 \\end{cases}"
           }
         ],
         "idea_clave": "Para expresar $|ax + b|$ a trozos se busca su raíz y se prueba el signo a ambos lados para cambiarlo únicamente donde lo de dentro sea negativo. En $|x|$, la raíz elemental es el 0."
@@ -49,7 +49,7 @@ window.CURSO_CONFIG = {
         "numero": 8,
         "titulo": "Inecuaciones con Valor Absoluto (El Centro vs. Los Extremos)",
         "referencia": "Punto 1.5 (Págs. 5-7)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>De la longitud a la inecuación:</strong> Igual que en el ejercicio anterior, las barras miden la <strong>longitud de lo de dentro</strong> (su distancia al cero). Si esa longitud debe ser pequeña ($\\le r$), lo de dentro no puede alejarse: queda atrapado en el centro entre el negativo y el positivo ($-r \\le \\dots \\le r$). Si la longitud debe ser grande ($> r$), se desborda y se escapa hacia los extremos. ¡Y sentido común: una longitud o distancia jamás puede dar un número negativo!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de la longitud y distancia en la recta:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>De la longitud a la inecuación:</strong> Igual que en el ejercicio anterior, las barras miden la <strong>longitud de lo de dentro</strong>. Si esa longitud debe ser pequeña ($\\le r$), lo de dentro no puede alejarse: queda atrapado en el centro entre el negativo y el positivo ($-r \\le \\dots \\le r$). Si la longitud debe ser grande ($> r$), se desborda y se escapa hacia los extremos. ¡Y sentido común: una longitud o distancia jamás puede dar un número negativo!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de la longitud y distancia en la recta:",
         "apartados": [
           {
             "letra": "a)",
@@ -72,7 +72,7 @@ window.CURSO_CONFIG = {
             "expresion": "|x - 4| \\le -2 \\implies \\emptyset \\quad\\text{frente a}\\quad |x + 1| \\ge -3 \\implies \\mathbb{R}"
           }
         ],
-        "idea_clave": "El valor absoluto mide la longitud de lo de dentro (su distancia al cero): si mide menos de r, queda atrapado en el centro (-r ≤ ... ≤ r); si mide más de r, se escapa hacia los extremos. Una longitud jamás puede dar negativo."
+        "idea_clave": "El valor absoluto mide la longitud de lo de dentro: si mide menos de r, queda atrapado en el centro (-r ≤ ... ≤ r); si mide más de r, se escapa hacia los extremos. Una longitud jamás puede dar negativo."
       }
     ]
   },
