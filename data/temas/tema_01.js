@@ -260,7 +260,7 @@ window.TEMAS_DATA[1] = {
           "numero": 7,
           "titulo": "El Valor Absoluto: Distancias en la Recta y Función a Trozos",
           "referencia": "Punto 1.4 (Págs. 4-5)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>Distancia entre dos puntos:</strong> El valor absoluto mide la <strong>distancia entre dos puntos</strong> de la recta real. Si dentro solo está la $x$ ($|x|$), es la distancia entre $x$ y el origen $0$ ($|x - 0|$). Cuando hay una resta ($|x - a|$), mide la distancia entre $x$ y el punto $a$. Si te piden que la distancia sea pequeña ($\\le$), estás cerca del punto y te quedas en el tramo central; si te piden que sea grande ($>$), te alejas hacia los lados.</div></div>Interpreta geométricamente como distancias en la recta real y resuelve:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>Longitud y distancia entre dos puntos:</strong> El valor absoluto mide el tamaño o <strong>longitud de lo de dentro</strong>. Si dentro solo está la $x$ ($|x|$), mide su longitud desde el origen: es la <strong>distancia entre $x$ y el $0$</strong> ($|x - 0|$). Cuando hay una resta ($|x - a|$), esa longitud representa la <strong>distancia entre dos puntos</strong>: cuánto se separa $x$ del punto $a$. Si esa distancia debe ser pequeña ($\\le$), estás cerca del punto y te quedas en el tramo central; si debe ser grande ($>$), te alejas hacia los lados.</div></div>Interpreta geométricamente como distancias en la recta real y resuelve:",
           "apartados": [
             {
               "letra": "a)",
@@ -289,7 +289,7 @@ window.TEMAS_DATA[1] = {
           "numero": 8,
           "titulo": "Inecuaciones con Valor Absoluto (El Centro vs. Los Extremos)",
           "referencia": "Punto 1.5 (Págs. 5-7)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Distancia al origen en inecuaciones:</strong> Piensa que las barras miden la distancia de <strong>lo de dentro</strong> al cero. Si esa distancia debe ser menor ($\\le r$), lo de dentro no puede alejarse y queda atrapado en el centro entre el negativo y el positivo ($-r \\le \\dots \\le r$). Si la distancia debe ser mayor ($> r$), se aleja hacia los extremos. ¡Y sentido común: una distancia jamás puede ser negativa!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de las distancias en la recta:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>De la longitud a la inecuación:</strong> Igual que en el ejercicio anterior, las barras miden la <strong>longitud de lo de dentro</strong> (su distancia al cero). Si esa longitud debe ser pequeña ($\\le r$), lo de dentro no puede alejarse: queda atrapado en el centro entre el negativo y el positivo ($-r \\le \\dots \\le r$). Si la longitud debe ser grande ($> r$), se desborda y se escapa hacia los extremos. ¡Y sentido común: una longitud o distancia jamás puede dar un número negativo!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de la longitud y distancia en la recta:",
           "apartados": [
             {
               "letra": "a)",
@@ -312,7 +312,7 @@ window.TEMAS_DATA[1] = {
               "expresion": "|x - 4| \\le -2 \\implies \\emptyset \\quad\\text{frente a}\\quad |x + 1| \\ge -3 \\implies \\mathbb{R}"
             }
           ],
-          "idea_clave": "El valor absoluto mide distancias: si la distancia es menor (≤ r), lo de dentro queda atrapado en el centro entre -r y +r; si es mayor (> r), se escapa hacia los extremos. Una distancia jamás puede dar negativo."
+          "idea_clave": "El valor absoluto mide la longitud de lo de dentro (su distancia al cero): si mide menos de r, queda atrapado en el centro (-r ≤ ... ≤ r); si mide más de r, se escapa hacia los extremos. Una longitud jamás puede dar negativo."
         }
       ]
     }
