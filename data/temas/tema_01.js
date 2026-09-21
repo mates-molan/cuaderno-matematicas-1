@@ -6,7 +6,7 @@ window.TEMAS_DATA[1] = {
   "id": 1,
   "titulo": "Tema 1: Herramientas del Álgebra",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 2,
+  "sesiones_impartidas": 3,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "sesiones": [
@@ -330,6 +330,40 @@ window.TEMAS_DATA[1] = {
           ],
           "enunciado": "Dados los conjuntos $I = (-\\infty, 4]$, $J = (-3, 6)$ y $K = [1, +\\infty)$, calcula y expresa el resultado en forma de intervalo o unión disjunta de intervalos: $$a)\\; I^c = \\mathbb{R} \\setminus I \\quad\\text{y}\\quad J^c = \\mathbb{R} \\setminus J \\qquad b)\\; (I \\cup K)^c = \\mathbb{R} \\setminus (I \\cup K)$$ $$c)\\; J \\setminus (I \\cap K) \\qquad d)\\; (I \\cap J)^c \\cap K \\qquad e)\\; (U \\cup V)^c \\quad\\text{siendo } U = (-\\infty, -2] \\quad\\text{y}\\quad V = [5, +\\infty)$$",
           "solucion": "a)\\; I^c = (4, +\\infty), \\quad J^c = (-\\infty, -3] \\cup [6, +\\infty); \\quad b)\\; (I \\cup K)^c = \\emptyset; \\quad c)\\; J \\setminus (I \\cap K) = (-3, 1) \\cup (4, 6); \\quad d)\\; (I \\cap J)^c \\cap K = (4, +\\infty); \\quad e)\\; (U \\cup V)^c = (-2, 5)"
+        },
+        {
+          "id": "P-05",
+          "caso": "Valor Absoluto y Distancias (Ejercicio 5 de la Hoja)",
+          "apartados_count": 4,
+          "instruccion": "Resuelve las siguientes cuestiones sobre la función valor absoluto:",
+          "apartados": [
+            { "letra": "a)", "expresion": "\\text{Expresa a trozos: } f(x) = |2x - 8|" },
+            { "letra": "b)", "expresion": "\\text{Expresa a trozos: } g(x) = |x + 3| - |x - 2|" },
+            { "letra": "c)", "expresion": "\\text{Distancia de } x \\text{ al punto } -3 \\text{ menor que 5 unidades (en forma de inecuación con valor absoluto)}" },
+            { "letra": "d)", "expresion": "\\text{La distancia de } x \\text{ al punto 4 es de al menos 6 unidades (en forma de inecuación con valor absoluto)}" }
+          ],
+          "enunciado": "Resuelve las siguientes cuestiones sobre la función valor absoluto: $$a)\\; \\text{Expresa a trozos: } f(x) = |2x - 8| \\qquad b)\\; \\text{Expresa a trozos: } g(x) = |x + 3| - |x - 2|$$ $$c)\\; \\text{Distancia de } x \\text{ al punto } -3 \\text{ menor que 5 unidades} \\qquad d)\\; \\text{La distancia de } x \\text{ al punto 4 es de al menos 6 unidades}$$",
+          "solucion": "a)\\; f(x) = \\begin{cases} -2x + 8 & \\text{si } x < 4 \\\\ 2x - 8 & \\text{si } x \\ge 4 \\end{cases}; \\quad b)\\; g(x) = \\begin{cases} -5 & \\text{si } x < -3 \\\\ 2x + 1 & \\text{si } -3 \\le x < 2 \\\\ 5 & \\text{si } x \\ge 2 \\end{cases}; \\quad c)\\; |x + 3| < 5 \\iff x \\in (-8, 2); \\quad d)\\; |x - 4| \\ge 6 \\iff x \\in (-\\infty, -2] \\cup [10, +\\infty)"
+        },
+        {
+          "id": "P-06",
+          "caso": "Ecuaciones e Inecuaciones con Valor Absoluto (Ejercicio 6 de la Hoja)",
+          "apartados_count": 10,
+          "instruccion": "Resuelve las siguientes ecuaciones e inecuaciones en $\\mathbb{R}$, expresando las soluciones en forma de conjunto o intervalo:",
+          "apartados": [
+            { "letra": "a)", "expresion": "|3x - 5| = 7" },
+            { "letra": "b)", "expresion": "|2x + 1| \\le 9" },
+            { "letra": "c)", "expresion": "|4 - 3x| > 5" },
+            { "letra": "d)", "expresion": "|2x - 3| < x + 6" },
+            { "letra": "e)", "expresion": "\\left|\\dfrac{x}{2} - 3\\right| < 4" },
+            { "letra": "f)", "expresion": "\\left|\\dfrac{2x - 1}{3}\\right| \\le 5" },
+            { "letra": "g)", "expresion": "\\left|\\dfrac{2x - 1}{x + 3}\\right| \\le 1 \\quad (x \\ne -3)" },
+            { "letra": "h)", "expresion": "\\left|\\dfrac{x + 1}{x - 2}\\right| \\ge 2 \\quad (x \\ne 2)" },
+            { "letra": "i)", "expresion": "|5x + 7| \\le -4" },
+            { "letra": "j)", "expresion": "|2x - 9| > -3" }
+          ],
+          "enunciado": "Resuelve las siguientes ecuaciones e inecuaciones en $\\mathbb{R}$, expresando las soluciones en forma de conjunto o intervalo: $$a)\\; |3x - 5| = 7 \\qquad b)\\; |2x + 1| \\le 9 \\qquad c)\\; |4 - 3x| > 5 \\qquad d)\\; |2x - 3| < x + 6$$ $$e)\\; \\left|\\dfrac{x}{2} - 3\\right| < 4 \\qquad f)\\; \\left|\\dfrac{2x - 1}{3}\\right| \\le 5 \\qquad g)\\; \\left|\\dfrac{2x - 1}{x + 3}\\right| \\le 1 \\; (x \\ne -3)$$ $$h)\\; \\left|\\dfrac{x + 1}{x - 2}\\right| \\ge 2 \\; (x \\ne 2) \\qquad i)\\; |5x + 7| \\le -4 \\qquad j)\\; |2x - 9| > -3$$",
+          "solucion": "a)\\; S = \\left\\{-\\dfrac{2}{3}, 4\\right\\}; \\quad b)\\; S = [-5, 4]; \\quad c)\\; S = \\left(-\\infty, -\\dfrac{1}{3}\\right) \\cup (3, +\\infty); \\quad d)\\; S = (-1, 9); \\quad e)\\; S = (-2, 14); \\quad f)\\; S = [-7, 8]; \\quad g)\\; S = \\left[-\\dfrac{2}{3}, 4\\right]; \\quad h)\\; S = [1, 2) \\cup (2, 5] = [1, 5] \\setminus \\{2\\}; \\quad i)\\; S = \\emptyset \\;\\text{(imposible)}; \\quad j)\\; S = \\mathbb{R}"
         }
       ]
     }
@@ -406,6 +440,40 @@ window.TEMAS_DATA[1] = {
       ],
       "enunciado": "Dados los conjuntos $I = (-\\infty, 4]$, $J = (-3, 6)$ y $K = [1, +\\infty)$, calcula y expresa el resultado en forma de intervalo o unión disjunta de intervalos: $$a)\\; I^c = \\mathbb{R} \\setminus I \\quad\\text{y}\\quad J^c = \\mathbb{R} \\setminus J \\qquad b)\\; (I \\cup K)^c = \\mathbb{R} \\setminus (I \\cup K)$$ $$c)\\; J \\setminus (I \\cap K) \\qquad d)\\; (I \\cap J)^c \\cap K \\qquad e)\\; (U \\cup V)^c \\quad\\text{siendo } U = (-\\infty, -2] \\quad\\text{y}\\quad V = [5, +\\infty)$$",
       "solucion": "a)\\; I^c = (4, +\\infty), \\quad J^c = (-\\infty, -3] \\cup [6, +\\infty); \\quad b)\\; (I \\cup K)^c = \\emptyset; \\quad c)\\; J \\setminus (I \\cap K) = (-3, 1) \\cup (4, 6); \\quad d)\\; (I \\cap J)^c \\cap K = (4, +\\infty); \\quad e)\\; (U \\cup V)^c = (-2, 5)"
+    },
+    {
+      "id": "P-05",
+      "caso": "Valor Absoluto y Distancias (Ejercicio 5 de la Hoja)",
+      "apartados_count": 4,
+      "instruccion": "Resuelve las siguientes cuestiones sobre la función valor absoluto:",
+      "apartados": [
+        { "letra": "a)", "expresion": "\\text{Expresa a trozos: } f(x) = |2x - 8|" },
+        { "letra": "b)", "expresion": "\\text{Expresa a trozos: } g(x) = |x + 3| - |x - 2|" },
+        { "letra": "c)", "expresion": "\\text{Distancia de } x \\text{ al punto } -3 \\text{ menor que 5 unidades (en forma de inecuación con valor absoluto)}" },
+        { "letra": "d)", "expresion": "\\text{La distancia de } x \\text{ al punto 4 es de al menos 6 unidades (en forma de inecuación con valor absoluto)}" }
+      ],
+      "enunciado": "Resuelve las siguientes cuestiones sobre la función valor absoluto: $$a)\\; \\text{Expresa a trozos: } f(x) = |2x - 8| \\qquad b)\\; \\text{Expresa a trozos: } g(x) = |x + 3| - |x - 2|$$ $$c)\\; \\text{Distancia de } x \\text{ al punto } -3 \\text{ menor que 5 unidades} \\qquad d)\\; \\text{La distancia de } x \\text{ al punto 4 es de al menos 6 unidades}$$",
+      "solucion": "a)\\; f(x) = \\begin{cases} -2x + 8 & \\text{si } x < 4 \\\\ 2x - 8 & \\text{si } x \\ge 4 \\end{cases}; \\quad b)\\; g(x) = \\begin{cases} -5 & \\text{si } x < -3 \\\\ 2x + 1 & \\text{si } -3 \\le x < 2 \\\\ 5 & \\text{si } x \\ge 2 \\end{cases}; \\quad c)\\; |x + 3| < 5 \\iff x \\in (-8, 2); \\quad d)\\; |x - 4| \\ge 6 \\iff x \\in (-\\infty, -2] \\cup [10, +\\infty)"
+    },
+    {
+      "id": "P-06",
+      "caso": "Ecuaciones e Inecuaciones con Valor Absoluto (Ejercicio 6 de la Hoja)",
+      "apartados_count": 10,
+      "instruccion": "Resuelve las siguientes ecuaciones e inecuaciones en $\\mathbb{R}$, expresando las soluciones en forma de conjunto o intervalo:",
+      "apartados": [
+        { "letra": "a)", "expresion": "|3x - 5| = 7" },
+        { "letra": "b)", "expresion": "|2x + 1| \\le 9" },
+        { "letra": "c)", "expresion": "|4 - 3x| > 5" },
+        { "letra": "d)", "expresion": "|2x - 3| < x + 6" },
+        { "letra": "e)", "expresion": "\\left|\\dfrac{x}{2} - 3\\right| < 4" },
+        { "letra": "f)", "expresion": "\\left|\\dfrac{2x - 1}{3}\\right| \\le 5" },
+        { "letra": "g)", "expresion": "\\left|\\dfrac{2x - 1}{x + 3}\\right| \\le 1 \\quad (x \\ne -3)" },
+        { "letra": "h)", "expresion": "\\left|\\dfrac{x + 1}{x - 2}\\right| \\ge 2 \\quad (x \\ne 2)" },
+        { "letra": "i)", "expresion": "|5x + 7| \\le -4" },
+        { "letra": "j)", "expresion": "|2x - 9| > -3" }
+      ],
+      "enunciado": "Resuelve las siguientes ecuaciones e inecuaciones en $\\mathbb{R}$, expresando las soluciones en forma de conjunto o intervalo: $$a)\\; |3x - 5| = 7 \\qquad b)\\; |2x + 1| \\le 9 \\qquad c)\\; |4 - 3x| > 5 \\qquad d)\\; |2x - 3| < x + 6$$ $$e)\\; \\left|\\dfrac{x}{2} - 3\\right| < 4 \\qquad f)\\; \\left|\\dfrac{2x - 1}{3}\\right| \\le 5 \\qquad g)\\; \\left|\\dfrac{2x - 1}{x + 3}\\right| \\le 1 \\; (x \\ne -3)$$ $$h)\\; \\left|\\dfrac{x + 1}{x - 2}\\right| \\ge 2 \\; (x \\ne 2) \\qquad i)\\; |5x + 7| \\le -4 \\qquad j)\\; |2x - 9| > -3$$",
+      "solucion": "a)\\; S = \\left\\{-\\dfrac{2}{3}, 4\\right\\}; \\quad b)\\; S = [-5, 4]; \\quad c)\\; S = \\left(-\\infty, -\\dfrac{1}{3}\\right) \\cup (3, +\\infty); \\quad d)\\; S = (-1, 9); \\quad e)\\; S = (-2, 14); \\quad f)\\; S = [-7, 8]; \\quad g)\\; S = \\left[-\\dfrac{2}{3}, 4\\right]; \\quad h)\\; S = [1, 2) \\cup (2, 5] = [1, 5] \\setminus \\{2\\}; \\quad i)\\; S = \\emptyset \\;\\text{(imposible)}; \\quad j)\\; S = \\mathbb{R}"
     }
   ],
   "comprueba": [
