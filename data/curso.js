@@ -13,6 +13,8 @@ window.CURSO_CONFIG = {
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesión 3: Operaciones con Intervalos y Extremos Compartidos",
     "referencia_apuntes": "Puntos 1.2 y 1.3 (Págs. 2-4)",
+    "mision_semanal": "Ejercicios 5 al 7 en tu libreta (Valor absoluto y potencias). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
+    "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 2 (P-05, P-06 y P-07) de la hoja semanal.",
     "ejercicios_vistos": [
       {
         "numero": 5,

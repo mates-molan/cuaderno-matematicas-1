@@ -100,11 +100,16 @@ function renderAlDia() {
   const tituloSesionEl = document.getElementById('heroTituloSesion');
   const temaNombreEl = document.getElementById('heroTemaNombre');
   const refEl = document.getElementById('heroReferencia');
+  const misionEl = document.getElementById('heroMisionSemanal');
 
   if (fechaEl) fechaEl.innerHTML = `<span>🗓️</span> <span>${u.fecha}</span>`;
   if (tituloSesionEl) tituloSesionEl.textContent = u.titulo_sesion;
   if (temaNombreEl) temaNombreEl.textContent = u.tema_titulo;
   if (refEl) refEl.textContent = '📖 Apuntes: ' + u.referencia_apuntes;
+  if (misionEl && (u.mision_semanal || u.trabajo_semanal_pendiente)) {
+    const texto = u.mision_semanal || u.trabajo_semanal_pendiente;
+    misionEl.innerHTML = `<strong>Misión semanal:</strong> ${texto} <span class="homework-link-btn">Ver semana →</span>`;
+  }
 
   const container = document.getElementById('heroEjerciciosContainer');
   if (!container || !u.ejercicios_vistos) return;
@@ -414,7 +419,7 @@ function renderSemanaHoja(temaId = currentTemaId) {
       : '<span class="semana-badge-estado anterior">⚪ Anterior</span>';
 
     html += `
-      <details class="semana-accordion" id="semana-bloque-${sem.semana_numero}" ontoggle="onAccordionToggle()">
+      <details class="semana-accordion" id="semana-bloque-${sem.semana_numero}" data-estado="${sem.estado}" ${esSemanaActual ? 'open' : ''} ontoggle="onAccordionToggle()">
         <summary class="semana-summary">
           <div class="semana-summary-left">
             <span class="semana-badge-num">Semana ${sem.semana_numero}</span>
@@ -645,7 +650,9 @@ function irASemanaActual() {
   switchMainView('temario');
   openTemaDetail(temaId);
   switchSubTab('semana-hoja');
-  const semActual = document.querySelector('.semana-accordion[id^="semana-bloque-"]');
+  const semActual = document.querySelector('.semana-accordion[data-estado="actual"]')
+    || document.querySelector('.semana-accordion[id^="semana-bloque-"]:last-of-type')
+    || document.querySelector('.semana-accordion');
   if (semActual) {
     semActual.open = true;
     setTimeout(() => {
