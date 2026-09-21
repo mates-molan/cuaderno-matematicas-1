@@ -20,7 +20,7 @@ window.CURSO_CONFIG = {
         "numero": 7,
         "titulo": "Distancias en la Recta y Funciones a Trozos",
         "referencia": "Punto 1.4 (Págs. 4-5)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>La cinta métrica:</strong> El valor absoluto mide la longitud de la resta (la separación física respecto a un punto). Si la separación mide poco, vives dentro del pasillo; si mide mucho, te sales fuera.</div></div>Interpreta geométricamente como longitudes y separaciones en la recta real, y resuelve:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>¿Cuánto te separas?:</strong> El valor absoluto mide la distancia entre dos números (lo de dentro es simplemente cuánto se separan). Si te piden que la distancia sea pequeña ($\le$), estás cerquita del punto y te quedas encerrado en el tramo central; si te piden que sea grande ($>$), te estás alejando y te vas hacia los lados.</div></div>Interpreta geométricamente como distancias en la recta real y resuelve:",
         "apartados": [
           {
             "letra": "a)",
@@ -28,7 +28,7 @@ window.CURSO_CONFIG = {
           },
           {
             "letra": "b)",
-            "expresion": "|x - 3| \\le 5 \\iff -5 \\le x - 3 \\le 5 \\iff x \\in [-2, 8] \\quad\\text{(pasillo centrado en 3)}"
+            "expresion": "|x - 3| \\le 5 \\iff -5 \\le x - 3 \\le 5 \\iff x \\in [-2, 8] \\quad\\text{(a distancia 5 del punto 3)}"
           },
           {
             "letra": "c)",
@@ -47,9 +47,9 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 8,
-        "titulo": "Inecuaciones con Valor Absoluto (El Pasillo vs. Los Extremos)",
+        "titulo": "Inecuaciones con Valor Absoluto (El Centro vs. Los Extremos)",
         "referencia": "Punto 1.5 (Págs. 5-7)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📦</span><div class=\"nota-aula-content\"><strong>El truco de la caja:</strong> Si $|📦| \\le r$, la caja vive dentro del pasillo central $[-r, r]$. Si $|📦| > r$, la caja vive fuera del pasillo a partir de $+r$ y $-r$. ¡Y ojo: una longitud jamás puede ser negativa!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de las zonas en la recta:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>La regla de la recta:</strong> Concéntrate en <strong>lo de dentro</strong> de las barras. Si tiene que ser menor ($\le$), queda atrapado en el centro, entre el número negativo y el positivo ($-r \\le \\dots \\le r$). Si tiene que ser mayor ($>$), se escapa hacia los extremos. ¡Y sentido común: una distancia nunca puede ser menor que un número negativo!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de las zonas en la recta:",
         "apartados": [
           {
             "letra": "a)",
@@ -72,7 +72,7 @@ window.CURSO_CONFIG = {
             "expresion": "|x - 4| \\le -2 \\implies \\emptyset \\quad\\text{frente a}\\quad |x + 1| \\ge -3 \\implies \\mathbb{R}"
           }
         ],
-        "idea_clave": "Si $|A| \\le r$, sándwich entre $-r$ y $+r$. Si $|A| > r$, dos alas hacia el exterior. Una longitud nunca puede ser menor o igual que un número negativo (conjunto vacío)."
+        "idea_clave": "Si es menor (≤), lo de dentro queda encerrado en el centro entre el negativo y el positivo (-r y +r). Si es mayor (>), se separa en dos caminos hacia los lados. Una distancia jamás puede dar negativo."
       }
     ]
   },
