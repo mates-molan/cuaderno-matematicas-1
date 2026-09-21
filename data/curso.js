@@ -80,7 +80,7 @@ window.CURSO_CONFIG = {
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "apuntes_listos": true,
       "ejercicios_listos": true,
-      "total_ejercicios_libreta": 6
+      "total_ejercicios_libreta": 7
     }
   ]
 };
