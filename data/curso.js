@@ -11,7 +11,7 @@ window.CURSO_CONFIG = {
     "fecha": "Martes 22 de Septiembre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 4: El Valor Absoluto: Longitudes e Inecuaciones",
+    "titulo_sesion": "Sesión 4: El Valor Absoluto: Ecuaciones e Inecuaciones",
     "referencia_apuntes": "Puntos 1.4 y 1.5 (Págs. 4-7)",
     "mision_semanal": "Ejercicios 5 al 7 en tu libreta (Valor absoluto y potencias). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
     "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 2 (P-05, P-06 y P-07) de la hoja semanal.",
@@ -47,32 +47,40 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 8,
-        "titulo": "Inecuaciones con Valor Absoluto (El Centro vs. Los Extremos)",
+        "titulo": "Ecuaciones e Inecuaciones con Valor Absoluto (El Centro vs. Los Extremos)",
         "referencia": "Punto 1.5 (Págs. 5-7)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>De la longitud a la inecuación:</strong> Igual que en el ejercicio anterior, las barras miden la <strong>longitud de lo de dentro</strong>. Si esa longitud debe ser pequeña ($\\le r$), lo de dentro no puede alejarse: queda atrapado en el centro entre el negativo y el positivo ($-r \\le \\dots \\le r$). Si la longitud debe ser grande ($> r$), se desborda y se escapa hacia los extremos. ¡Y sentido común: una longitud o distancia jamás puede dar un número negativo!</div></div>Resuelve en $\\mathbb{R}$ aplicando la regla de la longitud y distancia en la recta:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>De la longitud a las ecuaciones e inecuaciones:</strong> Igual que en el ejercicio anterior, las barras miden la <strong>longitud de lo de dentro</strong>.<br>• <strong>En una ecuación ($|A| = r$):</strong> la longitud es fija; lo de dentro vale exactamente $+r$ o $-r$ (dos puntos aislados en la recta).<br>• <strong>En una inecuación menor ($\le r$):</strong> no puede alejarse; queda atrapado en el tramo central entre el negativo y el positivo ($-r \\le A \\le r$).<br>• <strong>En una inecuación mayor ($> r$):</strong> se desborda y se escapa hacia los extremos.<br>¡Y sentido común: una longitud o distancia jamás puede dar un número negativo!</div></div>Resuelve en $\\mathbb{R}$ distinguiendo entre puntos aislados (ecuaciones) e intervalos (inecuaciones):",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "|x - 1| \\le 4 \\iff -4 \\le x - 1 \\le 4 \\iff x \\in [-3, 5]"
+            "expresion": "|x| = 6 \\iff x = 6 \\;\\text{o}\\; x = -6 \\iff x \\in \\{-6, 6\\}"
           },
           {
             "letra": "b)",
-            "expresion": "|2x - 5| \\le 7 \\iff -7 \\le 2x - 5 \\le 7 \\iff x \\in [-1, 6]"
+            "expresion": "|2x - 5| = 7 \\iff 2x - 5 = 7 \\;\\text{o}\\; 2x - 5 = -7 \\iff x \\in \\{-1, 6\\}"
           },
           {
             "letra": "c)",
-            "expresion": "|x + 3| > 2 \\iff x + 3 > 2 \\;\\text{o}\\; x + 3 < -2 \\iff x \\in (-\\infty, -5) \\cup (-1, +\\infty)"
+            "expresion": "|x - 1| \\le 4 \\iff -4 \\le x - 1 \\le 4 \\iff x \\in [-3, 5]"
           },
           {
             "letra": "d)",
-            "expresion": "|3x - 1| > 8 \\iff x \\in \\left(-\\infty, -\\dfrac{7}{3}\\right) \\cup (3, +\\infty)"
+            "expresion": "|2x - 5| \\le 7 \\iff -7 \\le 2x - 5 \\le 7 \\iff x \\in [-1, 6]"
           },
           {
             "letra": "e)",
+            "expresion": "|x + 3| > 2 \\iff x + 3 > 2 \\;\\text{o}\\; x + 3 < -2 \\iff x \\in (-\\infty, -5) \\cup (-1, +\\infty)"
+          },
+          {
+            "letra": "f)",
+            "expresion": "|3x - 1| > 8 \\iff x \\in \\left(-\\infty, -\\dfrac{7}{3}\\right) \\cup (3, +\\infty)"
+          },
+          {
+            "letra": "g)",
             "expresion": "|x - 4| \\le -2 \\implies \\emptyset \\quad\\text{frente a}\\quad |x + 1| \\ge -3 \\implies \\mathbb{R}"
           }
         ],
-        "idea_clave": "El valor absoluto mide la longitud de lo de dentro: si mide menos de r, queda atrapado en el centro (-r ≤ ... ≤ r); si mide más de r, se escapa hacia los extremos. Una longitud jamás puede dar negativo."
+        "idea_clave": "En ecuaciones (|A| = r) hay exactamente dos puntos aislados: A = r o A = -r. En inecuaciones (≤ r), lo de dentro queda atrapado en el centro; si es mayor (> r), hacia los extremos. Una longitud jamás puede dar negativo."
       }
     ]
   },
