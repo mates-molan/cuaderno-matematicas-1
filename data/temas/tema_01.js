@@ -259,7 +259,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 7,
           "titulo": "El Valor Absoluto: Distancias en la Recta y Función a Trozos",
-          "referencia": "Punto 1.4 (Págs. 4-5)",
+          "referencia": "Punto 1.4 (Págs. 5-6)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>Longitud y distancia entre dos puntos:</strong> El valor absoluto mide el tamaño o <strong>longitud de lo de dentro</strong>. Si dentro solo está la $x$ ($|x|$), mide su longitud desde el origen: es la <strong>distancia entre $x$ y el $0$</strong> ($|x - 0|$). Cuando hay una resta ($|x - a|$), esa longitud representa la <strong>distancia entre dos puntos</strong>: cuánto se separa $x$ del punto $a$. Si esa distancia debe ser pequeña ($\\le$), estás cerca del punto y te quedas en el tramo central; si debe ser grande ($>$), te alejas hacia los lados.</div></div>Razona y resuelve pensando geométricamente sobre la recta real:",
           "apartados": [
             {
@@ -288,7 +288,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 8,
           "titulo": "Ecuaciones e Inecuaciones con Valor Absoluto (El Centro vs. Los Extremos)",
-          "referencia": "Punto 1.5 (Págs. 5-7)",
+          "referencia": "Punto 1.5 (Págs. 6-8)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>De la longitud a las ecuaciones e inecuaciones:</strong> Igual que en el ejercicio anterior, las barras miden la <strong>longitud de lo de dentro</strong>.<br>• <strong>En una ecuación ($|A| = r$):</strong> la longitud es fija; lo de dentro vale exactamente $+r$ o $-r$ (dos puntos aislados en la recta).<br>• <strong>En una inecuación menor ($\\le r$):</strong> no puede alejarse; queda atrapado en el tramo central entre el negativo y el positivo ($-r \\le A \\le r$).<br>• <strong>En una inecuación mayor ($> r$):</strong> se desborda y se escapa hacia los extremos.<br>¡Y sentido común: una longitud o distancia jamás puede dar un número negativo!</div></div>Resuelve en $\\mathbb{R}$ distinguiendo entre puntos aislados (ecuaciones) e intervalos (inecuaciones):",
           "apartados": [
             {
@@ -327,12 +327,12 @@ window.TEMAS_DATA[1] = {
     {
       "numero": 6,
       "fecha": "Viernes 25 de Septiembre de 2026",
-      "titulo": "Taller de Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
+      "titulo": "Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
       "ejercicios": [
         {
           "numero": 9,
-          "titulo": "Taller de Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
-          "referencia": "Puntos 1.4 y 1.5 (Págs. 4-7)",
+          "titulo": "Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
+          "referencia": "Puntos 1.4 y 1.5 (Págs. 5-8)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Dos claves para no dudar con el valor absoluto:</strong><br>• <strong>Para escribir a trozos:</strong> Las barras solo hacen una cosa: si lo de dentro es positivo o cero, lo dejan tal cual; si es negativo, le dan la vuelta al signo. Para saber dónde cambia, halla su raíz (dónde se hace cero) y prueba el signo a cada lado. Si hay varios valores absolutos, coloca sus raíces en la recta real y analiza cada tramo por separado (¡ojo a los paréntesis si hay un signo menos delante!).<br>• <strong>Para inecuaciones:</strong> Piensa siempre en distancias sobre la recta. Si la distancia debe ser grande ($\\ge$), te alejas hacia los dos extremos exteriores (unión de semirrectas hacia el infinito). Y si aparecen fracciones, recuerda la regla de oro: ningún denominador puede anularse jamás (descarta antes de nada los valores prohibidos).</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
           "apartados": [
             {

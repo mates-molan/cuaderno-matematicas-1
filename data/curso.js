@@ -11,15 +11,15 @@ window.CURSO_CONFIG = {
     "fecha": "Viernes 25 de Septiembre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 6: Taller de Pizarra: Valor Absoluto a Trozos e Inecuaciones Racionales",
-    "referencia_apuntes": "Puntos 1.4 y 1.5 (Págs. 4-7)",
+    "titulo_sesion": "Sesión 6: Valor Absoluto a Trozos e Inecuaciones Racionales",
+    "referencia_apuntes": "Puntos 1.4 y 1.5 (Págs. 5-8)",
     "mision_semanal": "Ejercicios 5 al 7 en tu libreta (Valor absoluto y potencias). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
     "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 2 (P-05, P-06 y P-07) de la hoja semanal.",
     "ejercicios_vistos": [
       {
         "numero": 9,
-        "titulo": "Taller de Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
-        "referencia": "Puntos 1.4 y 1.5 (Págs. 4-7)",
+        "titulo": "Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
+        "referencia": "Puntos 1.4 y 1.5 (Págs. 5-8)",
         "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Dos claves para no dudar con el valor absoluto:</strong><br>• <strong>Para escribir a trozos:</strong> Las barras solo hacen una cosa: si lo de dentro es positivo o cero, lo dejan tal cual; si es negativo, le dan la vuelta al signo. Para saber dónde cambia, halla su raíz (dónde se hace cero) y prueba el signo a cada lado. Si hay varios valores absolutos, coloca sus raíces en la recta real y analiza cada tramo por separado (¡ojo a los paréntesis si hay un signo menos delante!).<br>• <strong>Para inecuaciones:</strong> Piensa siempre en distancias sobre la recta. Si la distancia debe ser grande ($\\ge$), te alejas hacia los dos extremos exteriores (unión de semirrectas hacia el infinito). Y si aparecen fracciones, recuerda la regla de oro: ningún denominador puede anularse jamás (descarta antes de nada los valores prohibidos).</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
         "apartados": [
           {
