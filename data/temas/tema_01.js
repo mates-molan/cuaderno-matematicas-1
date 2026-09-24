@@ -6,7 +6,7 @@ window.TEMAS_DATA[1] = {
   "id": 1,
   "titulo": "Tema 1: Herramientas del Álgebra",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 4,
+  "sesiones_impartidas": 5,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "sesiones": [
@@ -252,8 +252,8 @@ window.TEMAS_DATA[1] = {
       ]
     },
     {
-      "numero": 4,
-      "fecha": "Martes 22 de Septiembre de 2026",
+      "numero": "4 y 5",
+      "fecha": "Martes 22 y Jueves 24 de Septiembre de 2026",
       "titulo": "El Valor Absoluto: Ecuaciones e Inecuaciones",
       "ejercicios": [
         {

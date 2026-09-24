@@ -305,12 +305,13 @@ function renderDiarioPlegado(temaId = currentTemaId) {
 
     const esReciente = (idx === 0);
     const badgeReciente = esReciente ? '<span class="badge-reciente">⚡ Más reciente</span>' : '';
+    const sesionLabel = String(s.numero).includes('y') || String(s.numero).includes('-') ? `Sesiones ${s.numero}` : `Sesión ${s.numero}`;
 
     html += `
       <details class="sesion-accordion" ontoggle="onAccordionToggle()">
         <summary class="sesion-summary">
           <div class="sesion-summary-left">
-            <span class="sesion-badge">Sesión ${s.numero}</span>
+            <span class="sesion-badge">${sesionLabel}</span>
             ${badgeReciente}
             <span>🗓️ ${s.fecha}: ${s.titulo}</span>
           </div>
