@@ -8,79 +8,38 @@ window.CURSO_CONFIG = {
   "ano_academico": "2026-2027",
   "tema_actual_id": 1,
   "ultima_clase": {
-    "fecha": "Martes 22 y Jueves 24 de Septiembre de 2026",
+    "fecha": "Viernes 25 de Septiembre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesiones 4 y 5: El Valor Absoluto: Ecuaciones e Inecuaciones",
+    "titulo_sesion": "Sesión 6: Taller de Pizarra: Valor Absoluto a Trozos e Inecuaciones Racionales",
     "referencia_apuntes": "Puntos 1.4 y 1.5 (Págs. 4-7)",
     "mision_semanal": "Ejercicios 5 al 7 en tu libreta (Valor absoluto y potencias). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
     "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 2 (P-05, P-06 y P-07) de la hoja semanal.",
     "ejercicios_vistos": [
       {
-        "numero": 7,
-        "titulo": "El Valor Absoluto: Distancias en la Recta y Función a Trozos",
-        "referencia": "Punto 1.4 (Págs. 4-5)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📏</span><div class=\"nota-aula-content\"><strong>Longitud y distancia entre dos puntos:</strong> El valor absoluto mide el tamaño o <strong>longitud de lo de dentro</strong>. Si dentro solo está la $x$ ($|x|$), mide su longitud desde el origen: es la <strong>distancia entre $x$ y el $0$</strong> ($|x - 0|$). Cuando hay una resta ($|x - a|$), esa longitud representa la <strong>distancia entre dos puntos</strong>: cuánto se separa $x$ del punto $a$. Si esa distancia debe ser pequeña ($\\le$), estás cerca del punto y te quedas en el tramo central; si debe ser grande ($>$), te alejas hacia los lados.</div></div>Razona y resuelve pensando geométricamente sobre la recta real:",
+        "numero": 9,
+        "titulo": "Taller de Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
+        "referencia": "Puntos 1.4 y 1.5 (Págs. 4-7)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Cierre semanal de Valor Absoluto:</strong> Dos retos esenciales para rematar la semana con soltura:<br>1) <strong>Funciones a trozos:</strong> Atento al signo del coeficiente de $x$ (si es negativo, la función es decreciente y es positiva a la izquierda de la raíz) y a la resta de dos valores absolutos (separa la recta en 3 zonas con sus raíces ordenadas: $-4$ antes que $-2$).<br>2) <strong>Inecuaciones:</strong> En $\\ge 5$, la solución se escapa hacia los extremos exteriores (unión de semirrectas). En expresiones algebraicas fraccionarias, ¡marca primero la restricción de dominio ($x \\ne -4$)! Como $|-x-4| = |x+4| > 0$, puedes operar con seguridad analizando los signos de las ramas.</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\text{¿Qué números distan menos de 4 unidades del origen? } |x| < 4 \\iff x \\in (-4, 4)"
+            "expresion": "f(x) = \\left|-\\dfrac{x}{2} + 5\\right| = \\begin{cases} -\\dfrac{x}{2} + 5 & \\text{si } x < 10 \\\\[4pt] \\dfrac{x}{2} - 5 & \\text{si } x \\ge 10 \\end{cases}"
           },
           {
             "letra": "b)",
-            "expresion": "\\text{Puntos cuya distancia al } 3 \\text{ no supera 5: } |x - 3| \\le 5 \\iff x \\in [3-5, 3+5] = [-2, 8]"
+            "expresion": "g(x) = |x + 2| - |2x + 8| = \\begin{cases} x + 6 & \\text{si } x < -4 \\\\[4pt] -3x - 10 & \\text{si } -4 \\le x < -2 \\\\[4pt] -x - 6 & \\text{si } x \\ge -2 \\end{cases}"
           },
           {
             "letra": "c)",
-            "expresion": "\\text{Puntos que se alejan más de 3 unidades del } -2: |x - (-2)| = |x + 2| > 3 \\iff x \\in (-\\infty, -5) \\cup (1, +\\infty)"
+            "expresion": "\\left|\\dfrac{2x}{3} - 12\\right| \\ge 5 \\iff \\dfrac{2x}{3} - 12 \\le -5 \\;\\text{ o }\\; \\dfrac{2x}{3} - 12 \\ge 5 \\iff x \\in \\left(-\\infty, \\dfrac{21}{2}\\right] \\cup \\left[\\dfrac{51}{2}, +\\infty\\right)"
           },
           {
             "letra": "d)",
-            "expresion": "\\text{¿Por qué si } x = -7 \\text{ se cambia el signo? } |-7| = -(-7) = 7 \\implies f(x) = |x| = \\begin{cases} -x & \\text{si } x < 0 \\\\ x & \\text{si } x \\ge 0 \\end{cases}"
-          },
-          {
-            "letra": "e)",
-            "expresion": "\\text{¿En qué punto cambia de signo } 2x - 6? \\quad 2x - 6 = 0 \\implies x = 3 \\implies g(x) = |2x - 6| = \\begin{cases} -2x + 6 & \\text{si } x < 3 \\\\ 2x - 6 & \\text{si } x \\ge 3 \\end{cases}"
+            "expresion": "\\left|\\dfrac{3x + 2}{-x - 4}\\right| \\le 2 \\quad (x \\ne -4) \\iff |3x + 2| \\le 2|x + 4| \\iff x \\in [-2, 6]"
           }
         ],
-        "idea_clave": "Para expresar $|ax + b|$ a trozos se busca su raíz y se prueba el signo a ambos lados para cambiarlo únicamente donde lo de dentro sea negativo. En $|x|$, la raíz elemental es el 0."
-      },
-      {
-        "numero": 8,
-        "titulo": "Ecuaciones e Inecuaciones con Valor Absoluto (El Centro vs. Los Extremos)",
-        "referencia": "Punto 1.5 (Págs. 5-7)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>De la longitud a las ecuaciones e inecuaciones:</strong> Igual que en el ejercicio anterior, las barras miden la <strong>longitud de lo de dentro</strong>.<br>• <strong>En una ecuación ($|A| = r$):</strong> la longitud es fija; lo de dentro vale exactamente $+r$ o $-r$ (dos puntos aislados en la recta).<br>• <strong>En una inecuación menor ($\\le r$):</strong> no puede alejarse; queda atrapado en el tramo central entre el negativo y el positivo ($-r \\le A \\le r$).<br>• <strong>En una inecuación mayor ($> r$):</strong> se desborda y se escapa hacia los extremos.<br>¡Y sentido común: una longitud o distancia jamás puede dar un número negativo!</div></div>Resuelve en $\\mathbb{R}$ distinguiendo entre puntos aislados (ecuaciones) e intervalos (inecuaciones):",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "|x| = 6 \\iff x = 6 \\;\\text{o}\\; x = -6 \\iff x \\in \\{-6, 6\\}"
-          },
-          {
-            "letra": "b)",
-            "expresion": "|2x - 5| = 7 \\iff 2x - 5 = 7 \\;\\text{o}\\; 2x - 5 = -7 \\iff x \\in \\{-1, 6\\}"
-          },
-          {
-            "letra": "c)",
-            "expresion": "|x - 1| \\le 4 \\iff -4 \\le x - 1 \\le 4 \\iff x \\in [-3, 5]"
-          },
-          {
-            "letra": "d)",
-            "expresion": "|2x - 5| \\le 7 \\iff -7 \\le 2x - 5 \\le 7 \\iff x \\in [-1, 6]"
-          },
-          {
-            "letra": "e)",
-            "expresion": "|x + 3| > 2 \\iff x + 3 > 2 \\;\\text{o}\\; x + 3 < -2 \\iff x \\in (-\\infty, -5) \\cup (-1, +\\infty)"
-          },
-          {
-            "letra": "f)",
-            "expresion": "|3x - 1| > 8 \\iff x \\in \\left(-\\infty, -\\dfrac{7}{3}\\right) \\cup (3, +\\infty)"
-          },
-          {
-            "letra": "g)",
-            "expresion": "|x - 4| \\le -2 \\implies \\emptyset \\quad\\text{frente a}\\quad |x + 1| \\ge -3 \\implies \\mathbb{R}"
-          }
-        ],
-        "idea_clave": "En ecuaciones (|A| = r) hay exactamente dos puntos aislados: A = r o A = -r. En inecuaciones (≤ r), lo de dentro queda atrapado en el centro; si es mayor (> r), hacia los extremos. Una longitud jamás puede dar negativo."
+        "idea_clave": "En funciones a trozos, localiza las raíces de cada valor absoluto y estudia los signos en los intervalos resultantes cuidando los paréntesis en las restas. En inecuaciones fraccionarias, elimina los puntos que anulan denominadores ($x \\ne -4$) y opera aprovechando que $|-x-4| = |x+4| > 0$."
       }
     ]
   },
@@ -92,7 +51,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 5,
+      "sesiones_impartidas": 6,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
