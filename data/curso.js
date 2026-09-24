@@ -39,7 +39,7 @@ window.CURSO_CONFIG = {
             "expresion": "\\left|\\dfrac{3x + 2}{-x - 4}\\right| \\le 2 \\quad (x \\ne -4) \\iff |3x + 2| \\le 2|x + 4| \\iff x \\in [-2, 6]"
           }
         ],
-        "idea_clave": "El valor absoluto cambia de signo en sus raíces: ubícalas en la recta para estudiar cada intervalo. En inecuaciones, 'menor o igual' confina en el centro y 'mayor o igual' abre hacia los extremos; en fracciones, vigila siempre que el denominador no se anule."
+        "idea_clave": "El valor absoluto siempre da un resultado positivo o cero; lo que cambia de signo al cruzar sus raíces es la expresión de su interior. Al abrir a trozos, cambia el signo de la expresión solo en los intervalos donde sea negativa (ubica las raíces en la recta para distinguirlos). En inecuaciones, «≤» atrapa en el tramo central y «≥» se aleja hacia los extremos; y con fracciones, descarta siempre los valores que anulan el denominador."
       }
     ]
   },
