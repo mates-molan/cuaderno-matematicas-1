@@ -20,7 +20,7 @@ window.CURSO_CONFIG = {
         "numero": 9,
         "titulo": "Taller de Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
         "referencia": "Puntos 1.4 y 1.5 (Págs. 4-7)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Cierre semanal de Valor Absoluto:</strong> Dos retos esenciales para rematar la semana con soltura:<br>1) <strong>Funciones a trozos:</strong> Atento al signo del coeficiente de $x$ (si es negativo, la función es decreciente y es positiva a la izquierda de la raíz) y a la resta de dos valores absolutos (separa la recta en 3 zonas con sus raíces ordenadas: $-4$ antes que $-2$).<br>2) <strong>Inecuaciones:</strong> En $\\ge 5$, la solución se escapa hacia los extremos exteriores (unión de semirrectas). En expresiones algebraicas fraccionarias, ¡marca primero la restricción de dominio ($x \\ne -4$)! Como $|-x-4| = |x+4| > 0$, puedes operar con seguridad analizando los signos de las ramas.</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Dos claves para no dudar con el valor absoluto:</strong><br>• <strong>Para escribir a trozos:</strong> Las barras solo hacen una cosa: si lo de dentro es positivo o cero, lo dejan tal cual; si es negativo, le dan la vuelta al signo. Para saber dónde cambia, halla su raíz (dónde se hace cero) y prueba el signo a cada lado. Si hay varios valores absolutos, coloca sus raíces en la recta real y analiza cada tramo por separado (¡ojo a los paréntesis si hay un signo menos delante!).<br>• <strong>Para inecuaciones:</strong> Piensa siempre en distancias sobre la recta. Si la distancia debe ser grande ($\\ge$), te alejas hacia los dos extremos exteriores (unión de semirrectas hacia el infinito). Y si aparecen fracciones, recuerda la regla de oro: ningún denominador puede anularse jamás (descarta antes de nada los valores prohibidos).</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
         "apartados": [
           {
             "letra": "a)",
@@ -39,7 +39,7 @@ window.CURSO_CONFIG = {
             "expresion": "\\left|\\dfrac{3x + 2}{-x - 4}\\right| \\le 2 \\quad (x \\ne -4) \\iff |3x + 2| \\le 2|x + 4| \\iff x \\in [-2, 6]"
           }
         ],
-        "idea_clave": "En funciones a trozos, localiza las raíces de cada valor absoluto y estudia los signos en los intervalos resultantes cuidando los paréntesis en las restas. En inecuaciones fraccionarias, elimina los puntos que anulan denominadores ($x \\ne -4$) y opera aprovechando que $|-x-4| = |x+4| > 0$."
+        "idea_clave": "El valor absoluto cambia de signo en sus raíces: ubícalas en la recta para estudiar cada intervalo. En inecuaciones, 'menor o igual' confina en el centro y 'mayor o igual' abre hacia los extremos; en fracciones, vigila siempre que el denominador no se anule."
       }
     ]
   },
