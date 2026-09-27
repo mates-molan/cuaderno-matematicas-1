@@ -20,7 +20,7 @@ window.CURSO_CONFIG = {
         "numero": 9,
         "titulo": "Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
         "referencia": "Puntos 1.4 y 1.5 (Págs. 5-8)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Claves didácticas para no dudar con el valor absoluto:</strong><br>• <strong>Para escribir a trozos:</strong> Las barras solo hacen una cosa: si lo de dentro es positivo o cero, lo dejan tal cual; si es negativo, le dan la vuelta al signo. Para saber dónde cambia, halla su raíz (dónde se hace cero) y prueba el signo a cada lado. Si hay varios valores absolutos, coloca sus raíces en la recta real y analiza cada tramo por separado (¡ojo a los paréntesis si hay un signo menos delante!).<br>• <strong>Para inecuaciones racionales:</strong> Si la incógnita está en el denominador, recuerda la regla de oro: ningún denominador puede anularse jamás (descarta antes de nada los valores prohibidos). Al multiplicar por el denominador en valor absoluto, puedes operar elevando al cuadrado o analizando los signos de las ramas; pero comprueba siempre si el valor prohibido cae dentro de tu intervalo solución para excluirlo.<br>• <strong>Con la incógnita fuera de las barras ($|A| < B$):</strong> Recuerda que una longitud jamás puede ser negativa: exige primero la condición de existencia $B > 0$ y resuelve la doble inecuación $-B < A < B$.</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Claves didácticas para no dudar con el valor absoluto:</strong><br>• <strong>Para escribir a trozos:</strong> Las barras solo hacen una cosa: si lo de dentro es positivo o cero, lo dejan tal cual; si es negativo, le dan la vuelta al signo. Para saber dónde cambia, halla su raíz (dónde se hace cero) y prueba el signo a cada lado. Si hay varios valores absolutos, coloca sus raíces en la recta real y analiza cada tramo por separado (¡ojo a los paréntesis si hay un signo menos delante!).<br>• <strong>Para inecuaciones racionales:</strong> Si la incógnita está en el denominador, recuerda la regla de oro: ningún denominador puede anularse jamás (descarta antes de nada los valores prohibidos). Aplica la definición del valor absoluto (quedando acotado en el centro entre $-k$ y $k$, o separando en las dos ramas exteriores $\\le -k$ o $\\ge k$) y resuelve analizando los signos de la fracción, vigilando que los valores prohibidos queden fuera de la solución.<br>• <strong>Con la incógnita fuera de las barras ($|A| < B$):</strong> Recuerda que una longitud jamás puede ser negativa: exige primero la condición de existencia $B > 0$ y resuelve la doble inecuación $-B < A < B$.</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
         "apartados": [
           {
             "letra": "a)",
@@ -36,11 +36,11 @@ window.CURSO_CONFIG = {
           },
           {
             "letra": "d)",
-            "expresion": "\\left|\\dfrac{3x + 2}{-x - 4}\\right| \\le 2 \\quad (x \\ne -4) \\iff |3x + 2| \\le 2|x + 4| \\iff x \\in [-2, 6]"
+            "expresion": "\\left|\\dfrac{3x + 2}{-x - 4}\\right| \\le 2 \\quad (x \\ne -4) \\iff x \\in [-2, 6]"
           },
           {
             "letra": "e)",
-            "expresion": "\\left|\\dfrac{x + 3}{x - 1}\\right| \\ge 2 \\quad (x \\ne 1) \\iff |x + 3| \\ge 2|x - 1| \\iff x \\in \\left[-\\dfrac{1}{3}, 1\\right) \\cup (1, 5]"
+            "expresion": "\\left|\\dfrac{x + 3}{x - 1}\\right| \\ge 2 \\quad (x \\ne 1) \\iff x \\in \\left[-\\dfrac{1}{3}, 1\\right) \\cup (1, 5]"
           },
           {
             "letra": "f)",
