@@ -6,7 +6,7 @@ window.TEMAS_DATA[1] = {
   "id": 1,
   "titulo": "Tema 1: Herramientas del Álgebra",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 6,
+  "sesiones_impartidas": 7,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "sesiones": [
@@ -325,15 +325,15 @@ window.TEMAS_DATA[1] = {
       ]
     },
     {
-      "numero": 6,
-      "fecha": "Viernes 25 de Septiembre de 2026",
+      "numero": "6 y 7",
+      "fecha": "Viernes 25 y Lunes 28 de Septiembre de 2026",
       "titulo": "Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
       "ejercicios": [
         {
           "numero": 9,
           "titulo": "Valor Absoluto: Funciones a Trozos e Inecuaciones Racionales",
           "referencia": "Puntos 1.4 y 1.5 (Págs. 5-8)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Dos claves para no dudar con el valor absoluto:</strong><br>• <strong>Para escribir a trozos:</strong> Las barras solo hacen una cosa: si lo de dentro es positivo o cero, lo dejan tal cual; si es negativo, le dan la vuelta al signo. Para saber dónde cambia, halla su raíz (dónde se hace cero) y prueba el signo a cada lado. Si hay varios valores absolutos, coloca sus raíces en la recta real y analiza cada tramo por separado (¡ojo a los paréntesis si hay un signo menos delante!).<br>• <strong>Para inecuaciones:</strong> Piensa siempre en distancias sobre la recta. Si la distancia debe ser grande ($\\ge$), te alejas hacia los dos extremos exteriores (unión de semirrectas hacia el infinito). Y si aparecen fracciones, recuerda la regla de oro: ningún denominador puede anularse jamás (descarta antes de nada los valores prohibidos).</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Claves didácticas para no dudar con el valor absoluto:</strong><br>• <strong>Para escribir a trozos:</strong> Las barras solo hacen una cosa: si lo de dentro es positivo o cero, lo dejan tal cual; si es negativo, le dan la vuelta al signo. Para saber dónde cambia, halla su raíz (dónde se hace cero) y prueba el signo a cada lado. Si hay varios valores absolutos, coloca sus raíces en la recta real y analiza cada tramo por separado (¡ojo a los paréntesis si hay un signo menos delante!).<br>• <strong>Para inecuaciones racionales:</strong> Si la incógnita está en el denominador, recuerda la regla de oro: ningún denominador puede anularse jamás (descarta antes de nada los valores prohibidos). Al multiplicar por el denominador en valor absoluto, puedes operar elevando al cuadrado o analizando los signos de las ramas; pero comprueba siempre si el valor prohibido cae dentro de tu intervalo solución para excluirlo.<br>• <strong>Con la incógnita fuera de las barras ($|A| < B$):</strong> Recuerda que una longitud jamás puede ser negativa: exige primero la condición de existencia $B > 0$ y resuelve la doble inecuación $-B < A < B$.</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
           "apartados": [
             {
               "letra": "a)",
@@ -350,9 +350,17 @@ window.TEMAS_DATA[1] = {
             {
               "letra": "d)",
               "expresion": "\\left|\\dfrac{3x + 2}{-x - 4}\\right| \\le 2 \\quad (x \\ne -4) \\iff |3x + 2| \\le 2|x + 4| \\iff x \\in [-2, 6]"
+            },
+            {
+              "letra": "e)",
+              "expresion": "\\left|\\dfrac{x + 3}{x - 1}\\right| \\ge 2 \\quad (x \\ne 1) \\iff |x + 3| \\ge 2|x - 1| \\iff x \\in \\left[-\\dfrac{1}{3}, 1\\right) \\cup (1, 5]"
+            },
+            {
+              "letra": "f)",
+              "expresion": "|3x + 2| < x + 6 \\iff -(x + 6) < 3x + 2 < x + 6 \\iff x \\in (-2, 2)"
             }
           ],
-          "idea_clave": "El valor absoluto siempre da un resultado positivo o cero; lo que cambia de signo al cruzar sus raíces es la expresión de su interior. Al abrir a trozos, cambia el signo de la expresión solo en los intervalos donde sea negativa (ubica las raíces en la recta para distinguirlos). En inecuaciones, «≤» atrapa en el tramo central y «≥» se aleja hacia los extremos; y con fracciones, descarta siempre los valores que anulan el denominador."
+          "idea_clave": "El valor absoluto siempre da un resultado positivo o cero; lo que cambia de signo al cruzar sus raíces es la expresión de su interior. Al abrir a trozos, cambia el signo de la expresión solo en los intervalos donde sea negativa (ubica las raíces en la recta para distinguirlos). En inecuaciones fraccionarias, descarta siempre los valores que anulan el denominador (pueden partir tu intervalo); y si la $x$ aparece fuera de las barras ($|A| < B$), exige que $B > 0$ y resuelve $-B < A < B$."
         }
       ]
     }
