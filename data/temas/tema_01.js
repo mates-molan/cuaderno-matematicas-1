@@ -449,8 +449,8 @@ window.TEMAS_DATA[1] = {
     {
       "semana_numero": 2,
       "rango_fechas": "21 Sep - 25 Sep 2026",
-      "estado": "actual",
-      "meta_semanal": "Dominar el valor absoluto (definición analítica a trozos e inecuaciones de distancias) y la simplificación de potencias con exponentes enteros y fraccionarios.",
+      "estado": "anterior",
+      "meta_semanal": "Dominar el valor absoluto (definición analítica a trozos e inecuaciones de distancias).",
       "ejercicios": [
         {
           "id": "P-05",
@@ -485,7 +485,15 @@ window.TEMAS_DATA[1] = {
           ],
           "enunciado": "Resuelve las siguientes ecuaciones e inecuaciones en $\\mathbb{R}$, expresando las soluciones en forma de conjunto o intervalo: $$a)\\; |3x - 5| = 7 \\qquad b)\\; |2x + 1| \\le 9 \\qquad c)\\; |4 - 3x| > 5 \\qquad d)\\; |2x - 3| < x + 6$$ $$e)\\; \\left|\\dfrac{x}{2} - 3\\right| < 4 \\qquad f)\\; \\left|\\dfrac{2x - 1}{3}\\right| \\le 5 \\qquad g)\\; \\left|\\dfrac{2x - 1}{x + 3}\\right| \\le 1 \\; (x \\ne -3)$$ $$h)\\; \\left|\\dfrac{x + 1}{x - 2}\\right| \\ge 2 \\; (x \\ne 2) \\qquad i)\\; |5x + 7| \\le -4 \\qquad j)\\; |2x - 9| > -3$$",
           "solucion": "a)\\; S = \\left\\{-\\dfrac{2}{3}, 4\\right\\}; \\quad b)\\; S = [-5, 4]; \\quad c)\\; S = \\left(-\\infty, -\\dfrac{1}{3}\\right) \\cup (3, +\\infty); \\quad d)\\; S = (-1, 9); \\quad e)\\; S = (-2, 14); \\quad f)\\; S = [-7, 8]; \\quad g)\\; S = \\left[-\\dfrac{2}{3}, 4\\right]; \\quad h)\\; S = [1, 2) \\cup (2, 5] = [1, 5] \\setminus \\{2\\}; \\quad i)\\; S = \\emptyset \\;\\text{(imposible)}; \\quad j)\\; S = \\mathbb{R}"
-        },
+        }
+      ]
+    },
+    {
+      "semana_numero": 3,
+      "rango_fechas": "28 Sep - 02 Oct 2026",
+      "estado": "actual",
+      "meta_semanal": "Dominar la simplificación de potencias con exponentes enteros y fraccionarios, operaciones con radicales (mcm de índices y extracción), radicales anidados, técnicas de racionalización e identidades notables.",
+      "ejercicios": [
         {
           "id": "P-07",
           "caso": "Potencias y Signos: Exponentes Enteros y Fraccionarios (Ejercicio 7 de la Hoja)",
@@ -511,45 +519,147 @@ window.TEMAS_DATA[1] = {
           ],
           "enunciado": "Simplifica al máximo aplicando las propiedades de las potencias y expresando el resultado final con exponentes positivos: $$a)\\; \\dfrac{2^{-3} \\cdot 3^4 \\cdot 6^{-2}}{8^{-1} \\cdot 9^2 \\cdot 12^{-3}} \\qquad b)\\; \\dfrac{(-2)^4 \\cdot (-3)^3 \\cdot (-5)^0}{-2^4 \\cdot 3^2 \\cdot 10^{-2}} \\qquad c)\\; \\left(\\dfrac{a^{-2} b^3}{c^{-1}}\\right)^{-2} \\cdot \\left(\\dfrac{a^3 c^{-2}}{b^{-1}}\\right)^3 \\qquad d)\\; \\dfrac{(x^{2/3} y^{-1/2})^6}{(x^{-1} y^{3/4})^4}$$",
           "solucion": "a)\\; 48; \\quad b)\\; 300; \\quad c)\\; \\dfrac{a^{13}}{b^3 c^8}; \\quad d)\\; \\dfrac{x^8}{y^6}"
+        },
+        {
+          "id": "P-08",
+          "caso": "Radicales: Mínimo Común Índice y Extracción de Factores (Ejercicio 8 de la Hoja)",
+          "apartados_count": 6,
+          "instruccion": "Realiza las siguientes operaciones expresando el resultado en un único radical irreducible con factores simplificados (extrae todos los factores que puedas):",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\sqrt[3]{a^2} \\cdot \\sqrt[4]{a^3} \\cdot \\sqrt[6]{a^5}"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\dfrac{\\sqrt[3]{x^2 \\cdot y}}{\\sqrt[5]{x^3 \\cdot y^2}}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\sqrt{18} - 3\\sqrt{50} + 2\\sqrt{72} - \\sqrt{8}"
+            },
+            {
+              "letra": "d)",
+              "expresion": "2\\sqrt[3]{54} - \\sqrt[3]{16} + 3\\sqrt[3]{250}"
+            },
+            {
+              "letra": "e)",
+              "expresion": "\\dfrac{\\sqrt[3]{16a^4 b} \\cdot \\sqrt[4]{8a^3 b^5}}{\\sqrt[6]{32a^5 b^2}}"
+            },
+            {
+              "letra": "f)",
+              "expresion": "3\\sqrt[3]{\\dfrac{16}{27}} - \\dfrac{1}{2}\\sqrt[3]{128} + 5\\sqrt[3]{\\dfrac{2}{125}}"
+            }
+          ],
+          "enunciado": "Realiza las siguientes operaciones expresando el resultado en un único radical irreducible con factores simplificados (extrae todos los factores que puedas): $$a)\\; \\sqrt[3]{a^2} \\cdot \\sqrt[4]{a^3} \\cdot \\sqrt[6]{a^5} \\qquad b)\\; \\dfrac{\\sqrt[3]{x^2 \\cdot y}}{\\sqrt[5]{x^3 \\cdot y^2}} \\qquad c)\\; \\sqrt{18} - 3\\sqrt{50} + 2\\sqrt{72} - \\sqrt{8}$$ $$d)\\; 2\\sqrt[3]{54} - \\sqrt[3]{16} + 3\\sqrt[3]{250} \\qquad e)\\; \\dfrac{\\sqrt[3]{16a^4 b} \\cdot \\sqrt[4]{8a^3 b^5}}{\\sqrt[6]{32a^5 b^2}} \\qquad f)\\; 3\\sqrt[3]{\\dfrac{16}{27}} - \\dfrac{1}{2}\\sqrt[3]{128} + 5\\sqrt[3]{\\dfrac{2}{125}}$$",
+          "solucion": "a)\\; a^2 \\sqrt[4]{a}; \\quad b)\\; \\sqrt[15]{\\dfrac{x}{y}}; \\quad c)\\; -2\\sqrt{2}; \\quad d)\\; 19\\sqrt[3]{2}; \\quad e)\\; 2ab\\sqrt[4]{2ab}; \\quad f)\\; \\sqrt[3]{2}"
+        },
+        {
+          "id": "P-09",
+          "caso": "Radicales Anidados con Factores Intermedios (Ejercicio 9 de la Hoja)",
+          "apartados_count": 4,
+          "instruccion": "Reduce a una única raíz o a una potencia de exponente fraccionario irreducible:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\sqrt{x \\cdot \\sqrt[3]{x^2 \\cdot \\sqrt{x}}}"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\sqrt{\\dfrac{\\sqrt[4]{a^3}}{\\sqrt[3]{b}}} \\cdot \\sqrt[3]{\\dfrac{\\sqrt{b^2}}{\\sqrt{a}}}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\sqrt{2 \\cdot \\sqrt[3]{4 \\cdot \\sqrt{8}}}"
+            },
+            {
+              "letra": "d)",
+              "expresion": "\\sqrt[3]{x^2 \\cdot \\sqrt[4]{x \\cdot \\sqrt{x^3}}}"
+            }
+          ],
+          "enunciado": "Reduce a una única raíz o a una potencia de exponente fraccionario irreducible: $$a)\\; \\sqrt{x \\cdot \\sqrt[3]{x^2 \\cdot \\sqrt{x}}} \\qquad b)\\; \\sqrt{\\dfrac{\\sqrt[4]{a^3}}{\\sqrt[3]{b}}} \\cdot \\sqrt[3]{\\dfrac{\\sqrt{b^2}}{\\sqrt{a}}} \\qquad c)\\; \\sqrt{2 \\cdot \\sqrt[3]{4 \\cdot \\sqrt{8}}} \\qquad d)\\; \\sqrt[3]{x^2 \\cdot \\sqrt[4]{x \\cdot \\sqrt{x^3}}}$$",
+          "solucion": "a)\\; \\sqrt[12]{x^{11}}; \\quad b)\\; \\sqrt[24]{a^{14} b^{13}}; \\quad c)\\; \\sqrt[12]{2^{11}}; \\quad d)\\; \\sqrt[24]{x^{23}}"
+        },
+        {
+          "id": "P-10",
+          "caso": "Técnicas de Racionalización (Ejercicio 10 de la Hoja)",
+          "apartados_count": 9,
+          "instruccion": "Racionaliza los denominadores y simplifica al máximo las expresiones resultantes:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\dfrac{6}{\\sqrt{3}} \\quad\\text{y}\\quad \\dfrac{10}{\\sqrt[5]{4^2}}"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\dfrac{6}{\\sqrt[3]{9}}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\dfrac{10}{\\sqrt[9]{8^5}}"
+            },
+            {
+              "letra": "d)",
+              "expresion": "\\dfrac{4}{\\sqrt{7} - \\sqrt{3}}"
+            },
+            {
+              "letra": "e)",
+              "expresion": "\\dfrac{6}{3\\sqrt{2} - 2\\sqrt{3}}"
+            },
+            {
+              "letra": "f)",
+              "expresion": "\\dfrac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} - \\sqrt{2}}"
+            },
+            {
+              "letra": "g)",
+              "expresion": "\\dfrac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}}"
+            },
+            {
+              "letra": "h)",
+              "expresion": "\\dfrac{4}{\\sqrt[3]{5} - \\sqrt[3]{3}}"
+            },
+            {
+              "letra": "i)",
+              "expresion": "\\dfrac{10}{\\sqrt[3]{3} + \\sqrt[3]{2}}"
+            }
+          ],
+          "enunciado": "Racionaliza los denominadores y simplifica al máximo las expresiones resultantes: $$a)\\; \\dfrac{6}{\\sqrt{3}} \\;\\text{y}\\; \\dfrac{10}{\\sqrt[5]{4^2}} \\qquad b)\\; \\dfrac{6}{\\sqrt[3]{9}} \\qquad c)\\; \\dfrac{10}{\\sqrt[9]{8^5}}$$ $$d)\\; \\dfrac{4}{\\sqrt{7} - \\sqrt{3}} \\qquad e)\\; \\dfrac{6}{3\\sqrt{2} - 2\\sqrt{3}} \\qquad f)\\; \\dfrac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} - \\sqrt{2}}$$ $$g)\\; \\dfrac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}} \\qquad h)\\; \\dfrac{4}{\\sqrt[3]{5} - \\sqrt[3]{3}} \\qquad i)\\; \\dfrac{10}{\\sqrt[3]{3} + \\sqrt[3]{2}}$$",
+          "solucion": "a)\\; 2\\sqrt{3} \\;\\text{y}\\; 5\\sqrt[5]{2}; \\quad b)\\; 2\\sqrt[3]{3}; \\quad c)\\; 5\\sqrt[3]{2}; \\quad d)\\; \\sqrt{7} + \\sqrt{3}; \\quad e)\\; 3\\sqrt{2} + 2\\sqrt{3}; \\quad f)\\; \\dfrac{7 + 2\\sqrt{10}}{3}; \\quad g)\\; \\sqrt{6} - 2; \\quad h)\\; 2(\\sqrt[3]{25} + \\sqrt[3]{15} + \\sqrt[3]{9}); \\quad i)\\; 2(\\sqrt[3]{9} - \\sqrt[3]{6} + \\sqrt[3]{4})"
+        },
+        {
+          "id": "P-11",
+          "caso": "Identidades Notables y Factorización Inversa (Ejercicio 11 de la Hoja)",
+          "apartados_count": 5,
+          "instruccion": "Desarrolla, simplifica o factoriza aplicando las identidades notables fundamentales:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "(2x - 3y)^2 - (2x + 3y)(2x - 3y)"
+            },
+            {
+              "letra": "b)",
+              "expresion": "(2x - 3)^3 \\quad\\text{y}\\quad (x^2 + 2)^3"
+            },
+            {
+              "letra": "c)",
+              "expresion": "4x^2 - 12x + 9"
+            },
+            {
+              "letra": "d)",
+              "expresion": "25x^4 - 49y^2"
+            },
+            {
+              "letra": "e)",
+              "expresion": "8x^3 - 27 \\quad\\text{y}\\quad x^3 + 64"
+            }
+          ],
+          "enunciado": "Desarrolla, simplifica o factoriza aplicando las identidades notables fundamentales: $$a)\\; (2x - 3y)^2 - (2x + 3y)(2x - 3y) \\qquad b)\\; (2x - 3)^3 \\;\\text{y}\\; (x^2 + 2)^3$$ $$c)\\; 4x^2 - 12x + 9 \\quad\\text{(factoriza)} \\qquad d)\\; 25x^4 - 49y^2 \\quad\\text{(factoriza)}$$ $$e)\\; 8x^3 - 27 \\;\\text{y}\\; x^3 + 64 \\quad\\text{(factoriza sumas/diferencias de cubos)}$$",
+          "solucion": "a)\\; 6y(3y - 2x) = 18y^2 - 12xy; \\quad b)\\; 8x^3 - 36x^2 + 54x - 27 \\;\\text{y}\\; x^6 + 6x^4 + 12x^2 + 8; \\quad c)\\; (2x - 3)^2; \\quad d)\\; (5x^2 - 7y)(5x^2 + 7y); \\quad e)\\; (2x - 3)(4x^2 + 6x + 9) \\;\\text{y}\\; (x + 4)(x^2 - 4x + 16)"
         }
       ]
     }
   ],
   "ejercicios_semana": [
-    {
-      "id": "P-05",
-      "caso": "Valor Absoluto y Distancias (Ejercicio 5 de la Hoja)",
-      "apartados_count": 4,
-      "instruccion": "Resuelve las siguientes cuestiones sobre la función valor absoluto:",
-      "apartados": [
-        { "letra": "a)", "expresion": "\\text{Expresa a trozos: } f(x) = |2x - 8|" },
-        { "letra": "b)", "expresion": "\\text{Expresa a trozos: } g(x) = |x + 3| - |x - 2|" },
-        { "letra": "c)", "expresion": "\\text{Distancia de } x \\text{ al punto } -3 \\text{ menor que 5 unidades (en forma de inecuación con valor absoluto)}" },
-        { "letra": "d)", "expresion": "\\text{La distancia de } x \\text{ al punto 4 es de al menos 6 unidades (en forma de inecuación con valor absoluto)}" }
-      ],
-      "enunciado": "Resuelve las siguientes cuestiones sobre la función valor absoluto: $$a)\\; \\text{Expresa a trozos: } f(x) = |2x - 8| \\qquad b)\\; \\text{Expresa a trozos: } g(x) = |x + 3| - |x - 2|$$ $$c)\\; \\text{Distancia de } x \\text{ al punto } -3 \\text{ menor que 5 unidades} \\qquad d)\\; \\text{La distancia de } x \\text{ al punto 4 es de al menos 6 unidades}$$",
-      "solucion": "a)\\; f(x) = \\begin{cases} -2x + 8 & \\text{si } x < 4 \\\\ 2x - 8 & \\text{si } x \\ge 4 \\end{cases}; \\quad b)\\; g(x) = \\begin{cases} -5 & \\text{si } x < -3 \\\\ 2x + 1 & \\text{si } -3 \\le x < 2 \\\\ 5 & \\text{si } x \\ge 2 \\end{cases}; \\quad c)\\; |x + 3| < 5 \\iff x \\in (-8, 2); \\quad d)\\; |x - 4| \\ge 6 \\iff x \\in (-\\infty, -2] \\cup [10, +\\infty)"
-    },
-    {
-      "id": "P-06",
-      "caso": "Ecuaciones e Inecuaciones con Valor Absoluto (Ejercicio 6 de la Hoja)",
-      "apartados_count": 10,
-      "instruccion": "Resuelve las siguientes ecuaciones e inecuaciones en $\\mathbb{R}$, expresando las soluciones en forma de conjunto o intervalo:",
-      "apartados": [
-        { "letra": "a)", "expresion": "|3x - 5| = 7" },
-        { "letra": "b)", "expresion": "|2x + 1| \\le 9" },
-        { "letra": "c)", "expresion": "|4 - 3x| > 5" },
-        { "letra": "d)", "expresion": "|2x - 3| < x + 6" },
-        { "letra": "e)", "expresion": "\\left|\\dfrac{x}{2} - 3\\right| < 4" },
-        { "letra": "f)", "expresion": "\\left|\\dfrac{2x - 1}{3}\\right| \\le 5" },
-        { "letra": "g)", "expresion": "\\left|\\dfrac{2x - 1}{x + 3}\\right| \\le 1 \\quad (x \\ne -3)" },
-        { "letra": "h)", "expresion": "\\left|\\dfrac{x + 1}{x - 2}\\right| \\ge 2 \\quad (x \\ne 2)" },
-        { "letra": "i)", "expresion": "|5x + 7| \\le -4" },
-        { "letra": "j)", "expresion": "|2x - 9| > -3" }
-      ],
-      "enunciado": "Resuelve las siguientes ecuaciones e inecuaciones en $\\mathbb{R}$, expresando las soluciones en forma de conjunto o intervalo: $$a)\\; |3x - 5| = 7 \\qquad b)\\; |2x + 1| \\le 9 \\qquad c)\\; |4 - 3x| > 5 \\qquad d)\\; |2x - 3| < x + 6$$ $$e)\\; \\left|\\dfrac{x}{2} - 3\\right| < 4 \\qquad f)\\; \\left|\\dfrac{2x - 1}{3}\\right| \\le 5 \\qquad g)\\; \\left|\\dfrac{2x - 1}{x + 3}\\right| \\le 1 \\; (x \\ne -3)$$ $$h)\\; \\left|\\dfrac{x + 1}{x - 2}\\right| \\ge 2 \\; (x \\ne 2) \\qquad i)\\; |5x + 7| \\le -4 \\qquad j)\\; |2x - 9| > -3$$",
-      "solucion": "a)\\; S = \\left\\{-\\dfrac{2}{3}, 4\\right\\}; \\quad b)\\; S = [-5, 4]; \\quad c)\\; S = \\left(-\\infty, -\\dfrac{1}{3}\\right) \\cup (3, +\\infty); \\quad d)\\; S = (-1, 9); \\quad e)\\; S = (-2, 14); \\quad f)\\; S = [-7, 8]; \\quad g)\\; S = \\left[-\\dfrac{2}{3}, 4\\right]; \\quad h)\\; S = [1, 2) \\cup (2, 5] = [1, 5] \\setminus \\{2\\}; \\quad i)\\; S = \\emptyset \\;\\text{(imposible)}; \\quad j)\\; S = \\mathbb{R}"
-    },
     {
       "id": "P-07",
       "caso": "Potencias y Signos: Exponentes Enteros y Fraccionarios (Ejercicio 7 de la Hoja)",
@@ -575,6 +685,142 @@ window.TEMAS_DATA[1] = {
       ],
       "enunciado": "Simplifica al máximo aplicando las propiedades de las potencias y expresando el resultado final con exponentes positivos: $$a)\\; \\dfrac{2^{-3} \\cdot 3^4 \\cdot 6^{-2}}{8^{-1} \\cdot 9^2 \\cdot 12^{-3}} \\qquad b)\\; \\dfrac{(-2)^4 \\cdot (-3)^3 \\cdot (-5)^0}{-2^4 \\cdot 3^2 \\cdot 10^{-2}} \\qquad c)\\; \\left(\\dfrac{a^{-2} b^3}{c^{-1}}\\right)^{-2} \\cdot \\left(\\dfrac{a^3 c^{-2}}{b^{-1}}\\right)^3 \\qquad d)\\; \\dfrac{(x^{2/3} y^{-1/2})^6}{(x^{-1} y^{3/4})^4}$$",
       "solucion": "a)\\; 48; \\quad b)\\; 300; \\quad c)\\; \\dfrac{a^{13}}{b^3 c^8}; \\quad d)\\; \\dfrac{x^8}{y^6}"
+    },
+    {
+      "id": "P-08",
+      "caso": "Radicales: Mínimo Común Índice y Extracción de Factores (Ejercicio 8 de la Hoja)",
+      "apartados_count": 6,
+      "instruccion": "Realiza las siguientes operaciones expresando el resultado en un único radical irreducible con factores simplificados (extrae todos los factores que puedas):",
+      "apartados": [
+        {
+          "letra": "a)",
+          "expresion": "\\sqrt[3]{a^2} \\cdot \\sqrt[4]{a^3} \\cdot \\sqrt[6]{a^5}"
+        },
+        {
+          "letra": "b)",
+          "expresion": "\\dfrac{\\sqrt[3]{x^2 \\cdot y}}{\\sqrt[5]{x^3 \\cdot y^2}}"
+        },
+        {
+          "letra": "c)",
+          "expresion": "\\sqrt{18} - 3\\sqrt{50} + 2\\sqrt{72} - \\sqrt{8}"
+        },
+        {
+          "letra": "d)",
+          "expresion": "2\\sqrt[3]{54} - \\sqrt[3]{16} + 3\\sqrt[3]{250}"
+        },
+        {
+          "letra": "e)",
+          "expresion": "\\dfrac{\\sqrt[3]{16a^4 b} \\cdot \\sqrt[4]{8a^3 b^5}}{\\sqrt[6]{32a^5 b^2}}"
+        },
+        {
+          "letra": "f)",
+          "expresion": "3\\sqrt[3]{\\dfrac{16}{27}} - \\dfrac{1}{2}\\sqrt[3]{128} + 5\\sqrt[3]{\\dfrac{2}{125}}"
+        }
+      ],
+      "enunciado": "Realiza las siguientes operaciones expresando el resultado en un único radical irreducible con factores simplificados (extrae todos los factores que puedas): $$a)\\; \\sqrt[3]{a^2} \\cdot \\sqrt[4]{a^3} \\cdot \\sqrt[6]{a^5} \\qquad b)\\; \\dfrac{\\sqrt[3]{x^2 \\cdot y}}{\\sqrt[5]{x^3 \\cdot y^2}} \\qquad c)\\; \\sqrt{18} - 3\\sqrt{50} + 2\\sqrt{72} - \\sqrt{8}$$ $$d)\\; 2\\sqrt[3]{54} - \\sqrt[3]{16} + 3\\sqrt[3]{250} \\qquad e)\\; \\dfrac{\\sqrt[3]{16a^4 b} \\cdot \\sqrt[4]{8a^3 b^5}}{\\sqrt[6]{32a^5 b^2}} \\qquad f)\\; 3\\sqrt[3]{\\dfrac{16}{27}} - \\dfrac{1}{2}\\sqrt[3]{128} + 5\\sqrt[3]{\\dfrac{2}{125}}$$",
+      "solucion": "a)\\; a^2 \\sqrt[4]{a}; \\quad b)\\; \\sqrt[15]{\\dfrac{x}{y}}; \\quad c)\\; -2\\sqrt{2}; \\quad d)\\; 19\\sqrt[3]{2}; \\quad e)\\; 2ab\\sqrt[4]{2ab}; \\quad f)\\; \\sqrt[3]{2}"
+    },
+    {
+      "id": "P-09",
+      "caso": "Radicales Anidados con Factores Intermedios (Ejercicio 9 de la Hoja)",
+      "apartados_count": 4,
+      "instruccion": "Reduce a una única raíz o a una potencia de exponente fraccionario irreducible:",
+      "apartados": [
+        {
+          "letra": "a)",
+          "expresion": "\\sqrt{x \\cdot \\sqrt[3]{x^2 \\cdot \\sqrt{x}}}"
+        },
+        {
+          "letra": "b)",
+          "expresion": "\\sqrt{\\dfrac{\\sqrt[4]{a^3}}{\\sqrt[3]{b}}} \\cdot \\sqrt[3]{\\dfrac{\\sqrt{b^2}}{\\sqrt{a}}}"
+        },
+        {
+          "letra": "c)",
+          "expresion": "\\sqrt{2 \\cdot \\sqrt[3]{4 \\cdot \\sqrt{8}}}"
+        },
+        {
+          "letra": "d)",
+          "expresion": "\\sqrt[3]{x^2 \\cdot \\sqrt[4]{x \\cdot \\sqrt{x^3}}}"
+        }
+      ],
+      "enunciado": "Reduce a una única raíz o a una potencia de exponente fraccionario irreducible: $$a)\\; \\sqrt{x \\cdot \\sqrt[3]{x^2 \\cdot \\sqrt{x}}} \\qquad b)\\; \\sqrt{\\dfrac{\\sqrt[4]{a^3}}{\\sqrt[3]{b}}} \\cdot \\sqrt[3]{\\dfrac{\\sqrt{b^2}}{\\sqrt{a}}} \\qquad c)\\; \\sqrt{2 \\cdot \\sqrt[3]{4 \\cdot \\sqrt{8}}} \\qquad d)\\; \\sqrt[3]{x^2 \\cdot \\sqrt[4]{x \\cdot \\sqrt{x^3}}}$$",
+      "solucion": "a)\\; \\sqrt[12]{x^{11}}; \\quad b)\\; \\sqrt[24]{a^{14} b^{13}}; \\quad c)\\; \\sqrt[12]{2^{11}}; \\quad d)\\; \\sqrt[24]{x^{23}}"
+    },
+    {
+      "id": "P-10",
+      "caso": "Técnicas de Racionalización (Ejercicio 10 de la Hoja)",
+      "apartados_count": 9,
+      "instruccion": "Racionaliza los denominadores y simplifica al máximo las expresiones resultantes:",
+      "apartados": [
+        {
+          "letra": "a)",
+          "expresion": "\\dfrac{6}{\\sqrt{3}} \\quad\\text{y}\\quad \\dfrac{10}{\\sqrt[5]{4^2}}"
+        },
+        {
+          "letra": "b)",
+          "expresion": "\\dfrac{6}{\\sqrt[3]{9}}"
+        },
+        {
+          "letra": "c)",
+          "expresion": "\\dfrac{10}{\\sqrt[9]{8^5}}"
+        },
+        {
+          "letra": "d)",
+          "expresion": "\\dfrac{4}{\\sqrt{7} - \\sqrt{3}}"
+        },
+        {
+          "letra": "e)",
+          "expresion": "\\dfrac{6}{3\\sqrt{2} - 2\\sqrt{3}}"
+        },
+        {
+          "letra": "f)",
+          "expresion": "\\dfrac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} - \\sqrt{2}}"
+        },
+        {
+          "letra": "g)",
+          "expresion": "\\dfrac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}}"
+        },
+        {
+          "letra": "h)",
+          "expresion": "\\dfrac{4}{\\sqrt[3]{5} - \\sqrt[3]{3}}"
+        },
+        {
+          "letra": "i)",
+          "expresion": "\\dfrac{10}{\\sqrt[3]{3} + \\sqrt[3]{2}}"
+        }
+      ],
+      "enunciado": "Racionaliza los denominadores y simplifica al máximo las expresiones resultantes: $$a)\\; \\dfrac{6}{\\sqrt{3}} \\;\\text{y}\\; \\dfrac{10}{\\sqrt[5]{4^2}} \\qquad b)\\; \\dfrac{6}{\\sqrt[3]{9}} \\qquad c)\\; \\dfrac{10}{\\sqrt[9]{8^5}}$$ $$d)\\; \\dfrac{4}{\\sqrt{7} - \\sqrt{3}} \\qquad e)\\; \\dfrac{6}{3\\sqrt{2} - 2\\sqrt{3}} \\qquad f)\\; \\dfrac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} - \\sqrt{2}}$$ $$g)\\; \\dfrac{2\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + 2\\sqrt{2}} \\qquad h)\\; \\dfrac{4}{\\sqrt[3]{5} - \\sqrt[3]{3}} \\qquad i)\\; \\dfrac{10}{\\sqrt[3]{3} + \\sqrt[3]{2}}$$",
+      "solucion": "a)\\; 2\\sqrt{3} \\;\\text{y}\\; 5\\sqrt[5]{2}; \\quad b)\\; 2\\sqrt[3]{3}; \\quad c)\\; 5\\sqrt[3]{2}; \\quad d)\\; \\sqrt{7} + \\sqrt{3}; \\quad e)\\; 3\\sqrt{2} + 2\\sqrt{3}; \\quad f)\\; \\dfrac{7 + 2\\sqrt{10}}{3}; \\quad g)\\; \\sqrt{6} - 2; \\quad h)\\; 2(\\sqrt[3]{25} + \\sqrt[3]{15} + \\sqrt[3]{9}); \\quad i)\\; 2(\\sqrt[3]{9} - \\sqrt[3]{6} + \\sqrt[3]{4})"
+    },
+    {
+      "id": "P-11",
+      "caso": "Identidades Notables y Factorización Inversa (Ejercicio 11 de la Hoja)",
+      "apartados_count": 5,
+      "instruccion": "Desarrolla, simplifica o factoriza aplicando las identidades notables fundamentales:",
+      "apartados": [
+        {
+          "letra": "a)",
+          "expresion": "(2x - 3y)^2 - (2x + 3y)(2x - 3y)"
+        },
+        {
+          "letra": "b)",
+          "expresion": "(2x - 3)^3 \\quad\\text{y}\\quad (x^2 + 2)^3"
+        },
+        {
+          "letra": "c)",
+          "expresion": "4x^2 - 12x + 9"
+        },
+        {
+          "letra": "d)",
+          "expresion": "25x^4 - 49y^2"
+        },
+        {
+          "letra": "e)",
+          "expresion": "8x^3 - 27 \\quad\\text{y}\\quad x^3 + 64"
+        }
+      ],
+      "enunciado": "Desarrolla, simplifica o factoriza aplicando las identidades notables fundamentales: $$a)\\; (2x - 3y)^2 - (2x + 3y)(2x - 3y) \\qquad b)\\; (2x - 3)^3 \\;\\text{y}\\; (x^2 + 2)^3$$ $$c)\\; 4x^2 - 12x + 9 \\quad\\text{(factoriza)} \\qquad d)\\; 25x^4 - 49y^2 \\quad\\text{(factoriza)}$$ $$e)\\; 8x^3 - 27 \\;\\text{y}\\; x^3 + 64 \\quad\\text{(factoriza sumas/diferencias de cubos)}$$",
+      "solucion": "a)\\; 6y(3y - 2x) = 18y^2 - 12xy; \\quad b)\\; 8x^3 - 36x^2 + 54x - 27 \\;\\text{y}\\; x^6 + 6x^4 + 12x^2 + 8; \\quad c)\\; (2x - 3)^2; \\quad d)\\; (5x^2 - 7y)(5x^2 + 7y); \\quad e)\\; (2x - 3)(4x^2 + 6x + 9) \\;\\text{y}\\; (x + 4)(x^2 - 4x + 16)"
     }
   ],
   "comprueba": [

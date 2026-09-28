@@ -13,8 +13,8 @@ window.CURSO_CONFIG = {
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesiones 6 y 7: Valor Absoluto: A Trozos, Fracciones e Incógnita a Ambos Lados",
     "referencia_apuntes": "Puntos 1.4 y 1.5 (Págs. 5-8)",
-    "mision_semanal": "Ejercicios 5 al 7 en tu libreta (Valor absoluto y potencias). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
-    "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 2 (P-05, P-06 y P-07) de la hoja semanal.",
+    "mision_semanal": "Ejercicios 7 al 11 en tu libreta (Potencias, radicales, racionalización e identidades notables). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
+    "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 3 (P-07, P-08, P-09, P-10 y P-11) de la hoja semanal.",
     "ejercicios_vistos": [
       {
         "numero": 9,
@@ -65,7 +65,7 @@ window.CURSO_CONFIG = {
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "apuntes_listos": true,
       "ejercicios_listos": true,
-      "total_ejercicios_libreta": 7
+      "total_ejercicios_libreta": 11
     }
   ]
 };
