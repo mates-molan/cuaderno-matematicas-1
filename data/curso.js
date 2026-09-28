@@ -7,6 +7,17 @@ window.CURSO_CONFIG = {
   "centro": "IES Ricardo Ortega",
   "ano_academico": "2026-2027",
   "tema_actual_id": 1,
+  "tarea_classroom_activa": {
+    "existe": true,
+    "tema_id": 1,
+    "tarea_id": "Tarea-01",
+    "titulo": "Tarea 1: Números Reales, Intervalos y Valor Absoluto",
+    "fecha_limite": "Sábado 3 de Octubre de 2026 (23:59 h)",
+    "estado": "activa",
+    "pdf_tarea": "pdf/Tarea1_Herramientas_del_Algebra_1Bach.pdf",
+    "pdf_solucionario": "pdf/Tarea1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
+    "aviso": "Tarea 1 activa (Entrega en Google Classroom antes del Sábado 3 Octubre a las 23:59 h)"
+  },
   "ultima_clase": {
     "fecha": "Martes 29 de Septiembre de 2026",
     "tema_id": 1,
@@ -90,7 +101,8 @@ window.CURSO_CONFIG = {
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "apuntes_listos": true,
       "ejercicios_listos": true,
-      "total_ejercicios_libreta": 11
+      "total_ejercicios_libreta": 11,
+      "total_tareas_classroom": 1
     }
   ]
 };

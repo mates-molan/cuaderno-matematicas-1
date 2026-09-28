@@ -9,6 +9,25 @@ window.TEMAS_DATA[1] = {
   "sesiones_impartidas": 8,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
+  "tareas_classroom": [
+    {
+      "id": "Tarea-01",
+      "numero": 1,
+      "titulo": "Tarea 1: Herramientas del Álgebra (Números Reales, Intervalos y Valor Absoluto)",
+      "fecha_asignacion": "28 de Septiembre de 2026",
+      "fecha_limite": "Sábado 3 de Octubre de 2026 a las 23:59 h",
+      "estado": "activa",
+      "pdf_tarea": "pdf/Tarea1_Herramientas_del_Algebra_1Bach.pdf",
+      "pdf_solucionario": "pdf/Tarea1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
+      "criterios_entrega": "Entrega por Google Classroom en un único archivo PDF (con todas las hojas de tu libreta ordenadas y que se lean bien 😉). Explica los pasos con claridad y ¡mucho ojo a los valores prohibidos en los denominadores!",
+      "ejercicios_incluidos": [
+        "Ejercicio 1: Clasificación de números (reales y complejos) operando y simplificando antes.",
+        "Ejercicio 2: Operaciones con intervalos y semirrectas (unión, intersección, resta y complementarios).",
+        "Ejercicio 3: Ecuaciones e inecuaciones con valor absoluto pensando en distancias sobre la recta.",
+        "Ejercicio 4: Inecuaciones con fracciones y valor absoluto (cuidado con los denominadores)."
+      ]
+    }
+  ],
   "sesiones": [
     {
       "numero": 1,

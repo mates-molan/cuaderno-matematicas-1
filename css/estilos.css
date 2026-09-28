@@ -371,6 +371,42 @@ body {
   gap: 4px;
 }
 
+.classroom-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.98rem;
+  color: #1e40af;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1.5px solid #bfdbfe;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  box-shadow: var(--shadow-xs);
+}
+
+.classroom-notice:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: #3b82f6;
+}
+
+.classroom-notice strong {
+  color: #1e3a8a;
+}
+
+.classroom-link-btn {
+  text-decoration: underline;
+  font-weight: 800;
+  color: #2563eb;
+  margin-left: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .hero-pdf-btns {
   display: flex;
   gap: 12px;
@@ -885,6 +921,13 @@ body {
   background: #f8fafc;
   border: 1px solid var(--border-soft);
   color: #334155;
+}
+
+.meta-pill-classroom {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+  font-weight: 800;
 }
 
 .tema-card-btn {
@@ -1696,6 +1739,264 @@ body {
   .temas-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ========================================================================= */
+/* TAREAS DE CLASSROOM (ENTREGAS Y SOLUCIONARIOS)                            */
+/* ========================================================================= */
+.tareas-classroom-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarea-accordion {
+  background: #ffffff;
+  border: 1.5px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.tarea-accordion:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.tarea-accordion.activa {
+  border-left: 5px solid #f59e0b;
+}
+
+.tarea-accordion.solucionario-disponible {
+  border-left: 5px solid #10b981;
+}
+
+.tarea-accordion.cerrada {
+  border-left: 5px solid #64748b;
+}
+
+.tarea-accordion[open] {
+  box-shadow: var(--shadow-md);
+}
+
+.tarea-summary {
+  background: #ffffff;
+  padding: 16px 20px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 14px;
+  transition: background 0.15s ease;
+}
+
+.tarea-summary::-webkit-details-marker {
+  display: none;
+}
+
+.tarea-summary:hover {
+  background: #f8fafc;
+}
+
+.tarea-accordion[open] .tarea-summary {
+  border-bottom: 1px solid var(--border-soft);
+  background: #f8fafc;
+}
+
+.tarea-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tarea-summary-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.tarea-badge-id {
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid #cbd5e1;
+}
+
+.tarea-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.tarea-deadline-pill {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #b45309;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.tarea-toggle-icon {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+.tarea-accordion[open] .tarea-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.tarea-body {
+  padding: 22px 24px;
+  background: #ffffff;
+}
+
+.tarea-badge-estado {
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.84rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.tarea-badge-estado.activa {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.tarea-badge-estado.solucionario-disponible {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.tarea-badge-estado.cerrada {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.tarea-meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.tarea-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tarea-deadline {
+  color: #b45309;
+  font-weight: 700;
+  background: #fffbeb;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #fde68a;
+}
+
+.tarea-instructions-box {
+  background: #f8fafc;
+  border-left: 3px solid #3b82f6;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 0.94rem;
+  color: #334155;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.tarea-ejercicios-resumen {
+  margin-bottom: 20px;
+}
+
+.tarea-ejercicios-resumen summary {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 6px 0;
+  user-select: none;
+}
+
+.tarea-ejercicios-resumen ul {
+  list-style: none;
+  padding: 10px 0 4px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tarea-ejercicios-resumen li {
+  font-size: 0.92rem;
+  color: var(--text-main);
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-soft);
+}
+
+.tarea-actions-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.btn-action-emerald {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.93rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-fast);
+  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.2);
+}
+
+.btn-action-emerald:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+  color: #ffffff;
+}
+
+.solucion-pendiente-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #64748b;
+  background: #f8fafc;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  border: 1px dashed #cbd5e1;
 }
 
 /* ========================================================================= */

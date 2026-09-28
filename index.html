@@ -77,6 +77,14 @@
             </span>
           </div>
 
+          <div class="classroom-notice" id="heroClassroomNotice" onclick="irATareasClassroom()" title="Hacer clic para ver las tareas y entregas en Google Classroom">
+            <span>📤</span>
+            <span id="heroClassroomTexto">
+              <strong>Tarea en Classroom:</strong> Tarea 1 activa (Entrega antes del Sábado 3 Oct 23:59 h)
+              <span class="classroom-link-btn">Ver tarea →</span>
+            </span>
+          </div>
+
           <div class="hero-pdf-btns">
             <a href="pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf" target="_blank" class="btn-action-primary">
               <span>📘</span>
@@ -160,6 +168,10 @@
               <span>📝</span>
               <span>Tu Libreta (problemas de la semana)</span>
             </button>
+            <button class="subtab-btn" id="subtab-btn-classroom" onclick="switchSubTab('tareas-classroom', this)">
+              <span>📤</span>
+              <span>Tareas de Classroom (entregas y solucionarios)</span>
+            </button>
             <button class="subtab-btn" onclick="switchSubTab('comprueba-tema', this)">
               <span>🎯</span>
               <span>Tu Radar de Confianza (¿cómo te ves?)</span>
@@ -189,7 +201,17 @@
             </div>
           </div>
 
-          <!-- Subtab 3: Tu Radar de Confianza (Autoevaluación DUA) -->
+          <!-- Subtab 3: Tareas de Classroom (Entregas y Solucionarios) -->
+          <div class="subtab-panel" id="subtab-tareas-classroom">
+            <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1rem;">
+              Aquí tienes las tareas oficiales evaluables asignadas a través de Google Classroom. Revisa el enunciado, las fechas límite de entrega y, una vez finalizado el plazo, descarga el solucionario oficial resuelto para auto-corregir y contrastar tus desarrollos analíticos:
+            </p>
+            <div id="temaTareasClassroomContainer">
+              <!-- Renderizado dinámico -->
+            </div>
+          </div>
+
+          <!-- Subtab 4: Tu Radar de Confianza (Autoevaluación DUA) -->
           <div class="subtab-panel" id="subtab-comprueba-tema">
             <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1rem;">
               Aquí aprendes para ti, no para una nota. Marca con total sinceridad cómo te sientes con cada apartado (🟢 lo domino con soltura, 🟡 me apaño si tengo los apuntes delante, 🔴 profe, me lío y necesito una vuelta). Nadie te juzga: esto es 100% tuyo, se guarda en tu propio dispositivo y te sirve de guía para saber qué tienes clarísimo y qué te conviene reforzar:
@@ -207,10 +229,10 @@
   </main>
 
   <!-- Módulos de Datos Desacoplados -->
-  <script src="data/curso.js?v=20260928_06"></script>
-  <script src="data/temas/tema_01.js?v=20260928_06"></script>
+  <script src="data/curso.js?v=20260928_07"></script>
+  <script src="data/temas/tema_01.js?v=20260928_07"></script>
 
   <!-- Motor de la Aplicación -->
-  <script src="js/app.js?v=20260928_06"></script>
+  <script src="js/app.js?v=20260928_07"></script>
 </body>
 </html>

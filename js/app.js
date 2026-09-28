@@ -111,6 +111,23 @@ function renderAlDia() {
     misionEl.innerHTML = `<strong>Misión semanal:</strong> ${texto} <span class="homework-link-btn">Ver semana →</span>`;
   }
 
+  const classroomEl = document.getElementById('heroClassroomNotice');
+  if (classroomEl) {
+    if (config.tarea_classroom_activa && config.tarea_classroom_activa.existe) {
+      const tActiva = config.tarea_classroom_activa;
+      classroomEl.style.display = 'flex';
+      classroomEl.innerHTML = `
+        <span>📤</span>
+        <span id="heroClassroomTexto">
+          <strong>Tarea Classroom:</strong> ${tActiva.aviso || tActiva.titulo}
+          <span class="classroom-link-btn">Ver tarea →</span>
+        </span>
+      `;
+    } else {
+      classroomEl.style.display = 'none';
+    }
+  }
+
   const container = document.getElementById('heroEjerciciosContainer');
   if (!container || !u.ejercicios_vistos) return;
 
@@ -182,6 +199,13 @@ function renderTemasGrid() {
     if (t.total_ejercicios_libreta > 0) {
       metaPillsHtml += `<span class="meta-pill">📝 ${t.total_ejercicios_libreta} Ejercicios de Libreta</span>`;
     }
+    const numTareas = (window.TEMAS_DATA && window.TEMAS_DATA[t.id] && window.TEMAS_DATA[t.id].tareas_classroom)
+      ? window.TEMAS_DATA[t.id].tareas_classroom.length
+      : (t.total_tareas_classroom || 0);
+    if (numTareas > 0) {
+      const labelTareas = numTareas === 1 ? '1 Tarea de Classroom' : `${numTareas} Tareas de Classroom`;
+      metaPillsHtml += `<span class="meta-pill meta-pill-classroom">📤 ${labelTareas}</span>`;
+    }
     if (!t.apuntes_listos && !t.ejercicios_listos) {
       metaPillsHtml += '<span class="meta-pill">⏳ En preparación didáctica</span>';
     }
@@ -229,7 +253,9 @@ function renderTemaDetailHeader(temaId) {
       badgeEl.textContent = temaMeta.estado === 'en_curso' ? 'TEMA EN CURSO' : (temaMeta.estado === 'completado' ? 'TEMA COMPLETADO' : 'TEMA PROGRAMADO');
     }
     if (subEl) {
-      subEl.textContent = `${temaMeta.sesiones_impartidas} sesiones impartidas • ${temaMeta.evaluacion}`;
+      const numTareas = (temaData && temaData.tareas_classroom) ? temaData.tareas_classroom.length : (temaMeta.total_tareas_classroom || 0);
+      const tareasText = numTareas > 0 ? ` • 📤 ${numTareas} ${numTareas === 1 ? 'tarea' : 'tareas'} de Classroom` : '';
+      subEl.textContent = `${temaMeta.sesiones_impartidas} sesiones impartidas${tareasText} • ${temaMeta.evaluacion}`;
     }
   }
 
@@ -448,6 +474,116 @@ function renderSemanaHoja(temaId = currentTemaId) {
   initDragToScroll();
 }
 
+// Renderizado de Tareas de Google Classroom (Entregas y Solucionarios)
+function renderTareasClassroom(temaId = currentTemaId) {
+  const container = document.getElementById('temaTareasClassroomContainer');
+  if (!container) return;
+
+  const t = window.TEMAS_DATA && window.TEMAS_DATA[temaId];
+  if (!t || !t.tareas_classroom || t.tareas_classroom.length === 0) {
+    container.innerHTML = `
+      <div style="padding: 28px; background: #ffffff; border-radius: 12px; border: 1.5px solid var(--border-soft); text-align: center; color: var(--text-muted);">
+        <p style="font-size: 1.05rem;">📤 No hay tareas de Classroom registradas para esta unidad en este momento.</p>
+        <p style="font-size: 0.9rem; margin-top: 6px;">Las tareas evaluables oficiales se publicarán aquí conforme se asignen en Google Classroom.</p>
+      </div>
+    `;
+    return;
+  }
+
+  let html = '<div class="tareas-classroom-list">';
+  t.tareas_classroom.forEach(tarea => {
+    let estadoBadgeHtml = '';
+    let actionButtonsHtml = '';
+    let cardClass = 'tarea-accordion';
+
+    if (tarea.estado === 'activa') {
+      cardClass += ' activa';
+      estadoBadgeHtml = '<span class="tarea-badge-estado activa">🟡 Plazo Abierto (Entrega en Classroom)</span>';
+      actionButtonsHtml = `
+        <a href="${tarea.pdf_tarea}" target="_blank" class="btn-action-primary">
+          <span>📄</span>
+          <span>Descargar Enunciado de la Tarea (PDF)</span>
+        </a>
+        <div class="solucion-pendiente-box">
+          <span>🔒</span>
+          <span>Solucionario cerrado (se publicará aquí tras vencer el plazo de entrega)</span>
+        </div>
+      `;
+    } else if (tarea.estado === 'solucionario_disponible') {
+      cardClass += ' solucionario-disponible';
+      estadoBadgeHtml = '<span class="tarea-badge-estado solucionario-disponible">🟢 Solucionario Disponible (Auto-corrección)</span>';
+      actionButtonsHtml = `
+        <a href="${tarea.pdf_tarea}" target="_blank" class="btn-action-purple">
+          <span>📄</span>
+          <span>Ver Enunciado (PDF)</span>
+        </a>
+        <a href="${tarea.pdf_solucionario}" target="_blank" class="btn-action-emerald">
+          <span>✅</span>
+          <span>Descargar Solucionario Oficial Resuelto (PDF)</span>
+        </a>
+      `;
+    } else {
+      cardClass += ' cerrada';
+      estadoBadgeHtml = '<span class="tarea-badge-estado cerrada">🔒 Plazo Cerrado</span>';
+      actionButtonsHtml = `
+        <a href="${tarea.pdf_tarea}" target="_blank" class="btn-action-purple">
+          <span>📄</span>
+          <span>Ver Enunciado (PDF)</span>
+        </a>
+      `;
+    }
+
+    let ejerciciosHtml = '';
+    if (tarea.ejercicios_incluidos && tarea.ejercicios_incluidos.length > 0) {
+      let listItems = tarea.ejercicios_incluidos.map(e => `<li>${e}</li>`).join('');
+      ejerciciosHtml = `
+        <details class="tarea-ejercicios-resumen">
+          <summary>📋 Ver ejercicios incluidos en esta tarea (${tarea.ejercicios_incluidos.length} apartados/bloques)</summary>
+          <ul>${listItems}</ul>
+        </details>
+      `;
+    }
+
+    html += `
+      <details class="${cardClass}" ontoggle="onAccordionToggle()">
+        <summary class="tarea-summary">
+          <div class="tarea-summary-left">
+            <span class="tarea-badge-id">${tarea.id}</span>
+            <span class="tarea-title">${tarea.titulo}</span>
+            ${estadoBadgeHtml}
+          </div>
+          <div class="tarea-summary-right">
+            <span class="tarea-deadline-pill">⏰ ${tarea.fecha_limite}</span>
+            <span class="tarea-toggle-icon">▼</span>
+          </div>
+        </summary>
+
+        <div class="tarea-body">
+          <div class="tarea-meta-row">
+            <span class="tarea-meta-item">🗓️ <strong>Asignada:</strong> ${tarea.fecha_asignacion}</span>
+            <span class="tarea-meta-item tarea-deadline">⏰ <strong>Plazo de Entrega:</strong> ${tarea.fecha_limite}</span>
+          </div>
+
+          ${tarea.criterios_entrega ? `
+            <div class="tarea-instructions-box">
+              <strong>📌 Indicaciones de Entrega:</strong> ${tarea.criterios_entrega}
+            </div>
+          ` : ''}
+
+          ${ejerciciosHtml}
+
+          <div class="tarea-actions-bar">
+            ${actionButtonsHtml}
+          </div>
+        </div>
+      </details>
+    `;
+  });
+
+  html += '</div>';
+  container.innerHTML = html;
+}
+
 // Renderizado de la Autoevaluación Semafórica (Comprueba lo que sabes)
 function renderComprueba(temaId = currentTemaId) {
   const container = document.getElementById('temaCompruebaContainer');
@@ -613,6 +749,7 @@ function openTemaDetail(temaId) {
   renderTemaDetailHeader(temaId);
   renderDiarioPlegado(temaId);
   renderSemanaHoja(temaId);
+  renderTareasClassroom(temaId);
   renderComprueba(temaId);
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -627,7 +764,7 @@ function showTemarioGrid() {
   renderMath();
 }
 
-// Sub-pestañas dentro del tema (Diario, Ejercicios de la Semana, Comprueba)
+// Sub-pestañas dentro del tema (Diario, Ejercicios de la Semana, Classroom, Comprueba)
 function switchSubTab(subId, clickedBtn) {
   document.querySelectorAll('.subtab-btn').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.subtab-panel').forEach(p => p.classList.remove('active'));
@@ -635,7 +772,8 @@ function switchSubTab(subId, clickedBtn) {
   if (clickedBtn) {
     clickedBtn.classList.add('active');
   } else {
-    const btn = document.querySelector(`.subtab-btn[onclick*="${subId}"]`);
+    const btn = document.querySelector(`.subtab-btn[onclick*="${subId}"]`)
+      || document.getElementById(`subtab-btn-${subId.replace('tareas-', '')}`);
     if (btn) btn.classList.add('active');
   }
 
@@ -663,6 +801,29 @@ function irASemanaActual() {
   renderMath();
 }
 
+// Enlace rápido desde la portada a las tareas de Classroom
+function irATareasClassroom() {
+  const config = window.CURSO_CONFIG;
+  const temaId = (config && config.tarea_classroom_activa && config.tarea_classroom_activa.tema_id) || (config && config.tema_actual_id) || 1;
+  switchMainView('temario');
+  openTemaDetail(temaId);
+  switchSubTab('tareas-classroom');
+  const tabBtn = document.getElementById('subtab-btn-classroom');
+  if (tabBtn) {
+    document.querySelectorAll('.subtab-btn').forEach(b => b.classList.remove('active'));
+    tabBtn.classList.add('active');
+  }
+  const tareaActivaAcc = document.querySelector('.tarea-accordion.activa') || document.querySelector('.tarea-accordion');
+  if (tareaActivaAcc) {
+    tareaActivaAcc.open = true;
+  }
+  setTimeout(() => {
+    const target = tareaActivaAcc || document.getElementById('subtab-tareas-classroom');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 150);
+  renderMath();
+}
+
 // KaTeX renderizado universal de fórmulas
 function renderMath() {
   if (typeof renderMathInElement === 'function') {
@@ -683,6 +844,7 @@ function init() {
   renderTemaDetailHeader(currentTemaId);
   renderDiarioPlegado(currentTemaId);
   renderSemanaHoja(currentTemaId);
+  renderTareasClassroom(currentTemaId);
   renderComprueba(currentTemaId);
   setTimeout(renderMath, 100);
 }
