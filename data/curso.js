@@ -8,46 +8,71 @@ window.CURSO_CONFIG = {
   "ano_academico": "2026-2027",
   "tema_actual_id": 1,
   "ultima_clase": {
-    "fecha": "Viernes 25 y Lunes 28 de Septiembre de 2026",
+    "fecha": "Martes 29 de Septiembre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesiones 6 y 7: Valor Absoluto: A Trozos, Fracciones e Incógnita a Ambos Lados",
-    "referencia_apuntes": "Puntos 1.4 y 1.5 (Págs. 5-8)",
+    "titulo_sesion": "Sesión 8: Potencias, Radicales y Extracción de Factores",
+    "referencia_apuntes": "Puntos 2.1 y 2.2 (Págs. 8-11)",
     "mision_semanal": "Ejercicios 7 al 11 en tu libreta (Potencias, radicales, racionalización e identidades notables). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
     "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 3 (P-07, P-08, P-09, P-10 y P-11) de la hoja semanal.",
     "ejercicios_vistos": [
       {
-        "numero": 9,
-        "titulo": "Valor Absoluto: A Trozos, Fracciones e Incógnita a Ambos Lados",
-        "referencia": "Puntos 1.4 y 1.5 (Págs. 5-8)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Claves didácticas para no dudar con el valor absoluto:</strong><br>• <strong>Para escribir a trozos:</strong> Las barras solo hacen una cosa: si lo de dentro es positivo o cero, lo dejan tal cual; si es negativo, le dan la vuelta al signo. Para saber dónde cambia, halla su raíz (dónde se hace cero) y prueba el signo a cada lado. Si hay varios valores absolutos, coloca sus raíces en la recta real y analiza cada tramo por separado (¡ojo a los paréntesis si hay un signo menos delante!).<br>• <strong>Para inecuaciones racionales:</strong> Si la incógnita está en el denominador, recuerda la regla de oro: ningún denominador puede anularse jamás (descarta antes de nada los valores prohibidos). Aplica la definición del valor absoluto (quedando acotado en el centro entre $-k$ y $k$, o separando en las dos ramas exteriores $\\le -k$ o $\\ge k$) y resuelve analizando los signos de la fracción, vigilando que los valores prohibidos queden fuera de la solución.<br>• <strong>Con la incógnita fuera de las barras ($|A| < B$):</strong> Recuerda que una longitud jamás puede ser negativa: exige primero la condición de existencia $B > 0$ y resuelve la doble inecuación $-B < A < B$.</div></div>Expresa como función a trozos o resuelve en $\\mathbb{R}$ según corresponda:",
+        "numero": 10,
+        "titulo": "Potencias y Signos: Exponentes Enteros y Fraccionarios",
+        "referencia": "Punto 2.1 (Págs. 8-9)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Claves didácticas para potencias:</strong><br>• Descomponer siempre en factores primos antes de operar.<br>• Distinguir con precisión $(-a)^n$ de $-a^n$: el signo solo entra si está dentro del paréntesis.<br>• Invertir fracciones $(\\frac{a}{b})^{-n} = (\\frac{b}{a})^n$ y dejar el resultado final únicamente con exponentes positivos.</div></div>Simplifica al máximo aplicando las propiedades operativas de las potencias y expresando el resultado final con exponentes positivos:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "f(x) = \\left|-\\dfrac{x}{2} + 5\\right| = \\begin{cases} -\\dfrac{x}{2} + 5 & \\text{si } x < 10 \\\\[4pt] \\dfrac{x}{2} - 5 & \\text{si } x \\ge 10 \\end{cases}"
+            "expresion": "\\dfrac{2^{-4} \\cdot 3^3 \\cdot 6^3}{4^{-2} \\cdot 9^2 \\cdot 12^{-1}}"
           },
           {
             "letra": "b)",
-            "expresion": "g(x) = |x + 2| - |2x + 8| = \\begin{cases} x + 6 & \\text{si } x < -4 \\\\[4pt] -3x - 10 & \\text{si } -4 \\le x < -2 \\\\[4pt] -x - 6 & \\text{si } x \\ge -2 \\end{cases}"
+            "expresion": "\\dfrac{(-2)^6 \\cdot (-5)^3 \\cdot (-3)^0}{-2^4 \\cdot 5^2 \\cdot 10^{-2}}"
           },
           {
             "letra": "c)",
-            "expresion": "\\left|\\dfrac{2x}{3} - 12\\right| \\ge 5 \\iff \\dfrac{2x}{3} - 12 \\le -5 \\;\\text{ o }\\; \\dfrac{2x}{3} - 12 \\ge 5 \\iff x \\in \\left(-\\infty, \\dfrac{21}{2}\\right] \\cup \\left[\\dfrac{51}{2}, +\\infty\\right)"
+            "expresion": "\\left(\\dfrac{x^{-3} y^2}{z^{-2}}\\right)^{-3} \\cdot \\left(\\dfrac{x^4 z^{-3}}{y^{-2}}\right)^2"
           },
           {
             "letra": "d)",
-            "expresion": "\\left|\\dfrac{3x + 2}{-x - 4}\\right| \\le 2 \\quad (x \\ne -4) \\iff x \\in [-2, 6]"
+            "expresion": "\\dfrac{(a^{3/5} b^{-1/2})^{10}}{(a^{-2} b^{2/3})^6}"
+          }
+        ],
+        "idea_clave": "Descomponer siempre en bases primas antes de operar. Distinguir con precisión $(-a)^n$ de $-a^n$. En el paso final, ningún factor debe quedar con exponente negativo."
+      },
+      {
+        "numero": 11,
+        "titulo": "Radicales: Mínimo Común Índice, Extracción de Factores y Radicales Semejantes",
+        "referencia": "Punto 2.2 (Págs. 9-11)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Claves didácticas para raíces:</strong><br>• Para multiplicar o dividir raíces con distinto índice es obligatorio hallar el $\\text{mcm}$ de los índices.<br>• Para extraer factores: dividir exponente entre índice (el cociente sale fuera y el resto permanece dentro).<br>• Solo se suman o restan radicales si son semejantes tras extraer factores.<br>• Si los exponentes del radicando y el índice tienen divisor común, ¡simplifica el radical!</div></div>Realiza las siguientes operaciones expresando el resultado en un único radical irreducible con factores simplificados (extrae todos los factores posibles):",
+        "apartados": [
+          {
+            "letra": "a)",
+            "expresion": "\\sqrt[4]{x^3} \\cdot \\sqrt[6]{x^5} \\cdot \\sqrt[3]{x^2}"
+          },
+          {
+            "letra": "b)",
+            "expresion": "\\dfrac{\\sqrt[4]{a^3 b^2}}{\\sqrt[6]{a^4 b^3}}"
+          },
+          {
+            "letra": "c)",
+            "expresion": "2\\sqrt{27} - 4\\sqrt{75} + 3\\sqrt{48} - \\sqrt{12}"
+          },
+          {
+            "letra": "d)",
+            "expresion": "3\\sqrt[3]{24} - 2\\sqrt[3]{81} + 2\\sqrt[3]{375} - \\sqrt[3]{192}"
           },
           {
             "letra": "e)",
-            "expresion": "\\left|\\dfrac{x + 3}{x - 1}\\right| \\ge 2 \\quad (x \\ne 1) \\iff x \\in \\left[-\\dfrac{1}{3}, 1\\right) \\cup (1, 5]"
+            "expresion": "\\dfrac{\\sqrt[3]{9x^4 y} \\cdot \\sqrt[4]{27x^5 y^6}}{\\sqrt[6]{3x^5 y^2}}"
           },
           {
             "letra": "f)",
-            "expresion": "|3x + 2| < x + 6 \\iff -(x + 6) < 3x + 2 < x + 6 \\iff x \\in (-2, 2)"
+            "expresion": "4\\sqrt[3]{\\dfrac{16}{27}} - 5\\sqrt[3]{\\dfrac{2}{125}} + \\dfrac{1}{2}\\sqrt[3]{128}"
           }
         ],
-        "idea_clave": "El valor absoluto siempre da un resultado positivo o cero; lo que cambia de signo al cruzar sus raíces es la expresión de su interior. Al abrir a trozos, cambia el signo de la expresión solo en los intervalos donde sea negativa (ubica las raíces en la recta para distinguirlos). En inecuaciones fraccionarias, descarta siempre los valores que anulan el denominador (pueden partir tu intervalo); y si la $x$ aparece fuera de las barras ($|A| < B$), exige que $B > 0$ y resuelve $-B < A < B$."
+        "idea_clave": "Obligatorio mcm de índices para multiplicar/dividir raíces. Solo sumar radicales semejantes tras extracción. Simplificar siempre el radical resultante dividiendo índice y exponentes entre su mcd."
       }
     ]
   },
@@ -59,7 +84,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 7,
+      "sesiones_impartidas": 8,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
