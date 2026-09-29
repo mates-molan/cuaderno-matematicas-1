@@ -417,7 +417,7 @@ window.TEMAS_DATA[1] = {
           "numero": 11,
           "titulo": "Raíces: Mismo Índice, Sacar Factores y Sumar Raíces Iguales",
           "referencia": "Punto 2.1 (Pág. 11)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con las raíces:</strong><br>• Para multiplicar o dividir raíces con distinto número fuera (índice), ponles primero el mismo índice haciendo el mínimo común múltiplo ($\\text{mcm}$).<br>• Para sacar cosas fuera de la raíz: divide el exponente entre el índice. Lo que te dé sale fuera, y lo que sobre se queda dentro.<br>• Para sumar o restar raíces, tienen que ser idénticas. Si a simple vista no lo son, ¡saca primero factores fuera!<br>• Al terminar, si los números de la raíz se pueden simplificar dividiéndolos entre el mismo número, simplifícalos.</div></div>Haz las siguientes operaciones dejando una sola raíz y sacando fuera todo lo que puedas:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con las raíces:</strong><br>• Para multiplicar o dividir raíces con distinto índice, redúcelas primero a índice común calculando el mínimo común múltiplo ($\\text{mcm}$) de los índices.<br>• Para extraer factores fuera de la raíz: divide el exponente de cada factor entre el índice. El cociente sale fuera y el resto se queda dentro del radicando.<br>• Para sumar o restar raíces, deben ser radicales semejantes (mismo índice y mismo radicando). Si a simple vista no coinciden, ¡extrae primero factores!<br>• Al terminar, simplifica el radical si es posible: divide el índice y los exponentes del radicando entre su máximo común divisor ($\\text{mcd}$).</div></div>Haz las siguientes operaciones dejando una sola raíz y sacando fuera todo lo que puedas:",
           "apartados": [
             {
               "letra": "a)",
@@ -444,7 +444,7 @@ window.TEMAS_DATA[1] = {
               "expresion": "4\\sqrt[3]{\\dfrac{16}{27}} - 5\\sqrt[3]{\\dfrac{2}{125}} + \\dfrac{1}{2}\\sqrt[3]{128}"
             }
           ],
-          "idea_clave": "Para multiplicar o dividir raíces con distinto índice, ponles primero el mismo índice con el mcm. Solo se pueden sumar o restar raíces si son idénticas por dentro y por fuera tras sacar factores. Al final, saca todo lo posible y simplifica la raíz si se puede."
+          "idea_clave": "Para multiplicar o dividir raíces con distinto índice, ponles primero el mismo índice con el mcm. Solo se pueden sumar o restar raíces si son radicales semejantes: deben coincidir en el índice y en el radicando tras extraer factores. Al final, extrae todos los factores posibles y simplifica el radical si el índice y los exponentes tienen divisores comunes."
         }
       ]
     }
