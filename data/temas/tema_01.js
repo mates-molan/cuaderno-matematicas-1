@@ -448,9 +448,9 @@ window.TEMAS_DATA[1] = {
         },
         {
           "numero": 12,
-          "titulo": "Radicales Anidados y Factores Intermedios (Simplificación Avanzada)",
+          "titulo": "Radicales Anidados y Factores Intermedios",
           "referencia": "Punto 2.1 (Págs. 11-12)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Estrategias para no perderse con raíces dentro de raíces:</strong><br>• <strong>Método 1 (De dentro hacia fuera con exponentes fraccionarios):</strong> Convierte cada raíz en potencia fraccionaria ($\\sqrt[n]{a^m} = a^{m/n}$) y suma o resta exponentes nivel a nivel. Es la técnica más infalible cuando intervienen varias letras.<br>• <strong>Método 2 (De fuera hacia dentro metiendo factores):</strong> Para introducir un factor dentro de una raíz, multiplica su exponente por el índice de la raíz en la que entra ($a \\cdot \\sqrt[n]{b} = \\sqrt[n]{a^n b}$). Al final multiplica todos los índices sucesivos ($\\sqrt[m]{\\sqrt[n]{a}} = \\sqrt[m \\cdot n]{a}$).<br>• <strong>Al terminar:</strong> Extrae todos los factores posibles y simplifica el radical dividiendo el índice y los exponentes entre su $\\text{mcd}$.</div></div>Reduce a una única raíz irreducible o potencia fraccionaria, sacando fuera todos los factores posibles:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con raíces dentro de raíces:</strong><br>• <strong>Mete los factores hacia dentro:</strong> Para introducir un factor en la siguiente raíz, multiplica su exponente por el índice de esa raíz ($a \\cdot \\sqrt[n]{b} = \\sqrt[n]{a^n b}$). Ve paso a paso, siempre de fuera hacia dentro.<br>• <strong>Raíz de una raíz:</strong> Cuando ya no queden factores intermedios entre las raíces, junta todas en una sola multiplicando sus índices ($\\sqrt[m]{\\sqrt[n]{A}} = \\sqrt[m \\cdot n]{A}$).<br>• <strong>Al terminar:</strong> Si el exponente de algún factor es mayor o igual que el índice, ¡extrae factores fuera! Y si el índice y los exponentes tienen divisores comunes, simplifica dividiendo entre su $\\text{mcd}$.</div></div>Haz las siguientes operaciones dejando una sola raíz y sacando fuera todo lo que puedas:",
           "apartados": [
             {
               "letra": "a)",
@@ -473,13 +473,13 @@ window.TEMAS_DATA[1] = {
               "expresion": "\\sqrt{a \\cdot \\sqrt[3]{\\dfrac{b}{a} \\cdot \\sqrt[4]{\\dfrac{a^5}{b^2}}}}"
             }
           ],
-          "idea_clave": "Para simplificar radicales anidados, puedes introducir factores multiplicando su exponente por el índice de la raíz en la que entran, o bien operar con exponentes fraccionarios sumando potencias de la misma base. Recuerda multiplicar los índices sucesivos y extraer todos los factores posibles al final."
+          "idea_clave": "Para simplificar radicales anidados, introduce los factores intermedios de fuera hacia dentro multiplicando su exponente por el índice de la raíz en la que entran. Cuando las raíces queden juntas, multiplica sus índices y extrae todo lo que puedas al final."
         },
         {
           "numero": 13,
-          "titulo": "Racionalización Avanzada: Raíces en Numerador y Denominador y Casos Complejos",
+          "titulo": "Racionalización: Raíces en Numerador y Denominador",
           "referencia": "Punto 2.2 (Págs. 13-14)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Claves para dominar la racionalización avanzada:</strong><br>• <strong>Raíz enésima simple en el denominador ($\\frac{A}{\\sqrt[n]{b^k}}$):</strong> Extrae factores primero si el exponente supera al índice y multiplica arriba y abajo por $\\sqrt[n]{b^{n-k}}$ para completar la potencia exacta del índice.<br>• <strong>Binomio con raíces cuadradas ($\\sqrt{a} \\pm \\sqrt{b}$ o $a\\sqrt{b} \\pm c\\sqrt{d}$):</strong> Multiplica numerador y denominador por su binomio conjugado para aplicar suma por diferencia: $(u+v)(u-v) = u^2 - v^2$. Si también hay raíces en el numerador, aplica con calma la propiedad distributiva.<br>• <strong>Operaciones con fracciones de radicales:</strong> Muchas veces los denominadores ya son conjugados entre sí; calcular el común denominador directamente simplifica las cuentas.<br>• <strong>Tres raíces cuadradas en el denominador:</strong> Agrupa dos de ellas en bloque $((\\sqrt{a} + \\sqrt{b}) - \\sqrt{c})$ y racionaliza en dos etapas consecutivas.</div></div>Racionaliza los denominadores y simplifica al máximo las expresiones resultantes:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para racionalizar con calma y sin agobios:</strong><br>• <strong>Raíz simple en el denominador ($\\frac{A}{\\sqrt[n]{b^k}}$):</strong> Si se pueden sacar factores, sácalos primero. Luego multiplica arriba y abajo por la raíz con lo que le falta al exponente para llegar al índice ($\\sqrt[n]{b^{n-k}}$).<br>• <strong>Suma o resta con raíces en el denominador:</strong> Multiplica numerador y denominador por el conjugado (cambia el signo del medio) para que quede suma por diferencia: $(u+v)(u-v) = u^2 - v^2$. Si también tienes raíces en el numerador, haz la multiplicación despacio con la propiedad distributiva.<br>• <strong>Fracciones que se restan:</strong> Fíjate bien antes de empezar; si los denominadores ya son conjugados el uno del otro, su producto es el común denominador directo.<br>• <strong>Tres raíces en el denominador:</strong> Agrupa dos de ellas entre paréntesis como si fueran un solo bloque y haz el conjugado en dos pasos sencillos.</div></div>Racionaliza los denominadores y simplifica al máximo las expresiones resultantes:",
           "apartados": [
             {
               "letra": "a)",
@@ -506,7 +506,7 @@ window.TEMAS_DATA[1] = {
               "expresion": "\\dfrac{x - y}{\\sqrt{x} + \\sqrt{y}} \\quad\\text{y}\\quad \\dfrac{\\sqrt{x + 1} - \\sqrt{x}}{\\sqrt{x + 1} + \\sqrt{x}}"
             }
           ],
-          "idea_clave": "Para eliminar raíces enésimas simples se completa el exponente que falta para alcanzar el índice. Con binomios de raíces cuadradas, el conjugado convierte el denominador en una diferencia de cuadrados ($u^2 - v^2$). Si hay raíces tanto arriba como abajo, desarrolla con calma aplicando la propiedad distributiva. Y con tres raíces, agrupa en bloque y racionaliza en dos etapas."
+          "idea_clave": "En raíces simples completa los exponentes que faltan para alcanzar el índice. Con binomios de raíces cuadradas, el conjugado elimina las raíces del denominador aplicando diferencia de cuadrados ($u^2 - v^2$). Si hay raíces arriba y abajo, multiplica con cuidado término a término. Y si hay tres raíces, agrupa en bloque y repite el proceso."
         }
       ]
     }
