@@ -449,7 +449,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 12,
           "titulo": "Radicales Anidados y Factores Intermedios",
-          "referencia": "Punto 2.1 (Págs. 11-12)",
+          "referencia": "Punto 2.1 (Pág. 11)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con raíces dentro de raíces:</strong><br>• <strong>Mete los factores hacia dentro:</strong> Para introducir un factor en la siguiente raíz, multiplica su exponente por el índice de esa raíz ($a \\cdot \\sqrt[n]{b} = \\sqrt[n]{a^n b}$). Ve paso a paso, siempre de fuera hacia dentro.<br>• <strong>Raíz de una raíz:</strong> Cuando ya no queden factores intermedios entre las raíces, junta todas en una sola multiplicando sus índices ($\\sqrt[m]{\\sqrt[n]{A}} = \\sqrt[m \\cdot n]{A}$).<br>• <strong>Al terminar:</strong> Si el exponente de algún factor es mayor o igual que el índice, ¡extrae factores fuera! Y si el índice y los exponentes tienen divisores comunes, simplifica dividiendo entre su $\\text{mcd}$.</div></div>Haz las siguientes operaciones dejando una sola raíz y sacando fuera todo lo que puedas:",
           "apartados": [
             {
@@ -478,7 +478,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 13,
           "titulo": "Racionalización: Raíces en Numerador y Denominador",
-          "referencia": "Punto 2.2 (Págs. 13-14)",
+          "referencia": "Punto 2.2 (Págs. 12-14)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para racionalizar con calma y sin agobios:</strong><br>• <strong>Raíz simple en el denominador ($\\frac{A}{\\sqrt[n]{b^k}}$):</strong> Si se pueden sacar factores, sácalos primero. Luego multiplica arriba y abajo por la raíz con lo que le falta al exponente para llegar al índice ($\\sqrt[n]{b^{n-k}}$).<br>• <strong>Suma o resta con raíces en el denominador:</strong> Multiplica numerador y denominador por el conjugado (cambia el signo del medio) para que quede suma por diferencia: $(u+v)(u-v) = u^2 - v^2$. Si también tienes raíces en el numerador, haz la multiplicación despacio con la propiedad distributiva.<br>• <strong>Fracciones que se restan:</strong> Fíjate bien antes de empezar; si los denominadores ya son conjugados el uno del otro, su producto es el común denominador directo.<br>• <strong>Tres raíces en el denominador:</strong> Agrupa dos de ellas entre paréntesis como si fueran un solo bloque y haz el conjugado en dos pasos sencillos.</div></div>Racionaliza los denominadores y simplifica al máximo las expresiones resultantes:",
           "apartados": [
             {
