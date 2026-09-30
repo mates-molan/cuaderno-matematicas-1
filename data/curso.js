@@ -19,7 +19,7 @@ window.CURSO_CONFIG = {
     "aviso": "Tarea 1 activa (Entrega en Google Classroom antes del Sábado 3 Octubre a las 23:59 h)"
   },
   "ultima_clase": {
-    "fecha": "Martes 29 y Miércoles 30 de Septiembre de 2026",
+    "fecha": "Martes 29 de Septiembre y Jueves 1 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesiones 8 y 9: Potencias, Radicales, Radicales Anidados y Racionalización",

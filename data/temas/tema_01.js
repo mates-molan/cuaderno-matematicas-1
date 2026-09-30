@@ -385,7 +385,7 @@ window.TEMAS_DATA[1] = {
     },
     {
       "numero": "8 y 9",
-      "fecha": "Martes 29 y Miércoles 30 de Septiembre de 2026",
+      "fecha": "Martes 29 de Septiembre y Jueves 1 de Octubre de 2026",
       "titulo": "Potencias, Radicales, Radicales Anidados y Racionalización",
       "ejercicios": [
         {
