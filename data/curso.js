@@ -19,10 +19,10 @@ window.CURSO_CONFIG = {
     "aviso": "Tarea 1 activa (Entrega en Google Classroom antes del Sábado 3 Octubre a las 23:59 h)"
   },
   "ultima_clase": {
-    "fecha": "Martes 29 de Septiembre y Jueves 1 de Octubre de 2026",
+    "fecha": "Martes 29 de Septiembre, Jueves 1 y Viernes 2 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesiones 8 y 9: Potencias, Radicales, Radicales Anidados y Racionalización",
+    "titulo_sesion": "Sesiones 8, 9 y 10: Potencias, Radicales, Radicales Anidados y Racionalización",
     "referencia_apuntes": "Puntos 2, 2.1 y 2.2 (Págs. 9-14)",
     "mision_semanal": "Ejercicios 7 al 11 en tu libreta (Potencias, radicales, racionalización e identidades notables). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
     "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 3 (P-07, P-08, P-09, P-10 y P-11) de la hoja semanal.",
@@ -157,7 +157,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 9,
+      "sesiones_impartidas": 10,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",

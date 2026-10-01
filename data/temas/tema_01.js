@@ -6,7 +6,7 @@ window.TEMAS_DATA[1] = {
   "id": 1,
   "titulo": "Tema 1: Herramientas del Álgebra",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 9,
+  "sesiones_impartidas": 10,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "tareas_classroom": [
@@ -384,8 +384,8 @@ window.TEMAS_DATA[1] = {
       ]
     },
     {
-      "numero": "8 y 9",
-      "fecha": "Martes 29 de Septiembre y Jueves 1 de Octubre de 2026",
+      "numero": "8, 9 y 10",
+      "fecha": "Martes 29 de Septiembre, Jueves 1 y Viernes 2 de Octubre de 2026",
       "titulo": "Potencias, Radicales, Radicales Anidados y Racionalización",
       "ejercicios": [
         {
