@@ -35,19 +35,19 @@ window.CURSO_CONFIG = {
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\dfrac{2^{-4} \\cdot 3^3 \\cdot 6^3}{4^{-2} \\cdot 9^2 \\cdot 12^{-1}}"
+            "expresion": "\\dfrac{2^{-4} \\cdot 3^3 \\cdot 6^3}{4^{-2} \\cdot 9^2 \\cdot 12^{-1}} = 2^5 \\cdot 3^3 = 864"
           },
           {
             "letra": "b)",
-            "expresion": "\\dfrac{(-2)^6 \\cdot (-5)^3 \\cdot (-3)^0}{-2^4 \\cdot 5^2 \\cdot 10^{-2}}"
+            "expresion": "\\dfrac{(-2)^6 \\cdot (-5)^3 \\cdot (-3)^0}{-2^4 \\cdot 5^2 \\cdot 10^{-2}} = 2^4 \\cdot 5^3 = 2000"
           },
           {
             "letra": "c)",
-            "expresion": "\\left(\\dfrac{x^{-3} y^2}{z^{-2}}\\right)^{-3} \\cdot \\left(\\dfrac{x^4 z^{-3}}{y^{-2}}\\right)^2"
+            "expresion": "\\left(\\dfrac{x^{-3} y^2}{z^{-2}}\\right)^{-3} \\cdot \\left(\\dfrac{x^4 z^{-3}}{y^{-2}}\\right)^2 = \\dfrac{x^{17}}{y^2 z^{12}}"
           },
           {
             "letra": "d)",
-            "expresion": "\\dfrac{(a^{3/5} b^{-1/2})^{10}}{(a^{-2} b^{2/3})^6}"
+            "expresion": "\\dfrac{(a^{3/5} b^{-1/2})^{10}}{(a^{-2} b^{2/3})^6} = \\dfrac{a^{18}}{b^9}"
           }
         ],
         "idea_clave": "Pasa los números a primos ($2, 3, 5\\dots$) antes de hacer nada. Cuidado con $(-a)^n$ y $-a^n$: el signo solo se eleva si está entre paréntesis. Si una fracción tiene exponente negativo, dale la vuelta para ponerlo positivo. Al terminar, no dejes exponentes negativos."
@@ -60,27 +60,27 @@ window.CURSO_CONFIG = {
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\sqrt[4]{x^3} \\cdot \\sqrt[6]{x^5} \\cdot \\sqrt[3]{x^2}"
+            "expresion": "\\sqrt[4]{x^3} \\cdot \\sqrt[6]{x^5} \\cdot \\sqrt[3]{x^2} = x^2 \\sqrt[4]{x}"
           },
           {
             "letra": "b)",
-            "expresion": "\\dfrac{\\sqrt[4]{a^3 b^2}}{\\sqrt[6]{a^4 b^3}}"
+            "expresion": "\\dfrac{\\sqrt[4]{a^3 b^2}}{\\sqrt[6]{a^4 b^3}} = \\sqrt[12]{a}"
           },
           {
             "letra": "c)",
-            "expresion": "2\\sqrt{27} - 4\\sqrt{75} + 3\\sqrt{48} - \\sqrt{12}"
+            "expresion": "2\\sqrt{27} - 4\\sqrt{75} + 3\\sqrt{48} - \\sqrt{12} = -4\\sqrt{3}"
           },
           {
             "letra": "d)",
-            "expresion": "3\\sqrt[3]{24} - 2\\sqrt[3]{81} + 2\\sqrt[3]{375} - \\sqrt[3]{192}"
+            "expresion": "3\\sqrt[3]{24} - 2\\sqrt[3]{81} + 2\\sqrt[3]{375} - \\sqrt[3]{192} = 6\\sqrt[3]{3}"
           },
           {
             "letra": "e)",
-            "expresion": "\\dfrac{\\sqrt[3]{9x^4 y} \\cdot \\sqrt[4]{27x^5 y^6}}{\\sqrt[6]{3x^5 y^2}}"
+            "expresion": "\\dfrac{\\sqrt[3]{9x^4 y} \\cdot \\sqrt[4]{27x^5 y^6}}{\\sqrt[6]{3x^5 y^2}} = 3xy \\sqrt[4]{3x^3 y^2}"
           },
           {
             "letra": "f)",
-            "expresion": "4\\sqrt[3]{\\dfrac{16}{27}} - 5\\sqrt[3]{\\dfrac{2}{125}} + \\dfrac{1}{2}\\sqrt[3]{128}"
+            "expresion": "4\\sqrt[3]{\\dfrac{16}{27}} - 5\\sqrt[3]{\\dfrac{2}{125}} + \\dfrac{1}{2}\\sqrt[3]{128} = \\dfrac{11}{3}\\sqrt[3]{2}"
           }
         ],
         "idea_clave": "Para multiplicar o dividir raíces con distinto índice, ponles primero el mismo índice con el mcm. Solo se pueden sumar o restar raíces si son radicales semejantes: deben coincidir en el índice y en el radicando tras extraer factores. Al final, extrae todos los factores posibles y simplifica el radical si el índice y los exponentes tienen divisores comunes."
@@ -93,23 +93,23 @@ window.CURSO_CONFIG = {
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\sqrt[3]{\\dfrac{x^2}{y} \\cdot \\sqrt{\\dfrac{y^3}{x} \\cdot \\sqrt[4]{\\dfrac{x^3}{y^2}}}}"
+            "expresion": "\\sqrt[3]{\\dfrac{x^2}{y} \\cdot \\sqrt{\\dfrac{y^3}{x} \\cdot \\sqrt[4]{\\dfrac{x^3}{y^2}}}} = \\sqrt[24]{x^{15} y^2}"
           },
           {
             "letra": "b)",
-            "expresion": "\\sqrt[3]{16 \\cdot \\sqrt{8 \\cdot \\sqrt[4]{32}}}"
+            "expresion": "\\sqrt[3]{16 \\cdot \\sqrt{8 \\cdot \\sqrt[4]{32}}} = 4\\sqrt[24]{2}"
           },
           {
             "letra": "c)",
-            "expresion": "\\dfrac{\\sqrt[3]{x^2 \\cdot \\sqrt{x^3 \\cdot \\sqrt[4]{x}}}}{\\sqrt{x \\cdot \\sqrt[3]{x}}}"
+            "expresion": "\\dfrac{\\sqrt[3]{x^2 \\cdot \\sqrt{x^3 \\cdot \\sqrt[4]{x}}}}{\\sqrt{x \\cdot \\sqrt[3]{x}}} = \\sqrt[24]{x^{13}}"
           },
           {
             "letra": "d)",
-            "expresion": "\\sqrt{\\dfrac{x}{y} \\sqrt[3]{\\dfrac{y^2}{x}}} \\cdot \\sqrt[3]{\\dfrac{y}{x^2} \\sqrt{\\dfrac{x^3}{y}}}"
+            "expresion": "\\sqrt{\\dfrac{x}{y} \\sqrt[3]{\\dfrac{y^2}{x}}} \\cdot \\sqrt[3]{\\dfrac{y}{x^2} \\sqrt{\\dfrac{x^3}{y}}} = \\sqrt[6]{x}"
           },
           {
             "letra": "e)",
-            "expresion": "\\sqrt{a \\cdot \\sqrt[3]{\\dfrac{b}{a} \\cdot \\sqrt[4]{\\dfrac{a^5}{b^2}}}}"
+            "expresion": "\\sqrt{a \\cdot \\sqrt[3]{\\dfrac{b}{a} \\cdot \\sqrt[4]{\\dfrac{a^5}{b^2}}}} = \\sqrt[24]{a^{13} b^2}"
           }
         ],
         "idea_clave": "Para simplificar radicales anidados, introduce los factores intermedios de fuera hacia dentro multiplicando su exponente por el índice de la raíz en la que entran. Cuando las raíces queden juntas, multiplica sus índices y extrae todo lo que puedas al final."
@@ -122,27 +122,27 @@ window.CURSO_CONFIG = {
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\dfrac{6}{\\sqrt[4]{8}} \\quad\\text{y}\\quad \\dfrac{12x}{\\sqrt[5]{64x^3}}"
+            "expresion": "\\dfrac{6}{\\sqrt[4]{8}} = 3\\sqrt[4]{2} \\quad\\text{y}\\quad \\dfrac{12x}{\\sqrt[5]{64x^3}} = 3\\sqrt[5]{16x^2}"
           },
           {
             "letra": "b)",
-            "expresion": "\\dfrac{3\\sqrt{2} - 2\\sqrt{3}}{2\\sqrt{2} + 3\\sqrt{3}}"
+            "expresion": "\\dfrac{3\\sqrt{2} - 2\\sqrt{3}}{2\\sqrt{2} + 3\\sqrt{3}} = \\dfrac{13\\sqrt{6} - 30}{19}"
           },
           {
             "letra": "c)",
-            "expresion": "\\dfrac{2\\sqrt{5} + 3\\sqrt{2}}{3\\sqrt{5} - 4\\sqrt{2}}"
+            "expresion": "\\dfrac{2\\sqrt{5} + 3\\sqrt{2}}{3\\sqrt{5} - 4\\sqrt{2}} = \\dfrac{54 + 17\\sqrt{10}}{13}"
           },
           {
             "letra": "d)",
-            "expresion": "\\dfrac{\\sqrt{3} + 1}{\\sqrt{3} - 1} - \\dfrac{\\sqrt{3} - 1}{\\sqrt{3} + 1}"
+            "expresion": "\\dfrac{\\sqrt{3} + 1}{\\sqrt{3} - 1} - \\dfrac{\\sqrt{3} - 1}{\\sqrt{3} + 1} = 2\\sqrt{3}"
           },
           {
             "letra": "e)",
-            "expresion": "\\dfrac{1}{\\sqrt{2} + \\sqrt{3} - \\sqrt{5}}"
+            "expresion": "\\dfrac{1}{\\sqrt{2} + \\sqrt{3} - \\sqrt{5}} = \\dfrac{3\\sqrt{2} + 2\\sqrt{3} + \\sqrt{30}}{12}"
           },
           {
             "letra": "f)",
-            "expresion": "\\dfrac{x - y}{\\sqrt{x} + \\sqrt{y}} \\quad\\text{y}\\quad \\dfrac{\\sqrt{x + 1} - \\sqrt{x}}{\\sqrt{x + 1} + \\sqrt{x}}"
+            "expresion": "\\dfrac{x - y}{\\sqrt{x} + \\sqrt{y}} = \\sqrt{x} - \\sqrt{y} \\quad\\text{y}\\quad \\dfrac{\\sqrt{x + 1} - \\sqrt{x}}{\\sqrt{x + 1} + \\sqrt{x}} = 2x + 1 - 2\\sqrt{x^2 + x}"
           }
         ],
         "idea_clave": "En raíces simples completa los exponentes que faltan para alcanzar el índice. Con binomios de raíces cuadradas, el conjugado elimina las raíces del denominador aplicando diferencia de cuadrados ($u^2 - v^2$). Si hay raíces arriba y abajo, multiplica con cuidado término a término. Y si hay tres raíces, agrupa en bloque y repite el proceso."
