@@ -116,13 +116,25 @@ function renderAlDia() {
     if (config.tarea_classroom_activa && config.tarea_classroom_activa.existe) {
       const tActiva = config.tarea_classroom_activa;
       classroomEl.style.display = 'flex';
-      classroomEl.innerHTML = `
-        <span>📤</span>
-        <span id="heroClassroomTexto">
-          <strong>Tarea Classroom:</strong> ${tActiva.aviso || tActiva.titulo}
-          <span class="classroom-link-btn">Ver tarea →</span>
-        </span>
-      `;
+      if (tActiva.estado === 'solucionario_disponible') {
+        classroomEl.className = 'classroom-notice solucionario-disponible';
+        classroomEl.innerHTML = `
+          <span>✅</span>
+          <span id="heroClassroomTexto">
+            <strong>Solucionario Tarea 1:</strong> ${tActiva.aviso || 'Solucionario oficial resuelto disponible para auto-corrección.'}
+            <span class="classroom-link-btn">Ver y descargar soluciones →</span>
+          </span>
+        `;
+      } else {
+        classroomEl.className = 'classroom-notice';
+        classroomEl.innerHTML = `
+          <span>📤</span>
+          <span id="heroClassroomTexto">
+            <strong>Tarea Classroom:</strong> ${tActiva.aviso || tActiva.titulo}
+            <span class="classroom-link-btn">Ver tarea →</span>
+          </span>
+        `;
+      }
     } else {
       classroomEl.style.display = 'none';
     }
@@ -544,8 +556,9 @@ function renderTareasClassroom(temaId = currentTemaId) {
       `;
     }
 
+    const isExpanded = tarea.estado === 'solucionario_disponible' || tarea.estado === 'activa';
     html += `
-      <details class="${cardClass}" ontoggle="onAccordionToggle()">
+      <details class="${cardClass}" ontoggle="onAccordionToggle()" ${isExpanded ? 'open' : ''}>
         <summary class="tarea-summary">
           <div class="tarea-summary-left">
             <span class="tarea-badge-id">${tarea.id}</span>
@@ -813,7 +826,7 @@ function irATareasClassroom() {
     document.querySelectorAll('.subtab-btn').forEach(b => b.classList.remove('active'));
     tabBtn.classList.add('active');
   }
-  const tareaActivaAcc = document.querySelector('.tarea-accordion.activa') || document.querySelector('.tarea-accordion');
+  const tareaActivaAcc = document.querySelector('.tarea-accordion.solucionario-disponible') || document.querySelector('.tarea-accordion.activa') || document.querySelector('.tarea-accordion');
   if (tareaActivaAcc) {
     tareaActivaAcc.open = true;
   }

@@ -407,6 +407,25 @@ body {
   gap: 4px;
 }
 
+.classroom-notice.solucionario-disponible {
+  color: #065f46;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 1.5px solid #6ee7b7;
+}
+
+.classroom-notice.solucionario-disponible:hover {
+  border-color: #10b981;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.classroom-notice.solucionario-disponible strong {
+  color: #064e3b;
+}
+
+.classroom-notice.solucionario-disponible .classroom-link-btn {
+  color: #047857;
+}
+
 .hero-pdf-btns {
   display: flex;
   gap: 12px;

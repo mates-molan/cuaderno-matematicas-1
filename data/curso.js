@@ -12,11 +12,11 @@ window.CURSO_CONFIG = {
     "tema_id": 1,
     "tarea_id": "Tarea-01",
     "titulo": "Tarea 1: Números Reales, Intervalos y Valor Absoluto",
-    "fecha_limite": "Sábado 3 de Octubre de 2026 (23:59 h)",
-    "estado": "activa",
+    "fecha_limite": "Sábado 3 de Octubre de 2026 (23:59 h) - Plazo Finalizado",
+    "estado": "solucionario_disponible",
     "pdf_tarea": "pdf/Tarea1_Herramientas_del_Algebra_1Bach.pdf",
     "pdf_solucionario": "pdf/Tarea1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
-    "aviso": "Tarea 1 activa (Entrega en Google Classroom antes del Sábado 3 Octubre a las 23:59 h)"
+    "aviso": "¡Solucionario oficial de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "ultima_clase": {
     "fecha": "Martes 29 de Septiembre, Jueves 1 y Viernes 2 de Octubre de 2026",
