@@ -6,7 +6,7 @@ window.TEMAS_DATA[1] = {
   "id": 1,
   "titulo": "Tema 1: Herramientas del Álgebra",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 10,
+  "sesiones_impartidas": 11,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "tareas_classroom": [
@@ -507,6 +507,63 @@ window.TEMAS_DATA[1] = {
             }
           ],
           "idea_clave": "En raíces simples completa los exponentes que faltan para alcanzar el índice. Con binomios de raíces cuadradas, el conjugado elimina las raíces del denominador aplicando diferencia de cuadrados ($u^2 - v^2$). Si hay raíces arriba y abajo, multiplica con cuidado término a término. Y si hay tres raíces, agrupa en bloque y repite el proceso."
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "fecha": "Lunes 5 de Octubre de 2026",
+      "titulo": "Racionalización con Raíces Cúbicas e Identidades Notables al Revés",
+      "ejercicios": [
+        {
+          "numero": 14,
+          "titulo": "Racionalizar Denominadores: Raíces Cúbicas y el Truco de los Cubos",
+          "referencia": "Punto 2.2 (Págs. 13-14)",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con las raíces cúbicas abajo:</strong><br>• <strong>¿Por qué no sirve cambiar solo el signo?</strong> Si abajo tienes $\\sqrt[3]{x} - 2$ y multiplicas por $\\sqrt[3]{x} + 2$, te queda $(\\sqrt[3]{x})^2 - 4 = \\sqrt[3]{x^2} - 4$. ¡La raíz sigue ahí! Con raíces cúbicas necesitas cubos, no cuadrados.<br>• <strong>La fórmula que te salva:</strong> Recuerda que $(u - v)(u^2 + uv + v^2) = u^3 - v^3$ y que $(u + v)(u^2 - uv + v^2) = u^3 + v^3$.<br>• <strong>El truco práctico:</strong> Multiplica arriba y abajo por: el primero al cuadrado, el producto de los dos (con signo cambiado) y el segundo al cuadrado. Así abajo se van las raíces y te queda una resta o suma limpia.</div></div>Racionaliza los denominadores y simplifica al máximo:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\dfrac{4}{\\sqrt[3]{x} - 2} = \\dfrac{4(\\sqrt[3]{x^2} + 2\\sqrt[3]{x} + 4)}{x - 8}"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\dfrac{6}{\\sqrt[3]{5} + \\sqrt[3]{2}} = \\dfrac{6(\\sqrt[3]{25} - \\sqrt[3]{10} + \\sqrt[3]{4})}{7}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\dfrac{x - 1}{\\sqrt[3]{x} - 1} = \\sqrt[3]{x^2} + \\sqrt[3]{x} + 1"
+            }
+          ],
+          "idea_clave": "Para quitar raíces cúbicas en sumas o restas, olvídate del conjugado de siempre. Usa el truco de los cubos: multiplica por el primero al cuadrado, el producto de los dos con signo opuesto y el segundo al cuadrado. Abajo desaparecen las raíces."
+        },
+        {
+          "numero": 15,
+          "titulo": "Identidades Notables al Revés: Cómo Reconocer Patrones sin Operar a lo Loco",
+          "referencia": "Punto 2.3 (Págs. 15-16)",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para pillar las identidades al revés sin hacer cuentas raras:</strong><br>• <strong>Si ves 3 términos:</strong> Mira los dos extremos. Si son cuadrados perfectos (como $9x^2$ y $4$), comprueba si el del medio es el doble del primero por el segundo ($2 \\cdot 3x \\cdot 2 = 12x$). Si coincide, ¡bingo!, es $(3x - 2)^2$.<br>• <strong>¡Ojo a las trampas!:</strong> Si los extremos son cuadrados pero el del medio NO da el doble producto exacto, no inventes: no es un cuadrado de binomio.<br>• <strong>Si ves 2 términos restándose:</strong> Si los dos son cuadrados, es suma por diferencia. Con exponentes pares grandes, pon la mitad en cada paréntesis ($x^6$ pasa a $x^3$).<br>• <strong>¿Y si no tienen raíz cuadrada exacta?:</strong> Cualquier resta como $x - 7$ se puede escribir con raíces: $(\\sqrt{x} - \\sqrt{7})(\\sqrt{x} + \\sqrt{7})$. En límites esto te salvará la vida.</div></div>Reconoce la identidad notable de derecha a izquierda y escribe la expresión factorizada:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "9x^2 - 12x + 4 = (3x - 2)^2 \\quad\\text{y}\\quad \\dfrac{x^2}{4} + \\dfrac{x}{3} + \\dfrac{1}{9} = \\left(\\dfrac{x}{2} + \\dfrac{1}{3}\\right)^2"
+            },
+            {
+              "letra": "b)",
+              "expresion": "x^2 + 6x + 36 \\longrightarrow \\text{Extremos: } x^2 \\text{ y } 6^2, \\text{ pero } 2 \\cdot x \\cdot 6 = 12x \\ne 6x. \\text{ No es cuadrado de binomio (irreducible en } \\mathbb{R}\\text{)}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "16x^4 - 81 = (4x^2 + 9)(2x - 3)(2x + 3) \\quad\\text{y}\\quad 25x^6 - 4y^4 = (5x^3 - 2y^2)(5x^3 + 2y^2)"
+            },
+            {
+              "letra": "d)",
+              "expresion": "x - 7 = (\\sqrt{x} - \\sqrt{7})(\\sqrt{x} + \\sqrt{7}) \\quad (x \\ge 0)"
+            },
+            {
+              "letra": "e)",
+              "expresion": "x^2 - 6x + 9 - y^2 = (x - 3)^2 - y^2 = (x - 3 - y)(x - 3 + y)"
+            }
+          ],
+          "idea_clave": "No hagas fórmulas largas si no hace falta: busca los cuadrados en los extremos y confirma si el del medio es el doble producto. Y si dos cosas se restan, suma por diferencia partiendo exponentes a la mitad o metiendo raíces."
         }
       ]
     }

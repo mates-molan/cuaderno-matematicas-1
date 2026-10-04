@@ -19,133 +19,63 @@ window.CURSO_CONFIG = {
     "aviso": "¡Solucionario de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "ultima_clase": {
-    "fecha": "Martes 29 de Septiembre, Jueves 1 y Viernes 2 de Octubre de 2026",
+    "fecha": "Lunes 5 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesiones 8, 9 y 10: Potencias, Radicales, Radicales Anidados y Racionalización",
-    "referencia_apuntes": "Puntos 2, 2.1 y 2.2 (Págs. 9-14)",
-    "mision_semanal": "Ejercicios 7 al 11 en tu libreta (Potencias, radicales, racionalización e identidades notables). ¡A tu ritmo, pero no lo dejes para el último día! 😉",
-    "trabajo_semanal_pendiente": "Resolver en libreta los ejercicios de la Semana 3 (P-07, P-08, P-09, P-10 y P-11) de la hoja semanal.",
+    "titulo_sesion": "Sesión 11: Racionalización con Raíces Cúbicas e Identidades Notables al Revés",
+    "referencia_apuntes": "Puntos 2.2 y 2.3 (Págs. 13-16)",
+    "mision_semanal": "Repasar en tu libreta los Ejercicios 14 y 15 de pizarra (¡el truco de los cubos y cazar identidades al revés!).",
+    "trabajo_semanal_pendiente": "Repasar en libreta los Ejercicios 14 y 15 de modelado de pizarra.",
     "ejercicios_vistos": [
       {
-        "numero": 10,
-        "titulo": "Potencias y Signos: Cómo Simplificar Paso a Paso",
-        "referencia": "Punto 2 (Pág. 9)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con las potencias:</strong><br>• Pasa siempre los números a primos ($2, 3, 5\\dots$) antes de hacer nada.<br>• Cuidado con los signos: el menos solo entra en la potencia si está dentro del paréntesis, como en $(-2)^4$. Si ves $-2^4$, el menos no se eleva.<br>• Fracción con exponente negativo: dale la vuelta para poner el exponente positivo: $(\\frac{a}{b})^{-n} = (\\frac{b}{a})^n$.<br>• Al terminar, que no quede ningún exponente negativo: pásalos al otro lado con exponente positivo.</div></div>Simplifica al máximo aplicando las propiedades de las potencias y expresando el resultado final con exponentes positivos:",
+        "numero": 14,
+        "titulo": "Racionalizar Denominadores: Raíces Cúbicas y el Truco de los Cubos",
+        "referencia": "Punto 2.2 (Págs. 13-14)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con las raíces cúbicas abajo:</strong><br>• <strong>¿Por qué no sirve cambiar solo el signo?</strong> Si abajo tienes $\\sqrt[3]{x} - 2$ y multiplicas por $\\sqrt[3]{x} + 2$, te queda $(\\sqrt[3]{x})^2 - 4 = \\sqrt[3]{x^2} - 4$. ¡La raíz sigue ahí! Con raíces cúbicas necesitas cubos, no cuadrados.<br>• <strong>La fórmula que te salva:</strong> Recuerda que $(u - v)(u^2 + uv + v^2) = u^3 - v^3$ y que $(u + v)(u^2 - uv + v^2) = u^3 + v^3$.<br>• <strong>El truco práctico:</strong> Multiplica arriba y abajo por: el primero al cuadrado, el producto de los dos (con signo cambiado) y el segundo al cuadrado. Así abajo se van las raíces y te queda una resta o suma limpia.</div></div>Racionaliza los denominadores y simplifica al máximo:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\dfrac{2^{-4} \\cdot 3^3 \\cdot 6^3}{4^{-2} \\cdot 9^2 \\cdot 12^{-1}} = 2^5 \\cdot 3^3 = 864"
+            "expresion": "\\dfrac{4}{\\sqrt[3]{x} - 2} = \\dfrac{4(\\sqrt[3]{x^2} + 2\\sqrt[3]{x} + 4)}{x - 8}"
           },
           {
             "letra": "b)",
-            "expresion": "\\dfrac{(-2)^6 \\cdot (-5)^3 \\cdot (-3)^0}{-2^4 \\cdot 5^2 \\cdot 10^{-2}} = 2^4 \\cdot 5^3 = 2000"
+            "expresion": "\\dfrac{6}{\\sqrt[3]{5} + \\sqrt[3]{2}} = \\dfrac{6(\\sqrt[3]{25} - \\sqrt[3]{10} + \\sqrt[3]{4})}{7}"
           },
           {
             "letra": "c)",
-            "expresion": "\\left(\\dfrac{x^{-3} y^2}{z^{-2}}\\right)^{-3} \\cdot \\left(\\dfrac{x^4 z^{-3}}{y^{-2}}\\right)^2 = \\dfrac{x^{17}}{y^2 z^{12}}"
-          },
-          {
-            "letra": "d)",
-            "expresion": "\\dfrac{(a^{3/5} b^{-1/2})^{10}}{(a^{-2} b^{2/3})^6} = \\dfrac{a^{18}}{b^9}"
+            "expresion": "\\dfrac{x - 1}{\\sqrt[3]{x} - 1} = \\sqrt[3]{x^2} + \\sqrt[3]{x} + 1"
           }
         ],
-        "idea_clave": "Pasa los números a primos ($2, 3, 5\\dots$) antes de hacer nada. Cuidado con $(-a)^n$ y $-a^n$: el signo solo se eleva si está entre paréntesis. Si una fracción tiene exponente negativo, dale la vuelta para ponerlo positivo. Al terminar, no dejes exponentes negativos."
+        "idea_clave": "Para quitar raíces cúbicas en sumas o restas, olvídate del conjugado de siempre. Usa el truco de los cubos: multiplica por el primero al cuadrado, el producto de los dos con signo opuesto y el segundo al cuadrado. Abajo desaparecen las raíces."
       },
       {
-        "numero": 11,
-        "titulo": "Raíces: Mismo Índice, Sacar Factores y Sumar Raíces Iguales",
-        "referencia": "Punto 2.1 (Pág. 11)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con las raíces:</strong><br>• Para multiplicar o dividir raíces con distinto índice, redúcelas primero a índice común calculando el mínimo común múltiplo ($\\text{mcm}$) de los índices.<br>• Para extraer factores fuera de la raíz: divide el exponente de cada factor entre el índice. El cociente sale fuera y el resto se queda dentro del radicando.<br>• Para sumar o restar raíces, deben ser radicales semejantes (mismo índice y mismo radicando). Si a simple vista no coinciden, ¡extrae primero factores!<br>• Al terminar, simplifica el radical si es posible: divide el índice y los exponentes del radicando entre su máximo común divisor ($\\text{mcd}$).</div></div>Haz las siguientes operaciones dejando una sola raíz y sacando fuera todo lo que puedas:",
+        "numero": 15,
+        "titulo": "Identidades Notables al Revés: Cómo Reconocer Patrones sin Operar a lo Loco",
+        "referencia": "Punto 2.3 (Págs. 15-16)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para pillar las identidades al revés sin hacer cuentas raras:</strong><br>• <strong>Si ves 3 términos:</strong> Mira los dos extremos. Si son cuadrados perfectos (como $9x^2$ y $4$), comprueba si el del medio es el doble del primero por el segundo ($2 \\cdot 3x \\cdot 2 = 12x$). Si coincide, ¡bingo!, es $(3x - 2)^2$.<br>• <strong>¡Ojo a las trampas!:</strong> Si los extremos son cuadrados pero el del medio NO da el doble producto exacto, no inventes: no es un cuadrado de binomio.<br>• <strong>Si ves 2 términos restándose:</strong> Si los dos son cuadrados, es suma por diferencia. Con exponentes pares grandes, pon la mitad en cada paréntesis ($x^6$ pasa a $x^3$).<br>• <strong>¿Y si no tienen raíz cuadrada exacta?:</strong> Cualquier resta como $x - 7$ se puede escribir con raíces: $(\\sqrt{x} - \\sqrt{7})(\\sqrt{x} + \\sqrt{7})$. En límites esto te salvará la vida.</div></div>Reconoce la identidad notable de derecha a izquierda y escribe la expresión factorizada:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\sqrt[4]{x^3} \\cdot \\sqrt[6]{x^5} \\cdot \\sqrt[3]{x^2} = x^2 \\sqrt[4]{x}"
+            "expresion": "9x^2 - 12x + 4 = (3x - 2)^2 \\quad\\text{y}\\quad \\dfrac{x^2}{4} + \\dfrac{x}{3} + \\dfrac{1}{9} = \\left(\\dfrac{x}{2} + \\dfrac{1}{3}\\right)^2"
           },
           {
             "letra": "b)",
-            "expresion": "\\dfrac{\\sqrt[4]{a^3 b^2}}{\\sqrt[6]{a^4 b^3}} = \\sqrt[12]{a}"
+            "expresion": "x^2 + 6x + 36 \\longrightarrow \\text{Extremos: } x^2 \\text{ y } 6^2, \\text{ pero } 2 \\cdot x \\cdot 6 = 12x \\ne 6x. \\text{ No es cuadrado de binomio (irreducible en } \\mathbb{R}\\text{)}"
           },
           {
             "letra": "c)",
-            "expresion": "2\\sqrt{27} - 4\\sqrt{75} + 3\\sqrt{48} - \\sqrt{12} = -4\\sqrt{3}"
+            "expresion": "16x^4 - 81 = (4x^2 + 9)(2x - 3)(2x + 3) \\quad\\text{y}\\quad 25x^6 - 4y^4 = (5x^3 - 2y^2)(5x^3 + 2y^2)"
           },
           {
             "letra": "d)",
-            "expresion": "3\\sqrt[3]{24} - 2\\sqrt[3]{81} + 2\\sqrt[3]{375} - \\sqrt[3]{192} = 6\\sqrt[3]{3}"
+            "expresion": "x - 7 = (\\sqrt{x} - \\sqrt{7})(\\sqrt{x} + \\sqrt{7}) \\quad (x \\ge 0)"
           },
           {
             "letra": "e)",
-            "expresion": "\\dfrac{\\sqrt[3]{9x^4 y} \\cdot \\sqrt[4]{27x^5 y^6}}{\\sqrt[6]{3x^5 y^2}} = 3xy \\sqrt[4]{3x^3 y^2}"
-          },
-          {
-            "letra": "f)",
-            "expresion": "4\\sqrt[3]{\\dfrac{16}{27}} - 5\\sqrt[3]{\\dfrac{2}{125}} + \\dfrac{1}{2}\\sqrt[3]{128} = \\dfrac{11}{3}\\sqrt[3]{2}"
+            "expresion": "x^2 - 6x + 9 - y^2 = (x - 3)^2 - y^2 = (x - 3 - y)(x - 3 + y)"
           }
         ],
-        "idea_clave": "Para multiplicar o dividir raíces con distinto índice, ponles primero el mismo índice con el mcm. Solo se pueden sumar o restar raíces si son radicales semejantes: deben coincidir en el índice y en el radicando tras extraer factores. Al final, extrae todos los factores posibles y simplifica el radical si el índice y los exponentes tienen divisores comunes."
-      },
-      {
-        "numero": 12,
-        "titulo": "Radicales Anidados y Factores Intermedios",
-        "referencia": "Punto 2.1 (Pág. 11)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con raíces dentro de raíces:</strong><br>• <strong>Mete los factores hacia dentro:</strong> Para introducir un factor en la siguiente raíz, multiplica su exponente por el índice de esa raíz ($a \\cdot \\sqrt[n]{b} = \\sqrt[n]{a^n b}$). Ve paso a paso, siempre de fuera hacia dentro.<br>• <strong>Raíz de una raíz:</strong> Cuando ya no queden factores intermedios entre las raíces, junta todas en una sola multiplicando sus índices ($\\sqrt[m]{\\sqrt[n]{A}} = \\sqrt[m \\cdot n]{A}$).<br>• <strong>Al terminar:</strong> Si el exponente de algún factor es mayor o igual que el índice, ¡extrae factores fuera! Y si el índice y los exponentes tienen divisores comunes, simplifica dividiendo entre su $\\text{mcd}$.</div></div>Haz las siguientes operaciones dejando una sola raíz y sacando fuera todo lo que puedas:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "\\sqrt[3]{\\dfrac{x^2}{y} \\cdot \\sqrt{\\dfrac{y^3}{x} \\cdot \\sqrt[4]{\\dfrac{x^3}{y^2}}}} = \\sqrt[24]{x^{15} y^2}"
-          },
-          {
-            "letra": "b)",
-            "expresion": "\\sqrt[3]{16 \\cdot \\sqrt{8 \\cdot \\sqrt[4]{32}}} = 4\\sqrt[24]{2}"
-          },
-          {
-            "letra": "c)",
-            "expresion": "\\dfrac{\\sqrt[3]{x^2 \\cdot \\sqrt{x^3 \\cdot \\sqrt[4]{x}}}}{\\sqrt{x \\cdot \\sqrt[3]{x}}} = \\sqrt[24]{x^{13}}"
-          },
-          {
-            "letra": "d)",
-            "expresion": "\\sqrt{\\dfrac{x}{y} \\sqrt[3]{\\dfrac{y^2}{x}}} \\cdot \\sqrt[3]{\\dfrac{y}{x^2} \\sqrt{\\dfrac{x^3}{y}}} = \\sqrt[6]{x}"
-          },
-          {
-            "letra": "e)",
-            "expresion": "\\sqrt{a \\cdot \\sqrt[3]{\\dfrac{b}{a} \\cdot \\sqrt[4]{\\dfrac{a^5}{b^2}}}} = \\sqrt[24]{a^{13} b^2}"
-          }
-        ],
-        "idea_clave": "Para simplificar radicales anidados, introduce los factores intermedios de fuera hacia dentro multiplicando su exponente por el índice de la raíz en la que entran. Cuando las raíces queden juntas, multiplica sus índices y extrae todo lo que puedas al final."
-      },
-      {
-        "numero": 13,
-        "titulo": "Racionalización: Raíces en Numerador y Denominador",
-        "referencia": "Punto 2.2 (Págs. 12-14)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para racionalizar con calma y sin agobios:</strong><br>• <strong>Raíz simple en el denominador ($\\frac{A}{\\sqrt[n]{b^k}}$):</strong> Si se pueden sacar factores, sácalos primero. Luego multiplica arriba y abajo por la raíz con lo que le falta al exponente para llegar al índice ($\\sqrt[n]{b^{n-k}}$).<br>• <strong>Suma o resta con raíces en el denominador:</strong> Multiplica numerador y denominador por el conjugado (cambia el signo del medio) para que quede suma por diferencia: $(u+v)(u-v) = u^2 - v^2$. Si también tienes raíces en el numerador, haz la multiplicación despacio con la propiedad distributiva.<br>• <strong>Fracciones que se restan:</strong> Fíjate bien antes de empezar; si los denominadores ya son conjugados el uno del otro, su producto es el común denominador directo.<br>• <strong>Tres raíces en el denominador:</strong> Agrupa dos de ellas entre paréntesis como si fueran un solo bloque y haz el conjugado en dos pasos sencillos.</div></div>Racionaliza los denominadores y simplifica al máximo las expresiones resultantes:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "\\dfrac{6}{\\sqrt[4]{8}} = 3\\sqrt[4]{2} \\quad\\text{y}\\quad \\dfrac{12x}{\\sqrt[5]{64x^3}} = 3\\sqrt[5]{16x^2}"
-          },
-          {
-            "letra": "b)",
-            "expresion": "\\dfrac{3\\sqrt{2} - 2\\sqrt{3}}{2\\sqrt{2} + 3\\sqrt{3}} = \\dfrac{13\\sqrt{6} - 30}{19}"
-          },
-          {
-            "letra": "c)",
-            "expresion": "\\dfrac{2\\sqrt{5} + 3\\sqrt{2}}{3\\sqrt{5} - 4\\sqrt{2}} = \\dfrac{54 + 17\\sqrt{10}}{13}"
-          },
-          {
-            "letra": "d)",
-            "expresion": "\\dfrac{\\sqrt{3} + 1}{\\sqrt{3} - 1} - \\dfrac{\\sqrt{3} - 1}{\\sqrt{3} + 1} = 2\\sqrt{3}"
-          },
-          {
-            "letra": "e)",
-            "expresion": "\\dfrac{1}{\\sqrt{2} + \\sqrt{3} - \\sqrt{5}} = \\dfrac{3\\sqrt{2} + 2\\sqrt{3} + \\sqrt{30}}{12}"
-          },
-          {
-            "letra": "f)",
-            "expresion": "\\dfrac{x - y}{\\sqrt{x} + \\sqrt{y}} = \\sqrt{x} - \\sqrt{y} \\quad\\text{y}\\quad \\dfrac{\\sqrt{x + 1} - \\sqrt{x}}{\\sqrt{x + 1} + \\sqrt{x}} = 2x + 1 - 2\\sqrt{x^2 + x}"
-          }
-        ],
-        "idea_clave": "En raíces simples completa los exponentes que faltan para alcanzar el índice. Con binomios de raíces cuadradas, el conjugado elimina las raíces del denominador aplicando diferencia de cuadrados ($u^2 - v^2$). Si hay raíces arriba y abajo, multiplica con cuidado término a término. Y si hay tres raíces, agrupa en bloque y repite el proceso."
+        "idea_clave": "No hagas fórmulas largas si no hace falta: busca los cuadrados en los extremos y confirma si el del medio es el doble producto. Y si dos cosas se restan, suma por diferencia partiendo exponentes a la mitad o metiendo raíces."
       }
     ]
   },
@@ -157,7 +87,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 10,
+      "sesiones_impartidas": 11,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
