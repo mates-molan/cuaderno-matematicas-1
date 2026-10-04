@@ -121,7 +121,7 @@ function renderAlDia() {
         classroomEl.innerHTML = `
           <span>✅</span>
           <span id="heroClassroomTexto">
-            <strong>Solucionario Tarea 1:</strong> ${tActiva.aviso || 'Solucionario oficial resuelto disponible para auto-corrección.'}
+            <strong>Solucionario Tarea 1:</strong> ${tActiva.aviso || 'Solucionario resuelto disponible para auto-corrección.'}
             <span class="classroom-link-btn">Ver y descargar soluciones →</span>
           </span>
         `;
@@ -531,7 +531,7 @@ function renderTareasClassroom(temaId = currentTemaId) {
         </a>
         <a href="${tarea.pdf_solucionario}" target="_blank" class="btn-action-emerald">
           <span>✅</span>
-          <span>Descargar Solucionario Oficial Resuelto (PDF)</span>
+          <span>Descargar Solucionario Resuelto (PDF)</span>
         </a>
       `;
     } else {
@@ -556,9 +556,9 @@ function renderTareasClassroom(temaId = currentTemaId) {
       `;
     }
 
-    const isExpanded = tarea.estado === 'solucionario_disponible' || tarea.estado === 'activa';
+    // Las tareas vienen plegadas por defecto a petición docente
     html += `
-      <details class="${cardClass}" ontoggle="onAccordionToggle()" ${isExpanded ? 'open' : ''}>
+      <details class="${cardClass}" ontoggle="onAccordionToggle()">
         <summary class="tarea-summary">
           <div class="tarea-summary-left">
             <span class="tarea-badge-id">${tarea.id}</span>
@@ -827,9 +827,6 @@ function irATareasClassroom() {
     tabBtn.classList.add('active');
   }
   const tareaActivaAcc = document.querySelector('.tarea-accordion.solucionario-disponible') || document.querySelector('.tarea-accordion.activa') || document.querySelector('.tarea-accordion');
-  if (tareaActivaAcc) {
-    tareaActivaAcc.open = true;
-  }
   setTimeout(() => {
     const target = tareaActivaAcc || document.getElementById('subtab-tareas-classroom');
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });

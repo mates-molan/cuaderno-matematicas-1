@@ -19,7 +19,7 @@ window.TEMAS_DATA[1] = {
       "estado": "solucionario_disponible",
       "pdf_tarea": "pdf/Tarea1_Herramientas_del_Algebra_1Bach.pdf",
       "pdf_solucionario": "pdf/Tarea1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
-      "criterios_entrega": "Plazo de entrega en Google Classroom finalizado y corregido. Ya tienes disponible el solucionario oficial comentado paso a paso para contrastar tus desarrollos y auto-corregir cada ejercicio en tu libreta.",
+      "criterios_entrega": "Plazo de entrega en Google Classroom finalizado y corregido. Ya tienes disponible el solucionario comentado paso a paso para contrastar tus desarrollos y auto-corregir cada ejercicio en tu libreta.",
       "ejercicios_incluidos": [
         "Ejercicio 1: Clasificación de números (reales y complejos) operando y simplificando antes.",
         "Ejercicio 2: Operaciones con intervalos y semirrectas (unión, intersección, resta y complementarios).",

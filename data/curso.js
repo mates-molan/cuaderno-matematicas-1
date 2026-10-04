@@ -16,7 +16,7 @@ window.CURSO_CONFIG = {
     "estado": "solucionario_disponible",
     "pdf_tarea": "pdf/Tarea1_Herramientas_del_Algebra_1Bach.pdf",
     "pdf_solucionario": "pdf/Tarea1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
-    "aviso": "¡Solucionario oficial de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
+    "aviso": "¡Solucionario de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "ultima_clase": {
     "fecha": "Martes 29 de Septiembre, Jueves 1 y Viernes 2 de Octubre de 2026",
