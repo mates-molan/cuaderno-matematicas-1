@@ -52,7 +52,7 @@ window.CURSO_CONFIG = {
         "numero": 15,
         "titulo": "Identidades Notables al Revés: Cómo Reconocer Patrones sin Operar a lo Loco",
         "referencia": "Punto 2 (Pág. 10)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para pillar las identidades al revés de forma rápida y limpia:</strong><br>• <strong>Si ves 3 términos (no te fíes de la posición):</strong><br>&nbsp;&nbsp;1.º Localiza los <strong>dos términos positivos que sean cuadrados</strong> (da igual que estén en los extremos o uno en medio). Por ejemplo, en $9x^2 - 12x + 4$ o en $4 - 12x + 9x^2$, tus dos cuadrados son $9x^2$ (base $3x$) y $4$ (base $2$).<br>&nbsp;&nbsp;2.º Comprueba <strong>el término que queda suelto</strong>: tiene que ser obligatoriamente el doble producto de las dos bases ($2 \\cdot 3x \\cdot 2 = 12x$).<br>&nbsp;&nbsp;3.º Si coincide, ¡lo tienes! El signo del binomio lo manda ese tercer término: si lleva un menos ($-12x$), es $(3x - 2)^2$; si lleva un más, sería $(3x + 2)^2$.<br>• <strong>¡Cuidado con las trampas!:</strong> Para que sea un cuadrado de binomio, el término restante TIENE que coincidir exactamente con el doble producto. Si no coincide, ¡no inventes!: no se puede poner entre paréntesis al cuadrado.<br>• <strong>Si ves 2 términos restándose:</strong> Si los dos son cuadrados, es suma por diferencia. Con exponentes pares grandes, pon la mitad en cada paréntesis ($x^6$ pasa a $x^3$).<br>• <strong>¿Y si no tienen raíz cuadrada exacta?:</strong> Cualquier resta como $x - 7$ se puede escribir con raíces: $(\\sqrt{x} - \\sqrt{7})(\\sqrt{x} + \\sqrt{7})$. En límites esto te salvará la vida.</div></div>Reconoce la identidad notable de derecha a izquierda y escribe la expresión factorizada:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para pillar las identidades al revés de forma rápida y limpia:</strong><br>• <strong>Si ves 3 términos (no te fíes de la posición):</strong><br>&nbsp;&nbsp;1.º Localiza los <strong>dos términos positivos que sean cuadrados</strong> (da igual que estén en los extremos o uno en medio). Por ejemplo, en $9x^2 - 12x + 4$ o en $4 - 12x + 9x^2$, tus dos cuadrados son $9x^2$ (base $3x$) y $4$ (base $2$).<br>&nbsp;&nbsp;2.º Comprueba <strong>el término que queda suelto</strong>: tiene que ser obligatoriamente el doble producto de las dos bases ($2 \\cdot 3x \\cdot 2 = 12x$).<br>&nbsp;&nbsp;3.º Si coincide, ¡lo tienes! El signo del binomio lo manda ese tercer término: si lleva un menos ($-12x$), es $(3x - 2)^2$; si lleva un más, sería $(3x + 2)^2$.<br>• <strong>¡Cuidado con las trampas!:</strong> Para que sea un cuadrado de binomio, el término restante TIENE que coincidir exactamente con el doble producto. Si no coincide, ¡no inventes!: no se puede poner entre paréntesis al cuadrado.<br>• <strong>Si ves 2 términos restándose:</strong> Si los dos son cuadrados, es suma por diferencia. Con exponentes pares grandes, pon la mitad en cada paréntesis ($x^6$ pasa a $x^3$).<br>• <strong>¿Y si no tienen raíz cuadrada exacta?:</strong> Cualquier resta como $x - 3$ se puede escribir con raíces cuadradas: $(\\sqrt{x} - \\sqrt{3})(\\sqrt{x} + \\sqrt{3})$. En límites esto te salvará la vida.<br>• <strong>¿Y para factorizar con raíces cúbicas?:</strong> ¡Aplica la diferencia de cubos! Recuerda que $u^3 - v^3 = (u - v)(u^2 + uv + v^2)$. Si tienes $x - 8$, piensa que $x = (\\sqrt[3]{x})^3$ y que $8 = 2^3$. Entonces se factoriza directamente como: $(\\sqrt[3]{x} - 2)(\\sqrt[3]{x^2} + 2\\sqrt[3]{x} + 4)$. Así de fácil desaparecen las indeterminaciones en límites.</div></div>Reconoce la identidad notable de derecha a izquierda y escribe la expresión factorizada:",
         "apartados": [
           {
             "letra": "a)",
@@ -68,14 +68,18 @@ window.CURSO_CONFIG = {
           },
           {
             "letra": "d)",
-            "expresion": "x - 7 = (\\sqrt{x} - \\sqrt{7})(\\sqrt{x} + \\sqrt{7}) \\quad (x \\ge 0)"
+            "expresion": "x - 5 = (\\sqrt{x} - \\sqrt{5})(\\sqrt{x} + \\sqrt{5}) \\quad (x \\ge 0)"
           },
           {
             "letra": "e)",
+            "expresion": "x - 8 = (\\sqrt[3]{x} - 2)(\\sqrt[3]{x^2} + 2\\sqrt[3]{x} + 4)"
+          },
+          {
+            "letra": "f)",
             "expresion": "x^2 - 6x + 9 - y^2 = (x - 3)^2 - y^2 = (x - 3 - y)(x - 3 + y)"
           }
         ],
-        "idea_clave": "No hagas fórmulas largas si no hace falta: localiza los dos términos que sean cuadrados positivos (estén donde estén) y confirma si el término restante es exactamente el doble de su producto. Y si dos cosas se restan, suma por diferencia partiendo exponentes a la mitad o metiendo raíces."
+        "idea_clave": "No hagas fórmulas largas si no hace falta: localiza los dos términos que sean cuadrados positivos (estén donde estén) y confirma si el término restante es exactamente el doble de su producto. Si dos cosas se restan, suma por diferencia partiendo exponentes a la mitad o usando raíces cuadradas. Y para raíces cúbicas, descompón usando diferencia de cubos: $x - a^3 = (\\sqrt[3]{x} - a)(\\sqrt[3]{x^2} + a\\sqrt[3]{x} + a^2)$."
       }
     ]
   },
