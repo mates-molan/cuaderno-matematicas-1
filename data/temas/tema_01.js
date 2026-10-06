@@ -512,8 +512,8 @@ window.TEMAS_DATA[1] = {
     },
     {
       "numero": 11,
-      "fecha": "Lunes 5 de Octubre de 2026",
-      "titulo": "Racionalización con Raíces Cúbicas e Identidades Notables al Revés",
+      "fecha": "Lunes 5 y Martes 6 de Octubre de 2026",
+      "titulo": "Racionalización Cúbica, Identidades Notables y Logaritmos por Definición",
       "ejercicios": [
         {
           "numero": 14,
@@ -568,6 +568,31 @@ window.TEMAS_DATA[1] = {
             }
           ],
           "idea_clave": "No hagas fórmulas largas si no hace falta: localiza los dos términos que sean cuadrados positivos y confirma si el término restante es el doble producto. Si dos términos se restan, suma por diferencia partiendo exponentes a la mitad o con raíces. Y si son cubos ($A^3 \\pm B^3$), descompón al instante en $(A \\pm B)(A^2 \\mp AB + B^2)$ sin necesidad de usar Ruffini."
+        },
+        {
+          "numero": 16,
+          "titulo": "Cálculo de Logaritmos por Definición: Potencias, Raíces y Fracciones",
+          "referencia": "Punto 3.1 (Págs. 17-19)",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas y protocolo infalible para calcular logaritmos por definición:</strong><br>• <strong>El método en 3 pasos:</strong><br>&nbsp;&nbsp;1.º <strong>Iguala a la incógnita:</strong> Escribe $\\log_b(a) = x$.<br>&nbsp;&nbsp;2.º <strong>Pasa a forma exponencial:</strong> Traduce de inmediato a potencia: $b^x = a$. ¡El logaritmo es el exponente!<br>&nbsp;&nbsp;3.º <strong>Base común e igualar exponentes:</strong> Descompón en factores primos base y argumento. Cuando tengas la misma base en ambos miembros ($b^{f(x)} = b^k$), iguala los exponentes y despeja $x$.<br>• <strong>¡Cuidado con las bases con raíz!:</strong> Al elevar la base a $x$, multiplica exponentes: $(\\sqrt[3]{3})^x = (3^{1/3})^x = 3^{x/3}$.<br>• <strong>Invertir fracciones con exponente negativo:</strong> Recuerda que $\\left(\\dfrac{3}{2}\\right)^k = \\left(\\dfrac{2}{3}\\right)^{-k}$. Una fracción invertida se arregla con signo menos en el exponente.<br>• <strong>Argumentos con raíces y cocientes:</strong> Expresa todo como potencias de exponente fraccionario y opera antes de igualar.</div></div>Calcula razonadamente por definición el valor exacto de los siguientes logaritmos sin utilizar calculadora:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\log_2\\left(\\dfrac{\\sqrt[3]{16}}{32}\\right) = -\\dfrac{11}{3}"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\log_{\\sqrt[3]{3}}\\left(\\dfrac{1}{27\\sqrt{3}}\\right) = -\\dfrac{21}{2}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\log_{\\frac{2}{3}}\\left(\\dfrac{9\\sqrt{3}}{4\\sqrt{2}}\\right) = -\\dfrac{5}{2}"
+            },
+            {
+              "letra": "d)",
+              "expresion": "\\log_{\\frac{\\sqrt{5}}{5}}\\left(\\sqrt[3]{25\\sqrt{5}}\\right) = -\\dfrac{5}{3}"
+            }
+          ],
+          "idea_clave": "Por definición, $\\log_b(a) = x \\iff b^x = a$. Todo logaritmo por definición es una ecuación exponencial: se iguala a $x$, se traduce a potencias de la misma base y se igualan los exponentes aprovechando las propiedades de las potencias y radicales."
         }
       ]
     }
