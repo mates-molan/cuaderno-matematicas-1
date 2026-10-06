@@ -19,35 +19,14 @@ window.CURSO_CONFIG = {
     "aviso": "¡Solucionario de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "ultima_clase": {
-    "fecha": "Lunes 5 y Martes 6 de Octubre de 2026",
+    "fecha": "Martes 6 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 11: Racionalización Cúbica, Identidades Notables y Logaritmos por Definición",
-    "referencia_apuntes": "Puntos 2, 2.2 y 3.1 (Págs. 10, 12, 15 y 17-19)",
-    "mision_semanal": "Repasar en tu libreta los Ejercicios 14, 15 y 16 de pizarra (¡el truco de los cubos, identidades al revés y logaritmos por definición!).",
-    "trabajo_semanal_pendiente": "Repasar en libreta los Ejercicios 14, 15 y 16 de modelado de pizarra.",
+    "titulo_sesion": "Sesión 12: Identidades Notables (Cierre) y Cálculo de Logaritmos por Definición",
+    "referencia_apuntes": "Puntos 2 y 3.1 (Págs. 10 y 17-19)",
+    "mision_semanal": "Terminar en tu libreta el Ejercicio 15 de identidades al revés y practicar el Ejercicio 16 de logaritmos por definición.",
+    "trabajo_semanal_pendiente": "Repasar en libreta los Ejercicios 15 y 16 de modelado de pizarra.",
     "ejercicios_vistos": [
-      {
-        "numero": 14,
-        "titulo": "Racionalizar Denominadores: Raíces Cúbicas y el Truco de los Cubos",
-        "referencia": "Punto 2.2 (Págs. 12 y 15)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con las raíces cúbicas abajo:</strong><br>• <strong>¿Por qué no sirve cambiar solo el signo?</strong> Si abajo tienes $\\sqrt[3]{x} - 2$ y multiplicas por $\\sqrt[3]{x} + 2$, te queda $(\\sqrt[3]{x})^2 - 4 = \\sqrt[3]{x^2} - 4$. ¡La raíz sigue ahí! Con raíces cúbicas necesitas cubos, no cuadrados.<br>• <strong>La fórmula que te salva:</strong> Recuerda que $(u - v)(u^2 + uv + v^2) = u^3 - v^3$ y que $(u + v)(u^2 - uv + v^2) = u^3 + v^3$.<br>• <strong>El truco práctico:</strong> Multiplica arriba y abajo por: el primero al cuadrado, el producto de los dos (con signo cambiado) y el segundo al cuadrado. Así abajo se van las raíces y te queda una resta o suma limpia.</div></div>Racionaliza los denominadores y simplifica al máximo:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "\\dfrac{4}{\\sqrt[3]{x} - 2} = \\dfrac{4(\\sqrt[3]{x^2} + 2\\sqrt[3]{x} + 4)}{x - 8}"
-          },
-          {
-            "letra": "b)",
-            "expresion": "\\dfrac{6}{\\sqrt[3]{5} + \\sqrt[3]{2}} = \\dfrac{6(\\sqrt[3]{25} - \\sqrt[3]{10} + \\sqrt[3]{4})}{7}"
-          },
-          {
-            "letra": "c)",
-            "expresion": "\\dfrac{x - 1}{\\sqrt[3]{x} - 1} = \\sqrt[3]{x^2} + \\sqrt[3]{x} + 1"
-          }
-        ],
-        "idea_clave": "Para quitar raíces cúbicas en sumas o restas, olvídate del conjugado de siempre. Usa el truco de los cubos: multiplica por el primero al cuadrado, el producto de los dos con signo opuesto y el segundo al cuadrado. Abajo desaparecen las raíces."
-      },
       {
         "numero": 15,
         "titulo": "Identidades Notables al Revés: Cómo Reconocer Patrones sin Operar a lo Loco",
@@ -116,7 +95,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 11,
+      "sesiones_impartidas": 12,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",

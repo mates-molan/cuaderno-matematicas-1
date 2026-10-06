@@ -6,7 +6,7 @@ window.TEMAS_DATA[1] = {
   "id": 1,
   "titulo": "Tema 1: Herramientas del Álgebra",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 11,
+  "sesiones_impartidas": 12,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "tareas_classroom": [
@@ -512,8 +512,8 @@ window.TEMAS_DATA[1] = {
     },
     {
       "numero": 11,
-      "fecha": "Lunes 5 y Martes 6 de Octubre de 2026",
-      "titulo": "Racionalización Cúbica, Identidades Notables y Logaritmos por Definición",
+      "fecha": "Lunes 5 de Octubre de 2026",
+      "titulo": "Racionalización con Raíces Cúbicas e Identidades Notables al Revés",
       "ejercicios": [
         {
           "numero": 14,
@@ -536,6 +536,46 @@ window.TEMAS_DATA[1] = {
           ],
           "idea_clave": "Para quitar raíces cúbicas en sumas o restas, olvídate del conjugado de siempre. Usa el truco de los cubos: multiplica por el primero al cuadrado, el producto de los dos con signo opuesto y el segundo al cuadrado. Abajo desaparecen las raíces."
         },
+        {
+          "numero": 15,
+          "titulo": "Identidades Notables al Revés: Cómo Reconocer Patrones sin Operar a lo Loco",
+          "referencia": "Punto 2 (Pág. 10)",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para pillar las identidades al revés de forma rápida y limpia:</strong><br>• <strong>Si ves 3 términos (no te fíes de la posición):</strong><br>&nbsp;&nbsp;1.º Localiza los <strong>dos términos positivos que sean cuadrados</strong> (da igual que estén en los extremos o uno en medio). Por ejemplo, en $9x^2 - 12x + 4$ o en $4 - 12x + 9x^2$, tus dos cuadrados son $9x^2$ (base $3x$) y $4$ (base $2$).<br>&nbsp;&nbsp;2.º Comprueba <strong>el término que queda suelto</strong>: tiene que ser obligatoriamente el doble producto de las dos bases ($2 \\cdot 3x \\cdot 2 = 12x$).<br>&nbsp;&nbsp;3.º Si coincide, ¡lo tienes! El signo del binomio lo manda ese tercer término: si lleva un menos ($-12x$), es $(3x - 2)^2$; si lleva un más, sería $(3x + 2)^2$.<br>• <strong>¡Cuidado con las trampas!:</strong> Para que sea un cuadrado de binomio, el término restante TIENE que coincidir exactamente con el doble producto. Si no coincide, ¡no inventes!: no se puede poner entre paréntesis al cuadrado.<br>• <strong>Si ves 2 términos restándose con cuadrados:</strong> Es suma por diferencia. Con exponentes pares grandes, pon la mitad en cada paréntesis ($x^6$ pasa a $x^3$). Si no tienen raíz exacta, usa raíces: $x - 3 = (\\sqrt{x} - \\sqrt{3})(\\sqrt{x} + \\sqrt{3})$.<br>• <strong>¿Dos términos con cubos sumándose o restándose ($A^3 \\pm B^3$)?</strong><br>&nbsp;&nbsp;1.º <strong>Sácale la raíz cúbica a cada uno</strong> para hallar sus bases (de $27x^3$ sale $3x$, de $8$ sale $2$, y de $125$ sale $5$).<br>&nbsp;&nbsp;2.º <strong>El paréntesis corto (binomio):</strong> pon las dos bases con el mismo signo que traían: $(3x - 2)$ o $(x + 5)$.<br>&nbsp;&nbsp;3.º <strong>El paréntesis largo (trinomio):</strong> pon el primero al cuadrado, el producto de los dos con signo cambiado y el segundo al cuadrado: $(9x^2 + 6x + 4)$ o $(x^2 - 5x + 25)$.<br>&nbsp;&nbsp;<em>Fórmula directa:</em> $(A \\pm B)(A^2 \\mp AB + B^2)$. ¡Te ahorras hacer Ruffini!</div></div>Reconoce la identidad notable de derecha a izquierda y escribe la expresión factorizada:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "9x^2 - 12x + 4 = (3x - 2)^2 \\quad\\text{y}\\quad \\dfrac{x^2}{4} + \\dfrac{x}{3} + \\dfrac{1}{9} = \\left(\\dfrac{x}{2} + \\dfrac{1}{3}\\right)^2"
+            },
+            {
+              "letra": "b)",
+              "expresion": "x^2 + 6x + 36 \\longrightarrow \\text{Los dos cuadrados son } x^2 \\text{ y } 6^2, \\text{ pero el doble producto sería } 2 \\cdot x \\cdot 6 = 12x \\ne 6x. \\text{ No es cuadrado de binomio (irreducible en } \\mathbb{R}\\text{)}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "16x^4 - 81 = (4x^2 + 9)(2x - 3)(2x + 3) \\quad\\text{y}\\quad 25x^6 - 4y^4 = (5x^3 - 2y^2)(5x^3 + 2y^2)"
+            },
+            {
+              "letra": "d)",
+              "expresion": "x - 5 = (\\sqrt{x} - \\sqrt{5})(\\sqrt{x} + \\sqrt{5}) \\quad (x \\ge 0)"
+            },
+            {
+              "letra": "e)",
+              "expresion": "27x^3 - 8 = (3x - 2)(9x^2 + 6x + 4) \\quad\\text{y}\\quad x^3 + 125 = (x + 5)(x^2 - 5x + 25)"
+            },
+            {
+              "letra": "f)",
+              "expresion": "x^2 - 6x + 9 - y^2 = (x - 3)^2 - y^2 = (x - 3 - y)(x - 3 + y)"
+            }
+          ],
+          "idea_clave": "No hagas fórmulas largas si no hace falta: localiza los dos términos que sean cuadrados positivos y confirma si el término restante es el doble producto. Si dos términos se restan, suma por diferencia partiendo exponentes a la mitad o con raíces. Y si son cubos ($A^3 \\pm B^3$), descompón al instante en $(A \\pm B)(A^2 \\mp AB + B^2)$ sin necesidad de usar Ruffini."
+        }
+      ]
+    },
+    {
+      "numero": 12,
+      "fecha": "Martes 6 de Octubre de 2026",
+      "titulo": "Identidades Notables (Cierre) y Cálculo de Logaritmos por Definición",
+      "ejercicios": [
         {
           "numero": 15,
           "titulo": "Identidades Notables al Revés: Cómo Reconocer Patrones sin Operar a lo Loco",
