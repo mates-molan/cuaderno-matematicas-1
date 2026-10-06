@@ -24,8 +24,8 @@ window.CURSO_CONFIG = {
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesiones 11 y 12: Racionalización Cúbica, Identidades Notables y Logaritmos por Definición",
     "referencia_apuntes": "Puntos 2, 2.2 y 3.1 (Págs. 10, 12, 15 y 17-19)",
-    "mision_semanal": "Repasar en tu libreta los Ejercicios 14, 15 y 16 de pizarra (¡el truco de los cubos, identidades al revés y logaritmos por definición!).",
-    "trabajo_semanal_pendiente": "Repasar en libreta los Ejercicios 14, 15 y 16 de modelado de pizarra.",
+    "mision_semanal": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en tu libreta (Racionalización, Identidades Notables y Logaritmos).",
+    "trabajo_semanal_pendiente": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en la libreta.",
     "ejercicios_vistos": [
       {
         "numero": 14,
@@ -122,7 +122,7 @@ window.CURSO_CONFIG = {
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "apuntes_listos": true,
       "ejercicios_listos": true,
-      "total_ejercicios_libreta": 11,
+      "total_ejercicios_libreta": 12,
       "total_tareas_classroom": 1
     }
   ]

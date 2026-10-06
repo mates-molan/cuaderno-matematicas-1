@@ -723,8 +723,8 @@ window.TEMAS_DATA[1] = {
     {
       "semana_numero": 3,
       "rango_fechas": "28 Sep - 02 Oct 2026",
-      "estado": "actual",
-      "meta_semanal": "Dominar la simplificación de potencias con exponentes enteros y fraccionarios, operaciones con radicales (mcm de índices y extracción), radicales anidados, técnicas de racionalización e identidades notables.",
+      "estado": "anterior",
+      "meta_semanal": "Dominar la simplificación de potencias con exponentes enteros y fraccionarios, operaciones con radicales (mcm de índices y extracción) y radicales anidados (Ejercicios 7, 8 y 9 de la hoja).",
       "ejercicios": [
         {
           "id": "P-07",
@@ -811,7 +811,15 @@ window.TEMAS_DATA[1] = {
           ],
           "enunciado": "Reduce a una única raíz o a una potencia de exponente fraccionario irreducible: $$a)\\; \\sqrt{x \\cdot \\sqrt[3]{x^2 \\cdot \\sqrt{x}}} \\qquad b)\\; \\sqrt{\\dfrac{\\sqrt[4]{a^3}}{\\sqrt[3]{b}}} \\cdot \\sqrt[3]{\\dfrac{\\sqrt{b^2}}{\\sqrt{a}}} \\qquad c)\\; \\sqrt{2 \\cdot \\sqrt[3]{4 \\cdot \\sqrt{8}}} \\qquad d)\\; \\sqrt[3]{x^2 \\cdot \\sqrt[4]{x \\cdot \\sqrt{x^3}}}$$",
           "solucion": "a)\\; \\sqrt[12]{x^{11}}; \\quad b)\\; \\sqrt[24]{a^{14} b^{13}}; \\quad c)\\; \\sqrt[12]{2^{11}}; \\quad d)\\; \\sqrt[24]{x^{23}}"
-        },
+        }
+      ]
+    },
+    {
+      "semana_numero": 4,
+      "rango_fechas": "05 Oct - 09 Oct 2026",
+      "estado": "actual",
+      "meta_semanal": "Dominar las técnicas completas de racionalización de denominadores, la factorización inversa con identidades notables, y el cálculo de logaritmos por definición, ecuaciones y cambio de base (Ejercicios 10, 11 y 12 de la hoja).",
+      "ejercicios": [
         {
           "id": "P-10",
           "caso": "Técnicas de Racionalización (Ejercicio 10 de la Hoja)",
@@ -887,6 +895,36 @@ window.TEMAS_DATA[1] = {
           ],
           "enunciado": "Desarrolla, simplifica o factoriza aplicando las identidades notables fundamentales: $$a)\\; (2x - 3y)^2 - (2x + 3y)(2x - 3y) \\qquad b)\\; (2x - 3)^3 \\;\\text{y}\\; (x^2 + 2)^3$$ $$c)\\; 4x^2 - 12x + 9 \\quad\\text{(factoriza)} \\qquad d)\\; 25x^4 - 49y^2 \\quad\\text{(factoriza)}$$ $$e)\\; 8x^3 - 27 \\;\\text{y}\\; x^3 + 64 \\quad\\text{(factoriza sumas/diferencias de cubos)}$$",
           "solucion": "a)\\; 6y(3y - 2x) = 18y^2 - 12xy; \\quad b)\\; 8x^3 - 36x^2 + 54x - 27 \\;\\text{y}\\; x^6 + 6x^4 + 12x^2 + 8; \\quad c)\\; (2x - 3)^2; \\quad d)\\; (5x^2 - 7y)(5x^2 + 7y); \\quad e)\\; (2x - 3)(4x^2 + 6x + 9) \\;\\text{y}\\; (x + 4)(x^2 - 4x + 16)"
+        },
+        {
+          "id": "P-12",
+          "caso": "Logaritmos: Definición, Operaciones y Cambio de Base (Ejercicio 12 de la Hoja)",
+          "apartados_count": 5,
+          "instruccion": "Resuelve las siguientes actividades de logaritmos sin utilizar calculadora:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\log_2(64), \\quad \\log_3\\left(\\dfrac{1}{81}\\right), \\quad \\log_{\\sqrt{5}}(125), \\quad \\ln(e^4\\sqrt{e})"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\log_x(32) = \\dfrac{5}{2}, \\quad \\log_3(x) = -3, \\quad \\log_4(x^2 - 5) = 2"
+            },
+            {
+              "letra": "c)",
+              "expresion": "2\\log(x) - \\dfrac{1}{3}\\log(y) + 3\\log(z) - 1"
+            },
+            {
+              "letra": "d)",
+              "expresion": "\\log_4(32) \\quad\\text{y}\\quad \\log_{27}(81)"
+            },
+            {
+              "letra": "e)",
+              "expresion": "\\log_8\\left(\\dfrac{1}{16}\\right) \\quad\\text{y}\\quad \\log_9(27\\sqrt{3})"
+            }
+          ],
+          "enunciado": "Resuelve sin calculadora: $$a)\\; \\log_2(64), \\; \\log_3\\left(\\frac{1}{81}\\right), \\; \\log_{\\sqrt{5}}(125), \\; \\ln(e^4\\sqrt{e}) \\qquad b)\\; \\log_x(32)=\\frac{5}{2}, \\; \\log_3(x)=-3, \\; \\log_4(x^2-5)=2$$ $$c)\\; 2\\log(x)-\\frac{1}{3}\\log(y)+3\\log(z)-1 \\qquad d)\\; \\log_4(32) \\;\\text{y}\\; \\log_{27}(81) \\qquad e)\\; \\log_8\\left(\\frac{1}{16}\\right) \\;\\text{y}\\; \\log_9(27\\sqrt{3})$$",
+          "solucion": "a)\\; 6, \\; -4, \\; 6, \\; \\dfrac{9}{2}; \\quad b)\\; x=4, \\; x=\\dfrac{1}{27}, \\; x=\\pm\\sqrt{21}; \\quad c)\\; \\log\\left(\\dfrac{x^2 \\cdot z^3}{10\\sqrt[3]{y}}\\right); \\quad d)\\; \\dfrac{5}{2}, \\; \\dfrac{4}{3}; \\quad e)\\; -\\dfrac{4}{3}, \\; \\dfrac{7}{4}"
         }
       ]
     }
