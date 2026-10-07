@@ -513,7 +513,7 @@ window.TEMAS_DATA[1] = {
     {
       "numero": "11, 12 y 13",
       "fecha": "Lunes 5, Martes 6 y Jueves 8 de Octubre de 2026",
-      "titulo": "Racionalización Cúbica, Identidades Notables y Logaritmos (Definición, Incógnitas y Cambio de Base)",
+      "titulo": "Racionalización Cúbica, Identidades Notables y Logaritmos (Definición, Incógnitas, Cambio de Base y Valores Numéricos)",
       "ejercicios": [
         {
           "numero": 14,
@@ -596,13 +596,13 @@ window.TEMAS_DATA[1] = {
         },
         {
           "numero": 17,
-          "titulo": "Ecuaciones Logarítmicas por Definición: Incógnita en la Base o en el Argumento",
+          "titulo": "Cálculo de la Incógnita por Definición: La x en la Base o en el Argumento",
           "referencia": "Punto 3.1 (Págs. 17-19)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para despejar la incógnita aplicando la definición:</strong><br>• <strong>Paso 0 obligado:</strong> Pasa siempre de la forma logarítmica a la exponencial: $\\log_b(a) = c \\iff b^c = a$.<br>• <strong>Si la incógnita está en la base ($x^c = a$):</strong> Expresa el segundo miembro como potencia del mismo exponente o eleva ambos miembros a la inversa de la fracción. <strong>¡Condición de existencia!</strong> La base debe ser estrictamente positiva y distinta de 1 ($x > 0, x \\ne 1$). Si obtuvieras una solución negativa, debes descartarla inmediatamente.<br>• <strong>Si la incógnita está en el argumento ($b^c = a(x)$):</strong> Calcula el valor de la potencia numérica $b^c$ y despeja la ecuación algebraica resultante. <strong>¡Condición de existencia!</strong> El argumento debe ser estrictamente positivo ($a(x) > 0$). Comprueba siempre que tu solución no haga cero ni negativo el argumento.<br>• <strong>Si la incógnita está en el resultado:</strong> Es el cálculo directo por potencias de la misma base.</div></div>Calcula el valor de la incógnita $x$ aplicando la definición formal de logaritmo y comprueba la validez de las soluciones:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para despejar la incógnita aplicando la definición:</strong><br>• <strong>Paso 0 obligado:</strong> Pasa siempre de la forma logarítmica a la exponencial: $\\log_b(a) = c \\iff b^c = a$.<br>• <strong>Si la incógnita está en la base ($x^c = a$):</strong> Expresa el argumento como potencia de exponente fraccionario para igualar exponentes o eleva ambos miembros al inverso del exponente. <strong>¡Condición de existencia!</strong> La base debe ser estrictamente positiva y distinta de 1 ($x > 0, x \\ne 1$).<br>• <strong>Si la incógnita está bajo una raíz en el argumento:</strong> Despeja primero la raíz aislando el miembro correspondiente y luego eleva al índice para obtener $x$. <strong>¡Condición de existencia!</strong> El argumento debe ser estrictamente positivo ($a(x) > 0$).<br>• <strong>Si la base tiene una raíz (como $\\sqrt{3}$ o $\\sqrt{2}$):</strong> Eleva la raíz al exponente simplificando antes de operar.</div></div>Calcula el valor exacto de la incógnita $x$ aplicando la definición formal de logaritmo y comprueba la validez de las soluciones:",
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\log_x(128) = \\dfrac{7}{2} \\iff x^{7/2} = 2^7 \\iff x = 2^2 = 4"
+              "expresion": "\\log_x(4\\sqrt{2}) = \\dfrac{5}{2} \\iff x^{5/2} = 2^{5/2} \\iff x = 2"
             },
             {
               "letra": "b)",
@@ -610,20 +610,20 @@ window.TEMAS_DATA[1] = {
             },
             {
               "letra": "c)",
-              "expresion": "\\log_2(x) = -4 \\iff x = 2^{-4} = \\dfrac{1}{16}"
+              "expresion": "\\log_2(\\sqrt{x}) = -3 \\iff \\sqrt{x} = 2^{-3} = \\dfrac{1}{8} \\iff x = \\dfrac{1}{64}"
             },
             {
               "letra": "d)",
-              "expresion": "\\log_5(x^2 - 11) = 2 \\iff x^2 - 11 = 25 \\iff x^2 = 36 \\iff x = \\pm 6"
+              "expresion": "\\log_{\\sqrt{2}}(x) = 6 \\iff x = (\\sqrt{2})^6 = 8 \\quad\\text{y}\\quad \\log_5(\\sqrt{2x - 1}) = 1 \\iff 2x - 1 = 25 \\iff x = 13"
             }
           ],
-          "idea_clave": "Para hallar la incógnita $x$, traduce a la forma exponencial $b^c = a$. Si $x$ está en la base, exige obligatoriamente que sea positiva y distinta de 1 ($x > 0, x \\ne 1$). Si $x$ está en el argumento, verifica que el argumento resultante sea estrictamente positivo ($a > 0$)."
+          "idea_clave": "Para hallar $x$, traduce de inmediato a la forma exponencial $b^c = a$. Con raíces en la base o en el argumento, pásalas a potencias de exponente fraccionario. Exige siempre que la base sea positiva y distinta de 1 ($x > 0, x \\ne 1$) y que el argumento sea estrictamente positivo ($a > 0$)."
         },
         {
           "numero": 18,
-          "titulo": "Fórmula del Cambio de Base y Cálculo de Logaritmos No Canónicos",
-          "referencia": "Punto 3.2 (Págs. 20-21)",
-          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no tropezar con la fórmula de cambio de base:</strong><br>• <strong>La fórmula maestra:</strong> $\\log_b(a) = \\dfrac{\\log_c(a)}{\\log_c(b)}$. Tú eliges la nueva base $c$ que más te convenga.<br>• <strong>¿Qué base $c$ conviene elegir?:</strong> Si la base $b$ y el argumento $a$ son potencias de un mismo primo ($2, 3, 5\\dots$), pásalos a esa base prima común. Por ejemplo, en $\\log_8(32)$ la base común es $2$: $\\dfrac{\\log_2(32)}{\\log_2(8)} = \\dfrac{5}{3}$. ¡Mucho más rápido y limpio que plantear una ecuación exponencial!<br>• <strong>Con fracciones y raíces:</strong> Expresa el argumento y la base en potencias fraccionarias antes o después del cambio de base: $\\log_{16}(1/32) = \\dfrac{\\log_2(2^{-5})}{\\log_2(2^4)} = -\\dfrac{5}{4}$.<br>• <strong>El truco de la base 10 y el 5:</strong> Si te piden expresar logaritmos en función de $\\log(2)$ y $\\log(3)$, haz cambio a base 10 y recuerda que $5 = \\dfrac{10}{2}$, por lo que $\\log(5) = \\log(10) - \\log(2) = 1 - \\log(2)$.</div></div>Aplica la fórmula del cambio de base para calcular el valor exacto de los siguientes logaritmos sin calculadora y expresa en función de logaritmos decimales según corresponda:",
+          "titulo": "Fórmula del Cambio de Base",
+          "referencia": "Punto 3.2 (Págs. 18 y 21)",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para aplicar la fórmula de cambio de base:</strong><br>• <strong>La fórmula maestra:</strong> $\\log_b(a) = \\dfrac{\\log_c(a)}{\\log_c(b)}$. Tú eliges la nueva base $c$ que más te convenga.<br>• <strong>¿Qué base $c$ conviene elegir?:</strong> Si la base $b$ y el argumento $a$ son potencias de un mismo número primo ($2, 3, 5\\dots$), pásalos a esa base prima común. Por ejemplo, en $\\log_8(32)$ la base común es $2$: $\\dfrac{\\log_2(32)}{\\log_2(8)} = \\dfrac{5}{3}$. ¡Mucho más rápido y limpio que plantear una ecuación exponencial!<br>• <strong>Con fracciones y raíces:</strong> Expresa el argumento y la base en potencias fraccionarias antes o después del cambio de base: $\\log_{16}(1/32) = \\dfrac{\\log_2(2^{-5})}{\\log_2(2^4)} = -\\dfrac{5}{4}$.</div></div>Aplica la fórmula del cambio de base para calcular el valor exacto de los siguientes logaritmos sin utilizar calculadora:",
           "apartados": [
             {
               "letra": "a)",
@@ -636,13 +636,34 @@ window.TEMAS_DATA[1] = {
             {
               "letra": "c)",
               "expresion": "\\log_{25}(125\\sqrt[3]{5}) = \\dfrac{\\log_5(5^{10/3})}{\\log_5(5^2)} = \\dfrac{10/3}{2} = \\dfrac{5}{3}"
+            }
+          ],
+          "idea_clave": "La fórmula del cambio de base $\\log_b(a) = \\dfrac{\\log_c(a)}{\\log_c(b)}$ permite calcular cualquier logaritmo eligiendo una base prima común $c$ (como 2, 3 o 5) para simplificar inmediatamente potencias y raíces sin necesidad de calculadora."
+        },
+        {
+          "numero": 19,
+          "titulo": "Cálculo de Logaritmos a partir de Valores Conocidos: log(2) y log(3)",
+          "referencia": "Punto 3.2 (Págs. 18 y 21)",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para calcular logaritmos con datos conocidos:</strong><br>• <strong>Descomposición en factores primos:</strong> Expresa el argumento usando únicamente $2$, $3$ y potencias de $10$ para aplicar las propiedades del producto y cociente: $\\log(x \\cdot y) = \\log(x) + \\log(y)$ y $\\log(x / y) = \\log(x) - \\log(y)$.<br>• <strong>El truco indispensable del 5:</strong> Como $5 = \\dfrac{10}{2}$, su logaritmo decimal siempre vale: $\\log(5) = \\log\\left(\\dfrac{10}{2}\\right) = \\log(10) - \\log(2) = 1 - \\log(2)$.<br>• <strong>Cambio de base a base 10:</strong> Si el logaritmo está en otra base, aplica primero el cambio de base decimal: $\\log_b(a) = \\dfrac{\\log(a)}{\\log(b)}$. Sustituye después los valores decimales de $\\log(2)$ y $\\log(3)$ para hallar el valor exacto aproximado.</div></div>Sabiendo que $\\log(2) \\approx 0{,}3010$ y $\\log(3) \\approx 0{,}4771$, calcula razonadamente el valor numérico de los siguientes logaritmos:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\log(6) = \\log(2 \\cdot 3) = \\log(2) + \\log(3) = 0{,}3010 + 0{,}4771 = 0{,}7781"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\log(5) = \\log\\left(\\dfrac{10}{2}\\right) = 1 - \\log(2) = 1 - 0{,}3010 = 0{,}6990"
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\log_2(6) = \\dfrac{\\log(6)}{\\log(2)} = \\dfrac{0{,}7781}{0{,}3010} \\approx 2{,}5850"
             },
             {
               "letra": "d)",
-              "expresion": "\\log_2(6) = \\dfrac{\\log(6)}{\\log(2)} = 1 + \\dfrac{\\log(3)}{\\log(2)} \\quad\\text{y}\\quad \\log_3(5) = \\dfrac{\\log(5)}{\\log(3)} = \\dfrac{1 - \\log(2)}{\\log(3)}"
+              "expresion": "\\log_3(5) = \\dfrac{\\log(5)}{\\log(3)} = \\dfrac{0{,}6990}{0{,}4771} \\approx 1{,}4651"
             }
           ],
-          "idea_clave": "La fórmula del cambio de base $\\log_b(a) = \\dfrac{\\log_c(a)}{\\log_c(b)}$ permite calcular cualquier logaritmo eligiendo una base prima común $c$ (como 2 o 3) o la base decimal 10. Recuerda que $\\log(5) = \\log(10/2) = 1 - \\log(2)$."
+          "idea_clave": "Para calcular logaritmos con datos conocidos, descompón en factores $2, 3$ y $10$. Recuerda siempre que $\\log(5) = 1 - \\log(2)$, y para logaritmos en otra base aplica el cambio a base 10: $\\log_b(a) = \\dfrac{\\log(a)}{\\log(b)}$ sustituyendo los valores numéricos correspondientes."
         }
       ]
     }
