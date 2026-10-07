@@ -19,11 +19,11 @@ window.CURSO_CONFIG = {
     "aviso": "¡Solucionario de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "ultima_clase": {
-    "fecha": "Lunes 5 y Martes 6 de Octubre de 2026",
+    "fecha": "Lunes 5, Martes 6 y Jueves 8 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesiones 11 y 12: Racionalización Cúbica, Identidades Notables y Logaritmos por Definición",
-    "referencia_apuntes": "Puntos 2, 2.2 y 3.1 (Págs. 10, 12, 15 y 17-19)",
+    "titulo_sesion": "Sesiones 11, 12 y 13: Racionalización Cúbica, Identidades Notables y Logaritmos (Definición, Incógnitas y Cambio de Base)",
+    "referencia_apuntes": "Puntos 2, 2.2, 3.1 y 3.2 (Págs. 10, 12, 15 y 17-21)",
     "mision_semanal": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en tu libreta (Racionalización, Identidades Notables y Logaritmos).",
     "trabajo_semanal_pendiente": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en la libreta.",
     "ejercicios_vistos": [
@@ -105,6 +105,56 @@ window.CURSO_CONFIG = {
           }
         ],
         "idea_clave": "Por definición, $\\log_b(a) = x \\iff b^x = a$. Todo logaritmo por definición es una ecuación exponencial: se iguala a $x$, se traduce a potencias de la misma base y se igualan los exponentes aprovechando las propiedades de las potencias y radicales."
+      },
+      {
+        "numero": 17,
+        "titulo": "Ecuaciones Logarítmicas por Definición: Incógnita en la Base o en el Argumento",
+        "referencia": "Punto 3.1 (Págs. 17-19)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para despejar la incógnita aplicando la definición:</strong><br>• <strong>Paso 0 obligado:</strong> Pasa siempre de la forma logarítmica a la exponencial: $\\log_b(a) = c \\iff b^c = a$.<br>• <strong>Si la incógnita está en la base ($x^c = a$):</strong> Expresa el segundo miembro como potencia del mismo exponente o eleva ambos miembros a la inversa de la fracción. <strong>¡Condición de existencia!</strong> La base debe ser estrictamente positiva y distinta de 1 ($x > 0, x \\ne 1$). Si obtuvieras una solución negativa, debes descartarla inmediatamente.<br>• <strong>Si la incógnita está en el argumento ($b^c = a(x)$):</strong> Calcula el valor de la potencia numérica $b^c$ y despeja la ecuación algebraica resultante. <strong>¡Condición de existencia!</strong> El argumento debe ser estrictamente positivo ($a(x) > 0$). Comprueba siempre que tu solución no haga cero ni negativo el argumento.<br>• <strong>Si la incógnita está en el resultado:</strong> Es el cálculo directo por potencias de la misma base.</div></div>Calcula el valor de la incógnita $x$ aplicando la definición formal de logaritmo y comprueba la validez de las soluciones:",
+        "apartados": [
+          {
+            "letra": "a)",
+            "expresion": "\\log_x(128) = \\dfrac{7}{2} \\iff x^{7/2} = 2^7 \\iff x = 2^2 = 4"
+          },
+          {
+            "letra": "b)",
+            "expresion": "\\log_x\\left(\\dfrac{4}{9}\\right) = -2 \\iff x^{-2} = \\left(\\dfrac{3}{2}\\right)^{-2} \\iff x = \\dfrac{3}{2}"
+          },
+          {
+            "letra": "c)",
+            "expresion": "\\log_2(x) = -4 \\iff x = 2^{-4} = \\dfrac{1}{16}"
+          },
+          {
+            "letra": "d)",
+            "expresion": "\\log_5(x^2 - 11) = 2 \\iff x^2 - 11 = 25 \\iff x^2 = 36 \\iff x = \\pm 6"
+          }
+        ],
+        "idea_clave": "Para hallar la incógnita $x$, traduce a la forma exponencial $b^c = a$. Si $x$ está en la base, exige obligatoriamente que sea positiva y distinta de 1 ($x > 0, x \\ne 1$). Si $x$ está en el argumento, verifica que el argumento resultante sea estrictamente positivo ($a > 0$)."
+      },
+      {
+        "numero": 18,
+        "titulo": "Fórmula del Cambio de Base y Cálculo de Logaritmos No Canónicos",
+        "referencia": "Punto 3.2 (Págs. 20-21)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no tropezar con la fórmula de cambio de base:</strong><br>• <strong>La fórmula maestra:</strong> $\\log_b(a) = \\dfrac{\\log_c(a)}{\\log_c(b)}$. Tú eliges la nueva base $c$ que más te convenga.<br>• <strong>¿Qué base $c$ conviene elegir?:</strong> Si la base $b$ y el argumento $a$ son potencias de un mismo primo ($2, 3, 5\\dots$), pásalos a esa base prima común. Por ejemplo, en $\\log_8(32)$ la base común es $2$: $\\dfrac{\\log_2(32)}{\\log_2(8)} = \\dfrac{5}{3}$. ¡Mucho más rápido y limpio que plantear una ecuación exponencial!<br>• <strong>Con fracciones y raíces:</strong> Expresa el argumento y la base en potencias fraccionarias antes o después del cambio de base: $\\log_{16}(1/32) = \\dfrac{\\log_2(2^{-5})}{\\log_2(2^4)} = -\\dfrac{5}{4}$.<br>• <strong>El truco de la base 10 y el 5:</strong> Si te piden expresar logaritmos en función de $\\log(2)$ y $\\log(3)$, haz cambio a base 10 y recuerda que $5 = \\dfrac{10}{2}$, por lo que $\\log(5) = \\log(10) - \\log(2) = 1 - \\log(2)$.</div></div>Aplica la fórmula del cambio de base para calcular el valor exacto de los siguientes logaritmos sin calculadora y expresa en función de logaritmos decimales según corresponda:",
+        "apartados": [
+          {
+            "letra": "a)",
+            "expresion": "\\log_8(32) = \\dfrac{\\log_2(32)}{\\log_2(8)} = \\dfrac{5}{3} \\quad\\text{y}\\quad \\log_9(243) = \\dfrac{\\log_3(243)}{\\log_3(9)} = \\dfrac{5}{2}"
+          },
+          {
+            "letra": "b)",
+            "expresion": "\\log_{16}\\left(\\dfrac{1}{32}\\right) = \\dfrac{\\log_2(2^{-5})}{\\log_2(2^4)} = -\\dfrac{5}{4} \\quad\\text{y}\\quad \\log_{27}\\left(\\dfrac{1}{9\\sqrt{3}}\\right) = \\dfrac{\\log_3(3^{-5/2})}{\\log_3(3^3)} = -\\dfrac{5}{6}"
+          },
+          {
+            "letra": "c)",
+            "expresion": "\\log_{25}(125\\sqrt[3]{5}) = \\dfrac{\\log_5(5^{10/3})}{\\log_5(5^2)} = \\dfrac{10/3}{2} = \\dfrac{5}{3}"
+          },
+          {
+            "letra": "d)",
+            "expresion": "\\log_2(6) = \\dfrac{\\log(6)}{\\log(2)} = 1 + \\dfrac{\\log(3)}{\\log(2)} \\quad\\text{y}\\quad \\log_3(5) = \\dfrac{\\log(5)}{\\log(3)} = \\dfrac{1 - \\log(2)}{\\log(3)}"
+          }
+        ],
+        "idea_clave": "La fórmula del cambio de base $\\log_b(a) = \\dfrac{\\log_c(a)}{\\log_c(b)}$ permite calcular cualquier logaritmo eligiendo una base prima común $c$ (como 2 o 3) o la base decimal 10. Recuerda que $\\log(5) = \\log(10/2) = 1 - \\log(2)$."
       }
     ]
   },
@@ -116,7 +166,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 12,
+      "sesiones_impartidas": 13,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
