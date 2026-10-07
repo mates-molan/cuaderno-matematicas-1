@@ -643,7 +643,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 19,
           "titulo": "Cálculo de Logaritmos a partir de Valores Conocidos: log(2) y log(3)",
-          "referencia": "Punto 3.2 (Págs. 18 y 21)",
+          "referencia": "Punto 3.2 (Págs. 18 y 22)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para calcular logaritmos con datos conocidos:</strong><br>• <strong>Descomposición en factores primos:</strong> Expresa el argumento usando únicamente $2$, $3$ y potencias de $10$ para aplicar las propiedades del producto y cociente: $\\log(x \\cdot y) = \\log(x) + \\log(y)$ y $\\log(x / y) = \\log(x) - \\log(y)$.<br>• <strong>El truco indispensable del 5:</strong> Como $5 = \\dfrac{10}{2}$, su logaritmo decimal siempre vale: $\\log(5) = \\log\\left(\\dfrac{10}{2}\\right) = \\log(10) - \\log(2) = 1 - \\log(2)$.<br>• <strong>Cambio de base a base 10:</strong> Si el logaritmo está en otra base, aplica primero el cambio de base decimal: $\\log_b(a) = \\dfrac{\\log(a)}{\\log(b)}$. Sustituye después los valores decimales de $\\log(2)$ y $\\log(3)$ para hallar el valor exacto aproximado.</div></div>Sabiendo que $\\log(2) \\approx 0{,}3010$ y $\\log(3) \\approx 0{,}4771$, calcula razonadamente el valor numérico de los siguientes logaritmos:",
           "apartados": [
             {
