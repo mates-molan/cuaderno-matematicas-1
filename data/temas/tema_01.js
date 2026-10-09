@@ -946,7 +946,7 @@ window.TEMAS_DATA[1] = {
       "semana_numero": 4,
       "rango_fechas": "05 Oct - 09 Oct 2026",
       "estado": "actual",
-      "meta_semanal": "Dominar las técnicas completas de racionalización de denominadores, la factorización inversa con identidades notables, y la reducción y separación de logaritmos aplicando sus propiedades (Ejercicios 10, 11 y 12 de la hoja).",
+      "meta_semanal": "Dominar las técnicas completas de racionalización de denominadores, la factorización inversa con identidades notables, el cálculo de logaritmos e incógnitas en la base o argumento, y su reducción y separación aplicando propiedades (Ejercicios 10, 11 y 12 de la hoja).",
       "ejercicios": [
         {
           "id": "P-10",
