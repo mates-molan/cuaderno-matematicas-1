@@ -90,6 +90,65 @@ function initDragToScroll() {
   });
 }
 
+// Descompone la instrucción del ejercicio en:
+// 1. Enunciado matemático principal (en negrita y tamaño destacado)
+// 2. Desplegable de pistas didácticas (plegado por defecto para no saturar al alumnado)
+function parseInstruccionEjercicio(ex) {
+  let raw = ex.instruccion || '';
+  let pistasContent = ex.pistas || null;
+  let enunciado = ex.enunciado || '';
+  let icon = '💡';
+
+  if (!pistasContent && raw) {
+    const match = raw.match(/<div class="nota-aula-box">([\s\S]*?)<\/div><\/div>/);
+    if (match) {
+      const iconMatch = match[1].match(/<span class="nota-aula-icon">([\s\S]*?)<\/span>/);
+      if (iconMatch) icon = iconMatch[1].trim();
+      const innerMatch = match[1].match(/<div class="nota-aula-content">([\s\S]*?)$/);
+      pistasContent = innerMatch ? innerMatch[1].trim() : match[1].trim();
+      enunciado = raw.replace(match[0], '').trim();
+    } else {
+      const matchSimple = raw.match(/<div class="nota-aula-box">([\s\S]*?)<\/div>/);
+      if (matchSimple) {
+        const iconMatch = matchSimple[1].match(/<span class="nota-aula-icon">([\s\S]*?)<\/span>/);
+        if (iconMatch) icon = iconMatch[1].trim();
+        const innerMatch = matchSimple[1].match(/<div class="nota-aula-content">([\s\S]*?)$/);
+        pistasContent = innerMatch ? innerMatch[1].trim() : matchSimple[1].trim();
+        enunciado = raw.replace(matchSimple[0], '').trim();
+      } else {
+        enunciado = raw.trim();
+      }
+    }
+  } else if (!enunciado && raw) {
+    enunciado = raw.trim();
+  }
+
+  if (pistasContent) {
+    pistasContent = pistasContent.replace(/<\/div>\s*$/, '').trim();
+  }
+
+  let pistasHtml = '';
+  if (pistasContent) {
+    pistasHtml = `
+      <details class="pistas-accordion" ontoggle="onAccordionToggle()">
+        <summary class="pistas-summary">
+          <div class="pistas-summary-left">
+            <span class="pistas-icon">${icon}</span>
+            <span class="pistas-title">Pistas para hacer el ejercicio</span>
+            <span class="pistas-sub">¡Ábreme solo si te atascas! 🤫</span>
+          </div>
+          <span class="pistas-toggle-icon">▼</span>
+        </summary>
+        <div class="pistas-body">
+          ${pistasContent}
+        </div>
+      </details>
+    `;
+  }
+
+  return { enunciado, pistasHtml };
+}
+
 // Renderizado Vista 1: Al Día (Última clase impartida)
 function renderAlDia() {
   const config = window.CURSO_CONFIG;
@@ -150,6 +209,8 @@ function renderAlDia() {
       apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base);
     }
 
+    const { enunciado, pistasHtml } = parseInstruccionEjercicio(ex);
+
     // Los ejercicios vienen plegados por defecto
     html += `
       <details class="pizarra-accordion" ontoggle="onAccordionToggle()">
@@ -162,7 +223,8 @@ function renderAlDia() {
           <span class="pizarra-toggle-icon">▼</span>
         </summary>
         <div class="pizarra-body">
-          <div class="exercise-instruction">${ex.instruccion}</div>
+          <div class="exercise-enunciado">${enunciado}</div>
+          ${pistasHtml}
           ${apartadosHtml}
           ${ex.idea_clave ? `<div class="idea-box"><strong>💡 Idea clave para tu libreta:</strong> ${ex.idea_clave}</div>` : ''}
         </div>
@@ -322,6 +384,8 @@ function renderDiarioPlegado(temaId = currentTemaId) {
         apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base);
       }
 
+      const { enunciado, pistasHtml } = parseInstruccionEjercicio(ex);
+
       ejerciciosHtml += `
         <details class="pizarra-accordion" ontoggle="onAccordionToggle()" style="margin-bottom: 14px;">
           <summary class="pizarra-summary">
@@ -333,7 +397,8 @@ function renderDiarioPlegado(temaId = currentTemaId) {
             <span class="pizarra-toggle-icon">▼</span>
           </summary>
           <div class="pizarra-body">
-            <div class="exercise-instruction">${ex.instruccion}</div>
+            <div class="exercise-enunciado">${enunciado}</div>
+            ${pistasHtml}
             ${apartadosHtml}
             ${ex.idea_clave ? `<div class="idea-box"><strong>💡 Idea clave:</strong> ${ex.idea_clave}</div>` : ''}
           </div>
