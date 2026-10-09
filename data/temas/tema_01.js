@@ -572,7 +572,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 16,
           "titulo": "Cálculo de Logaritmos por Definición: Potencias, Raíces y Fracciones",
-          "referencia": "Punto 3.1 (Págs. 17-19)",
+          "referencia": "Punto 3.1 (Págs. 17 y 19)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas y protocolo infalible para calcular logaritmos por definición:</strong><br>• <strong>El método en 3 pasos:</strong><br>&nbsp;&nbsp;1.º <strong>Iguala a la incógnita:</strong> Escribe $\\log_b(a) = x$.<br>&nbsp;&nbsp;2.º <strong>Pasa a forma exponencial:</strong> Traduce de inmediato a potencia: $b^x = a$. ¡El logaritmo es el exponente!<br>&nbsp;&nbsp;3.º <strong>Base común e igualar exponentes:</strong> Descompón en factores primos base y argumento. Cuando tengas la misma base en ambos miembros ($b^{f(x)} = b^k$), iguala los exponentes y despeja $x$.<br>• <strong>¡Cuidado con las bases con raíz!:</strong> Al elevar la base a $x$, multiplica exponentes: $(\\sqrt[3]{3})^x = (3^{1/3})^x = 3^{x/3}$.<br>• <strong>Invertir fracciones con exponente negativo:</strong> Recuerda que $\\left(\\dfrac{3}{2}\\right)^k = \\left(\\dfrac{2}{3}\\right)^{-k}$. Una fracción invertida se arregla con signo menos en el exponente.<br>• <strong>Argumentos con raíces y cocientes:</strong> Expresa todo como potencias de exponente fraccionario y opera antes de igualar.</div></div>Calcula razonadamente por definición el valor exacto de los siguientes logaritmos sin utilizar calculadora:",
           "apartados": [
             {
@@ -597,7 +597,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 17,
           "titulo": "Cálculo de la Incógnita por Definición: La x en la Base o en el Argumento",
-          "referencia": "Punto 3.1 (Págs. 17-19)",
+          "referencia": "Punto 3.1 (Págs. 17 y 19)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para despejar la incógnita aplicando la definición:</strong><br>• <strong>Paso 0 obligado:</strong> Pasa siempre de la forma logarítmica a la exponencial: $\\log_b(a) = c \\iff b^c = a$.<br>• <strong>Si la incógnita está en la base ($x^c = a$):</strong> Expresa el argumento como potencia de exponente fraccionario para igualar exponentes o eleva ambos miembros al inverso del exponente. <strong>¡Condición de existencia!</strong> La base debe ser estrictamente positiva y distinta de 1 ($x > 0, x \\ne 1$).<br>• <strong>Si la incógnita está bajo una raíz en el argumento:</strong> Despeja primero la raíz aislando el miembro correspondiente y luego eleva al índice para obtener $x$. <strong>¡Condición de existencia!</strong> El argumento debe ser estrictamente positivo ($a(x) > 0$).<br>• <strong>Si la base tiene una raíz (como $\\sqrt{3}$ o $\\sqrt{2}$):</strong> Eleva la raíz al exponente simplificando antes de operar.</div></div>Calcula el valor exacto de la incógnita $x$ aplicando la definición formal de logaritmo y comprueba la validez de las soluciones:",
           "apartados": [
             {
@@ -675,7 +675,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 20,
           "titulo": "Desarrollo de Expresiones: Aplicar las Propiedades Paso a Paso",
-          "referencia": "Punto 3.2 (Págs. 19-21)",
+          "referencia": "Punto 3.2 (Págs. 17 y 20)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas clave para desarrollar paso a paso:</strong><br>• <strong>Lo que multiplica, suma:</strong> los factores del numerador se separan sumando logaritmos.<br>• <strong>Lo que divide, resta:</strong> los factores del denominador se separan restando logaritmos.<br>• <strong>Los exponentes y raíces bajan delante:</strong> una potencia pasa multiplicando ($n \\cdot \\log(x)$) y una raíz pasa dividiendo.<br>• <strong>Cuidado con las sumas dentro del paréntesis:</strong> expresiones como $(A + B)$ o $(x^2 + y^2)$ no se pueden separar directamente. Solo separamos productos y cocientes.<br>• <strong>Calcula los números conocidos:</strong> si aparece un valor exacto como $\\log(100) = 2$, $\\log_2(16) = 4$ o $\\ln(e) = 1$, escríbelo directamente en su forma numérica.</div></div>Desarrolla las siguientes expresiones aplicando las propiedades de los logaritmos y simplificando los términos numéricos:",
           "apartados": [
             {
@@ -700,7 +700,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 21,
           "titulo": "Unir en un Único Logaritmo: El Camino Inverso",
-          "referencia": "Punto 3.2 (Págs. 19-21)",
+          "referencia": "Punto 3.2 (Pág. 17)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas clave para juntar todo en un solo logaritmo:</strong><br>• <strong>1. Sube los números de delante como exponentes:</strong> $k \\cdot \\log(x)$ pasa a ser $\\log(x^k)$. Si el exponente es una fracción, se expresa como raíz.<br>• <strong>2. Disfraza los números sueltos de logaritmo:</strong> escríbelos en la misma base. Por ejemplo, en base 10 el $2$ es $\\log(100)$; en base 2 el $3$ es $\\log_2(8)$; y en base $e$, el $1$ es $\\ln(e)$.<br>• <strong>3. Agrupa en una sola fracción:</strong> escribe un único logaritmo. Los términos que suman van al numerador y los que restan van al denominador.<br>• <strong>4. Simplifica al final:</strong> una vez dentro del mismo logaritmo, opera las potencias o simplifica la fracción si es posible.</div></div>Reduce a un único logaritmo y simplifica el resultado:",
           "apartados": [
             {

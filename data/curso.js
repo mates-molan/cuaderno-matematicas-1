@@ -23,14 +23,14 @@ window.CURSO_CONFIG = {
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesión 14: Propiedades de los Logaritmos (Desarrollar y Unir en un Único Logaritmo)",
-    "referencia_apuntes": "Punto 3.2 (Págs. 19-21)",
+    "referencia_apuntes": "Punto 3.2 (Págs. 17 y 20)",
     "mision_semanal": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en tu libreta (Racionalización, Identidades Notables y Logaritmos).",
     "trabajo_semanal_pendiente": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en la libreta.",
     "ejercicios_vistos": [
       {
         "numero": 20,
         "titulo": "Desarrollo de Expresiones: Aplicar las Propiedades Paso a Paso",
-        "referencia": "Punto 3.2 (Págs. 19-21)",
+        "referencia": "Punto 3.2 (Págs. 17 y 20)",
         "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas clave para desarrollar paso a paso:</strong><br>• <strong>Lo que multiplica, suma:</strong> los factores del numerador se separan sumando logaritmos.<br>• <strong>Lo que divide, resta:</strong> los factores del denominador se separan restando logaritmos.<br>• <strong>Los exponentes y raíces bajan delante:</strong> una potencia pasa multiplicando ($n \\cdot \\log(x)$) y una raíz pasa dividiendo.<br>• <strong>Cuidado con las sumas dentro del paréntesis:</strong> expresiones como $(A + B)$ o $(x^2 + y^2)$ no se pueden separar directamente. Solo separamos productos y cocientes.<br>• <strong>Calcula los números conocidos:</strong> si aparece un valor exacto como $\\log(100) = 2$, $\\log_2(16) = 4$ o $\\ln(e) = 1$, escríbelo directamente en su forma numérica.</div></div>Desarrolla las siguientes expresiones aplicando las propiedades de los logaritmos y simplificando los términos numéricos:",
         "apartados": [
           {
@@ -55,7 +55,7 @@ window.CURSO_CONFIG = {
       {
         "numero": 21,
         "titulo": "Unir en un Único Logaritmo: El Camino Inverso",
-        "referencia": "Punto 3.2 (Págs. 19-21)",
+        "referencia": "Punto 3.2 (Pág. 17)",
         "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas clave para juntar todo en un solo logaritmo:</strong><br>• <strong>1. Sube los números de delante como exponentes:</strong> $k \\cdot \\log(x)$ pasa a ser $\\log(x^k)$. Si el exponente es una fracción, se expresa como raíz.<br>• <strong>2. Disfraza los números sueltos de logaritmo:</strong> escríbelos en la misma base. Por ejemplo, en base 10 el $2$ es $\\log(100)$; en base 2 el $3$ es $\\log_2(8)$; y en base $e$, el $1$ es $\\ln(e)$.<br>• <strong>3. Agrupa en una sola fracción:</strong> escribe un único logaritmo. Los términos que suman van al numerador y los que restan van al denominador.<br>• <strong>4. Simplifica al final:</strong> una vez dentro del mismo logaritmo, opera las potencias o simplifica la fracción si es posible.</div></div>Reduce a un único logaritmo y simplifica el resultado:",
         "apartados": [
           {
