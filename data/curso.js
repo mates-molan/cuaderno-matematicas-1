@@ -22,16 +22,16 @@ window.CURSO_CONFIG = {
     "fecha": "Viernes 9 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 14: Propiedades Operativas de los Logaritmos (Desarrollo Complejo y Contracción a un Único Logaritmo)",
+    "titulo_sesion": "Sesión 14: Propiedades de los Logaritmos (Desarrollar y Unir en un Único Logaritmo)",
     "referencia_apuntes": "Punto 3.2 (Págs. 19-21)",
     "mision_semanal": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en tu libreta (Racionalización, Identidades Notables y Logaritmos).",
     "trabajo_semanal_pendiente": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en la libreta.",
     "ejercicios_vistos": [
       {
         "numero": 20,
-        "titulo": "Desarrollo de Expresiones Logarítmicas Complejas: Propiedades al Máximo",
+        "titulo": "Desarrollo de Expresiones: Aplicar las Propiedades Paso a Paso",
         "referencia": "Punto 3.2 (Págs. 19-21)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas y protocolo infalible para desarrollar logaritmos sin caer en trampas:</strong><br>• <strong>Regla de oro del denominador:</strong> Todo factor que esté dividiendo (en el denominador) sale restando con su propio signo menos. Si abajo hay un producto ($B \\cdot C$), ambos restan: $-\\log(B) - \\log(C)$. ¡Cuidado con no olvidar distribuir el signo menos!<br>• <strong>Constantes que se simplifican:</strong> En base 10, $\\log(100) = 2$ o $\\log(10) = 1$. En base 2, $\\log_2(16) = 4$. En base $e$, $\\ln(e^k) = k$. No dejes logaritmos de números calculables sin simplificar.<br>• <strong>¡Simplifica antes de desarrollar!:</strong> Si dentro del argumento puedes operar potencias de la misma base, extraer raíces o factorizar identidades notables, ¡hazlo antes! Te ahorrarás un desarrollo kilométrico.<br>• <strong>La gran trampa de las sumas:</strong> $\\log(A + B)$ o $\\log(x^2 + y^2)$ <strong>NO se pueden separar</strong> (son sumas irreducibles en $\\mathbb{R}$). En cambio, una diferencia de cuadrados ($x^2 - y^2$) sí se factoriza como $(x-y)(x+y)$ y se separa.</div></div>Desarrolla al máximo las siguientes expresiones aplicando las propiedades de los logaritmos, simplificando los términos numéricos y factorizando cuando sea posible:",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas clave para desarrollar paso a paso:</strong><br>• <strong>Lo que multiplica, suma:</strong> los factores del numerador se separan sumando logaritmos.<br>• <strong>Lo que divide, resta:</strong> los factores del denominador se separan restando logaritmos.<br>• <strong>Los exponentes y raíces bajan delante:</strong> una potencia pasa multiplicando ($n \\cdot \\log(x)$) y una raíz pasa dividiendo.<br>• <strong>Cuidado con las sumas dentro del paréntesis:</strong> expresiones como $(A + B)$ o $(x^2 + y^2)$ no se pueden separar directamente. Solo separamos productos y cocientes.<br>• <strong>Calcula los números conocidos:</strong> si aparece un valor exacto como $\\log(100) = 2$, $\\log_2(16) = 4$ o $\\ln(e) = 1$, escríbelo directamente en su forma numérica.</div></div>Desarrolla las siguientes expresiones aplicando las propiedades de los logaritmos y simplificando los términos numéricos:",
         "apartados": [
           {
             "letra": "a)",
@@ -50,13 +50,13 @@ window.CURSO_CONFIG = {
             "expresion": "\\log\\left(\\dfrac{\\sqrt{x^2 + y^2}}{x^2 - y^2}\\right) = \\dfrac{1}{2}\\log(x^2 + y^2) - \\log(x+y) - \\log(x-y)"
           }
         ],
-        "idea_clave": "Todo factor del numerador suma y todo factor del denominador resta. Las constantes con la misma base se calculan como enteros. Simplifica exponentes y radicales antes de aplicar logaritmos. Recuerda: una suma $(x^2+y^2)$ es intocable, pero una diferencia $(x^2-y^2)$ se factoriza y se separa en dos logaritmos."
+        "idea_clave": "Para desarrollar expresiones: lo que está arriba suma, lo que está abajo resta, y los exponentes bajan delante multiplicando. Las sumas dentro de un logaritmo no se pueden separar a menos que se puedan factorizar en productos."
       },
       {
         "numero": 21,
-        "titulo": "Contracción a un Único Logaritmo: Números Sueltos, Radicales y Colapso Numérico",
+        "titulo": "Unir en un Único Logaritmo: El Camino Inverso",
         "referencia": "Punto 3.2 (Págs. 19-21)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para contraer expresiones a un solo logaritmo de forma rápida y limpia:</strong><br>• <strong>Paso 1: Sube los coeficientes a exponentes:</strong> $k\\log(x) = \\log(x^k)$. Las fracciones pasan a ser raíces: $\\frac{1}{2}\\log(y) = \\log(\\sqrt{y})$ y $\\frac{1}{3}\\log(z) = \\log(\\sqrt[3]{z})$.<br>• <strong>Paso 2: Transforma los números sueltos en logaritmos:</strong> Escribe cualquier número entero o fracción en la misma base: en base 10, $2 = \\log(10^2) = \\log(100)$; en base 2, $3 = \\log_2(2^3) = \\log_2(8)$; en base $e$, $1 = \\ln(e)$ o $\\frac{3}{2} = \\ln(e\\sqrt{e})$.<br>• <strong>Paso 3: La regla directa del numerador y denominador:</strong> Pon una única palabra $\\log(\\dots)$ con una gran fracción. Todo término que tenga signo $+$ va multiplicando al <strong>numerador</strong>; todo término que tenga signo $-$ va multiplicando al <strong>denominador</strong>.<br>• <strong>Paso 4: Simplifica el argumento:</strong> Una vez reunido todo en un solo logaritmo, cancela factores comunes si es algebraico o resuelve la aritmética si es numérico.</div></div>Reduce a un único logaritmo y simplifica al máximo la expresión resultante (evalúa el valor exacto final en caso de colapso numérico):",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas clave para juntar todo en un solo logaritmo:</strong><br>• <strong>1. Sube los números de delante como exponentes:</strong> $k \\cdot \\log(x)$ pasa a ser $\\log(x^k)$. Si el exponente es una fracción, se expresa como raíz.<br>• <strong>2. Disfraza los números sueltos de logaritmo:</strong> escríbelos en la misma base. Por ejemplo, en base 10 el $2$ es $\\log(100)$; en base 2 el $3$ es $\\log_2(8)$; y en base $e$, el $1$ es $\\ln(e)$.<br>• <strong>3. Agrupa en una sola fracción:</strong> escribe un único logaritmo. Los términos que suman van al numerador y los que restan van al denominador.<br>• <strong>4. Simplifica al final:</strong> una vez dentro del mismo logaritmo, opera las potencias o simplifica la fracción si es posible.</div></div>Reduce a un único logaritmo y simplifica el resultado:",
         "apartados": [
           {
             "letra": "a)",
@@ -75,7 +75,7 @@ window.CURSO_CONFIG = {
             "expresion": "\\log(40) + 2\\log(5) - \\log(2) + \\log\\left(\\dfrac{1}{5}\\right) = \\log\\left(\\dfrac{40 \\cdot 25 \\cdot 1}{2 \\cdot 5}\\right) = \\log\\left(\\dfrac{1000}{10}\\right) = \\log(100) = 2"
           }
         ],
-        "idea_clave": "Sube coeficientes a los exponentes, convierte términos independientes en logaritmos de la misma base ($k = \\log_b(b^k)$), y agrupa en una única fracción: los logaritmos positivos van arriba y los negativos abajo. Al final, factoriza y simplifica el interior del argumento."
+        "idea_clave": "Para unir en un único logaritmo: sube los coeficientes a los exponentes, convierte los números sueltos en logaritmos de la misma base y agrupa todo en una sola fracción (positivos arriba y negativos abajo). Al final, simplifica el interior."
       }
     ]
   },
