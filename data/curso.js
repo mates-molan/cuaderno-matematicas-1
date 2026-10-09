@@ -19,163 +19,63 @@ window.CURSO_CONFIG = {
     "aviso": "¡Solucionario de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "ultima_clase": {
-    "fecha": "Lunes 5, Martes 6 y Jueves 8 de Octubre de 2026",
+    "fecha": "Viernes 9 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesiones 11, 12 y 13: Racionalización Cúbica, Identidades Notables y Logaritmos (Definición, Incógnitas, Cambio de Base y Valores Numéricos)",
-    "referencia_apuntes": "Puntos 2, 2.2, 3.1 y 3.2 (Págs. 10, 12, 15, 17-19, 21 y 22)",
+    "titulo_sesion": "Sesión 14: Propiedades Operativas de los Logaritmos (Desarrollo Complejo y Contracción a un Único Logaritmo)",
+    "referencia_apuntes": "Punto 3.2 (Págs. 19-21)",
     "mision_semanal": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en tu libreta (Racionalización, Identidades Notables y Logaritmos).",
     "trabajo_semanal_pendiente": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en la libreta.",
     "ejercicios_vistos": [
       {
-        "numero": 14,
-        "titulo": "Racionalizar Denominadores: Raíces Cúbicas y el Truco de los Cubos",
-        "referencia": "Punto 2.2 (Págs. 12 y 15)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para no liarte con las raíces cúbicas abajo:</strong><br>• <strong>¿Por qué no sirve cambiar solo el signo?</strong> Si abajo tienes $\\sqrt[3]{x} - 2$ y multiplicas por $\\sqrt[3]{x} + 2$, te queda $(\\sqrt[3]{x})^2 - 4 = \\sqrt[3]{x^2} - 4$. ¡La raíz sigue ahí! Con raíces cúbicas necesitas cubos, no cuadrados.<br>• <strong>La fórmula que te salva:</strong> Recuerda que $(u - v)(u^2 + uv + v^2) = u^3 - v^3$ y que $(u + v)(u^2 - uv + v^2) = u^3 + v^3$.<br>• <strong>El truco práctico:</strong> Multiplica arriba y abajo por: el primero al cuadrado, el producto de los dos (con signo cambiado) y el segundo al cuadrado. Así abajo se van las raíces y te queda una resta o suma limpia.</div></div>Racionaliza los denominadores y simplifica al máximo:",
+        "numero": 20,
+        "titulo": "Desarrollo de Expresiones Logarítmicas Complejas: Propiedades al Máximo",
+        "referencia": "Punto 3.2 (Págs. 19-21)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas y protocolo infalible para desarrollar logaritmos sin caer en trampas:</strong><br>• <strong>Regla de oro del denominador:</strong> Todo factor que esté dividiendo (en el denominador) sale restando con su propio signo menos. Si abajo hay un producto ($B \\cdot C$), ambos restan: $-\\log(B) - \\log(C)$. ¡Cuidado con no olvidar distribuir el signo menos!<br>• <strong>Constantes que se simplifican:</strong> En base 10, $\\log(100) = 2$ o $\\log(10) = 1$. En base 2, $\\log_2(16) = 4$. En base $e$, $\\ln(e^k) = k$. No dejes logaritmos de números calculables sin simplificar.<br>• <strong>¡Simplifica antes de desarrollar!:</strong> Si dentro del argumento puedes operar potencias de la misma base, extraer raíces o factorizar identidades notables, ¡hazlo antes! Te ahorrarás un desarrollo kilométrico.<br>• <strong>La gran trampa de las sumas:</strong> $\\log(A + B)$ o $\\log(x^2 + y^2)$ <strong>NO se pueden separar</strong> (son sumas irreducibles en $\\mathbb{R}$). En cambio, una diferencia de cuadrados ($x^2 - y^2$) sí se factoriza como $(x-y)(x+y)$ y se separa.</div></div>Desarrolla al máximo las siguientes expresiones aplicando las propiedades de los logaritmos, simplificando los términos numéricos y factorizando cuando sea posible:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\dfrac{4}{\\sqrt[3]{x} - 2} = \\dfrac{4(\\sqrt[3]{x^2} + 2\\sqrt[3]{x} + 4)}{x - 8}"
+            "expresion": "\\log\\left(\\dfrac{100 \\cdot x^3 \\cdot \\sqrt{y}}{z^4 \\cdot \\sqrt[3]{w}}\\right) = 2 + 3\\log(x) + \\dfrac{1}{2}\\log(y) - 4\\log(z) - \\dfrac{1}{3}\\log(w)"
           },
           {
             "letra": "b)",
-            "expresion": "\\dfrac{6}{\\sqrt[3]{5} + \\sqrt[3]{2}} = \\dfrac{6(\\sqrt[3]{25} - \\sqrt[3]{10} + \\sqrt[3]{4})}{7}"
+            "expresion": "\\log_2\\left(\\dfrac{(x^2 - 9) \\cdot \\sqrt[4]{x+3}}{16 \\cdot (x-3)^3}\\right) = \\dfrac{5}{4}\\log_2(x+3) - 2\\log_2(x-3) - 4"
           },
           {
             "letra": "c)",
-            "expresion": "\\dfrac{x - 1}{\\sqrt[3]{x} - 1} = \\sqrt[3]{x^2} + \\sqrt[3]{x} + 1"
-          }
-        ],
-        "idea_clave": "Para quitar raíces cúbicas en sumas o restas, olvídate del conjugado de siempre. Usa el truco de los cubos: multiplica por el primero al cuadrado, el producto de los dos con signo opuesto y el segundo al cuadrado. Abajo desaparecen las raíces."
-      },
-      {
-        "numero": 15,
-        "titulo": "Identidades Notables al Revés: Cómo Reconocer Patrones sin Operar a lo Loco",
-        "referencia": "Punto 2 (Pág. 10)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para pillar las identidades al revés de forma rápida y limpia:</strong><br>• <strong>Si ves 3 términos (no te fíes de la posición):</strong><br>&nbsp;&nbsp;1.º Localiza los <strong>dos términos positivos que sean cuadrados</strong> (da igual que estén en los extremos o uno en medio). Por ejemplo, en $9x^2 - 12x + 4$ o en $4 - 12x + 9x^2$, tus dos cuadrados son $9x^2$ (base $3x$) y $4$ (base $2$).<br>&nbsp;&nbsp;2.º Comprueba <strong>el término que queda suelto</strong>: tiene que ser obligatoriamente el doble producto de las dos bases ($2 \\cdot 3x \\cdot 2 = 12x$).<br>&nbsp;&nbsp;3.º Si coincide, ¡lo tienes! El signo del binomio lo manda ese tercer término: si lleva un menos ($-12x$), es $(3x - 2)^2$; si lleva un más, sería $(3x + 2)^2$.<br>• <strong>¡Cuidado con las trampas!:</strong> Para que sea un cuadrado de binomio, el término restante TIENE que coincidir exactamente con el doble producto. Si no coincide, ¡no inventes!: no se puede poner entre paréntesis al cuadrado.<br>• <strong>Si ves 2 términos restándose con cuadrados:</strong> Es suma por diferencia. Con exponentes pares grandes, pon la mitad en cada paréntesis ($x^6$ pasa a $x^3$). Si no tienen raíz exacta, usa raíces: $x - 3 = (\\sqrt{x} - \\sqrt{3})(\\sqrt{x} + \\sqrt{3})$.<br>• <strong>¿Dos términos con cubos sumándose o restándose ($A^3 \\pm B^3$)?</strong><br>&nbsp;&nbsp;1.º <strong>Sácale la raíz cúbica a cada uno</strong> para hallar sus bases (de $27x^3$ sale $3x$, de $8$ sale $2$, y de $125$ sale $5$).<br>&nbsp;&nbsp;2.º <strong>El paréntesis corto (binomio):</strong> pon las dos bases con el mismo signo que traían: $(3x - 2)$ o $(x + 5)$.<br>&nbsp;&nbsp;3.º <strong>El paréntesis largo (trinomio):</strong> pon el primero al cuadrado, el producto de los dos con signo cambiado y el segundo al cuadrado: $(9x^2 + 6x + 4)$ o $(x^2 - 5x + 25)$.<br>&nbsp;&nbsp;<em>Fórmula directa:</em> $(A \\pm B)(A^2 \\mp AB + B^2)$. ¡Te ahorras hacer Ruffini!</div></div>Reconoce la identidad notable de derecha a izquierda y escribe la expresión factorizada:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "9x^2 - 12x + 4 = (3x - 2)^2 \\quad\\text{y}\\quad \\dfrac{x^2}{4} + \\dfrac{x}{3} + \\dfrac{1}{9} = \\left(\\dfrac{x}{2} + \\dfrac{1}{3}\\right)^2"
-          },
-          {
-            "letra": "b)",
-            "expresion": "x^2 + 6x + 36 \\longrightarrow \\text{Los dos cuadrados son } x^2 \\text{ y } 6^2, \\text{ pero el doble producto sería } 2 \\cdot x \\cdot 6 = 12x \\ne 6x. \\text{ No es cuadrado de binomio (irreducible en } \\mathbb{R}\\text{)}"
-          },
-          {
-            "letra": "c)",
-            "expresion": "16x^4 - 81 = (4x^2 + 9)(2x - 3)(2x + 3) \\quad\\text{y}\\quad 25x^6 - 4y^4 = (5x^3 - 2y^2)(5x^3 + 2y^2)"
+            "expresion": "\\ln\\left(\\dfrac{e^3 \\cdot x^2}{\\sqrt{e \\cdot \\sqrt[3]{x \\cdot y^2}}}\\right) = \\dfrac{5}{2} + \\dfrac{11}{6}\\ln(x) - \\dfrac{1}{3}\\ln(y)"
           },
           {
             "letra": "d)",
-            "expresion": "x - 5 = (\\sqrt{x} - \\sqrt{5})(\\sqrt{x} + \\sqrt{5}) \\quad (x \\ge 0)"
-          },
-          {
-            "letra": "e)",
-            "expresion": "27x^3 - 8 = (3x - 2)(9x^2 + 6x + 4) \\quad\\text{y}\\quad x^3 + 125 = (x + 5)(x^2 - 5x + 25)"
-          },
-          {
-            "letra": "f)",
-            "expresion": "x^2 - 6x + 9 - y^2 = (x - 3)^2 - y^2 = (x - 3 - y)(x - 3 + y)"
+            "expresion": "\\log\\left(\\dfrac{\\sqrt{x^2 + y^2}}{x^2 - y^2}\\right) = \\dfrac{1}{2}\\log(x^2 + y^2) - \\log(x+y) - \\log(x-y)"
           }
         ],
-        "idea_clave": "No hagas fórmulas largas si no hace falta: localiza los dos términos que sean cuadrados positivos y confirma si el término restante es el doble producto. Si dos términos se restan, suma por diferencia partiendo exponentes a la mitad o con raíces. Y si son cubos ($A^3 \\pm B^3$), descompón al instante en $(A \\pm B)(A^2 \\mp AB + B^2)$ sin necesidad de usar Ruffini."
+        "idea_clave": "Todo factor del numerador suma y todo factor del denominador resta. Las constantes con la misma base se calculan como enteros. Simplifica exponentes y radicales antes de aplicar logaritmos. Recuerda: una suma $(x^2+y^2)$ es intocable, pero una diferencia $(x^2-y^2)$ se factoriza y se separa en dos logaritmos."
       },
       {
-        "numero": 16,
-        "titulo": "Cálculo de Logaritmos por Definición: Potencias, Raíces y Fracciones",
-        "referencia": "Punto 3.1 (Págs. 17-19)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas y protocolo infalible para calcular logaritmos por definición:</strong><br>• <strong>El método en 3 pasos:</strong><br>&nbsp;&nbsp;1.º <strong>Iguala a la incógnita:</strong> Escribe $\\log_b(a) = x$.<br>&nbsp;&nbsp;2.º <strong>Pasa a forma exponencial:</strong> Traduce de inmediato a potencia: $b^x = a$. ¡El logaritmo es el exponente!<br>&nbsp;&nbsp;3.º <strong>Base común e igualar exponentes:</strong> Descompón en factores primos base y argumento. Cuando tengas la misma base en ambos miembros ($b^{f(x)} = b^k$), iguala los exponentes y despeja $x$.<br>• <strong>¡Cuidado con las bases con raíz!:</strong> Al elevar la base a $x$, multiplica exponentes: $(\\sqrt[3]{3})^x = (3^{1/3})^x = 3^{x/3}$.<br>• <strong>Invertir fracciones con exponente negativo:</strong> Recuerda que $\\left(\\dfrac{3}{2}\\right)^k = \\left(\\dfrac{2}{3}\\right)^{-k}$. Una fracción invertida se arregla con signo menos en el exponente.<br>• <strong>Argumentos con raíces y cocientes:</strong> Expresa todo como potencias de exponente fraccionario y opera antes de igualar.</div></div>Calcula razonadamente por definición el valor exacto de los siguientes logaritmos sin utilizar calculadora:",
+        "numero": 21,
+        "titulo": "Contracción a un Único Logaritmo: Números Sueltos, Radicales y Colapso Numérico",
+        "referencia": "Punto 3.2 (Págs. 19-21)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para contraer expresiones a un solo logaritmo de forma rápida y limpia:</strong><br>• <strong>Paso 1: Sube los coeficientes a exponentes:</strong> $k\\log(x) = \\log(x^k)$. Las fracciones pasan a ser raíces: $\\frac{1}{2}\\log(y) = \\log(\\sqrt{y})$ y $\\frac{1}{3}\\log(z) = \\log(\\sqrt[3]{z})$.<br>• <strong>Paso 2: Transforma los números sueltos en logaritmos:</strong> Escribe cualquier número entero o fracción en la misma base: en base 10, $2 = \\log(10^2) = \\log(100)$; en base 2, $3 = \\log_2(2^3) = \\log_2(8)$; en base $e$, $1 = \\ln(e)$ o $\\frac{3}{2} = \\ln(e\\sqrt{e})$.<br>• <strong>Paso 3: La regla directa del numerador y denominador:</strong> Pon una única palabra $\\log(\\dots)$ con una gran fracción. Todo término que tenga signo $+$ va multiplicando al <strong>numerador</strong>; todo término que tenga signo $-$ va multiplicando al <strong>denominador</strong>.<br>• <strong>Paso 4: Simplifica el argumento:</strong> Una vez reunido todo en un solo logaritmo, cancela factores comunes si es algebraico o resuelve la aritmética si es numérico.</div></div>Reduce a un único logaritmo y simplifica al máximo la expresión resultante (evalúa el valor exacto final en caso de colapso numérico):",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\log_2\\left(\\dfrac{\\sqrt[3]{16}}{32}\\right) = -\\dfrac{11}{3}"
+            "expresion": "3\\log(x) - \\dfrac{1}{2}\\log(y) + 2\\log(z) - 2 = \\log\\left(\\dfrac{x^3 \\cdot z^2}{100\\sqrt{y}}\\right)"
           },
           {
             "letra": "b)",
-            "expresion": "\\log_{\\sqrt[3]{3}}\\left(\\dfrac{1}{27\\sqrt{3}}\\right) = -\\dfrac{21}{2}"
+            "expresion": "2\\log_2(x+1) - \\log_2(x^2 - 1) + 3 - \\dfrac{1}{2}\\log_2(x-1) = \\log_2\\left(\\dfrac{8(x+1)}{\\sqrt{(x-1)^3}}\\right)"
           },
           {
             "letra": "c)",
-            "expresion": "\\log_{\\frac{2}{3}}\\left(\\dfrac{9\\sqrt{3}}{4\\sqrt{2}}\\right) = -\\dfrac{5}{2}"
+            "expresion": "\\dfrac{1}{3}\\ln(x) - 2\\ln(y) + \\dfrac{1}{2}\\ln(z) + \\dfrac{3}{2} = \\ln\\left(\\dfrac{e\\sqrt{e} \\cdot \\sqrt[3]{x} \\cdot \\sqrt{z}}{y^2}\\right) = \\ln\\left(\\dfrac{\\sqrt{e^3 z} \\cdot \\sqrt[3]{x}}{y^2}\\right)"
           },
           {
             "letra": "d)",
-            "expresion": "\\log_{\\frac{\\sqrt{5}}{5}}\\left(\\sqrt[3]{25\\sqrt{5}}\\right) = -\\dfrac{5}{3}"
+            "expresion": "\\log(40) + 2\\log(5) - \\log(2) + \\log\\left(\\dfrac{1}{5}\\right) = \\log\\left(\\dfrac{40 \\cdot 25 \\cdot 1}{2 \\cdot 5}\\right) = \\log\\left(\\dfrac{1000}{10}\\right) = \\log(100) = 2"
           }
         ],
-        "idea_clave": "Por definición, $\\log_b(a) = x \\iff b^x = a$. Todo logaritmo por definición es una ecuación exponencial: se iguala a $x$, se traduce a potencias de la misma base y se igualan los exponentes aprovechando las propiedades de las potencias y radicales."
-      },
-      {
-        "numero": 17,
-        "titulo": "Cálculo de la Incógnita por Definición: La x en la Base o en el Argumento",
-        "referencia": "Punto 3.1 (Págs. 17-19)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para despejar la incógnita aplicando la definición:</strong><br>• <strong>Paso 0 obligado:</strong> Pasa siempre de la forma logarítmica a la exponencial: $\\log_b(a) = c \\iff b^c = a$.<br>• <strong>Si la incógnita está en la base ($x^c = a$):</strong> Expresa el argumento como potencia de exponente fraccionario para igualar exponentes o eleva ambos miembros al inverso del exponente. <strong>¡Condición de existencia!</strong> La base debe ser estrictamente positiva y distinta de 1 ($x > 0, x \\ne 1$).<br>• <strong>Si la incógnita está bajo una raíz en el argumento:</strong> Despeja primero la raíz aislando el miembro correspondiente y luego eleva al índice para obtener $x$. <strong>¡Condición de existencia!</strong> El argumento debe ser estrictamente positivo ($a(x) > 0$).<br>• <strong>Si la base tiene una raíz (como $\\sqrt{3}$ o $\\sqrt{2}$):</strong> Eleva la raíz al exponente simplificando antes de operar.</div></div>Calcula el valor exacto de la incógnita $x$ aplicando la definición formal de logaritmo y comprueba la validez de las soluciones:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "\\log_x(4\\sqrt{2}) = \\dfrac{5}{2} \\iff x^{5/2} = 2^{5/2} \\iff x = 2"
-          },
-          {
-            "letra": "b)",
-            "expresion": "\\log_x\\left(\\dfrac{4}{9}\\right) = -2 \\iff x^{-2} = \\left(\\dfrac{3}{2}\\right)^{-2} \\iff x = \\dfrac{3}{2}"
-          },
-          {
-            "letra": "c)",
-            "expresion": "\\log_2(\\sqrt{x}) = -3 \\iff \\sqrt{x} = 2^{-3} = \\dfrac{1}{8} \\iff x = \\dfrac{1}{64}"
-          },
-          {
-            "letra": "d)",
-            "expresion": "\\log_{\\sqrt{2}}(x) = 6 \\iff x = (\\sqrt{2})^6 = 8 \\quad\\text{y}\\quad \\log_5(\\sqrt{2x - 1}) = 1 \\iff 2x - 1 = 25 \\iff x = 13"
-          }
-        ],
-        "idea_clave": "Para hallar $x$, traduce de inmediato a la forma exponencial $b^c = a$. Con raíces en la base o en el argumento, pásalas a potencias de exponente fraccionario. Exige siempre que la base sea positiva y distinta de 1 ($x > 0, x \\ne 1$) y que el argumento sea estrictamente positivo ($a > 0$)."
-      },
-      {
-        "numero": 18,
-        "titulo": "Fórmula del Cambio de Base",
-        "referencia": "Punto 3.2 (Págs. 18 y 21)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para aplicar la fórmula de cambio de base:</strong><br>• <strong>La fórmula maestra:</strong> $\\log_b(a) = \\dfrac{\\log_c(a)}{\\log_c(b)}$. Tú eliges la nueva base $c$ que más te convenga.<br>• <strong>¿Qué base $c$ conviene elegir?:</strong> Si la base $b$ y el argumento $a$ son potencias de un mismo número primo ($2, 3, 5\\dots$), pásalos a esa base prima común. Por ejemplo, en $\\log_8(32)$ la base común es $2$: $\\dfrac{\\log_2(32)}{\\log_2(8)} = \\dfrac{5}{3}$. ¡Mucho más rápido y limpio que plantear una ecuación exponencial!<br>• <strong>Con fracciones y raíces:</strong> Expresa el argumento y la base en potencias fraccionarias antes o después del cambio de base: $\\log_{16}(1/32) = \\dfrac{\\log_2(2^{-5})}{\\log_2(2^4)} = -\\dfrac{5}{4}$.</div></div>Aplica la fórmula del cambio de base para calcular el valor exacto de los siguientes logaritmos sin utilizar calculadora:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "\\log_8(32) = \\dfrac{\\log_2(32)}{\\log_2(8)} = \\dfrac{5}{3} \\quad\\text{y}\\quad \\log_9(243) = \\dfrac{\\log_3(243)}{\\log_3(9)} = \\dfrac{5}{2}"
-          },
-          {
-            "letra": "b)",
-            "expresion": "\\log_{16}\\left(\\dfrac{1}{32}\\right) = \\dfrac{\\log_2(2^{-5})}{\\log_2(2^4)} = -\\dfrac{5}{4} \\quad\\text{y}\\quad \\log_{27}\\left(\\dfrac{1}{9\\sqrt{3}}\\right) = \\dfrac{\\log_3(3^{-5/2})}{\\log_3(3^3)} = -\\dfrac{5}{6}"
-          },
-          {
-            "letra": "c)",
-            "expresion": "\\log_{25}(125\\sqrt[3]{5}) = \\dfrac{\\log_5(5^{10/3})}{\\log_5(5^2)} = \\dfrac{10/3}{2} = \\dfrac{5}{3}"
-          }
-        ],
-        "idea_clave": "La fórmula del cambio de base $\\log_b(a) = \\dfrac{\\log_c(a)}{\\log_c(b)}$ permite calcular cualquier logaritmo eligiendo una base prima común $c$ (como 2, 3 o 5) para simplificar inmediatamente potencias y raíces sin necesidad de calculadora."
-      },
-      {
-        "numero": 19,
-        "titulo": "Cálculo de Logaritmos a partir de Valores Conocidos: log(2) y log(3)",
-        "referencia": "Punto 3.2 (Págs. 18 y 22)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas para calcular logaritmos con datos conocidos:</strong><br>• <strong>Descomposición en factores primos:</strong> Expresa el argumento usando únicamente $2$, $3$ y potencias de $10$ para aplicar las propiedades del producto y cociente: $\\log(x \\cdot y) = \\log(x) + \\log(y)$ y $\\log(x / y) = \\log(x) - \\log(y)$.<br>• <strong>El truco indispensable del 5:</strong> Como $5 = \\dfrac{10}{2}$, su logaritmo decimal siempre vale: $\\log(5) = \\log\\left(\\dfrac{10}{2}\\right) = \\log(10) - \\log(2) = 1 - \\log(2)$.<br>• <strong>Cambio de base a base 10:</strong> Si el logaritmo está en otra base, aplica primero el cambio de base decimal: $\\log_b(a) = \\dfrac{\\log(a)}{\\log(b)}$. Sustituye después los valores decimales de $\\log(2)$ y $\\log(3)$ para hallar el valor exacto aproximado.</div></div>Sabiendo que $\\log(2) \\approx 0{,}3010$ y $\\log(3) \\approx 0{,}4771$, calcula razonadamente el valor numérico de los siguientes logaritmos:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "\\log(6) = \\log(2 \\cdot 3) = \\log(2) + \\log(3) = 0{,}3010 + 0{,}4771 = 0{,}7781"
-          },
-          {
-            "letra": "b)",
-            "expresion": "\\log(5) = \\log\\left(\\dfrac{10}{2}\\right) = 1 - \\log(2) = 1 - 0{,}3010 = 0{,}6990"
-          },
-          {
-            "letra": "c)",
-            "expresion": "\\log_2(6) = \\dfrac{\\log(6)}{\\log(2)} = \\dfrac{0{,}7781}{0{,}3010} \\approx 2{,}5850"
-          },
-          {
-            "letra": "d)",
-            "expresion": "\\log_3(5) = \\dfrac{\\log(5)}{\\log(3)} = \\dfrac{0{,}6990}{0{,}4771} \\approx 1{,}4651"
-          }
-        ],
-        "idea_clave": "Para calcular logaritmos con datos conocidos, descompón en factores $2, 3$ y $10$. Recuerda siempre que $\\log(5) = 1 - \\log(2)$, y para logaritmos en otra base aplica el cambio a base 10: $\\log_b(a) = \\dfrac{\\log(a)}{\\log(b)}$ sustituyendo los valores numéricos correspondientes."
+        "idea_clave": "Sube coeficientes a los exponentes, convierte términos independientes en logaritmos de la misma base ($k = \\log_b(b^k)$), y agrupa en una única fracción: los logaritmos positivos van arriba y los negativos abajo. Al final, factoriza y simplifica el interior del argumento."
       }
     ]
   },
@@ -187,7 +87,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 13,
+      "sesiones_impartidas": 14,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
