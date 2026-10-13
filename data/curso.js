@@ -18,6 +18,17 @@ window.CURSO_CONFIG = {
     "pdf_solucionario": "pdf/Tarea1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
     "aviso": "¡Solucionario de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
+  "control_test_activo": {
+    "existe": false,
+    "tema_id": 1,
+    "test_id": "Test-01",
+    "titulo": "Control Test 1: Radicales, Racionalización y Logaritmos",
+    "fecha": "Martes 13 de Octubre de 2026",
+    "estado": "en_curso",
+    "pdf_examen": "pdf/Examen_Test_Radicales_Logaritmos_1Bach_Master.pdf",
+    "pdf_solucionario": "pdf/Examen_Test_Radicales_Logaritmos_1Bach_Solucionario.pdf",
+    "aviso": "Control tipo test en directo en el aula. Enunciado oficial listo para descargar."
+  },
   "ultima_clase": {
     "fecha": "Viernes 9 de Octubre de 2026",
     "tema_id": 1,
@@ -94,7 +105,8 @@ window.CURSO_CONFIG = {
       "apuntes_listos": true,
       "ejercicios_listos": true,
       "total_ejercicios_libreta": 12,
-      "total_tareas_classroom": 1
+      "total_tareas_classroom": 1,
+      "total_controles_test": 0
     }
   ]
 };

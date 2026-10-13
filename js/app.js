@@ -14,11 +14,13 @@ function renderApartadosSlider(apartados, enunciadoBase = null) {
     baseHtml = `<div class="center-math">$${enunciadoBase}$</div>`;
   }
 
+  const badgeColors = ['badge-blue', 'badge-purple', 'badge-emerald', 'badge-amber', 'badge-rose', 'badge-cyan'];
   let cardsHtml = '';
-  apartados.forEach(ap => {
+  apartados.forEach((ap, idx) => {
+    const colorClass = badgeColors[idx % badgeColors.length];
     cardsHtml += `
-      <div class="apartado-card">
-        <span class="apartado-badge">${ap.letra}</span>
+      <div class="apartado-card ${colorClass}-card">
+        <span class="apartado-badge ${colorClass}">${ap.letra}</span>
         <div class="apartado-math">$${ap.expresion}$</div>
       </div>
     `;
@@ -199,6 +201,25 @@ function renderAlDia() {
     }
   }
 
+  const testNoticeEl = document.getElementById('heroTestNotice');
+  if (testNoticeEl) {
+    if (config.control_test_activo && config.control_test_activo.existe) {
+      const tTest = config.control_test_activo;
+      testNoticeEl.style.display = 'flex';
+      const esEnCurso = tTest.estado === 'en_curso';
+      testNoticeEl.className = esEnCurso ? 'test-notice en-curso' : 'test-notice';
+      testNoticeEl.innerHTML = `
+        <span>✍️</span>
+        <span id="heroTestTexto">
+          <strong>${esEnCurso ? '🔴 Control en Vivo hoy:' : '✅ Control Realizado:'}</strong> ${tTest.aviso || tTest.titulo}
+          <span class="test-link-btn">Ver control y hojas de examen →</span>
+        </span>
+      `;
+    } else {
+      testNoticeEl.style.display = 'none';
+    }
+  }
+
   const container = document.getElementById('heroEjerciciosContainer');
   if (!container || !u.ejercicios_vistos) return;
 
@@ -280,6 +301,13 @@ function renderTemasGrid() {
       const labelTareas = numTareas === 1 ? '1 Tarea de Classroom' : `${numTareas} Tareas de Classroom`;
       metaPillsHtml += `<span class="meta-pill meta-pill-classroom">📤 ${labelTareas}</span>`;
     }
+    const numTests = (window.TEMAS_DATA && window.TEMAS_DATA[t.id] && window.TEMAS_DATA[t.id].controles_test)
+      ? window.TEMAS_DATA[t.id].controles_test.length
+      : (t.total_controles_test || 0);
+    if (numTests > 0) {
+      const labelTests = numTests === 1 ? '1 Control Test' : `${numTests} Controles Test`;
+      metaPillsHtml += `<span class="meta-pill meta-pill-test">✍️ ${labelTests}</span>`;
+    }
     if (!t.apuntes_listos && !t.ejercicios_listos) {
       metaPillsHtml += '<span class="meta-pill">⏳ En preparación didáctica</span>';
     }
@@ -329,7 +357,9 @@ function renderTemaDetailHeader(temaId) {
     if (subEl) {
       const numTareas = (temaData && temaData.tareas_classroom) ? temaData.tareas_classroom.length : (temaMeta.total_tareas_classroom || 0);
       const tareasText = numTareas > 0 ? ` • 📤 ${numTareas} ${numTareas === 1 ? 'tarea' : 'tareas'} de Classroom` : '';
-      subEl.textContent = `${temaMeta.sesiones_impartidas} sesiones impartidas${tareasText} • ${temaMeta.evaluacion}`;
+      const numTests = (temaData && temaData.controles_test) ? temaData.controles_test.length : (temaMeta.total_controles_test || 0);
+      const testsText = numTests > 0 ? ` • ✍️ ${numTests} ${numTests === 1 ? 'control test' : 'controles test'}` : '';
+      subEl.textContent = `${temaMeta.sesiones_impartidas} sesiones impartidas${tareasText}${testsText} • ${temaMeta.evaluacion}`;
     }
   }
 
@@ -662,6 +692,121 @@ function renderTareasClassroom(temaId = currentTemaId) {
   container.innerHTML = html;
 }
 
+// Renderizado de Controles y Exámenes Test de Aula (Enunciados y Solucionarios)
+function renderControlesTest(temaId = currentTemaId) {
+  const container = document.getElementById('temaControlesTestContainer');
+  if (!container) return;
+
+  const t = window.TEMAS_DATA && window.TEMAS_DATA[temaId];
+  if (!t || !t.controles_test || t.controles_test.length === 0) {
+    container.innerHTML = `
+      <div style="padding: 28px; background: #ffffff; border-radius: 12px; border: 1.5px solid var(--border-soft); text-align: center; color: var(--text-muted);">
+        <p style="font-size: 1.05rem;">✍️ No hay controles tipo test registrados para esta unidad en este momento.</p>
+        <p style="font-size: 0.9rem; margin-top: 6px;">Las pruebas escritas se publicarán aquí en directo conforme se realicen en el aula.</p>
+      </div>
+    `;
+    return;
+  }
+
+  let html = '<div class="controles-test-list">';
+  t.controles_test.forEach(test => {
+    let estadoBadgeHtml = '';
+    let actionButtonsHtml = '';
+    let cardClass = 'test-accordion';
+
+    const btnRespuestas = test.pdf_respuestas ? `
+        <a href="${test.pdf_respuestas}" target="_blank" class="btn-action-purple">
+          <span>📝</span>
+          <span>Ficha de Respuestas (PDF)</span>
+        </a>
+    ` : '';
+
+    if (test.estado === 'en_curso') {
+      cardClass += ' en-curso';
+      estadoBadgeHtml = '<span class="test-badge-estado en-curso">🔴 En Curso en el Aula</span>';
+      actionButtonsHtml = `
+        <a href="${test.pdf_examen}" target="_blank" class="btn-action-primary">
+          <span>📄</span>
+          <span>Descargar Enunciado del Examen (PDF)</span>
+        </a>
+        ${btnRespuestas}
+        <div class="solucion-pendiente-box">
+          <span>🔒</span>
+          <span>${test.aviso_solucionario || 'Solucionario cerrado temporalmente durante la prueba'}</span>
+        </div>
+      `;
+    } else if (test.estado === 'solucionario_disponible') {
+      cardClass += ' solucionario-disponible';
+      estadoBadgeHtml = '<span class="test-badge-estado solucionario-disponible">🟢 Solucionario Disponible (Auto-corrección)</span>';
+      actionButtonsHtml = `
+        <a href="${test.pdf_examen}" target="_blank" class="btn-action-purple">
+          <span>📄</span>
+          <span>Ver Enunciado del Examen (PDF)</span>
+        </a>
+        ${btnRespuestas}
+        <a href="${test.pdf_solucionario}" target="_blank" class="btn-action-emerald">
+          <span>✅</span>
+          <span>Descargar Solucionario Oficial Resuelto (PDF)</span>
+        </a>
+      `;
+    } else {
+      cardClass += ' cerrada';
+      estadoBadgeHtml = '<span class="test-badge-estado cerrada">⚪ Prueba Realizada</span>';
+      actionButtonsHtml = `
+        <a href="${test.pdf_examen}" target="_blank" class="btn-action-purple">
+          <span>📄</span>
+          <span>Ver Enunciado (PDF)</span>
+        </a>
+        ${btnRespuestas}
+        <a href="${test.pdf_solucionario}" target="_blank" class="btn-action-emerald">
+          <span>✅</span>
+          <span>Solucionario Oficial (PDF)</span>
+        </a>
+      `;
+    }
+
+    html += `
+      <details class="${cardClass}" open ontoggle="onAccordionToggle()">
+        <summary class="test-summary">
+          <div class="test-summary-left">
+            <span class="test-badge-id">${test.id}</span>
+            <span class="test-title">${test.titulo}</span>
+            ${estadoBadgeHtml}
+          </div>
+          <div class="test-summary-right">
+            <span class="test-date-pill">🗓️ ${test.fecha}</span>
+            <span class="test-toggle-icon">▼</span>
+          </div>
+        </summary>
+
+        <div class="test-body">
+          <div class="test-meta-row">
+            <span class="test-meta-item">📝 <strong>Formato:</strong> ${test.num_preguntas} cuestiones tipo test (4 opciones)</span>
+            <span class="test-meta-item">🎯 <strong>Evaluación:</strong> ${test.evaluacion}</span>
+          </div>
+
+          <div class="test-desc-box">
+            <strong>📋 Contenidos evaluados:</strong> ${test.descripcion}
+          </div>
+
+          ${test.criterios ? `
+            <div class="test-instructions-box">
+              <strong>📌 Instrucciones de examen:</strong> ${test.criterios}
+            </div>
+          ` : ''}
+
+          <div class="test-actions-bar">
+            ${actionButtonsHtml}
+          </div>
+        </div>
+      </details>
+    `;
+  });
+
+  html += '</div>';
+  container.innerHTML = html;
+}
+
 // Renderizado de la Autoevaluación Semafórica (Comprueba lo que sabes)
 function renderComprueba(temaId = currentTemaId) {
   const container = document.getElementById('temaCompruebaContainer');
@@ -828,6 +973,7 @@ function openTemaDetail(temaId) {
   renderDiarioPlegado(temaId);
   renderSemanaHoja(temaId);
   renderTareasClassroom(temaId);
+  renderControlesTest(temaId);
   renderComprueba(temaId);
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -842,7 +988,7 @@ function showTemarioGrid() {
   renderMath();
 }
 
-// Sub-pestañas dentro del tema (Diario, Ejercicios de la Semana, Classroom, Comprueba)
+// Sub-pestañas dentro del tema (Diario, Ejercicios de la Semana, Classroom, Controles, Comprueba)
 function switchSubTab(subId, clickedBtn) {
   document.querySelectorAll('.subtab-btn').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.subtab-panel').forEach(p => p.classList.remove('active'));
@@ -851,7 +997,7 @@ function switchSubTab(subId, clickedBtn) {
     clickedBtn.classList.add('active');
   } else {
     const btn = document.querySelector(`.subtab-btn[onclick*="${subId}"]`)
-      || document.getElementById(`subtab-btn-${subId.replace('tareas-', '')}`);
+      || document.getElementById(`subtab-btn-${subId.replace('tareas-', '').replace('controles-', '')}`);
     if (btn) btn.classList.add('active');
   }
 
@@ -899,6 +1045,26 @@ function irATareasClassroom() {
   renderMath();
 }
 
+// Enlace rápido desde la portada a los controles y exámenes test de aula
+function irAControlesTest() {
+  const config = window.CURSO_CONFIG;
+  const temaId = (config && config.control_test_activo && config.control_test_activo.tema_id) || (config && config.tema_actual_id) || 1;
+  switchMainView('temario');
+  openTemaDetail(temaId);
+  switchSubTab('controles-test');
+  const tabBtn = document.getElementById('subtab-btn-test');
+  if (tabBtn) {
+    document.querySelectorAll('.subtab-btn').forEach(b => b.classList.remove('active'));
+    tabBtn.classList.add('active');
+  }
+  const testActivoAcc = document.querySelector('.test-accordion.en-curso') || document.querySelector('.test-accordion.solucionario-disponible') || document.querySelector('.test-accordion');
+  setTimeout(() => {
+    const target = testActivoAcc || document.getElementById('subtab-controles-test');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 150);
+  renderMath();
+}
+
 // KaTeX renderizado universal de fórmulas
 function renderMath() {
   if (typeof renderMathInElement === 'function') {
@@ -920,6 +1086,7 @@ function init() {
   renderDiarioPlegado(currentTemaId);
   renderSemanaHoja(currentTemaId);
   renderTareasClassroom(currentTemaId);
+  renderControlesTest(currentTemaId);
   renderComprueba(currentTemaId);
   setTimeout(renderMath, 100);
 }

@@ -28,6 +28,7 @@ window.TEMAS_DATA[1] = {
       ]
     }
   ],
+  "controles_test": [],
   "sesiones": [
     {
       "numero": 1,

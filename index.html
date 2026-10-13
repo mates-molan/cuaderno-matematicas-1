@@ -14,7 +14,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
   <!-- Estilos modulares desacoplados -->
-  <link rel="stylesheet" href="css/estilos.css?v=20261009_183806">
+  <link rel="stylesheet" href="css/estilos.css?v=20261013_121910">
 </head>
 <body>
 
@@ -84,6 +84,14 @@
             <span id="heroClassroomTexto">
               <strong>Tarea en Classroom:</strong> Tarea 1 activa (Entrega antes del Sábado 3 Oct 23:59 h)
               <span class="classroom-link-btn">Ver tarea →</span>
+            </span>
+          </div>
+
+          <div class="test-notice" id="heroTestNotice" onclick="irAControlesTest()" title="Hacer clic para ver el control tipo test y descargar enunciados">
+            <span>✍️</span>
+            <span id="heroTestTexto">
+              <strong>Control en Aula:</strong> Test 1 activo hoy (Radicales y Logaritmos)
+              <span class="test-link-btn">Ver control y hojas de examen →</span>
             </span>
           </div>
 
@@ -164,23 +172,39 @@
             </div>
           </div>
 
-          <!-- Sub-Pestañas del Tema -->
+          <!-- Guía de Orientación Rápida para el Alumnado -->
+          <div class="tema-route-guide">
+            <span class="guide-title">🧭 <strong>¿A dónde ir?</strong></span>
+            <div class="guide-chips">
+              <button type="button" class="guide-chip chip-pizarra" onclick="switchSubTab('pizarra-diario')">📅 <strong>Diario:</strong> Repasar clase de hoy</button>
+              <button type="button" class="guide-chip chip-libreta" onclick="switchSubTab('semana-hoja')">📝 <strong>Libreta:</strong> Ejercicios semanales</button>
+              <button type="button" class="guide-chip chip-classroom" onclick="switchSubTab('tareas-classroom')">📤 <strong>Classroom:</strong> Entregas oficiales</button>
+              <button type="button" class="guide-chip chip-test" onclick="switchSubTab('controles-test')">✍️ <strong>Test:</strong> Exámenes y soluciones</button>
+              <button type="button" class="guide-chip chip-radar" onclick="switchSubTab('comprueba-tema')">🎯 <strong>Radar:</strong> ¿Cómo te ves?</button>
+            </div>
+          </div>
+
+          <!-- Sub-Pestañas del Tema con Identidad Cromática -->
           <nav class="tema-subtabs">
-            <button class="subtab-btn active" onclick="switchSubTab('pizarra-diario', this)">
+            <button class="subtab-btn subtab-btn-pizarra active" onclick="switchSubTab('pizarra-diario', this)">
               <span>📅</span>
-              <span>Diario de Pizarra (lo visto en clase)</span>
+              <span>Diario de Pizarra (en clase)</span>
             </button>
-            <button class="subtab-btn" onclick="switchSubTab('semana-hoja', this)">
+            <button class="subtab-btn subtab-btn-libreta" onclick="switchSubTab('semana-hoja', this)">
               <span>📝</span>
-              <span>Tu Libreta (problemas de la semana)</span>
+              <span>Tu Libreta (semana a semana)</span>
             </button>
-            <button class="subtab-btn" id="subtab-btn-classroom" onclick="switchSubTab('tareas-classroom', this)">
+            <button class="subtab-btn subtab-btn-classroom" id="subtab-btn-classroom" onclick="switchSubTab('tareas-classroom', this)">
               <span>📤</span>
-              <span>Tareas de Classroom (entregas y solucionarios)</span>
+              <span>Tareas de Classroom</span>
             </button>
-            <button class="subtab-btn" onclick="switchSubTab('comprueba-tema', this)">
+            <button class="subtab-btn subtab-btn-test" id="subtab-btn-test" onclick="switchSubTab('controles-test', this)">
+              <span>✍️</span>
+              <span>Controles y Test (exámenes)</span>
+            </button>
+            <button class="subtab-btn subtab-btn-radar" onclick="switchSubTab('comprueba-tema', this)">
               <span>🎯</span>
-              <span>Tu Radar de Confianza (¿cómo te ves?)</span>
+              <span>Tu Radar (autoevaluación)</span>
             </button>
           </nav>
 
@@ -217,6 +241,16 @@
             </div>
           </div>
 
+          <!-- Subtab 4: Controles y Test de Aula (Enunciados y Solucionarios) -->
+          <div class="subtab-panel" id="subtab-controles-test">
+            <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1rem;">
+              Aquí tienes las pruebas escritas y controles tipo test realizados en cada bloque del tema. Puedes descargar el examen completo, la ficha de respuestas multicopia y, una vez finalizada la prueba, el solucionario detallado paso a paso para auto-corregir:
+            </p>
+            <div id="temaControlesTestContainer">
+              <!-- Renderizado dinámico -->
+            </div>
+          </div>
+
           <!-- Subtab 4: Tu Radar de Confianza (Autoevaluación DUA) -->
           <div class="subtab-panel" id="subtab-comprueba-tema">
             <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1rem;">
@@ -235,10 +269,10 @@
   </main>
 
   <!-- Módulos de Datos Desacoplados -->
-  <script src="data/curso.js?v=20261009_183806"></script>
-  <script src="data/temas/tema_01.js?v=20261009_183806"></script>
+  <script src="data/curso.js?v=20261013_121910"></script>
+  <script src="data/temas/tema_01.js?v=20261013_121910"></script>
 
   <!-- Motor de la Aplicación -->
-  <script src="js/app.js?v=20261009_183806"></script>
+  <script src="js/app.js?v=20261013_121910"></script>
 </body>
 </html>
