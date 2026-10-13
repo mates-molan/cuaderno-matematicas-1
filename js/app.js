@@ -602,7 +602,7 @@ function renderTareasClassroom(temaId = currentTemaId) {
     container.innerHTML = `
       <div style="padding: 28px; background: #ffffff; border-radius: 12px; border: 1.5px solid var(--border-soft); text-align: center; color: var(--text-muted);">
         <p style="font-size: 1.05rem;">📤 No hay tareas de Classroom registradas para esta unidad en este momento.</p>
-        <p style="font-size: 0.9rem; margin-top: 6px;">Las tareas evaluables oficiales se publicarán aquí conforme se asignen en Google Classroom.</p>
+        <p style="font-size: 0.9rem; margin-top: 6px;">Las tareas entregables se publicarán aquí conforme se asignen en Google Classroom.</p>
       </div>
     `;
     return;
