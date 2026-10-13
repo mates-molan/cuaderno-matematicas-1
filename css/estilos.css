@@ -468,6 +468,25 @@ body {
   box-shadow: 0 2px 8px rgba(225, 29, 72, 0.12);
 }
 
+.test-notice.solucionario-disponible {
+  color: #065f46;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 1.5px solid #6ee7b7;
+}
+
+.test-notice.solucionario-disponible:hover {
+  border-color: #10b981;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.test-notice.solucionario-disponible strong {
+  color: #064e3b;
+}
+
+.test-notice.solucionario-disponible .test-link-btn {
+  color: #047857;
+}
+
 .hero-pdf-btns {
   display: flex;
   gap: 12px;

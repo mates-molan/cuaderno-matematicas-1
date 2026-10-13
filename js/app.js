@@ -206,15 +206,26 @@ function renderAlDia() {
     if (config.control_test_activo && config.control_test_activo.existe) {
       const tTest = config.control_test_activo;
       testNoticeEl.style.display = 'flex';
-      const esEnCurso = tTest.estado === 'en_curso';
-      testNoticeEl.className = esEnCurso ? 'test-notice en-curso' : 'test-notice';
-      testNoticeEl.innerHTML = `
-        <span>✍️</span>
-        <span id="heroTestTexto">
-          <strong>${esEnCurso ? '🔴 Control en Vivo hoy:' : '✅ Control Realizado:'}</strong> ${tTest.aviso || tTest.titulo}
-          <span class="test-link-btn">Ver control y hojas de examen →</span>
-        </span>
-      `;
+      if (tTest.estado === 'solucionario_disponible') {
+        testNoticeEl.className = 'test-notice solucionario-disponible';
+        testNoticeEl.innerHTML = `
+          <span>✅</span>
+          <span id="heroTestTexto">
+            <strong>Control Test 1 y Solucionario:</strong> ${tTest.aviso || 'Enunciado oficial y solucionario resuelto disponibles para auto-corrección.'}
+            <span class="test-link-btn">Ver examen y soluciones →</span>
+          </span>
+        `;
+      } else {
+        const esEnCurso = tTest.estado === 'en_curso';
+        testNoticeEl.className = esEnCurso ? 'test-notice en-curso' : 'test-notice';
+        testNoticeEl.innerHTML = `
+          <span>✍️</span>
+          <span id="heroTestTexto">
+            <strong>${esEnCurso ? '🔴 Control en Vivo hoy:' : '✅ Control Realizado:'}</strong> ${tTest.aviso || tTest.titulo}
+            <span class="test-link-btn">Ver control y examen →</span>
+          </span>
+        `;
+      }
     } else {
       testNoticeEl.style.display = 'none';
     }
