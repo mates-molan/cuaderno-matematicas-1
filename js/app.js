@@ -777,7 +777,7 @@ function renderControlesTest(temaId = currentTemaId) {
     }
 
     html += `
-      <details class="${cardClass}" open ontoggle="onAccordionToggle()">
+      <details class="${cardClass}" ontoggle="onAccordionToggle()">
         <summary class="test-summary">
           <div class="test-summary-left">
             <span class="test-badge-id">${test.id}</span>
@@ -792,18 +792,15 @@ function renderControlesTest(temaId = currentTemaId) {
 
         <div class="test-body">
           <div class="test-meta-row">
-            <span class="test-meta-item">📝 <strong>Formato:</strong> ${test.num_preguntas} cuestiones tipo test (4 opciones)</span>
-            <span class="test-meta-item">🎯 <strong>Evaluación:</strong> ${test.evaluacion}</span>
-          </div>
-
-          <div class="test-desc-box">
-            <strong>📋 Contenidos evaluados:</strong> ${test.descripcion}
+            <span class="test-meta-item">📝 <strong>Formato:</strong> ${test.num_preguntas} cuestiones</span>
+            <span class="test-meta-item">🎯 <strong>Temas:</strong> ${test.descripcion || 'Contenidos de la unidad'}</span>
           </div>
 
           ${test.criterios ? `
-            <div class="test-instructions-box">
-              <strong>📌 Instrucciones de examen:</strong> ${test.criterios}
-            </div>
+            <details class="tarea-ejercicios-resumen" style="margin-bottom: 12px;">
+              <summary>📌 Ver indicaciones adicionales</summary>
+              <p style="margin: 6px 0 0 0; font-size: 0.9rem; color: var(--text-muted);">${test.criterios}</p>
+            </details>
           ` : ''}
 
           <div class="test-actions-bar">

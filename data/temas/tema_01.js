@@ -37,10 +37,9 @@ window.TEMAS_DATA[1] = {
       "evaluacion": "1.ª Evaluación",
       "estado": "solucionario_disponible",
       "num_preguntas": 10,
-      "descripcion": "Prueba escrita individual tipo test (10 cuestiones de razonamiento formal y procedimental). Cubre m.c.m. de índices, factorización y exponentes racionales, racionalización avanzada de binomios y trinomios, y propiedades operativas de logaritmos con restricciones de base.",
+      "descripcion": "Radicales, racionalización y logaritmos.",
       "pdf_examen": "pdf/Examen_Test_Radicales_Logaritmos_1Bach_Master.pdf",
-      "pdf_solucionario": "pdf/Examen_Test_Radicales_Logaritmos_1Bach_Solucionario.pdf",
-      "criterios": "Responde marcando con cruz en la ficha oficial. Cada pregunta correcta suma 1 punto (sin penalización por fallo). Calibrado a 4 páginas exactas (2 folios a doble cara)."
+      "pdf_solucionario": "pdf/Examen_Test_Radicales_Logaritmos_1Bach_Solucionario.pdf"
     }
   ],
   "sesiones": [
