@@ -30,63 +30,88 @@ window.CURSO_CONFIG = {
     "aviso": "¡Control Test 1 y Solucionario disponibles! Consulta el enunciado oficial y las soluciones resueltas paso a paso para auto-corregir."
   },
   "ultima_clase": {
-    "fecha": "Viernes 9 de Octubre de 2026",
+    "fecha": "Miércoles 14 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 14: Propiedades de los Logaritmos (Desarrollar y Unir en un Único Logaritmo)",
-    "referencia_apuntes": "Punto 3.2 (Págs. 17 y 20)",
-    "mision_semanal": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en tu libreta (Racionalización, Identidades Notables y Logaritmos).",
-    "trabajo_semanal_pendiente": "Hacer los Ejercicios 10, 11 y 12 de la hoja de ejercicios en la libreta.",
+    "titulo_sesion": "Sesión 15: Fracciones Algebraicas (Factorización, Identidades Notables y Operaciones con m.c.m.)",
+    "referencia_apuntes": "Punto 4 (Págs. 21-25)",
+    "mision_semanal": "Practicar la simplificación y operaciones con fracciones algebraicas identificando siempre las identidades notables antes de operar.",
+    "trabajo_semanal_pendiente": "Practicar la simplificación y operaciones con fracciones algebraicas identificando siempre las identidades notables antes de operar.",
     "ejercicios_vistos": [
       {
-        "numero": 20,
-        "titulo": "Desarrollo de Expresiones: Aplicar las Propiedades Paso a Paso",
-        "referencia": "Punto 3.2 (Págs. 17 y 20)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas clave para desarrollar paso a paso:</strong><br>• <strong>Lo que multiplica, suma:</strong> los factores del numerador se separan sumando logaritmos.<br>• <strong>Lo que divide, resta:</strong> los factores del denominador se separan restando logaritmos.<br>• <strong>Los exponentes y raíces bajan delante:</strong> una potencia pasa multiplicando ($n \\cdot \\log(x)$) y una raíz pasa dividiendo.<br>• <strong>Cuidado con las sumas dentro del paréntesis:</strong> expresiones como $(A + B)$ o $(x^2 + y^2)$ no se pueden separar directamente. Solo separamos productos y cocientes.<br>• <strong>Calcula los números conocidos:</strong> si aparece un valor exacto como $\\log(100) = 2$, $\\log_2(16) = 4$ o $\\ln(e) = 1$, escríbelo directamente en su forma numérica.</div></div>Desarrolla las siguientes expresiones aplicando las propiedades de los logaritmos y simplificando los términos numéricos:",
+        "numero": 22,
+        "titulo": "Simplificación de Fracciones Algebraicas (El Ojo Clínico)",
+        "referencia": "Punto 4 (Págs. 21-22)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Regla de oro para simplificar:</strong><br>• <strong>¡Prohibido tachar sumandos!:</strong> Solo se cancelan factores completos que multipliquen a TODO el numerador y a TODO el denominador.<br>• <strong>Filtro 1 — Factor común:</strong> Extrae siempre factor común numérico o literal antes de nada.<br>• <strong>Filtro 2 — Identidades notables:</strong> Reconoce al vuelo $(a+b)^2$, $(a-b)^2$ o $(a+b)(a-b)$.<br>• <strong>Filtro 3 — Factores opuestos:</strong> Si encuentras $(b - a)$ frente a $(a - b)$, extrae el signo menos: $(b - a) = -(a - b)$ para cancelar dejando un $-1$.</div></div>Simplifica al máximo las siguientes fracciones algebraicas e indica los valores que anulan el denominador (restricciones de existencia):",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\log\\left(\\dfrac{100 \\cdot x^3 \\cdot \\sqrt{y}}{z^4 \\cdot \\sqrt[3]{w}}\\right) = 2 + 3\\log(x) + \\dfrac{1}{2}\\log(y) - 4\\log(z) - \\dfrac{1}{3}\\log(w)"
+            "expresion": "\\dfrac{4x^2 - 9}{4x^2 + 12x + 9} = \\dfrac{(2x-3)(2x+3)}{(2x+3)^2} = \\dfrac{2x-3}{2x+3} \\quad \\left(x \\ne -\\dfrac{3}{2}\\right)"
           },
           {
             "letra": "b)",
-            "expresion": "\\log_2\\left(\\dfrac{(x^2 - 9) \\cdot \\sqrt[4]{x+3}}{16 \\cdot (x-3)^3}\\right) = \\dfrac{5}{4}\\log_2(x+3) - 2\\log_2(x-3) - 4"
+            "expresion": "\\dfrac{3x^3 - 12x^2 + 12x}{6x^3 - 24x} = \\dfrac{3x(x-2)^2}{6x(x-2)(x+2)} = \\dfrac{x-2}{2(x+2)} = \\dfrac{x-2}{2x+4} \\quad (x \\ne 0, \\pm 2)"
           },
           {
             "letra": "c)",
-            "expresion": "\\ln\\left(\\dfrac{e^3 \\cdot x^2}{\\sqrt{e \\cdot \\sqrt[3]{x \\cdot y^2}}}\\right) = \\dfrac{5}{2} + \\dfrac{11}{6}\\ln(x) - \\dfrac{1}{3}\\ln(y)"
+            "expresion": "\\dfrac{x^2 - 25}{15 - 3x} = \\dfrac{(x-5)(x+5)}{-3(x-5)} = -\\dfrac{x+5}{3} \\quad (x \\ne 5)"
           },
           {
             "letra": "d)",
-            "expresion": "\\log\\left(\\dfrac{\\sqrt{x^2 + y^2}}{x^2 - y^2}\\right) = \\dfrac{1}{2}\\log(x^2 + y^2) - \\log(x+y) - \\log(x-y)"
+            "expresion": "\\dfrac{x^4 - 16}{(x^2 + 4)(x^2 - 4x + 4)} = \\dfrac{(x-2)(x+2)(x^2+4)}{(x^2+4)(x-2)^2} = \\dfrac{x+2}{x-2} \\quad (x \\ne 2)"
           }
         ],
-        "idea_clave": "Para desarrollar expresiones: lo que está arriba suma, lo que está abajo resta, y los exponentes bajan delante multiplicando. Las sumas dentro de un logaritmo no se pueden separar a menos que se puedan factorizar en productos."
+        "idea_clave": "Nunca simplifiques sumandos sueltos. Primero saca factor común, luego descompón con identidades notables y vigila si aparecen factores opuestos extrayendo el signo menos."
       },
       {
-        "numero": 21,
-        "titulo": "Unir en un Único Logaritmo: El Camino Inverso",
-        "referencia": "Punto 3.2 (Pág. 17)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pistas clave para juntar todo en un solo logaritmo:</strong><br>• <strong>1. Sube los números de delante como exponentes:</strong> $k \\cdot \\log(x)$ pasa a ser $\\log(x^k)$. Si el exponente es una fracción, se expresa como raíz.<br>• <strong>2. Disfraza los números sueltos de logaritmo:</strong> escríbelos en la misma base. Por ejemplo, en base 10 el $2$ es $\\log(100)$; en base 2 el $3$ es $\\log_2(8)$; y en base $e$, el $1$ es $\\ln(e)$.<br>• <strong>3. Agrupa en una sola fracción:</strong> escribe un único logaritmo. Los términos que suman van al numerador y los que restan van al denominador.<br>• <strong>4. Simplifica al final:</strong> una vez dentro del mismo logaritmo, opera las potencias o simplifica la fracción si es posible.</div></div>Reduce a un único logaritmo y simplifica el resultado:",
+        "numero": 23,
+        "titulo": "Suma y Resta con Denominadores Polinómicos (m.c.m. con Identidades Notables)",
+        "referencia": "Punto 4 (Págs. 23-24)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pasos seguros para sumar y restar:</strong><br>• <strong>1. No multipliques los denominadores a lo bruto:</strong> Factoriza cada denominador primero usando identidades notables para calcular el mínimo común múltiplo ($\\text{mcm}$).<br>• <strong>2. ¡Cuidado con el signo menos!:</strong> El signo menos que precede a una fracción afecta a TODOS los términos de su numerador. Pon siempre paréntesis protectores.<br>• <strong>3. Opera el numerador y mantén el denominador factorizado:</strong> No desarrolles el denominador común. Al final, factoriza el numerador resultante por si se puede simplificar con el denominador.</div></div>Realiza las siguientes operaciones reduciendo a común denominador y simplificando al máximo el resultado final:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "3\\log(x) - \\dfrac{1}{2}\\log(y) + 2\\log(z) - 2 = \\log\\left(\\dfrac{x^3 \\cdot z^2}{100\\sqrt{y}}\\right)"
+            "expresion": "\\dfrac{x}{x-1} - \\dfrac{2}{x+1} - \\dfrac{x^2+1}{x^2-1} = \\dfrac{x(x+1) - 2(x-1) - (x^2+1)}{(x-1)(x+1)} = \\dfrac{-(x-1)}{(x-1)(x+1)} = -\\dfrac{1}{x+1}"
           },
           {
             "letra": "b)",
-            "expresion": "2\\log_2(x+1) - \\log_2(x^2 - 1) + 3 - \\dfrac{1}{2}\\log_2(x-1) = \\log_2\\left(\\dfrac{8(x+1)}{\\sqrt{(x-1)^3}}\\right)"
+            "expresion": "\\dfrac{x+2}{x^2 - 2x + 1} - \\dfrac{x}{x^2 - 1} = \\dfrac{(x+2)(x+1) - x(x-1)}{(x-1)^2(x+1)} = \\dfrac{2(2x+1)}{(x-1)^2(x+1)}"
           },
           {
             "letra": "c)",
-            "expresion": "\\dfrac{1}{3}\\ln(x) - 2\\ln(y) + \\dfrac{1}{2}\\ln(z) + \\dfrac{3}{2} = \\ln\\left(\\dfrac{e\\sqrt{e} \\cdot \\sqrt[3]{x} \\cdot \\sqrt{z}}{y^2}\\right) = \\ln\\left(\\dfrac{\\sqrt{e^3 z} \\cdot \\sqrt[3]{x}}{y^2}\\right)"
+            "expresion": "\\dfrac{x^2 + 9}{x^2 - 9} - \\dfrac{x - 3}{x + 3} = \\dfrac{(x^2+9) - (x-3)^2}{x^2-9} = \\dfrac{x^2+9 - (x^2-6x+9)}{x^2-9} = \\dfrac{6x}{x^2 - 9}"
           },
           {
             "letra": "d)",
-            "expresion": "\\log(40) + 2\\log(5) - \\log(2) + \\log\\left(\\dfrac{1}{5}\\right) = \\log\\left(\\dfrac{40 \\cdot 25 \\cdot 1}{2 \\cdot 5}\\right) = \\log\\left(\\dfrac{1000}{10}\\right) = \\log(100) = 2"
+            "expresion": "\\dfrac{2}{x^2 - 4} - \\dfrac{1}{x^2 + 2x} + \\dfrac{1}{x^2 - 2x} = \\dfrac{2x - (x-2) + (x+2)}{x(x-2)(x+2)} = \\dfrac{2(x+2)}{x(x-2)(x+2)} = \\dfrac{2}{x(x-2)}"
           }
         ],
-        "idea_clave": "Para unir en un único logaritmo: sube los coeficientes a los exponentes, convierte los números sueltos en logaritmos de la misma base y agrupa todo en una sola fracción (positivos arriba y negativos abajo). Al final, simplifica el interior."
+        "idea_clave": "Para sumar o restar fracciones algebraicas, factoriza los denominadores para calcular el m.c.m. Protege siempre los numeradores tras un signo menos y vuelve a factorizar el numerador resultante al final."
+      },
+      {
+        "numero": 24,
+        "titulo": "Multiplicación, División y Operaciones Combinadas",
+        "referencia": "Punto 4 (Pág. 25)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Estrategia infalible en productos y cocientes:</strong><br>• <strong>¡Prohibido multiplicar polinomios!:</strong> En una multiplicación o división de fracciones, NUNCA multipliques los polinomios para generar grados 3 o 4 inmanejables.<br>• <strong>Factoriza TODO de antemano:</strong> Descompón en factores primos cada numerador y denominador con identidades notables y factor común.<br>• <strong>Convierte la división en producto:</strong> Invierte la segunda fracción ($A:B = A \\cdot \\frac{1}{B}$) y cancela factores comunes en vertical o en cruz antes de escribir el resultado.</div></div>Opera y simplifica al máximo las siguientes expresiones algebraicas:",
+        "apartados": [
+          {
+            "letra": "a)",
+            "expresion": "\\dfrac{x^2 - 4}{x^2 + 6x + 9} \\cdot \\dfrac{2x + 6}{x^2 - 2x} = \\dfrac{(x-2)(x+2) \\cdot 2(x+3)}{(x+3)^2 \\cdot x(x-2)} = \\dfrac{2(x+2)}{x(x+3)} = \\dfrac{2x+4}{x^2+3x}"
+          },
+          {
+            "letra": "b)",
+            "expresion": "\\dfrac{x^2 - 25}{x^2 - 10x + 25} : \\dfrac{3x + 15}{x^2 - x} = \\dfrac{(x-5)(x+5)}{(x-5)^2} \\cdot \\dfrac{x(x-1)}{3(x+5)} = \\dfrac{x(x-1)}{3(x-5)} = \\dfrac{x^2-x}{3x-15}"
+          },
+          {
+            "letra": "c)",
+            "expresion": "\\left( \\dfrac{x}{x+2} - \\dfrac{x}{x-2} \\right) : \\dfrac{4x}{x^2 - 4} = \\dfrac{x(x-2) - x(x+2)}{x^2 - 4} : \\dfrac{4x}{x^2 - 4} = \\dfrac{-4x}{x^2 - 4} : \\dfrac{4x}{x^2 - 4} = -1"
+          },
+          {
+            "letra": "d)",
+            "expresion": "\\dfrac{x^3 - 9x}{x^2 + 4x + 4} \\cdot \\dfrac{x^2 - 4}{(x - 3)^2} = \\dfrac{x(x-3)(x+3) \\cdot (x-2)(x+2)}{(x+2)^2 (x-3)^2} = \\dfrac{x(x+3)(x-2)}{(x+2)(x-3)}"
+          }
+        ],
+        "idea_clave": "En productos y cocientes, factoriza antes de multiplicar. Una expresión que parece gigantesca colapsa a términos mínimos o a constantes gracias a la simetría de las identidades notables."
       }
     ]
   },
@@ -98,7 +123,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 14,
+      "sesiones_impartidas": 15,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
