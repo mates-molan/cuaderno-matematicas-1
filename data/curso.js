@@ -34,14 +34,14 @@ window.CURSO_CONFIG = {
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesión 15: Fracciones Algebraicas (Factorización, Identidades Notables y Operaciones con m.c.m.)",
-    "referencia_apuntes": "Punto 5 (Págs. 27-28)",
+    "referencia_apuntes": "Puntos 4.2 y 5 (Págs. 24-25 y 27-28)",
     "mision_semanal": "Hacer el Ejercicio 13 de la hoja de ejercicios en tu libreta (Polinomios: Teorema del Resto, Ruffini y Factorización Completa).",
     "trabajo_semanal_pendiente": "Hacer el Ejercicio 13 de la hoja de ejercicios en la libreta.",
     "ejercicios_vistos": [
       {
         "numero": 22,
         "titulo": "Simplificación de Fracciones Algebraicas (El Ojo Clínico)",
-        "referencia": "Punto 5.1 (Pág. 27)",
+        "referencia": "Punto 4.2 (Págs. 24-25) y Punto 5.1 (Pág. 27)",
         "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Regla de oro para simplificar:</strong><br>• <strong>¡Prohibido tachar sumandos!:</strong> Solo se cancelan factores completos que multipliquen a TODO el numerador y a TODO el denominador.<br>• <strong>Filtro 1 — Factor común:</strong> Extrae siempre factor común numérico o literal antes de nada.<br>• <strong>Filtro 2 — Identidades notables:</strong> Reconoce al vuelo $(a+b)^2$, $(a-b)^2$ o $(a+b)(a-b)$.<br>• <strong>Filtro 3 — Factores opuestos:</strong> Si encuentras $(b - a)$ frente a $(a - b)$, extrae el signo menos: $(b - a) = -(a - b)$ para cancelar dejando un $-1$.</div></div>Simplifica al máximo las siguientes fracciones algebraicas e indica los valores que anulan el denominador (restricciones de existencia):",
         "apartados": [
           {

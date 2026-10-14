@@ -746,7 +746,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 22,
           "titulo": "Simplificación de Fracciones Algebraicas (El Ojo Clínico)",
-          "referencia": "Punto 5.1 (Pág. 27)",
+          "referencia": "Punto 4.2 (Págs. 24-25) y Punto 5.1 (Pág. 27)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Regla de oro para simplificar:</strong><br>• <strong>¡Prohibido tachar sumandos!:</strong> Solo se cancelan factores completos que multipliquen a TODO el numerador y a TODO el denominador.<br>• <strong>Filtro 1 — Factor común:</strong> Extrae siempre factor común numérico o literal antes de nada.<br>• <strong>Filtro 2 — Identidades notables:</strong> Reconoce al vuelo $(a+b)^2$, $(a-b)^2$ o $(a+b)(a-b)$.<br>• <strong>Filtro 3 — Factores opuestos:</strong> Si encuentras $(b - a)$ frente a $(a - b)$, extrae el signo menos: $(b - a) = -(a - b)$ para cancelar dejando un $-1$.</div></div>Simplifica al máximo las siguientes fracciones algebraicas e indica los valores que anulan el denominador (restricciones de existencia):",
           "apartados": [
             {
@@ -1162,7 +1162,7 @@ window.TEMAS_DATA[1] = {
           "id": "P-13",
           "caso": "Polinomios: Teorema del Resto, Ruffini y Factorización Completa (Ejercicio 13 de la Hoja)",
           "apartados_count": 8,
-          "instruccion": "Resuelve los siguientes apartados sobre polinomios aplicando el Teorema del Resto, el Teorema del Factor y las técnicas de descomposición factorial completa en $\\mathbb{R}$:",
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📖</span><div class=\"nota-aula-content\"><strong>Consulta tus apuntes:</strong> Tienes la teoría de polinomios irreducibles y ejemplos resueltos de factorización con la Regla de Ruffini paso a paso en las <strong>Páginas 24 y 25</strong> de tus apuntes (Punto 4.2).</div></div>Resuelve los siguientes apartados sobre polinomios aplicando el Teorema del Resto, el Teorema del Factor y las técnicas de descomposición factorial completa en $\\mathbb{R}$:",
           "apartados": [
             {
               "letra": "a)",
