@@ -746,7 +746,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 22,
           "titulo": "Simplificación de Fracciones Algebraicas (El Ojo Clínico)",
-          "referencia": "Punto 4 (Págs. 21-22)",
+          "referencia": "Punto 5.1 (Pág. 27)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Regla de oro para simplificar:</strong><br>• <strong>¡Prohibido tachar sumandos!:</strong> Solo se cancelan factores completos que multipliquen a TODO el numerador y a TODO el denominador.<br>• <strong>Filtro 1 — Factor común:</strong> Extrae siempre factor común numérico o literal antes de nada.<br>• <strong>Filtro 2 — Identidades notables:</strong> Reconoce al vuelo $(a+b)^2$, $(a-b)^2$ o $(a+b)(a-b)$.<br>• <strong>Filtro 3 — Factores opuestos:</strong> Si encuentras $(b - a)$ frente a $(a - b)$, extrae el signo menos: $(b - a) = -(a - b)$ para cancelar dejando un $-1$.</div></div>Simplifica al máximo las siguientes fracciones algebraicas e indica los valores que anulan el denominador (restricciones de existencia):",
           "apartados": [
             {
@@ -771,7 +771,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 23,
           "titulo": "Suma y Resta con Denominadores Polinómicos (m.c.m. con Identidades Notables)",
-          "referencia": "Punto 4 (Págs. 23-24)",
+          "referencia": "Punto 5.2 (Págs. 27-28)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Pasos seguros para sumar y restar:</strong><br>• <strong>1. No multipliques los denominadores a lo bruto:</strong> Factoriza cada denominador primero usando identidades notables para calcular el mínimo común múltiplo ($\\text{mcm}$).<br>• <strong>2. ¡Cuidado con el signo menos!:</strong> El signo menos que precede a una fracción afecta a TODOS los términos de su numerador. Pon siempre paréntesis protectores.<br>• <strong>3. Opera el numerador y mantén el denominador factorizado:</strong> No desarrolles el denominador común. Al final, factoriza el numerador resultante por si se puede simplificar con el denominador.</div></div>Realiza las siguientes operaciones reduciendo a común denominador y simplificando al máximo el resultado final:",
           "apartados": [
             {
@@ -796,7 +796,7 @@ window.TEMAS_DATA[1] = {
         {
           "numero": 24,
           "titulo": "Multiplicación, División y Operaciones Combinadas",
-          "referencia": "Punto 4 (Pág. 25)",
+          "referencia": "Punto 5.2 (Pág. 28)",
           "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Estrategia infalible en productos y cocientes:</strong><br>• <strong>¡Prohibido multiplicar polinomios!:</strong> En una multiplicación o división de fracciones, NUNCA multipliques los polinomios para generar grados 3 o 4 inmanejables.<br>• <strong>Factoriza TODO de antemano:</strong> Descompón en factores primos cada numerador y denominador con identidades notables y factor común.<br>• <strong>Convierte la división en producto:</strong> Invierte la segunda fracción ($A:B = A \\cdot \\frac{1}{B}$) y cancela factores comunes en vertical o en cruz antes de escribir el resultado.</div></div>Opera y simplifica al máximo las siguientes expresiones algebraicas:",
           "apartados": [
             {
