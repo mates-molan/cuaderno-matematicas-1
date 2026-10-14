@@ -1041,7 +1041,7 @@ window.TEMAS_DATA[1] = {
     {
       "semana_numero": 4,
       "rango_fechas": "05 Oct - 09 Oct 2026",
-      "estado": "actual",
+      "estado": "anterior",
       "meta_semanal": "Dominar las técnicas completas de racionalización de denominadores, la factorización inversa con identidades notables, el cálculo de logaritmos e incógnitas en la base o argumento, y su reducción y separación aplicando propiedades (Ejercicios 10, 11 y 12 de la hoja).",
       "ejercicios": [
         {
@@ -1149,6 +1149,56 @@ window.TEMAS_DATA[1] = {
           ],
           "enunciado": "Resuelve sin calculadora: $$a)\\; \\log_2(64), \\; \\log_3\\left(\\frac{1}{81}\\right), \\; \\log_{\\sqrt{5}}(125), \\; \\ln(e^4\\sqrt{e}) \\qquad b)\\; \\log_x(32)=\\frac{5}{2}, \\; \\log_3(x)=-3, \\; \\log_4(x^2-5)=2$$ $$c)\\; 2\\log(x)-\\frac{1}{3}\\log(y)+3\\log(z)-1 \\qquad d)\\; \\log_4(32) \\;\\text{y}\\; \\log_{27}(81) \\qquad e)\\; \\log_8\\left(\\frac{1}{16}\\right) \\;\\text{y}\\; \\log_9(27\\sqrt{3})$$",
           "solucion": "a)\\; 6, \\; -4, \\; 6, \\; \\dfrac{9}{2}; \\quad b)\\; x=4, \\; x=\\dfrac{1}{27}, \\; x=\\pm\\sqrt{21}; \\quad c)\\; \\log\\left(\\dfrac{x^2 \\cdot z^3}{10\\sqrt[3]{y}}\\right); \\quad d)\\; \\dfrac{5}{2}, \\; \\dfrac{4}{3}; \\quad e)\\; -\\dfrac{4}{3}, \\; \\dfrac{7}{4}"
+        }
+      ]
+    },
+    {
+      "semana_numero": 5,
+      "rango_fechas": "12 Oct - 16 Oct 2026",
+      "estado": "actual",
+      "meta_semanal": "Dominar el cálculo de restos sin dividir (Teorema del Resto), el cálculo de parámetros k (Teorema del Factor) y la descomposición factorial completa de polinomios en ℝ mediante factor común, identidades notables y Ruffini (Ejercicio 13 de la hoja).",
+      "ejercicios": [
+        {
+          "id": "P-13",
+          "caso": "Polinomios: Teorema del Resto, Ruffini y Factorización Completa (Ejercicio 13 de la Hoja)",
+          "apartados_count": 8,
+          "instruccion": "Resuelve los siguientes apartados sobre polinomios aplicando el Teorema del Resto, el Teorema del Factor y las técnicas de descomposición factorial completa en $\\mathbb{R}$:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\text{Halla el resto de dividir } P(x) = 2x^4 - 5x^3 + 3x - 7 \\text{ entre } x - 2 \\text{ sin realizar la división.}"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\text{Determina el valor de } k \\text{ para que } Q(x) = x^3 - kx^2 + 4x - 12 \\text{ sea divisible por } x - 3."
+            },
+            {
+              "letra": "c)",
+              "expresion": "P_1(x) = 2x^4 - 4x^3 - 10x^2 + 12x"
+            },
+            {
+              "letra": "d)",
+              "expresion": "P_2(x) = x^4 - 16"
+            },
+            {
+              "letra": "e)",
+              "expresion": "P_3(x) = 3x^4 - 3x^3 - 9x^2 + 3x + 6"
+            },
+            {
+              "letra": "f)",
+              "expresion": "P_4(x) = x^5 - 2x^4 - 3x^3 + 6x^2 + 2x - 4"
+            },
+            {
+              "letra": "g)",
+              "expresion": "P_5(x) = 2x^5 + 4x^4 - 10x^3 - 12x^2"
+            },
+            {
+              "letra": "h)",
+              "expresion": "P_6(x) = x^5 + 5x^3 - 36x"
+            }
+          ],
+          "enunciado": "Resuelve los siguientes apartados sobre polinomios: $$a)\\; \\text{Resto de dividir } P(x) = 2x^4 - 5x^3 + 3x - 7 \\text{ entre } x - 2 \\text{ sin realizar la división.} \\qquad b)\\; \\text{Determina } k \\text{ para que } Q(x) = x^3 - kx^2 + 4x - 12 \\text{ sea divisible por } x - 3.$$ Factoriza completamente en $\\mathbb{R}$ identificando sus raíces reales y factores irreducibles: $$c)\\; P_1(x) = 2x^4 - 4x^3 - 10x^2 + 12x \\qquad d)\\; P_2(x) = x^4 - 16 \\qquad e)\\; P_3(x) = 3x^4 - 3x^3 - 9x^2 + 3x + 6$$ $$f)\\; P_4(x) = x^5 - 2x^4 - 3x^3 + 6x^2 + 2x - 4 \\qquad g)\\; P_5(x) = 2x^5 + 4x^4 - 10x^3 - 12x^2 \\qquad h)\\; P_6(x) = x^5 + 5x^3 - 36x$$",
+          "solucion": "a)\\; \\text{Resto} = P(2) = -9; \\quad b)\\; k = 3; \\quad c)\\; P_1(x) = 2x(x - 1)(x + 2)(x - 3) \\text{ con raíces } \\{0, 1, -2, 3\\}; \\quad d)\\; P_2(x) = (x - 2)(x + 2)(x^2 + 4) \\text{ con raíces } \\{2, -2\\}; \\quad e)\\; P_3(x) = 3(x - 1)(x - 2)(x + 1)^2 \\text{ con raíces } \\{1, 2, -1 \\text{ (doble)}\\}; \\quad f)\\; P_4(x) = (x - 1)(x + 1)(x - 2)(x - \\sqrt{2})(x + \\sqrt{2}) \\text{ con raíces } \\{1, -1, 2, \\pm\\sqrt{2}\\}; \\quad g)\\; P_5(x) = 2x^2(x + 1)(x - 2)(x + 3) \\text{ con raíces } \\{0 \\text{ (doble)}, -1, 2, -3\\}; \\quad h)\\; P_6(x) = x(x - 2)(x + 2)(x^2 + 9) \\text{ con raíces } \\{0, 2, -2\\}"
         }
       ]
     }

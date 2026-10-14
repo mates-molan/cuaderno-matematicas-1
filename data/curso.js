@@ -35,8 +35,8 @@ window.CURSO_CONFIG = {
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesión 15: Fracciones Algebraicas (Factorización, Identidades Notables y Operaciones con m.c.m.)",
     "referencia_apuntes": "Punto 4 (Págs. 21-25)",
-    "mision_semanal": "Practicar la simplificación y operaciones con fracciones algebraicas identificando siempre las identidades notables antes de operar.",
-    "trabajo_semanal_pendiente": "Practicar la simplificación y operaciones con fracciones algebraicas identificando siempre las identidades notables antes de operar.",
+    "mision_semanal": "Hacer el Ejercicio 13 de la hoja de ejercicios en tu libreta (Polinomios: Teorema del Resto, Ruffini y Factorización Completa).",
+    "trabajo_semanal_pendiente": "Hacer el Ejercicio 13 de la hoja de ejercicios en la libreta.",
     "ejercicios_vistos": [
       {
         "numero": 22,
@@ -129,7 +129,7 @@ window.CURSO_CONFIG = {
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "apuntes_listos": true,
       "ejercicios_listos": true,
-      "total_ejercicios_libreta": 12,
+      "total_ejercicios_libreta": 13,
       "total_tareas_classroom": 1,
       "total_controles_test": 1
     }
