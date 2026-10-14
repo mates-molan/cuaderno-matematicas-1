@@ -30,7 +30,7 @@ window.CURSO_CONFIG = {
     "aviso": "¡Control Test 1 y Solucionario disponibles! Consulta el enunciado oficial y las soluciones resueltas paso a paso para auto-corregir."
   },
   "ultima_clase": {
-    "fecha": "Miércoles 14 de Octubre de 2026",
+    "fecha": "Jueves 15 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesión 15: Fracciones Algebraicas (Factorización, Identidades Notables y Operaciones con m.c.m.)",
@@ -111,7 +111,7 @@ window.CURSO_CONFIG = {
             "expresion": "\\dfrac{x^3 - 9x}{x^2 + 4x + 4} \\cdot \\dfrac{x^2 - 4}{(x - 3)^2} = \\dfrac{x(x-3)(x+3) \\cdot (x-2)(x+2)}{(x+2)^2 (x-3)^2} = \\dfrac{x(x+3)(x-2)}{(x+2)(x-3)}"
           }
         ],
-        "idea_clave": "En productos y cocientes, factoriza antes de multiplicar. Una expresión que parece gigantesca colapsa a términos mínimos o a constantes gracias a la simetría de las identidades notables."
+        "idea_clave": "En productos y divisiones, factoriza siempre antes de operar: una expresión que al principio asusta por lo larga que parece se reduce a algo muy sencillo al tachar los factores repetidos arriba y abajo."
       }
     ]
   },

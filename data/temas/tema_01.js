@@ -740,7 +740,7 @@ window.TEMAS_DATA[1] = {
     },
     {
       "numero": 15,
-      "fecha": "Miércoles 14 de Octubre de 2026",
+      "fecha": "Jueves 15 de Octubre de 2026",
       "titulo": "Fracciones Algebraicas: Identidades Notables y Operaciones con m.c.m.",
       "ejercicios": [
         {
@@ -816,7 +816,7 @@ window.TEMAS_DATA[1] = {
               "expresion": "\\dfrac{x^3 - 9x}{x^2 + 4x + 4} \\cdot \\dfrac{x^2 - 4}{(x - 3)^2} = \\dfrac{x(x-3)(x+3) \\cdot (x-2)(x+2)}{(x+2)^2 (x-3)^2} = \\dfrac{x(x+3)(x-2)}{(x+2)(x-3)}"
             }
           ],
-          "idea_clave": "En productos y cocientes, factoriza antes de multiplicar. Una expresión que parece gigantesca colapsa a términos mínimos o a constantes gracias a la simetría de las identidades notables."
+          "idea_clave": "En productos y divisiones, factoriza siempre antes de operar: una expresión que al principio asusta por lo larga que parece se reduce a algo muy sencillo al tachar los factores repetidos arriba y abajo."
         }
       ]
     }
