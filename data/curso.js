@@ -30,10 +30,10 @@ window.CURSO_CONFIG = {
     "aviso": "¡Control Test 1 y Solucionario disponibles! Consulta el enunciado oficial y las soluciones resueltas paso a paso para auto-corregir."
   },
   "ultima_clase": {
-    "fecha": "Jueves 15 de Octubre de 2026",
+    "fecha": "Jueves 15 y Viernes 16 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 15: Fracciones Algebraicas (Factorización, Identidades Notables y Operaciones con m.c.m.)",
+    "titulo_sesion": "Sesiones 15 y 16: Fracciones Algebraicas (Factorización, Identidades Notables y Operaciones con m.c.m.)",
     "referencia_apuntes": "Puntos 4.2 y 5 (Págs. 24-25 y 27-28)",
     "mision_semanal": "Hacer el Ejercicio 13 de la hoja de ejercicios en tu libreta (Polinomios: Teorema del Resto, Ruffini y Factorización Completa).",
     "trabajo_semanal_pendiente": "Hacer el Ejercicio 13 de la hoja de ejercicios en la libreta.",
@@ -123,7 +123,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 15,
+      "sesiones_impartidas": 16,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini y fracciones algebraicas.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",

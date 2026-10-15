@@ -739,8 +739,8 @@ window.TEMAS_DATA[1] = {
       ]
     },
     {
-      "numero": 15,
-      "fecha": "Jueves 15 de Octubre de 2026",
+      "numero": "15 y 16",
+      "fecha": "Jueves 15 y Viernes 16 de Octubre de 2026",
       "titulo": "Fracciones Algebraicas: Identidades Notables y Operaciones con m.c.m.",
       "ejercicios": [
         {
