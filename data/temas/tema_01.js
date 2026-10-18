@@ -1237,7 +1237,7 @@ window.TEMAS_DATA[1] = {
     {
       "semana_numero": 5,
       "rango_fechas": "12 Oct - 16 Oct 2026",
-      "estado": "actual",
+      "estado": "anterior",
       "meta_semanal": "Dominar el cálculo de restos sin dividir (Teorema del Resto), el cálculo de parámetros k (Teorema del Factor) y la descomposición factorial completa de polinomios en ℝ mediante factor común, identidades notables y Ruffini (Ejercicio 13 de la hoja).",
       "ejercicios": [
         {
@@ -1281,6 +1281,82 @@ window.TEMAS_DATA[1] = {
           ],
           "enunciado": "Resuelve los siguientes apartados sobre polinomios: $$a)\\; \\text{Resto de dividir } P(x) = 2x^4 - 5x^3 + 3x - 7 \\text{ entre } x - 2 \\text{ sin realizar la división.} \\qquad b)\\; \\text{Determina } k \\text{ para que } Q(x) = x^3 - kx^2 + 4x - 12 \\text{ sea divisible por } x - 3.$$ Factoriza completamente en $\\mathbb{R}$ identificando sus raíces reales y factores irreducibles: $$c)\\; P_1(x) = 2x^4 - 4x^3 - 10x^2 + 12x \\qquad d)\\; P_2(x) = x^4 - 16 \\qquad e)\\; P_3(x) = 3x^4 - 3x^3 - 9x^2 + 3x + 6$$ $$f)\\; P_4(x) = x^5 - 2x^4 - 3x^3 + 6x^2 + 2x - 4 \\qquad g)\\; P_5(x) = 2x^5 + 4x^4 - 10x^3 - 12x^2 \\qquad h)\\; P_6(x) = x^5 + 5x^3 - 36x$$",
           "solucion": "a)\\; \\text{Resto} = P(2) = -9; \\quad b)\\; k = 3; \\quad c)\\; P_1(x) = 2x(x - 1)(x + 2)(x - 3) \\text{ con raíces } \\{0, 1, -2, 3\\}; \\quad d)\\; P_2(x) = (x - 2)(x + 2)(x^2 + 4) \\text{ con raíces } \\{2, -2\\}; \\quad e)\\; P_3(x) = 3(x - 1)(x - 2)(x + 1)^2 \\text{ con raíces } \\{1, 2, -1 \\text{ (doble)}\\}; \\quad f)\\; P_4(x) = (x - 1)(x + 1)(x - 2)(x - \\sqrt{2})(x + \\sqrt{2}) \\text{ con raíces } \\{1, -1, 2, \\pm\\sqrt{2}\\}; \\quad g)\\; P_5(x) = 2x^2(x + 1)(x - 2)(x + 3) \\text{ con raíces } \\{0 \\text{ (doble)}, -1, 2, -3\\}; \\quad h)\\; P_6(x) = x(x - 2)(x + 2)(x^2 + 9) \\text{ con raíces } \\{0, 2, -2\\}"
+        }
+      ]
+    },
+    {
+      "semana_numero": 6,
+      "rango_fechas": "19 Oct - 23 Oct 2026",
+      "estado": "actual",
+      "meta_semanal": "Cerrar la hoja de ejercicios con el Teorema del Binomio de Newton (desarrollos con Tartaglia, cálculo analítico de términos concretos y término independiente) y operaciones con fracciones algebraicas (Ejercicios 14 y 15).",
+      "ejercicios": [
+        {
+          "id": "P-14",
+          "caso": "Fracciones Algebraicas: Operaciones y Fracciones Simples (Ejercicio 14 de la Hoja)",
+          "apartados_count": 6,
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📖</span><div class=\"nota-aula-content\"><strong>Consulta tus apuntes:</strong> Dominio de existencia, operaciones combinadas con m.c.m. y descomposición en fracciones simples en las <strong>Páginas 27 a 29</strong> de tus apuntes (Punto 5).</div></div>Resuelve las siguientes operaciones con fracciones algebraicas indicando las restricciones de su dominio de existencia y descompón en fracciones simples:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\text{Determina el dominio y simplifica: } F(x) = \\dfrac{x^3 - 4x}{x^3 - 2x^2 - 4x + 8}"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\text{Suma y resta con común denominador: } \\dfrac{2x}{x^2 - 9} - \\dfrac{1}{x + 3} + \\dfrac{3}{x - 3}"
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\text{Operación combinada (división): } \\left(\\dfrac{x + 1}{x - 1} - \\dfrac{x - 1}{x + 1}\\right) : \\dfrac{4x}{x^2 - 1}"
+            },
+            {
+              "letra": "d)",
+              "expresion": "\\text{Operación combinada (multiplicación): } \\left(\\dfrac{x + 1}{x - 2} - \\dfrac{x - 1}{x + 2}\\right) \\cdot \\dfrac{x^2 - 4}{x^2 + 2x}"
+            },
+            {
+              "letra": "e)",
+              "expresion": "\\text{Descompón en fracciones simples: } f(x) = \\dfrac{5x - 1}{x^2 - x - 2}"
+            },
+            {
+              "letra": "f)",
+              "expresion": "\\text{Descompón en fracciones simples: } g(x) = \\dfrac{2x + 10}{x^2 + 2x - 3}"
+            }
+          ],
+          "enunciado": "Resuelve las siguientes operaciones con fracciones algebraicas indicando las restricciones de su dominio: $$a)\\; \\text{Simplifica: } F(x) = \\dfrac{x^3 - 4x}{x^3 - 2x^2 - 4x + 8} \\qquad b)\\; \\dfrac{2x}{x^2 - 9} - \\dfrac{1}{x + 3} + \\dfrac{3}{x - 3}$$ $$c)\\; \\left(\\dfrac{x + 1}{x - 1} - \\dfrac{x - 1}{x + 1}\\right) : \\dfrac{4x}{x^2 - 1} \\qquad d)\\; \\left(\\dfrac{x + 1}{x - 2} - \\dfrac{x - 1}{x + 2}\\right) \\cdot \\dfrac{x^2 - 4}{x^2 + 2x}$$ Descompón en suma de fracciones simples: $$e)\\; f(x) = \\dfrac{5x - 1}{x^2 - x - 2} \\qquad f)\\; g(x) = \\dfrac{2x + 10}{x^2 + 2x - 3}$$",
+          "solucion": "a)\\; \\text{Dom} = \\mathbb{R} \\setminus \\{-2, 2\\}; \\; \\dfrac{x}{x-2}; \\quad b)\\; \\dfrac{4}{x-3} \\; (x \\ne \\pm 3); \\quad c)\\; 1 \\; (x \\notin \\{-1, 0, 1\\}); \\quad d)\\; \\dfrac{6}{x+2} \\; (x \\notin \\{-2, 0, 2\\}); \\quad e)\\; \\text{Dom}(f) = \\mathbb{R} \\setminus \\{-1, 2\\}; \\; \\dfrac{5x-1}{x^2-x-2} = \\dfrac{3}{x-2} + \\dfrac{2}{x+1}; \\quad f)\\; \\text{Dom}(g) = \\mathbb{R} \\setminus \\{-3, 1\\}; \\; \\dfrac{2x+10}{x^2+2x-3} = \\dfrac{3}{x-1} - \\dfrac{1}{x+3}"
+        },
+        {
+          "id": "P-15",
+          "caso": "Binomio de Newton: Desarrollos, Términos Específicos y Término Independiente (Ejercicio 15 de la Hoja)",
+          "apartados_count": 6,
+          "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">📖</span><div class=\"nota-aula-content\"><strong>Consulta tus apuntes:</strong> Tienes la fórmula del Teorema del Binomio de Newton, el Triángulo de Tartaglia y ejemplos del término independiente en las <strong>Páginas 30 a 33</strong> de tus apuntes (Punto 6).</div></div>Aplica el Teorema del Binomio de Newton en los siguientes casos:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\text{Desarrolla completamente: } (2x - 3)^4"
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\text{Desarrolla completamente: } (x^2 - 2y)^5"
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\text{Quinto término } (T_5) \\text{ de } (3x - y^2)^8 \\text{ sin desarrollar la potencia completa.}"
+            },
+            {
+              "letra": "d)",
+              "expresion": "\\text{Término que contiene } x^4 \\text{ en } \\left(2x^2 - \\dfrac{1}{x}\\right)^8"
+            },
+            {
+              "letra": "e)",
+              "expresion": "\\text{Término independiente de } x \\text{ en } \\left(x^2 - \\dfrac{2}{x}\\right)^9"
+            },
+            {
+              "letra": "f)",
+              "expresion": "\\text{Término independiente de } x \\text{ en } \\left(3x^3 - \\dfrac{1}{2x^2}\\right)^{10}"
+            }
+          ],
+          "enunciado": "Aplica el Teorema del Binomio de Newton en los siguientes casos: $$a)\\; \\text{Desarrolla: } (2x - 3)^4 \\qquad b)\\; \\text{Desarrolla: } (x^2 - 2y)^5$$ $$c)\\; \\text{Quinto término } (T_5) \\text{ de } (3x - y^2)^8 \\text{ sin desarrollar todo el binomio.} \\qquad d)\\; \\text{Término que contiene } x^4 \\text{ en } \\left(2x^2 - \\dfrac{1}{x}\\right)^8$$ $$e)\\; \\text{Término independiente de } x \\text{ en } \\left(x^2 - \\dfrac{2}{x}\\right)^9 \\qquad f)\\; \\text{Término independiente de } x \\text{ en } \\left(3x^3 - \\dfrac{1}{2x^2}\\right)^{10}$$",
+          "solucion": "a)\\; 16x^4 - 96x^3 + 216x^2 - 216x + 81; \\quad b)\\; x^{10} - 10x^8 y + 40x^6 y^2 - 80x^4 y^3 + 80x^2 y^4 - 32y^5; \\quad c)\\; T_5 = 5.670 x^4 y^8; \\quad d)\\; \\text{Término en } x^4: T_5 = 1.120 x^4; \\quad e)\\; \\text{Término independiente: } T_7 = 5.376; \\quad f)\\; \\text{Término independiente: } T_7 = \\dfrac{8.505}{32}"
         }
       ]
     }

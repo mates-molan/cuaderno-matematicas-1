@@ -35,8 +35,8 @@ window.CURSO_CONFIG = {
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesión 17: Cierre de Herramientas del Álgebra (Operaciones con Ruffini y Binomio de Newton)",
     "referencia_apuntes": "Puntos 4.2, 5.2 y 6 (Págs. 24-28 y 30-33)",
-    "mision_semanal": "Hacer el Ejercicio 13 de la hoja de ejercicios en tu libreta (Polinomios: Teorema del Resto, Ruffini y Factorización Completa).",
-    "trabajo_semanal_pendiente": "Hacer el Ejercicio 13 de la hoja de ejercicios en la libreta.",
+    "mision_semanal": "Hacer el Ejercicio 15 de la hoja de ejercicios en tu libreta (Binomio de Newton: Desarrollos, Términos Específicos y Término Independiente).",
+    "trabajo_semanal_pendiente": "Hacer el Ejercicio 15 de la hoja de ejercicios en la libreta.",
     "ejercicios_vistos": [
       {
         "numero": 25,
@@ -129,7 +129,7 @@ window.CURSO_CONFIG = {
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "apuntes_listos": true,
       "ejercicios_listos": true,
-      "total_ejercicios_libreta": 13,
+      "total_ejercicios_libreta": 15,
       "total_tareas_classroom": 1,
       "total_controles_test": 1
     }
