@@ -6,7 +6,7 @@ window.TEMAS_DATA[1] = {
   "id": 1,
   "titulo": "Tema 1: Herramientas del Álgebra",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 17,
+  "sesiones_impartidas": 18,
   "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
   "tareas_classroom": [
@@ -821,8 +821,8 @@ window.TEMAS_DATA[1] = {
       ]
     },
     {
-      "numero": 17,
-      "fecha": "Lunes 19 de Octubre de 2026",
+      "numero": "17 y 18",
+      "fecha": "Lunes 19 y Martes 20 de Octubre de 2026",
       "titulo": "Cierre de Herramientas del Álgebra: Operaciones con Ruffini y Binomio de Newton",
       "ejercicios": [
         {

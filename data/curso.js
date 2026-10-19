@@ -30,10 +30,10 @@ window.CURSO_CONFIG = {
     "aviso": "¡Control Test 1 y Solucionario disponibles! Consulta el enunciado oficial y las soluciones resueltas paso a paso para auto-corregir."
   },
   "ultima_clase": {
-    "fecha": "Lunes 19 de Octubre de 2026",
+    "fecha": "Lunes 19 y Martes 20 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 17: Cierre de Herramientas del Álgebra (Operaciones con Ruffini y Binomio de Newton)",
+    "titulo_sesion": "Sesiones 17 y 18: Cierre de Herramientas del Álgebra (Operaciones con Ruffini y Binomio de Newton)",
     "referencia_apuntes": "Puntos 4.2, 5.2 y 6 (Págs. 24-28 y 30-33)",
     "mision_semanal": "Hacer el Ejercicio 15 de la hoja de ejercicios en tu libreta (Binomio de Newton: Desarrollos, Términos Específicos y Término Independiente).",
     "trabajo_semanal_pendiente": "Hacer el Ejercicio 15 de la hoja de ejercicios en la libreta.",
@@ -123,7 +123,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 17,
+      "sesiones_impartidas": 18,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini, fracciones algebraicas y Binomio de Newton.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
