@@ -26,6 +26,23 @@ window.TEMAS_DATA[1] = {
         "Ejercicio 3: Ecuaciones e inecuaciones con valor absoluto pensando en distancias sobre la recta.",
         "Ejercicio 4: Inecuaciones con fracciones y valor absoluto (cuidado con los denominadores)."
       ]
+    },
+    {
+      "id": "Tarea-02",
+      "numero": 2,
+      "titulo": "Tarea 2: Herramientas del Álgebra (Radicales, Logaritmos, Fracciones Algebraicas y Binomio de Newton)",
+      "fecha_asignacion": "20 de Octubre de 2026",
+      "fecha_limite": "Domingo 25 de Octubre de 2026 a las 20:00 h",
+      "estado": "activa",
+      "pdf_tarea": "pdf/Tarea2_Herramientas_del_Algebra_1Bach.pdf",
+      "pdf_solucionario": "pdf/Tarea2_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
+      "criterios_entrega": "Segunda y última tarea evaluable del Tema 1 para entrega en Google Classroom. Resuelve en tu libreta con caligrafía clara y tinta azul/negra justificando cada paso algebraico y comprobando las restricciones de dominio. Escanea en un único archivo PDF vertical y entrega a través de Google Classroom antes del domingo 25 de octubre a las 20:00 h (8:00 de la tarde).",
+      "ejercicios_incluidos": [
+        "Ejercicio 1: Radicales (demostración del colapso algebraico a número natural y racionalización cúbica con variables).",
+        "Ejercicio 2: Logaritmos (ecuación con incógnita en la base y análisis estricto de dominio, y deducción analítica de log(75) y log₆(15)).",
+        "Ejercicio 3: Fracciones algebraicas (simplificación con coeficiente principal aₙ = 2 en Ruffini y operación combinada con m.c.m. polinómico).",
+        "Ejercicio 4: Binomio de Newton (desarrollo escalonado con Tartaglia para n = 5 y problema analítico inverso de parámetro k para término independiente)."
+      ]
     }
   ],
   "controles_test": [

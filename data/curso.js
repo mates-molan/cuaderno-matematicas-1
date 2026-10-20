@@ -130,7 +130,7 @@ window.CURSO_CONFIG = {
       "apuntes_listos": true,
       "ejercicios_listos": true,
       "total_ejercicios_libreta": 15,
-      "total_tareas_classroom": 1,
+      "total_tareas_classroom": 2,
       "total_controles_test": 1
     }
   ]
