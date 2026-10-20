@@ -35,7 +35,7 @@ window.TEMAS_DATA[1] = {
       "fecha_limite": "Domingo 25 de Octubre de 2026 a las 20:00 h",
       "estado": "activa",
       "pdf_tarea": "pdf/Tarea2_Herramientas_del_Algebra_1Bach.pdf",
-      "pdf_solucionario": "pdf/Tarea2_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
+      "pdf_solucionario": "",
       "criterios_entrega": "Segunda y última tarea evaluable del Tema 1 para entrega en Google Classroom. Resuelve en tu libreta con caligrafía clara y tinta azul/negra justificando cada paso algebraico y comprobando las restricciones de dominio. Escanea en un único archivo PDF vertical y entrega a través de Google Classroom antes del domingo 25 de octubre a las 20:00 h (8:00 de la tarde).",
       "ejercicios_incluidos": [
         "Ejercicio 1: Radicales (demostración del colapso algebraico a número natural y racionalización cúbica con variables).",
