@@ -378,6 +378,7 @@ function renderTemaDetailHeader(temaId) {
     let btnsHtml = '';
     const apuntesUrl = (temaData && temaData.apuntes_pdf) || (temaMeta && temaMeta.apuntes_pdf);
     const ejerciciosUrl = (temaData && temaData.ejercicios_pdf) || (temaMeta && temaMeta.ejercicios_pdf);
+    const repasoUrl = (temaData && temaData.repaso_pdf) || (temaMeta && temaMeta.repaso_pdf);
 
     if (apuntesUrl) {
       btnsHtml += `
@@ -392,6 +393,14 @@ function renderTemaDetailHeader(temaId) {
         <a href="${ejerciciosUrl}" target="_blank" class="btn-action-purple">
           <span>📄</span>
           <span>Hoja de Ejercicios (PDF)</span>
+        </a>
+      `;
+    }
+    if (repasoUrl) {
+      btnsHtml += `
+        <a href="${repasoUrl}" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border-color: #b45309;" title="Descargar Ficha de Repaso y Preparación de Examen">
+          <span>🎯</span>
+          <span>Ficha de Repaso Examen (PDF)</span>
         </a>
       `;
     }
