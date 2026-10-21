@@ -33,7 +33,7 @@ window.CURSO_CONFIG = {
     "fecha": "Lunes 19, Martes 20 y Jueves 22 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesiones 17, 18 y 19: Cierre del Binomio de Newton (Término Independiente) e Inicio del Repaso de Examen",
+    "titulo_sesion": "Sesiones 17, 18 y 19: Cierre de Herramientas del Álgebra (Operaciones con Ruffini, Binomio de Newton e Inicio del Repaso de Examen)",
     "referencia_apuntes": "Puntos 4.2, 5.2 y 6 (Págs. 24-28 y 30-33) + Ficha de Repaso Pre-Examen",
     "mision_semanal": "Concluir el Ejercicio 15 en la libreta y comenzar a trabajar la Ficha de Repaso Pre-Examen (PDF ya disponible en la web).",
     "trabajo_semanal_pendiente": "Hacer el Ejercicio 15 y avanzar con los ejercicios de la Ficha de Repaso Pre-Examen.",
@@ -112,31 +112,6 @@ window.CURSO_CONFIG = {
           }
         ],
         "idea_clave": "No desarrolles el binomio entero si solo te piden una pieza: para hallar el término que ocupa el lugar $p$, aplica $T_{k+1} = \\binom{n}{k} a^{n-k} b^k$ restando uno a la posición ($k = p - 1$) y respetando el signo del segundo sumando."
-      },
-      {
-        "numero": 28,
-        "titulo": "Inicio del Repaso Oficial Pre-Examen: Ficha de Repaso del Tema 1",
-        "referencia": "Ficha de Repaso Pre-Examen (PDF en la web) y Puntos 1 a 6 de Apuntes",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>¡Arranca el Repaso Oficial para el Examen del Tema 1!:</strong><br>• <strong>Ficha de Repaso disponible:</strong> Tienes ya en la web el PDF con los 10 ejercicios integrales de repaso pre-examen (modelos de examen, Tarea 1 y Tarea 2).<br>• <strong>Estructura del examen:</strong> El examen escrito constará de ejercicios muy parecidos a los de esta ficha. Recuerda justificar con total rigor cada paso algebraico como en la pizarra.<br>• <strong>En clase hoy:</strong> Concluimos el modelado del término independiente del binomio y arrancamos el repaso en pizarra modelando operaciones con intervalos y valor absoluto con fracciones.</div></div>Modelado en pizarra de ejercicios seleccionados de la Ficha de Repaso:",
-        "apartados": [
-          {
-            "letra": "Ej. 2a)",
-            "expresion": "A = [-6, 3), \\; B = [-1, 5], \\; C = (-\\infty, 2] \\implies A \\cap B = [-1, 3), \\quad A \\setminus B = [-6, -1), \\quad (A \\cap C)^c \\cap B = (2, 5]"
-          },
-          {
-            "letra": "Ej. 2b)",
-            "expresion": "D = (-4, 2], \\; E = [-1, 6), \\; F = [0, +\\infty) \\implies \\Big((D \\setminus E) \\cup (F^c \\cap D)\\Big)^c \\setminus \\big(E \\cap (D \\cup F)\\big) = (-\\infty, -4] \\cup (6, +\\infty)"
-          },
-          {
-            "letra": "Ej. 3a)",
-            "expresion": "\\left|\\dfrac{3x - 1}{4}\\right| - \\dfrac{1}{2} = \\dfrac{5}{6} \\iff \\left|\\dfrac{3x - 1}{4}\\right| = \\dfrac{4}{3} \\iff 3x - 1 = \\pm \\dfrac{16}{3} \\implies S = \\left\\{-\\dfrac{13}{9}, \\; \\dfrac{19}{9}\\right\\}"
-          },
-          {
-            "letra": "Ej. 3c)",
-            "expresion": "1 - \\left|\\dfrac{2x - 3}{5}\\right| \\ge \\dfrac{1}{4} \\iff \\left|\\dfrac{2x - 3}{5}\\right| \\le \\dfrac{3}{4} \\iff -\\dfrac{15}{4} \\le 2x - 3 \\le \\dfrac{15}{4} \\implies S = \\left[-\\dfrac{3}{8}, \\; \\dfrac{27}{8}\\right]"
-          }
-        ],
-        "idea_clave": "El examen escrito se extraerá de ejercicios muy similares a los de la Ficha de Repaso. Resuelve en tu libreta cada problema justificando propiedades antes de contrastar las soluciones."
       }
     ]
   },
