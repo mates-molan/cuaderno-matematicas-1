@@ -35,8 +35,8 @@ window.CURSO_CONFIG = {
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
     "titulo_sesion": "Sesiones 17, 18 y 19: Cierre de Herramientas del Álgebra (Operaciones con Ruffini, Binomio de Newton e Inicio del Repaso de Examen)",
     "referencia_apuntes": "Puntos 4.2, 5.2 y 6 (Págs. 24-28 y 30-33) + Ficha de Repaso Pre-Examen",
-    "mision_semanal": "Concluir el Ejercicio 15 en la libreta y comenzar a trabajar la Ficha de Repaso Pre-Examen (PDF ya disponible en la web).",
-    "trabajo_semanal_pendiente": "Hacer el Ejercicio 15 y avanzar con los ejercicios de la Ficha de Repaso Pre-Examen.",
+    "mision_semanal": "Concluir el Ejercicio 15 en la libreta y avanzar con la Ficha de Repaso Pre-Examen (enunciado y solucionario resuelto paso a paso disponibles en la web).",
+    "trabajo_semanal_pendiente": "Hacer el Ejercicio 15 y contrastar los ejercicios de la Ficha de Repaso con su solucionario oficial.",
     "ejercicios_vistos": [
       {
         "numero": 25,
@@ -128,6 +128,7 @@ window.CURSO_CONFIG = {
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "repaso_pdf": "pdf/Ficha_Repaso_Examen_Tema1_Herramientas_del_Algebra_1Bach.pdf",
+      "repaso_solucionario_pdf": "pdf/Ficha_Repaso_Examen_Tema1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
       "apuntes_listos": true,
       "ejercicios_listos": true,
       "total_ejercicios_libreta": 15,

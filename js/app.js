@@ -379,6 +379,7 @@ function renderTemaDetailHeader(temaId) {
     const apuntesUrl = (temaData && temaData.apuntes_pdf) || (temaMeta && temaMeta.apuntes_pdf);
     const ejerciciosUrl = (temaData && temaData.ejercicios_pdf) || (temaMeta && temaMeta.ejercicios_pdf);
     const repasoUrl = (temaData && temaData.repaso_pdf) || (temaMeta && temaMeta.repaso_pdf);
+    const repasoSolucionarioUrl = (temaData && temaData.repaso_solucionario_pdf) || (temaMeta && temaMeta.repaso_solucionario_pdf);
 
     if (apuntesUrl) {
       btnsHtml += `
@@ -401,6 +402,14 @@ function renderTemaDetailHeader(temaId) {
         <a href="${repasoUrl}" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border-color: #b45309;" title="Descargar Ficha de Repaso y Preparación de Examen">
           <span>🎯</span>
           <span>Ficha de Repaso Examen (PDF)</span>
+        </a>
+      `;
+    }
+    if (repasoSolucionarioUrl) {
+      btnsHtml += `
+        <a href="${repasoSolucionarioUrl}" target="_blank" class="btn-action-emerald" title="Descargar Solucionario Oficial Resuelto de la Ficha de Repaso">
+          <span>✅</span>
+          <span>Solucionario Repaso (PDF)</span>
         </a>
       `;
     }
