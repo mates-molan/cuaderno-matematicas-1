@@ -19,99 +19,109 @@ window.CURSO_CONFIG = {
     "aviso": "¡Solucionario de la Tarea 2 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "control_test_activo": {
-    "existe": false,
+    "existe": true,
     "tema_id": 1,
-    "test_id": "Test-01",
-    "titulo": "Control Test 1: Radicales, Racionalización y Logaritmos",
-    "fecha": "Martes 13 de Octubre de 2026",
+    "test_id": "Examen-01",
+    "titulo": "Examen Tema 1: Herramientas del Álgebra",
+    "fecha": "Lunes 26 de Octubre de 2026",
     "estado": "solucionario_disponible",
-    "pdf_examen": "pdf/Examen_Test_Radicales_Logaritmos_1Bach_Master.pdf",
-    "pdf_solucionario": "pdf/Examen_Test_Radicales_Logaritmos_1Bach_Solucionario.pdf",
-    "aviso": "¡Control Test 1 y Solucionario disponibles! Consulta el enunciado oficial y las soluciones resueltas paso a paso para auto-corregir."
+    "pdf_examen": "pdf/Examen_Tema1_Herramientas_del_Algebra_1Bach.pdf",
+    "pdf_solucionario": "pdf/Examen_Tema1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
+    "aviso": "¡Examen Oficial del Tema 1 y su Solucionario resuelto paso a paso disponibles!"
   },
   "ultima_clase": {
-    "fecha": "Lunes 19, Martes 20 y Jueves 22 de Octubre de 2026",
+    "fecha": "Lunes 26 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesiones 17, 18 y 19: Cierre de Herramientas del Álgebra (Operaciones con Ruffini, Binomio de Newton e Inicio del Repaso de Examen)",
-    "referencia_apuntes": "Puntos 4.2, 5.2 y 6 (Págs. 24-28 y 30-33) + Ficha de Repaso Pre-Examen",
-    "mision_semanal": "Concluir el Ejercicio 15 en la libreta y avanzar con la Ficha de Repaso Pre-Examen (enunciado y solucionario resuelto paso a paso disponibles en la web).",
-    "trabajo_semanal_pendiente": "Hacer el Ejercicio 15 y contrastar los ejercicios de la Ficha de Repaso con su solucionario oficial.",
+    "titulo_sesion": "Sesión 20: Examen Oficial del Tema 1 (Enunciado y Solucionario Resuelto)",
+    "referencia_apuntes": "Todo el Tema 1 (Págs. 1-33) • Inicio del Tema 2 en la próxima sesión",
+    "mision_semanal": "Revisar y contrastar tu Examen del Tema 1 con el solucionario oficial y traer descargados los Apuntes del Tema 2 (Ecuaciones, Complejos y Sistemas).",
+    "trabajo_semanal_pendiente": "Revisar el solucionario del Examen del Tema 1 y preparar los Apuntes del Tema 2.",
     "ejercicios_vistos": [
       {
-        "numero": 25,
-        "titulo": "Operaciones con Polinomios y Fracciones: Factor Común, Ruffini e Identidades Notables",
-        "referencia": "Puntos 4.2 y 5.2 (Págs. 24-28)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Orden mental para factorizar rápido y ahorrarte trabajo:</strong><br>• <strong>1.º Saca factor común (clave en grados grandes):</strong> Si todos los términos tienen $x$ o son múltiplos de un mismo número, extrae primero el factor común numérico y literal ($2x^2, 3x\\dots$). ¡Nunca empieces Ruffini con un $0$ al final!<br>• <strong>2.º Busca identidades notables ANTES de hacer Ruffini:</strong> Mira siempre si lo que tienes (al principio o tras sacar factor común) es una identidad notable ($a^2 - b^2$, $(a \\pm b)^2$). ¡Reconocerla de un vistazo te ahorra tener que hacer Ruffini!<br>• <strong>3.º En polinomios de 2.º grado, usa la fórmula de 2.º grado:</strong> Si tienes un polinomio de segundo grado que no sea identidad notable, aplica directamente la fórmula cuadrática para hallar las dos raíces de golpe sin tantear.<br>• <strong>4.º Aplica Ruffini en polinomios de grado $\\ge 3$:</strong> Si el grado es 3 o mayor y no es identidad notable, baja el grado con Ruffini hasta llegar a segundo grado. ¡Y recuerda que si el coeficiente principal es distinto de 1 ($2x^3, 3x^2\\dots$), no debes perderlo al escribir los factores: $2\\left(x - \\frac{1}{2}\\right) = (2x - 1)$!</div></div>Factoriza siguiendo el orden más ágil (factor común, identidades notables, fórmula de 2.º grado y Ruffini solo cuando sea necesario, vigilando los coeficientes principales distintos de 1) y simplifica al máximo:",
+        "numero": 1,
+        "titulo": "Ejercicio 1 del Examen (1,5 ptos): Valor Absoluto e Intervalos en la Recta Real",
+        "referencia": "Puntos 1.2, 1.3 y 1.4 (Págs. 3-8)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 1:</strong><br>• <strong>Apartado a):</strong> En $|2x - 1| \\le x + 4$, imponemos $x + 4 \\ge 0 \\implies x \\ge -4$ y desdoblamos en $-(x+4) \\le 2x - 1 \\le x + 4$. De $-x - 4 \\le 2x - 1$ obtenemos $x \\ge -1$, y de $2x - 1 \\le x + 4$ obtenemos $x \\le 5$. Intersecando: $S = [-1, 5]$.<br>• <strong>Apartado b):</strong> Dados $A = (-5, 2]$, $B = [-1, 6)$ y $C = (-\\infty, 0]$, al restar $B$ a $A$ retiramos desde $-1$ incluido en adelante, por lo que $A \\setminus B = (-5, -1)$ (abierto en $-1$ porque $-1 \\in B$). Como $C^c = (0, +\\infty)$, la unión queda en dos tramos disjuntos.</div></div>Resuelve razonadamente los dos apartados de intervalos y valor absoluto del examen:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\dfrac{2x^3 + x^2 - 5x + 2}{x^3 + x^2 - 4x - 4} = \\dfrac{(2x-1)(x-1)(x+2)}{(x+1)(x-2)(x+2)} = \\dfrac{(2x-1)(x-1)}{(x+1)(x-2)} \\quad (x \\ne -1, \\pm 2)"
+            "expresion": "|2x - 1| \\le x + 4 \\iff -(x+4) \\le 2x - 1 \\le x + 4 \\implies \\begin{cases} 3x \\ge -3 \\implies x \\ge -1 \\\\ x \\le 5 \\end{cases} \\implies S = [-1, 5]"
           },
           {
             "letra": "b)",
-            "expresion": "\\dfrac{2x^5 - 4x^4 - 10x^3 + 12x^2}{3x^4 - 9x^3 - 3x^2 + 9x} = \\dfrac{2x^2(x-1)(x+2)(x-3)}{3x(x-1)(x+1)(x-3)} = \\dfrac{2x(x+2)}{3(x+1)} \\quad (x \\ne 0, \\pm 1, 3)"
-          },
-          {
-            "letra": "c)",
-            "expresion": "\\dfrac{x - 5}{x^3 - 2x^2 - x + 2} - \\dfrac{2}{x^2 - 1} + \\dfrac{1}{x - 2} = \\dfrac{(x-5) - 2(x-2) + (x^2-1)}{(x-1)(x+1)(x-2)} = \\dfrac{x^2 - x - 2}{(x-1)(x+1)(x-2)} = \\dfrac{1}{x-1}"
-          },
-          {
-            "letra": "d)",
-            "expresion": "\\dfrac{2x^3 - 3x^2 - 8x + 12}{x^3 - 4x^2 + 4x} : \\dfrac{4x^2 - 9}{2x^3 - 4x^2} = \\dfrac{(x-2)(x+2)(2x-3)}{x(x-2)^2} \\cdot \\dfrac{2x^2(x-2)}{(2x-3)(2x+3)} = \\dfrac{2x(x+2)}{2x+3}"
+            "expresion": "A = (-5, 2],\\; B = [-1, 6),\\; C = (-\\infty, 0] \\implies A \\setminus B = (-5, -1) \\text{ y } C^c = (0, +\\infty) \\implies (A \\setminus B) \\cup C^c = (-5, -1) \\cup (0, +\\infty)"
           }
         ],
-        "idea_clave": "Para agilizar el trabajo al factorizar polinomios, sigue siempre este orden: 1.º saca factor común ($2x^2, 3x\\dots$), 2.º observa si hay una identidad notable para ahorrarte pasos, 3.º en polinomios de 2.º grado aplica la fórmula de 2.º grado directamente, y 4.º en grados $\\ge 3$ usa Ruffini hasta llegar a grado 2 (sin olvidar el coeficiente principal si es distinto de 1)."
+        "idea_clave": "En la diferencia $A \\setminus B$, si el extremo frontera $-1$ pertenece al conjunto $B$ que sustraemos, desaparece del resultado y queda abierto: $(-5, -1)$."
       },
       {
-        "numero": 26,
-        "titulo": "Desarrollo de Binomios con el Binomio de Newton y el Triángulo de Tartaglia (n = 3, 4, 5 y 6)",
-        "referencia": "Puntos 6.1, 6.2 y 6.3 (Págs. 30-32)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">💡</span><div class=\"nota-aula-content\"><strong>Cómo desarrollar $(a \\pm b)^n$ rápido y sin fallos:</strong><br>• <strong>1. Coeficientes con el Triángulo de Tartaglia:</strong><br>&nbsp;&nbsp;– Para $n=3$: $1, 3, 3, 1$<br>&nbsp;&nbsp;– Para $n=4$: $1, 4, 6, 4, 1$<br>&nbsp;&nbsp;– Para $n=5$: $1, 5, 10, 10, 5, 1$<br>&nbsp;&nbsp;– Para $n=6$: $1, 6, 15, 20, 15, 6, 1$<br>• <strong>2. Escalera de exponentes:</strong> Las potencias del primer término ($a$) bajan de $n$ a $0$, mientras las del segundo ($b$) suben de $0$ a $n$. En cada sumando, los dos exponentes suman siempre $n$.<br>• <strong>3. Signos y paréntesis:</strong> Si es una resta $(a - b)^n$, alterna los signos empezando con más ($+ - + - \\dots$). Y rodea siempre con paréntesis cada bloque al elevarlo: $(3x)^4 = 81x^4$.</div></div>Desarrolla completamente las siguientes potencias de grado 3, 4, 5 y 6 aplicando el Teorema del Binomio de Newton:",
+        "numero": 2,
+        "titulo": "Ejercicio 2 del Examen (2,5 ptos): Radicales, Conjugados y Racionalización Cúbica",
+        "referencia": "Puntos 2.1 y 2.2 (Págs. 11-15)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 2:</strong><br>• <strong>Apartado a):</strong> Factoriza radicandos en primos ($20=2^2\\cdot 5,\\; 45=3^2\\cdot 5,\\; 125=5^3,\\; 80=2^4\\cdot 5$) para extraer factores y cancelar $\\sqrt{5}$.<br>• <strong>Apartado b):</strong> El denominador común de los conjugados es $(2\\sqrt{5})^2 - (\\sqrt{2})^2 = 20 - 2 = 18$, y en el numerador $(a+b)^2 - (a-b)^2 = 4ab = 8\\sqrt{10}$.<br>• <strong>Apartado c):</strong> Aplica la suma de cubos $(\\sqrt[3]{a} + \\sqrt[3]{b})(\\sqrt[3]{a^2} - \\sqrt[3]{ab} + \\sqrt[3]{b^2}) = a + b = 7 + 3 = 10$.</div></div>Opera, simplifica al máximo y clasifica en los conjuntos numéricos cuando se indique:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "(2x + 3)^3 = 1(2x)^3 + 3(2x)^2(3) + 3(2x)(3^2) + 1(3^3) = 8x^3 + 36x^2 + 54x + 27"
+            "expresion": "A = \\dfrac{3\\sqrt{20} - \\sqrt{45} + 2\\sqrt{125}}{\\sqrt{80}} = \\dfrac{6\\sqrt{5} - 3\\sqrt{5} + 10\\sqrt{5}}{4\\sqrt{5}} = \\dfrac{13\\sqrt{5}}{4\\sqrt{5}} = \\dfrac{13}{4} \\in \\mathbb{Q} \\subset \\mathbb{R} \\subset \\mathbb{C} \\quad (\\text{mcd}(13,4)=1)"
           },
           {
             "letra": "b)",
-            "expresion": "(3x - 2)^4 = 1(3x)^4 - 4(3x)^3(2) + 6(3x)^2(2^2) - 4(3x)(2^3) + 1(2^4) = 81x^4 - 216x^3 + 216x^2 - 96x + 16"
+            "expresion": "B = \\left( \\dfrac{2\\sqrt{5} + \\sqrt{2}}{2\\sqrt{5} - \\sqrt{2}} - \\dfrac{2\\sqrt{5} - \\sqrt{2}}{2\\sqrt{5} + \\sqrt{2}} \\right) \\cdot \\dfrac{9\\sqrt{10}}{8} = \\dfrac{(22+4\\sqrt{10}) - (22-4\\sqrt{10})}{20 - 2} \\cdot \\dfrac{9\\sqrt{10}}{8} = \\dfrac{8\\sqrt{10}}{18} \\cdot \\dfrac{9\\sqrt{10}}{8} = 5 \\in \\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R} \\subset \\mathbb{C}"
           },
           {
             "letra": "c)",
+            "expresion": "C = \\dfrac{10}{\\sqrt[3]{7} + \\sqrt[3]{3}} = \\dfrac{10(\\sqrt[3]{49} - \\sqrt[3]{21} + \\sqrt[3]{9})}{(\\sqrt[3]{7})^3 + (\\sqrt[3]{3})^3} = \\dfrac{10(\\sqrt[3]{49} - \\sqrt[3]{21} + \\sqrt[3]{9})}{7 + 3} = \\sqrt[3]{49} - \\sqrt[3]{21} + \\sqrt[3]{9}"
+          }
+        ],
+        "idea_clave": "Para racionalizar una suma de raíces cúbicas $\\sqrt[3]{a} + \\sqrt[3]{b}$, multiplica numerador y denominador por $\\sqrt[3]{a^2} - \\sqrt[3]{ab} + \\sqrt[3]{b^2}$ para obtener $a + b$ en el denominador."
+      },
+      {
+        "numero": 3,
+        "titulo": "Ejercicio 3 del Examen (2 ptos): Cálculo Analítico de Logaritmos sin Calculadora",
+        "referencia": "Puntos 3.1 y 3.2 (Págs. 17-20)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 3:</strong><br>• <strong>Apartado a):</strong> Expresa todo en base $3$: $81\\cdot\\sqrt[3]{9} = 3^4 \\cdot 3^{2/3} = 3^{14/3}$ y $\\dfrac{\\sqrt{3}}{27} = \\dfrac{3^{1/2}}{3^3} = 3^{-5/2}$. Como la segunda base es $9 = 3^2$, $\\log_9(3^{-5/2}) = -\\dfrac{5}{4}$.<br>• <strong>Apartado b):</strong> Factoriza $90 = 9 \\cdot 10 = 3^2 \\cdot 10$ y usa que $\\log(10) = 1$.</div></div>Calcula el valor exacto sin utilizar calculadora:",
+        "apartados": [
+          {
+            "letra": "a)",
+            "expresion": "L = \\log_3\\left(81\\cdot\\sqrt[3]{9}\\right) - 2\\log_9\\left(\\dfrac{\\sqrt{3}}{27}\\right) = \\log_3\\left(3^{14/3}\\right) - 2\\log_{3^2}\\left(3^{-5/2}\\right) = \\dfrac{14}{3} - 2\\left(-\\dfrac{5}{4}\\right) = \\dfrac{14}{3} + \\dfrac{5}{2} = \\dfrac{43}{6}"
+          },
+          {
+            "letra": "b)",
+            "expresion": "\\text{Si } \\log(2)=a \\text{ y } \\log(3)=b: \\quad \\log(90) = \\log(3^2 \\cdot 10) = 2\\log(3) + \\log(10) = 2b + 1"
+          }
+        ],
+        "idea_clave": "En $\\log(90)$, descomponer como $9 \\cdot 10 = 3^2 \\cdot 10$ evita pasos extra porque en base decimal $\\log(10) = 1$ directamente."
+      },
+      {
+        "numero": 4,
+        "titulo": "Ejercicio 4 del Examen (2 ptos): Operaciones con Fracciones Algebraicas y Dominio",
+        "referencia": "Puntos 4.2 y 5.2 (Págs. 24-28)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 4:</strong><br>• <strong>1.º Dominio:</strong> Se anulan denominadores cuando $x - 3 = 0$, $x + 3 = 0$ o $2x^2 + 12x = 2x(x+6) = 0 \\implies x \\notin \\{-6, -3, 0, 3\\}$.<br>• <strong>2.º Paréntesis:</strong> $(2x+1)(x+3) - (2x-1)(x-3) = (2x^2+7x+3) - (2x^2-7x+3) = 14x$.<br>• <strong>3.º Producto y simplificación:</strong> Se cancela $(x-3)(x+3) = x^2-9$ y se simplifica $\\dfrac{14x}{2x(x+6)} = \\dfrac{7}{x+6}$.</div></div>Efectúa, simplifica al máximo y explicita los valores excluidos del dominio:",
+        "apartados": [
+          {
+            "letra": "Único",
+            "expresion": "\\left( \\dfrac{2x + 1}{x - 3} - \\dfrac{2x - 1}{x + 3} \\right) \\cdot \\dfrac{x^2 - 9}{2x^2 + 12x} = \\dfrac{14x}{(x-3)(x+3)} \\cdot \\dfrac{(x-3)(x+3)}{2x(x+6)} = \\dfrac{7}{x + 6} \\quad \\forall x \\in \\mathbb{R} \\setminus \\{-6, -3, 0, 3\\}"
+          }
+        ],
+        "idea_clave": "Antes de multiplicar polinomios, factoriza $x^2 - 9 = (x-3)(x+3)$ y $2x^2 + 12x = 2x(x+6)$: los factores comunes se cancelan limpios."
+      },
+      {
+        "numero": 5,
+        "titulo": "Ejercicio 5 del Examen (2 ptos): Binomio de Newton y Análisis del Término Independiente",
+        "referencia": "Puntos 6.1, 6.2 y 6.3 (Págs. 30-33)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 5:</strong><br>• <strong>Apartado a):</strong> Fila $n=5$ de Tartaglia ($1, 5, 10, 10, 5, 1$) alternando signos ($+ - + - + -$).<br>• <strong>Apartado b):</strong> En $T_{k+1} = (-1)^k\\binom{6}{k}2^{6-k}x^{12-3k}$, igualamos el exponente de $x$ a cero: $12 - 3k = 0 \\implies k = 4$ (quinto término $T_5$). Sustituyendo $k=4$, resulta $T_5 = 60 \\ne 40$.</div></div>Desarrolla el binomio y verifica analíticamente la afirmación sobre el término independiente:",
+        "apartados": [
+          {
+            "letra": "a)",
             "expresion": "(2x - y^2)^5 = 32x^5 - 80x^4y^2 + 80x^3y^4 - 40x^2y^6 + 10xy^8 - y^{10}"
           },
           {
-            "letra": "d)",
-            "expresion": "\\left(x^2 - \\dfrac{1}{x}\\right)^6 = x^{12} - 6x^9 + 15x^6 - 20x^3 + 15 - \\dfrac{6}{x^3} + \\dfrac{1}{x^6}"
-          }
-        ],
-        "idea_clave": "Con el Binomio de Newton no necesitas multiplicar paréntesis tras paréntesis: coloca los coeficientes del Triángulo de Tartaglia (según el exponente 3, 4, 5 o 6), baja un exponente mientras subes el otro, alterna los signos si hay un menos y eleva cada término entre paréntesis."
-      },
-      {
-        "numero": 27,
-        "titulo": "Cálculo del Término que Ocupa un Lugar Concreto (Tₖ₊₁) y Término Independiente",
-        "referencia": "Punto 6.2 y Término Independiente (Págs. 31 y 33)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>La fórmula del término general para ir directo al grano:</strong><br>• <strong>Fórmula maestra:</strong> $T_{k+1} = \\binom{n}{k} a^{n-k} b^k$.<br>• <strong>¡Cuidado con la posición ($k$ empieza en $0$)!:</strong> El primer término tiene $k = 0$ y el segundo $k = 1$. Por tanto, si te piden el término que ocupa el <strong>lugar $p$</strong>, debes sustituir siempre <strong>$k = p - 1$</strong> (por ejemplo, para el <strong>5.º término $T_5$</strong> se usa $k = 4$, y para el <strong>4.º término $T_4$</strong> se usa $k = 3$).<br>• <strong>¿Y si te piden el término independiente (sin $x$)?</strong> Escribe la fórmula general dejando la $k$ como incógnita, junta todas las $x$ en una sola potencia e iguala su exponente a $0$ para despejar $k$.</div></div>Calcula directamente el término pedido en cada caso sin desarrollar la potencia completa del binomio:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "\\text{Quinto término } (T_5 \\implies k=4) \\text{ de } (2x - y^3)^7: \\quad T_5 = \\binom{7}{4}(2x)^{7-4}(-y^3)^4 = 35 \\cdot 8x^3 \\cdot y^{12} = 280x^3y^{12}"
-          },
-          {
             "letra": "b)",
-            "expresion": "\\text{Cuarto término } (T_4 \\implies k=3) \\text{ de } \\left(x^2 - \\dfrac{2}{x}\\right)^8: \\quad T_4 = \\binom{8}{3}(x^2)^5\\left(-\\dfrac{2}{x}\\right)^3 = 56 \\cdot x^{10} \\cdot \\left(-\\dfrac{8}{x^3}\\right) = -448x^7"
-          },
-          {
-            "letra": "c)",
-            "expresion": "\\text{Sexto término } (T_6 \\implies k=5) \\text{ de } \\left(2x - \\dfrac{1}{2x^2}\\right)^9: \\quad T_6 = \\binom{9}{5}(2x)^4\\left(-\\dfrac{1}{2x^2}\\right)^5 = 126 \\cdot 16x^4 \\cdot \\left(-\\dfrac{1}{32x^{10}}\\right) = -\\dfrac{63}{x^6}"
-          },
-          {
-            "letra": "d)",
-            "expresion": "\\text{Término independiente de } x \\text{ en } \\left(2x^2 - \\dfrac{1}{x}\\right)^6: \\quad T_{k+1} = (-1)^k\\binom{6}{k}2^{6-k}x^{12-3k} \\implies 12-3k=0 \\implies k=4 \\implies T_5 = 60"
+            "expresion": "\\text{En } \\left(2x^2 - \\dfrac{1}{x}\\right)^6: \\; T_{k+1} = (-1)^k\\binom{6}{k}2^{6-k}x^{12-3k} \\xrightarrow{12-3k=0} k=4 \\implies T_5 = (-1)^4\\binom{6}{4}2^2 = 15 \\cdot 4 = 60 \\ne 40 \\text{ (Perico se equivoca)}"
           }
         ],
-        "idea_clave": "No desarrolles el binomio entero si solo te piden una pieza: para hallar el término que ocupa el lugar $p$, aplica $T_{k+1} = \\binom{n}{k} a^{n-k} b^k$ restando uno a la posición ($k = p - 1$) y respetando el signo del segundo sumando."
+        "idea_clave": "Al igualar a cero el exponente $12 - 3k = 0$, obtenemos $k = 4$, que corresponde al quinto término $T_5 = \\binom{6}{4}\\cdot 2^2 = 15 \\cdot 4 = 60$."
       }
     ]
   },
@@ -123,7 +133,7 @@ window.CURSO_CONFIG = {
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
       "estado": "completado",
-      "sesiones_impartidas": 19,
+      "sesiones_impartidas": 20,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini, fracciones algebraicas y Binomio de Newton.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf",
@@ -133,7 +143,7 @@ window.CURSO_CONFIG = {
       "ejercicios_listos": true,
       "total_ejercicios_libreta": 15,
       "total_tareas_classroom": 2,
-      "total_controles_test": 1
+      "total_controles_test": 2
     },
     {
       "id": 2,

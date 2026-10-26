@@ -212,8 +212,8 @@ function renderAlDia() {
         testNoticeEl.innerHTML = `
           <span>✅</span>
           <span id="heroTestTexto">
-            <strong>Control Test 1 y Solucionario:</strong> ${tTest.aviso || 'Enunciado oficial y solucionario resuelto disponibles para auto-corrección.'}
-            <span class="test-link-btn">Ver examen y soluciones →</span>
+            <strong>${tTest.titulo || 'Examen Oficial'}:</strong> ${tTest.aviso || 'Enunciado oficial y solucionario resuelto disponibles para auto-corrección.'}
+            <span class="test-link-btn">Ver en Temario →</span>
           </span>
         `;
       } else {
@@ -222,8 +222,8 @@ function renderAlDia() {
         testNoticeEl.innerHTML = `
           <span>✍️</span>
           <span id="heroTestTexto">
-            <strong>${esEnCurso ? '🔴 Control en Vivo hoy:' : '✅ Control Realizado:'}</strong> ${tTest.aviso || tTest.titulo}
-            <span class="test-link-btn">Ver control y examen →</span>
+            <strong>${esEnCurso ? '🔴 Examen en Vivo hoy:' : '✅ Examen Realizado:'}</strong> ${tTest.aviso || tTest.titulo}
+            <span class="test-link-btn">Ver examen →</span>
           </span>
         `;
       }
@@ -237,9 +237,28 @@ function renderAlDia() {
   if (heroBtnsEl) {
     const temaSesion = (config.temas || []).find(t => t.id === u.tema_id);
     const temaActual = (config.temas || []).find(t => t.id === config.tema_actual_id);
+    const tTest = (config.control_test_activo && config.control_test_activo.existe) ? config.control_test_activo : null;
     let heroBtnsHtml = '';
 
-    if (temaSesion && temaSesion.apuntes_pdf) {
+    if (tTest && tTest.pdf_examen) {
+      heroBtnsHtml += `
+        <a href="${tTest.pdf_examen}" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); border-color: #be123c;" title="Abrir el Enunciado Oficial del Examen en PDF">
+          <span>📄</span>
+          <span>Enunciado Examen Tema ${tTest.tema_id} (PDF)</span>
+        </a>
+      `;
+    }
+
+    if (tTest && tTest.estado === 'solucionario_disponible' && tTest.pdf_solucionario) {
+      heroBtnsHtml += `
+        <a href="${tTest.pdf_solucionario}" target="_blank" class="btn-action-emerald" title="Abrir el Solucionario Oficial Resuelto del Examen en PDF">
+          <span>✅</span>
+          <span>Solucionario Examen Tema ${tTest.tema_id} (PDF)</span>
+        </a>
+      `;
+    }
+
+    if (!tTest && temaSesion && temaSesion.apuntes_pdf) {
       heroBtnsHtml += `
         <a href="${temaSesion.apuntes_pdf}" target="_blank" class="btn-action-primary" title="Abrir los apuntes utilizados en esta sesión de pizarra">
           <span>📘</span>
@@ -248,19 +267,19 @@ function renderAlDia() {
       `;
     }
 
-    if (temaActual && temaActual.id !== u.tema_id && temaActual.apuntes_pdf) {
+    if (temaActual && temaActual.apuntes_pdf) {
       heroBtnsHtml += `
-        <a href="${temaActual.apuntes_pdf}" target="_blank" class="btn-action-emerald" title="Descargar Apuntes Oficiales del nuevo Tema ${temaActual.numero}">
-          <span>🆕</span>
-          <span>Apuntes Nuevo Tema ${temaActual.numero} (PDF)</span>
+        <a href="${temaActual.apuntes_pdf}" target="_blank" class="btn-action-primary" title="Descargar Apuntes Oficiales del Tema ${temaActual.numero}">
+          <span>📘</span>
+          <span>Apuntes Tema ${temaActual.numero} (PDF)</span>
         </a>
       `;
     }
 
     heroBtnsHtml += `
-      <button type="button" class="btn-action-purple" onclick="irATemaSeccion(${u.tema_id}, 'pizarra-diario')" style="cursor: pointer; font-family: inherit;">
+      <button type="button" class="btn-action-purple" onclick="irATemaSeccion(${u.tema_id}, 'controles-test')" style="cursor: pointer; font-family: inherit;">
         <span>📂</span>
-        <span>Abrir Tema ${u.tema_id} completo →</span>
+        <span>Ir a Exámenes del Tema ${u.tema_id} →</span>
       </button>
     `;
 
