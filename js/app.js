@@ -179,10 +179,11 @@ function renderAlDia() {
       classroomEl.style.display = 'flex';
       if (tActiva.estado === 'solucionario_disponible') {
         classroomEl.className = 'classroom-notice solucionario-disponible';
+        const labelSol = tActiva.titulo ? ('Solucionario ' + tActiva.titulo.split(':')[0]) : 'Solucionario';
         classroomEl.innerHTML = `
           <span>✅</span>
           <span id="heroClassroomTexto">
-            <strong>Solucionario Tarea 1:</strong> ${tActiva.aviso || 'Solucionario resuelto disponible para auto-corrección.'}
+            <strong>${labelSol}:</strong> ${tActiva.aviso || 'Solucionario resuelto disponible para auto-corrección.'}
             <span class="classroom-link-btn">Ver y descargar soluciones →</span>
           </span>
         `;
@@ -1035,7 +1036,7 @@ function switchSubTab(subId, clickedBtn) {
 // Enlace rápido desde la portada a los problemas de la semana
 function irASemanaActual() {
   const config = window.CURSO_CONFIG;
-  const temaId = (config && config.tema_actual_id) || 1;
+  const temaId = (config && config.ultima_clase && config.ultima_clase.tema_id) || (config && config.tema_actual_id) || 1;
   switchMainView('temario');
   openTemaDetail(temaId);
   switchSubTab('semana-hoja');

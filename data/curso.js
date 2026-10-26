@@ -6,17 +6,17 @@ window.CURSO_CONFIG = {
   "nivel": "1.º de Bachillerato de Ciencias y Tecnología",
   "centro": "IES Ricardo Ortega",
   "ano_academico": "2026-2027",
-  "tema_actual_id": 1,
+  "tema_actual_id": 2,
   "tarea_classroom_activa": {
     "existe": true,
     "tema_id": 1,
-    "tarea_id": "Tarea-01",
-    "titulo": "Tarea 1: Números Reales, Intervalos y Valor Absoluto",
-    "fecha_limite": "Sábado 3 de Octubre de 2026 (23:59 h) - Plazo Finalizado",
+    "tarea_id": "Tarea-02",
+    "titulo": "Tarea 2: Radicales, Logaritmos, Fracciones Algebraicas y Binomio de Newton",
+    "fecha_limite": "Domingo 25 de Octubre de 2026 (20:00 h) - Plazo Finalizado",
     "estado": "solucionario_disponible",
-    "pdf_tarea": "pdf/Tarea1_Herramientas_del_Algebra_1Bach.pdf",
-    "pdf_solucionario": "pdf/Tarea1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
-    "aviso": "¡Solucionario de la Tarea 1 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
+    "pdf_tarea": "pdf/Tarea2_Herramientas_del_Algebra_1Bach.pdf",
+    "pdf_solucionario": "pdf/Tarea2_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
+    "aviso": "¡Solucionario de la Tarea 2 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "control_test_activo": {
     "existe": true,
@@ -122,7 +122,7 @@ window.CURSO_CONFIG = {
       "numero": 1,
       "titulo": "Herramientas del Álgebra",
       "evaluacion": "1.ª Evaluación",
-      "estado": "en_curso",
+      "estado": "completado",
       "sesiones_impartidas": 19,
       "descripcion": "Conjuntos numéricos ($\\mathbb{N}, \\mathbb{Z}, \\mathbb{Q}, \\mathbb{I}, \\mathbb{R}$), operaciones con intervalos en la recta real, valor absoluto, potencias, radicales, logaritmos, polinomios, factorización con Ruffini, fracciones algebraicas y Binomio de Newton.",
       "apuntes_pdf": "pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf",
@@ -134,6 +134,25 @@ window.CURSO_CONFIG = {
       "total_ejercicios_libreta": 15,
       "total_tareas_classroom": 2,
       "total_controles_test": 1
+    },
+    {
+      "id": 2,
+      "codigo": "T02",
+      "numero": 2,
+      "titulo": "Ecuaciones, Números Complejos y Sistemas",
+      "evaluacion": "1.ª Evaluación",
+      "estado": "en_curso",
+      "sesiones_impartidas": 0,
+      "descripcion": "Ecuaciones polinómicas y racionales, ecuaciones con radicales, exponenciales y logarítmicas, números complejos (forma binómica, operaciones y plano complejo), sistemas de ecuaciones algebraicos y geométricos, y Método de Gauss con matrices.",
+      "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
+      "ejercicios_pdf": "",
+      "repaso_pdf": "",
+      "repaso_solucionario_pdf": "",
+      "apuntes_listos": true,
+      "ejercicios_listos": false,
+      "total_ejercicios_libreta": 0,
+      "total_tareas_classroom": 0,
+      "total_controles_test": 0
     }
   ]
 };
