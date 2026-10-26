@@ -1123,30 +1123,105 @@ body {
   line-height: 1.55;
 }
 
+.tema-card-meta-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  padding-top: 14px;
+  border-top: 1px dashed var(--border-soft);
+  margin-bottom: 10px;
+}
+
 .tema-card-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 20px;
-  padding-top: 16px;
-  border-top: 1px dashed var(--border-soft);
 }
 
 .meta-pill {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 700;
-  padding: 5px 12px;
+  padding: 6px 13px;
   border-radius: var(--radius-pill);
   background: #f8fafc;
-  border: 1px solid var(--border-soft);
+  border: 1.5px solid var(--border-soft);
   color: #334155;
+  text-decoration: none;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition-fast);
+}
+
+.meta-pill-btn {
+  cursor: pointer;
+}
+
+.meta-pill-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+.meta-pill-apuntes {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+  font-weight: 800;
+}
+.meta-pill-apuntes:hover {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.meta-pill-hoja {
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+  color: #6d28d9;
+  font-weight: 800;
+}
+.meta-pill-hoja:hover {
+  background: #7c3aed;
+  color: #ffffff;
+  border-color: #7c3aed;
+}
+
+.meta-pill-pizarra {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+.meta-pill-pizarra:hover {
+  background: #eff6ff;
+  border-color: #60a5fa;
+  color: #1d4ed8;
+}
+
+.meta-pill-libreta {
+  background: #faf5ff;
+  border-color: #ddd6fe;
+  color: #6d28d9;
+}
+.meta-pill-libreta:hover {
+  background: #f3e8ff;
+  border-color: #a78bfa;
+  color: #5b21b6;
 }
 
 .meta-pill-classroom {
-  background: #eff6ff;
-  border-color: #bfdbfe;
-  color: #1d4ed8;
+  background: #fffbeb;
+  border-color: #fde68a;
+  color: #b45309;
   font-weight: 800;
+}
+.meta-pill-classroom:hover {
+  background: #fef3c7;
+  border-color: #f59e0b;
+  color: #92400e;
 }
 
 .meta-pill-test {
@@ -1154,6 +1229,41 @@ body {
   border-color: #fecdd3;
   color: #be123c;
   font-weight: 800;
+}
+.meta-pill-test:hover {
+  background: #ffe4e6;
+  border-color: #fb7185;
+  color: #9f1239;
+}
+
+.meta-pill-radar {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+.meta-pill-radar:hover {
+  background: #d1fae5;
+  border-color: #34d399;
+  color: #065f46;
+}
+
+.detail-sub-link {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: var(--transition-fast);
+}
+
+.detail-sub-link:hover {
+  background: #eff6ff;
+  color: #2563eb;
+  text-decoration: underline;
 }
 
 .tema-card-btn {

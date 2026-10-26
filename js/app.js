@@ -232,6 +232,41 @@ function renderAlDia() {
     }
   }
 
+  // Botonera contextual limpia en el Hero (Cero acumulación de PDFs antiguos)
+  const heroBtnsEl = document.getElementById('heroPdfBtns');
+  if (heroBtnsEl) {
+    const temaSesion = (config.temas || []).find(t => t.id === u.tema_id);
+    const temaActual = (config.temas || []).find(t => t.id === config.tema_actual_id);
+    let heroBtnsHtml = '';
+
+    if (temaSesion && temaSesion.apuntes_pdf) {
+      heroBtnsHtml += `
+        <a href="${temaSesion.apuntes_pdf}" target="_blank" class="btn-action-primary" title="Abrir los apuntes utilizados en esta sesión de pizarra">
+          <span>📘</span>
+          <span>Apuntes de esta clase (Tema ${temaSesion.numero})</span>
+        </a>
+      `;
+    }
+
+    if (temaActual && temaActual.id !== u.tema_id && temaActual.apuntes_pdf) {
+      heroBtnsHtml += `
+        <a href="${temaActual.apuntes_pdf}" target="_blank" class="btn-action-emerald" title="Descargar Apuntes Oficiales del nuevo Tema ${temaActual.numero}">
+          <span>🆕</span>
+          <span>Apuntes Nuevo Tema ${temaActual.numero} (PDF)</span>
+        </a>
+      `;
+    }
+
+    heroBtnsHtml += `
+      <button type="button" class="btn-action-purple" onclick="irATemaSeccion(${u.tema_id}, 'pizarra-diario')" style="cursor: pointer; font-family: inherit;">
+        <span>📂</span>
+        <span>Abrir Tema ${u.tema_id} completo →</span>
+      </button>
+    `;
+
+    heroBtnsEl.innerHTML = heroBtnsHtml;
+  }
+
   const container = document.getElementById('heroEjerciciosContainer');
   if (!container || !u.ejercicios_vistos) return;
 
@@ -279,7 +314,7 @@ function renderTemasGrid() {
   config.temas.forEach(t => {
     let badgeNumClass = 'badge-tema-num';
     let estadoLabel = 'TEMA ' + t.numero;
-    let cardClick = `onclick="openTemaDetail(${t.id})"`;
+    let cardClick = `onclick="openTemaDetail(${t.id}, 'pizarra-diario', false)"`;
     let btnText = 'Entrar al Tema ' + t.numero;
     let btnIcon = '→';
 
@@ -289,39 +324,42 @@ function renderTemasGrid() {
       estadoLabel += ' • COMPLETADO';
     } else {
       estadoLabel += ' • PRÓXIMAMENTE';
-      cardClick = `onclick="openTemaDetail(${t.id})"`;
       btnText = 'Consultar Programa';
     }
 
+    const temaData = window.TEMAS_DATA && window.TEMAS_DATA[t.id];
+    const numSesiones = (temaData && temaData.sesiones) ? temaData.sesiones.length : (t.sesiones_impartidas || 0);
+    const numTareas = (temaData && temaData.tareas_classroom) ? temaData.tareas_classroom.length : (t.total_tareas_classroom || 0);
+    const numTests = (temaData && temaData.controles_test) ? temaData.controles_test.length : (t.total_controles_test || 0);
+    const numRadar = (temaData && temaData.comprueba) ? temaData.comprueba.length : 0;
+
     let metaPillsHtml = '';
-    if (t.apuntes_listos) {
-      metaPillsHtml += '<span class="meta-pill">📘 Apuntes Listos</span>';
+    if (t.apuntes_listos && t.apuntes_pdf) {
+      metaPillsHtml += `<a href="${t.apuntes_pdf}" target="_blank" class="meta-pill meta-pill-btn meta-pill-apuntes" onclick="event.stopPropagation()" title="Abrir directamente los Apuntes Oficiales en PDF">📘 Apuntes (PDF) ↗</a>`;
     }
-    if (t.ejercicios_listos) {
-      metaPillsHtml += '<span class="meta-pill">📥 Hoja de Ejercicios Lista</span>';
+    if (t.ejercicios_listos && t.ejercicios_pdf) {
+      metaPillsHtml += `<a href="${t.ejercicios_pdf}" target="_blank" class="meta-pill meta-pill-btn meta-pill-hoja" onclick="event.stopPropagation()" title="Abrir directamente la Hoja de Problemas en PDF">📄 Hoja de Problemas (PDF) ↗</a>`;
     }
-    if (t.sesiones_impartidas > 0) {
-      metaPillsHtml += `<span class="meta-pill">📅 ${t.sesiones_impartidas} Sesiones Impartidas</span>`;
+
+    // Botones de sección interactivos que llevan directamente a la pestaña correspondiente
+    metaPillsHtml += `<button type="button" class="meta-pill meta-pill-btn meta-pill-pizarra" onclick="event.stopPropagation(); irATemaSeccion(${t.id}, 'pizarra-diario')" title="Ir al Diario de Pizarra de este tema">📅 ${t.sesiones_impartidas > 0 ? t.sesiones_impartidas + ' Sesiones de Pizarra' : 'Diario de Pizarra'} →</button>`;
+
+    if (t.total_ejercicios_libreta > 0 || t.ejercicios_listos) {
+      metaPillsHtml += `<button type="button" class="meta-pill meta-pill-btn meta-pill-libreta" onclick="event.stopPropagation(); irATemaSeccion(${t.id}, 'semana-hoja')" title="Ir a los Ejercicios de la Semana (Tu Libreta)">📝 ${t.total_ejercicios_libreta > 0 ? t.total_ejercicios_libreta + ' Ejercicios de Libreta' : 'Tu Libreta'} →</button>`;
     }
-    if (t.total_ejercicios_libreta > 0) {
-      metaPillsHtml += `<span class="meta-pill">📝 ${t.total_ejercicios_libreta} Ejercicios de Libreta</span>`;
-    }
-    const numTareas = (window.TEMAS_DATA && window.TEMAS_DATA[t.id] && window.TEMAS_DATA[t.id].tareas_classroom)
-      ? window.TEMAS_DATA[t.id].tareas_classroom.length
-      : (t.total_tareas_classroom || 0);
+
     if (numTareas > 0) {
       const labelTareas = numTareas === 1 ? '1 Tarea de Classroom' : `${numTareas} Tareas de Classroom`;
-      metaPillsHtml += `<span class="meta-pill meta-pill-classroom">📤 ${labelTareas}</span>`;
+      metaPillsHtml += `<button type="button" class="meta-pill meta-pill-btn meta-pill-classroom" onclick="event.stopPropagation(); irATemaSeccion(${t.id}, 'tareas-classroom')" title="Ir a las Tareas y Solucionarios de Classroom">📤 ${labelTareas} →</button>`;
     }
-    const numTests = (window.TEMAS_DATA && window.TEMAS_DATA[t.id] && window.TEMAS_DATA[t.id].controles_test)
-      ? window.TEMAS_DATA[t.id].controles_test.length
-      : (t.total_controles_test || 0);
-    if (numTests > 0) {
-      const labelTests = numTests === 1 ? '1 Control Test' : `${numTests} Controles Test`;
-      metaPillsHtml += `<span class="meta-pill meta-pill-test">✍️ ${labelTests}</span>`;
+
+    if (numTests > 0 || t.repaso_pdf) {
+      const labelTests = numTests > 0 ? (numTests === 1 ? '1 Control / Examen' : `${numTests} Controles / Exámenes`) : 'Exámenes y Repaso';
+      metaPillsHtml += `<button type="button" class="meta-pill meta-pill-btn meta-pill-test" onclick="event.stopPropagation(); irATemaSeccion(${t.id}, 'controles-test')" title="Ir a los Controles Tipo Test y Solucionarios">✍️ ${labelTests} →</button>`;
     }
-    if (!t.apuntes_listos && !t.ejercicios_listos) {
-      metaPillsHtml += '<span class="meta-pill">⏳ En preparación didáctica</span>';
+
+    if (numRadar > 0) {
+      metaPillsHtml += `<button type="button" class="meta-pill meta-pill-btn meta-pill-radar" onclick="event.stopPropagation(); irATemaSeccion(${t.id}, 'comprueba-tema')" title="Ir al Radar de Autoevaluación de este tema">🎯 Tu Radar (${numRadar}) →</button>`;
     }
 
     html += `
@@ -335,6 +373,7 @@ function renderTemasGrid() {
           <p class="tema-card-desc">${t.descripcion}</p>
         </div>
         <div>
+          <div class="tema-card-meta-label">🧭 Ir directo a una sección o material:</div>
           <div class="tema-card-meta">
             ${metaPillsHtml}
           </div>
@@ -361,17 +400,44 @@ function renderTemaDetailHeader(temaId) {
   const subEl = document.getElementById('temaDetailSub');
   const actionsEl = document.getElementById('temaDetailActions');
 
+  const numSesiones = (temaMeta && temaMeta.sesiones_impartidas) || 0;
+  const numLibreta = (temaMeta && temaMeta.total_ejercicios_libreta) || 0;
+  const numTareas = (temaData && temaData.tareas_classroom) ? temaData.tareas_classroom.length : ((temaMeta && temaMeta.total_tareas_classroom) || 0);
+  const numTests = (temaData && temaData.controles_test) ? temaData.controles_test.length : ((temaMeta && temaMeta.total_controles_test) || 0);
+  const numRadar = (temaData && temaData.comprueba) ? temaData.comprueba.length : 0;
+
+  // Actualizar contadores en los botones de pestañas del tema
+  const lblPizarra = document.getElementById('subtab-label-pizarra');
+  const lblLibreta = document.getElementById('subtab-label-libreta');
+  const lblClassroom = document.getElementById('subtab-label-classroom');
+  const lblTest = document.getElementById('subtab-label-test');
+  const lblRadar = document.getElementById('subtab-label-radar');
+
+  if (lblPizarra) lblPizarra.textContent = numSesiones > 0 ? `Diario de Pizarra (${numSesiones} ses.)` : 'Diario de Pizarra';
+  if (lblLibreta) lblLibreta.textContent = numLibreta > 0 ? `Tu Libreta (${numLibreta} ej.)` : 'Tu Libreta (semanal)';
+  if (lblClassroom) lblClassroom.textContent = numTareas > 0 ? `Tareas Classroom (${numTareas})` : 'Tareas Classroom';
+  if (lblTest) lblTest.textContent = numTests > 0 ? `Controles y Test (${numTests})` : 'Controles y Test';
+  if (lblRadar) lblRadar.textContent = numRadar > 0 ? `Tu Radar (${numRadar} ítems)` : 'Tu Radar';
+
   if (temaMeta) {
     if (titleEl) titleEl.textContent = `Tema ${temaMeta.numero}: ${temaMeta.titulo}`;
     if (badgeEl) {
       badgeEl.textContent = temaMeta.estado === 'en_curso' ? 'TEMA EN CURSO' : (temaMeta.estado === 'completado' ? 'TEMA COMPLETADO' : 'TEMA PROGRAMADO');
     }
     if (subEl) {
-      const numTareas = (temaData && temaData.tareas_classroom) ? temaData.tareas_classroom.length : (temaMeta.total_tareas_classroom || 0);
-      const tareasText = numTareas > 0 ? ` • 📤 ${numTareas} ${numTareas === 1 ? 'tarea' : 'tareas'} de Classroom` : '';
-      const numTests = (temaData && temaData.controles_test) ? temaData.controles_test.length : (temaMeta.total_controles_test || 0);
-      const testsText = numTests > 0 ? ` • ✍️ ${numTests} ${numTests === 1 ? 'control test' : 'controles test'}` : '';
-      subEl.textContent = `${temaMeta.sesiones_impartidas} sesiones impartidas${tareasText}${testsText} • ${temaMeta.evaluacion}`;
+      let pillsSub = [];
+      pillsSub.push(`<button type="button" class="detail-sub-link" onclick="switchSubTab('pizarra-diario', null, true)">📅 ${numSesiones} sesiones impartidas</button>`);
+      if (numLibreta > 0) {
+        pillsSub.push(`<button type="button" class="detail-sub-link" onclick="switchSubTab('semana-hoja', null, true)">📝 ${numLibreta} ejercicios de libreta</button>`);
+      }
+      if (numTareas > 0) {
+        pillsSub.push(`<button type="button" class="detail-sub-link" onclick="switchSubTab('tareas-classroom', null, true)">📤 ${numTareas} ${numTareas === 1 ? 'tarea' : 'tareas'} de Classroom</button>`);
+      }
+      if (numTests > 0) {
+        pillsSub.push(`<button type="button" class="detail-sub-link" onclick="switchSubTab('controles-test', null, true)">✍️ ${numTests} ${numTests === 1 ? 'control test' : 'controles test'}</button>`);
+      }
+      pillsSub.push(`<span style="color: var(--text-muted);">${temaMeta.evaluacion}</span>`);
+      subEl.innerHTML = pillsSub.join(' <span style="color: #cbd5e1;">•</span> ');
     }
   }
 
@@ -379,8 +445,6 @@ function renderTemaDetailHeader(temaId) {
     let btnsHtml = '';
     const apuntesUrl = (temaData && temaData.apuntes_pdf) || (temaMeta && temaMeta.apuntes_pdf);
     const ejerciciosUrl = (temaData && temaData.ejercicios_pdf) || (temaMeta && temaMeta.ejercicios_pdf);
-    const repasoUrl = (temaData && temaData.repaso_pdf) || (temaMeta && temaMeta.repaso_pdf);
-    const repasoSolucionarioUrl = (temaData && temaData.repaso_solucionario_pdf) || (temaMeta && temaMeta.repaso_solucionario_pdf);
 
     if (apuntesUrl) {
       btnsHtml += `
@@ -394,23 +458,7 @@ function renderTemaDetailHeader(temaId) {
       btnsHtml += `
         <a href="${ejerciciosUrl}" target="_blank" class="btn-action-purple">
           <span>📄</span>
-          <span>Hoja de Ejercicios (PDF)</span>
-        </a>
-      `;
-    }
-    if (repasoUrl) {
-      btnsHtml += `
-        <a href="${repasoUrl}" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border-color: #b45309;" title="Descargar Ficha de Repaso y Preparación de Examen">
-          <span>🎯</span>
-          <span>Ficha de Repaso Examen (PDF)</span>
-        </a>
-      `;
-    }
-    if (repasoSolucionarioUrl) {
-      btnsHtml += `
-        <a href="${repasoSolucionarioUrl}" target="_blank" class="btn-action-emerald" title="Descargar Solucionario Oficial Resuelto de la Ficha de Repaso">
-          <span>✅</span>
-          <span>Solucionario Repaso (PDF)</span>
+          <span>Hoja de Problemas (PDF)</span>
         </a>
       `;
     }
@@ -499,10 +547,11 @@ function renderSemanaHoja(temaId = currentTemaId) {
 
   const t = window.TEMAS_DATA && window.TEMAS_DATA[temaId];
 
-  // Banner superior de descarga
+  // Banner superior de descarga (Hoja de Ejercicios y Ficha de Repaso si existen)
   if (bannerContainer) {
+    let bannersHtml = '';
     if (t && t.ejercicios_pdf) {
-      bannerContainer.innerHTML = `
+      bannersHtml += `
         <div class="hoja-download-banner">
           <div class="hoja-download-info">
             <span class="hoja-download-icon">📑</span>
@@ -513,10 +562,38 @@ function renderSemanaHoja(temaId = currentTemaId) {
           </div>
           <a href="${t.ejercicios_pdf}" target="_blank" class="btn-action-purple">
             <span>📄</span>
-            <span>Ver / Descargar PDF</span>
+            <span>Ver / Descargar Hoja (PDF)</span>
           </a>
         </div>
       `;
+    }
+    if (t && t.repaso_pdf) {
+      bannersHtml += `
+        <div class="hoja-download-banner" style="background: linear-gradient(135deg, #ffffff 0%, #fffbeb 100%); border-color: #fde68a;">
+          <div class="hoja-download-info">
+            <span class="hoja-download-icon">🎯</span>
+            <div>
+              <h4 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">Ficha de Repaso de Examen: Tema ${t.id}</h4>
+              <p style="color: var(--text-muted); font-size: 0.92rem;">Selección de ejercicios de preparación de examen con su solucionario resuelto paso a paso.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="${t.repaso_pdf}" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border-color: #b45309;">
+              <span>🎯</span>
+              <span>Enunciado Repaso (PDF)</span>
+            </a>
+            ${t.repaso_solucionario_pdf ? `
+              <a href="${t.repaso_solucionario_pdf}" target="_blank" class="btn-action-emerald">
+                <span>✅</span>
+                <span>Solucionario Resuelto (PDF)</span>
+              </a>
+            ` : ''}
+          </div>
+        </div>
+      `;
+    }
+    if (bannersHtml) {
+      bannerContainer.innerHTML = bannersHtml;
       bannerContainer.style.display = 'block';
     } else {
       bannerContainer.style.display = 'none';
@@ -728,18 +805,49 @@ function renderControlesTest(temaId = currentTemaId) {
   if (!container) return;
 
   const t = window.TEMAS_DATA && window.TEMAS_DATA[temaId];
-  if (!t || !t.controles_test || t.controles_test.length === 0) {
+  const hasTests = t && t.controles_test && t.controles_test.length > 0;
+  const hasRepaso = t && t.repaso_pdf;
+
+  if (!hasTests && !hasRepaso) {
     container.innerHTML = `
       <div style="padding: 28px; background: #ffffff; border-radius: 12px; border: 1.5px solid var(--border-soft); text-align: center; color: var(--text-muted);">
-        <p style="font-size: 1.05rem;">✍️ No hay controles tipo test registrados para esta unidad en este momento.</p>
-        <p style="font-size: 0.9rem; margin-top: 6px;">Las pruebas escritas se publicarán aquí en directo conforme se realicen en el aula.</p>
+        <p style="font-size: 1.05rem;">✍️ No hay controles ni material de examen registrados para esta unidad en este momento.</p>
+        <p style="font-size: 0.9rem; margin-top: 6px;">Las pruebas escritas y fichas de repaso se publicarán aquí conforme avancemos en el aula.</p>
       </div>
     `;
     return;
   }
 
   let html = '<div class="controles-test-list">';
-  t.controles_test.forEach(test => {
+
+  if (hasRepaso) {
+    html += `
+      <div class="hoja-download-banner" style="background: linear-gradient(135deg, #ffffff 0%, #fffbeb 100%); border-color: #fde68a; margin-bottom: 18px;">
+        <div class="hoja-download-info">
+          <span class="hoja-download-icon">🎯</span>
+          <div>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">Preparación de Examen: Ficha de Repaso (Tema ${t.id})</h4>
+            <p style="color: var(--text-muted); font-size: 0.92rem;">Colección de problemas modelo de examen con solucionario oficial resuelto paso a paso.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <a href="${t.repaso_pdf}" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border-color: #b45309;">
+            <span>📄</span>
+            <span>Enunciado Repaso (PDF)</span>
+          </a>
+          ${t.repaso_solucionario_pdf ? `
+            <a href="${t.repaso_solucionario_pdf}" target="_blank" class="btn-action-emerald">
+              <span>✅</span>
+              <span>Solucionario Resuelto (PDF)</span>
+            </a>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  }
+
+  if (hasTests) {
+    t.controles_test.forEach(test => {
     let estadoBadgeHtml = '';
     let actionButtonsHtml = '';
     let cardClass = 'test-accordion';
@@ -828,7 +936,8 @@ function renderControlesTest(temaId = currentTemaId) {
         </div>
       </details>
     `;
-  });
+    });
+  }
 
   html += '</div>';
   container.innerHTML = html;
@@ -990,8 +1099,17 @@ function switchMainView(view) {
   renderMath();
 }
 
-// Navegación dentro del Temario: Abrir detalle de un tema
-function openTemaDetail(temaId) {
+// Navegación directa desde cualquier tarjeta o botón hacia una sección concreta de un tema
+function irATemaSeccion(temaId, subTabId = 'pizarra-diario') {
+  document.querySelectorAll('.view-container').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('view-temario').classList.add('active');
+  document.getElementById('btn-view-temario').classList.add('active');
+  openTemaDetail(temaId, subTabId, true);
+}
+
+// Navegación dentro del Temario: Abrir detalle de un tema en la pestaña indicada
+function openTemaDetail(temaId, subTabId = 'pizarra-diario', scrollToSection = false) {
   currentTemaId = temaId;
   document.getElementById('temario-grid-view').style.display = 'none';
   document.getElementById('temario-detail-view').style.display = 'block';
@@ -1003,7 +1121,10 @@ function openTemaDetail(temaId) {
   renderControlesTest(temaId);
   renderComprueba(temaId);
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  switchSubTab(subTabId, null, scrollToSection);
+  if (!scrollToSection) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   renderMath();
 }
 
@@ -1016,20 +1137,37 @@ function showTemarioGrid() {
 }
 
 // Sub-pestañas dentro del tema (Diario, Ejercicios de la Semana, Classroom, Controles, Comprueba)
-function switchSubTab(subId, clickedBtn) {
+function switchSubTab(subId, clickedBtn = null, scrollToSection = false) {
   document.querySelectorAll('.subtab-btn').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.subtab-panel').forEach(p => p.classList.remove('active'));
+
+  const subtabMap = {
+    'pizarra-diario': 'subtab-btn-pizarra',
+    'semana-hoja': 'subtab-btn-libreta',
+    'tareas-classroom': 'subtab-btn-classroom',
+    'controles-test': 'subtab-btn-test',
+    'comprueba-tema': 'subtab-btn-radar'
+  };
 
   if (clickedBtn) {
     clickedBtn.classList.add('active');
   } else {
-    const btn = document.querySelector(`.subtab-btn[onclick*="${subId}"]`)
-      || document.getElementById(`subtab-btn-${subId.replace('tareas-', '').replace('controles-', '')}`);
+    const mappedId = subtabMap[subId];
+    const btn = (mappedId && document.getElementById(mappedId))
+      || document.querySelector(`.subtab-btn[onclick*="${subId}"]`);
     if (btn) btn.classList.add('active');
   }
 
   const panel = document.getElementById('subtab-' + subId);
   if (panel) panel.classList.add('active');
+
+  if (scrollToSection) {
+    setTimeout(() => {
+      const navEl = document.getElementById('temaSubtabsNav') || panel;
+      if (navEl) navEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
+  }
+
   renderMath();
 }
 
@@ -1037,9 +1175,7 @@ function switchSubTab(subId, clickedBtn) {
 function irASemanaActual() {
   const config = window.CURSO_CONFIG;
   const temaId = (config && config.ultima_clase && config.ultima_clase.tema_id) || (config && config.tema_actual_id) || 1;
-  switchMainView('temario');
-  openTemaDetail(temaId);
-  switchSubTab('semana-hoja');
+  irATemaSeccion(temaId, 'semana-hoja');
   const semActual = document.querySelector('.semana-accordion[data-estado="actual"]')
     || document.querySelector('.semana-accordion[id^="semana-bloque-"]:last-of-type')
     || document.querySelector('.semana-accordion');
@@ -1056,15 +1192,13 @@ function irASemanaActual() {
 function irATareasClassroom() {
   const config = window.CURSO_CONFIG;
   const temaId = (config && config.tarea_classroom_activa && config.tarea_classroom_activa.tema_id) || (config && config.tema_actual_id) || 1;
-  switchMainView('temario');
-  openTemaDetail(temaId);
-  switchSubTab('tareas-classroom');
-  const tabBtn = document.getElementById('subtab-btn-classroom');
-  if (tabBtn) {
-    document.querySelectorAll('.subtab-btn').forEach(b => b.classList.remove('active'));
-    tabBtn.classList.add('active');
+  irATemaSeccion(temaId, 'tareas-classroom');
+  const allSol = document.querySelectorAll('.tarea-accordion.solucionario-disponible');
+  const tareaActivaAcc = document.querySelector('.tarea-accordion.activa')
+    || (allSol.length ? allSol[allSol.length - 1] : document.querySelector('.tarea-accordion'));
+  if (tareaActivaAcc) {
+    tareaActivaAcc.open = true;
   }
-  const tareaActivaAcc = document.querySelector('.tarea-accordion.solucionario-disponible') || document.querySelector('.tarea-accordion.activa') || document.querySelector('.tarea-accordion');
   setTimeout(() => {
     const target = tareaActivaAcc || document.getElementById('subtab-tareas-classroom');
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -1076,15 +1210,13 @@ function irATareasClassroom() {
 function irAControlesTest() {
   const config = window.CURSO_CONFIG;
   const temaId = (config && config.control_test_activo && config.control_test_activo.tema_id) || (config && config.tema_actual_id) || 1;
-  switchMainView('temario');
-  openTemaDetail(temaId);
-  switchSubTab('controles-test');
-  const tabBtn = document.getElementById('subtab-btn-test');
-  if (tabBtn) {
-    document.querySelectorAll('.subtab-btn').forEach(b => b.classList.remove('active'));
-    tabBtn.classList.add('active');
+  irATemaSeccion(temaId, 'controles-test');
+  const allTests = document.querySelectorAll('.test-accordion.solucionario-disponible');
+  const testActivoAcc = document.querySelector('.test-accordion.en-curso')
+    || (allTests.length ? allTests[allTests.length - 1] : document.querySelector('.test-accordion'));
+  if (testActivoAcc) {
+    testActivoAcc.open = true;
   }
-  const testActivoAcc = document.querySelector('.test-accordion.en-curso') || document.querySelector('.test-accordion.solucionario-disponible') || document.querySelector('.test-accordion');
   setTimeout(() => {
     const target = testActivoAcc || document.getElementById('subtab-controles-test');
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });

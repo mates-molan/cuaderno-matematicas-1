@@ -14,7 +14,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
   <!-- Estilos modulares desacoplados -->
-  <link rel="stylesheet" href="css/estilos.css?v=20261026_102004">
+  <link rel="stylesheet" href="css/estilos.css?v=20261026_104607">
 </head>
 <body>
 
@@ -95,35 +95,8 @@
             </span>
           </div>
 
-          <div class="hero-pdf-btns">
-            <a href="pdf/Apuntes_Tema1_Herramientas_del_Algebra_1Bach.pdf" target="_blank" class="btn-action-primary">
-              <span>📘</span>
-              <span>Apuntes Tema 1 (PDF)</span>
-            </a>
-            <a href="pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);" title="Descargar Apuntes Oficiales del Tema 2: Ecuaciones, Complejos y Sistemas">
-              <span>📘</span>
-              <span>Apuntes Tema 2 (PDF)</span>
-            </a>
-            <a href="pdf/Ficha_Tema1_Herramientas_del_Algebra_1Bach.pdf" target="_blank" class="btn-action-purple">
-              <span>📄</span>
-              <span>Hoja de Problemas Tema 1 (PDF)</span>
-            </a>
-            <a href="pdf/Ficha_Repaso_Examen_Tema1_Herramientas_del_Algebra_1Bach.pdf" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border-color: #b45309;" title="Descargar Ficha de Repaso y Preparación de Examen">
-              <span>🎯</span>
-              <span>Ficha de Repaso Examen (PDF)</span>
-            </a>
-            <a href="pdf/Ficha_Repaso_Examen_Tema1_Herramientas_del_Algebra_1Bach_Solucionario.pdf" target="_blank" class="btn-action-emerald" id="heroRepasoSolucionarioBtn" title="Descargar soluciones resueltas paso a paso de la Ficha de Repaso">
-              <span>✅</span>
-              <span>Solucionario Repaso (PDF)</span>
-            </a>
-            <a href="pdf/Tarea1_Herramientas_del_Algebra_1Bach_Solucionario.pdf" target="_blank" class="btn-action-emerald" id="heroSolucionarioBtn" title="Descargar soluciones resueltas paso a paso de la Tarea 1">
-              <span>✅</span>
-              <span>Solucionario Tarea 1 (PDF)</span>
-            </a>
-            <a href="pdf/Tarea2_Herramientas_del_Algebra_1Bach_Solucionario.pdf" target="_blank" class="btn-action-emerald" id="heroSolucionarioTarea2Btn" title="Descargar soluciones resueltas paso a paso de la Tarea 2">
-              <span>✅</span>
-              <span>Solucionario Tarea 2 (PDF)</span>
-            </a>
+          <div class="hero-pdf-btns" id="heroPdfBtns">
+            <!-- Botones contextuales limpios renderizados dinámicamente por app.js -->
           </div>
         </div>
       </article>
@@ -188,39 +161,27 @@
             </div>
           </div>
 
-          <!-- Guía de Orientación Rápida para el Alumnado -->
-          <div class="tema-route-guide">
-            <span class="guide-title">🧭 <strong>¿A dónde ir?</strong></span>
-            <div class="guide-chips">
-              <button type="button" class="guide-chip chip-pizarra" onclick="switchSubTab('pizarra-diario')">📅 <strong>Diario:</strong> Repasar clase de hoy</button>
-              <button type="button" class="guide-chip chip-libreta" onclick="switchSubTab('semana-hoja')">📝 <strong>Libreta:</strong> Ejercicios semanales</button>
-              <button type="button" class="guide-chip chip-classroom" onclick="switchSubTab('tareas-classroom')">📤 <strong>Classroom:</strong> Tareas entregables</button>
-              <button type="button" class="guide-chip chip-test" onclick="switchSubTab('controles-test')">✍️ <strong>Test:</strong> Exámenes y soluciones</button>
-              <button type="button" class="guide-chip chip-radar" onclick="switchSubTab('comprueba-tema')">🎯 <strong>Radar:</strong> ¿Cómo te ves?</button>
-            </div>
-          </div>
-
-          <!-- Sub-Pestañas del Tema con Identidad Cromática -->
-          <nav class="tema-subtabs">
-            <button class="subtab-btn subtab-btn-pizarra active" onclick="switchSubTab('pizarra-diario', this)">
+          <!-- Sub-Pestañas del Tema con Identidad Cromática y Contadores -->
+          <nav class="tema-subtabs" id="temaSubtabsNav">
+            <button class="subtab-btn subtab-btn-pizarra active" id="subtab-btn-pizarra" onclick="switchSubTab('pizarra-diario', this)">
               <span>📅</span>
-              <span>Diario de Pizarra (en clase)</span>
+              <span id="subtab-label-pizarra">Diario de Pizarra</span>
             </button>
-            <button class="subtab-btn subtab-btn-libreta" onclick="switchSubTab('semana-hoja', this)">
+            <button class="subtab-btn subtab-btn-libreta" id="subtab-btn-libreta" onclick="switchSubTab('semana-hoja', this)">
               <span>📝</span>
-              <span>Tu Libreta (semana a semana)</span>
+              <span id="subtab-label-libreta">Tu Libreta (semana a semana)</span>
             </button>
             <button class="subtab-btn subtab-btn-classroom" id="subtab-btn-classroom" onclick="switchSubTab('tareas-classroom', this)">
               <span>📤</span>
-              <span>Tareas de Classroom</span>
+              <span id="subtab-label-classroom">Tareas de Classroom</span>
             </button>
             <button class="subtab-btn subtab-btn-test" id="subtab-btn-test" onclick="switchSubTab('controles-test', this)">
               <span>✍️</span>
-              <span>Controles y Test (exámenes)</span>
+              <span id="subtab-label-test">Controles y Test</span>
             </button>
-            <button class="subtab-btn subtab-btn-radar" onclick="switchSubTab('comprueba-tema', this)">
+            <button class="subtab-btn subtab-btn-radar" id="subtab-btn-radar" onclick="switchSubTab('comprueba-tema', this)">
               <span>🎯</span>
-              <span>Tu Radar (autoevaluación)</span>
+              <span id="subtab-label-radar">Tu Radar (autoevaluación)</span>
             </button>
           </nav>
 
@@ -285,11 +246,11 @@
   </main>
 
   <!-- Módulos de Datos Desacoplados -->
-  <script src="data/curso.js?v=20261026_102004"></script>
-  <script src="data/temas/tema_01.js?v=20261026_102004"></script>
-  <script src="data/temas/tema_02.js?v=20261026_102004"></script>
+  <script src="data/curso.js?v=20261026_104607"></script>
+  <script src="data/temas/tema_01.js?v=20261026_104607"></script>
+  <script src="data/temas/tema_02.js?v=20261026_104607"></script>
 
   <!-- Motor de la Aplicación -->
-  <script src="js/app.js?v=20261026_102004"></script>
+  <script src="js/app.js?v=20261026_104607"></script>
 </body>
 </html>

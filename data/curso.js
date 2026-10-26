@@ -19,7 +19,7 @@ window.CURSO_CONFIG = {
     "aviso": "¡Solucionario de la Tarea 2 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "control_test_activo": {
-    "existe": true,
+    "existe": false,
     "tema_id": 1,
     "test_id": "Test-01",
     "titulo": "Control Test 1: Radicales, Racionalización y Logaritmos",
