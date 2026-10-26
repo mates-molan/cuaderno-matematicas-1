@@ -27,15 +27,15 @@ window.CURSO_CONFIG = {
     "estado": "solucionario_disponible",
     "pdf_examen": "pdf/Examen_Tema1_Herramientas_del_Algebra_1Bach.pdf",
     "pdf_solucionario": "pdf/Examen_Tema1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
-    "aviso": "¡Examen Oficial del Tema 1 y su Solucionario resuelto paso a paso disponibles!"
+    "aviso": "¡Examen del Tema 1 y su Solucionario resuelto paso a paso disponibles!"
   },
   "ultima_clase": {
     "fecha": "Lunes 26 de Octubre de 2026",
     "tema_id": 1,
     "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 20: Examen Oficial del Tema 1 (Enunciado y Solucionario Resuelto)",
+    "titulo_sesion": "Sesión 20: Examen del Tema 1 (Enunciado y Solucionario Resuelto)",
     "referencia_apuntes": "Todo el Tema 1 (Págs. 1-33) • Inicio del Tema 2 en la próxima sesión",
-    "mision_semanal": "Revisar y contrastar tu Examen del Tema 1 con el solucionario oficial y traer descargados los Apuntes del Tema 2 (Ecuaciones, Complejos y Sistemas).",
+    "mision_semanal": "Revisar y contrastar tu Examen del Tema 1 con el solucionario y traer descargados los Apuntes del Tema 2 (Ecuaciones, Complejos y Sistemas).",
     "trabajo_semanal_pendiente": "Revisar el solucionario del Examen del Tema 1 y preparar los Apuntes del Tema 2.",
     "ejercicios_vistos": [
       {

@@ -38,7 +38,7 @@ window.TEMAS_DATA[1] = {
       "estado": "solucionario_disponible",
       "pdf_tarea": "pdf/Tarea2_Herramientas_del_Algebra_1Bach.pdf",
       "pdf_solucionario": "pdf/Tarea2_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
-      "criterios_entrega": "Plazo de entrega en Google Classroom finalizado. Ya tienes disponible el solucionario oficial resuelto paso a paso para contrastar tus desarrollos y auto-corregir cada ejercicio en tu libreta.",
+      "criterios_entrega": "Plazo de entrega en Google Classroom finalizado. Ya tienes disponible el solucionario resuelto paso a paso para contrastar tus desarrollos y auto-corregir cada ejercicio en tu libreta.",
       "ejercicios_incluidos": [
         "Ejercicio 1: Radicales (demostración del colapso algebraico a número natural y racionalización cúbica con variables).",
         "Ejercicio 2: Logaritmos (ecuación con incógnita en la base y análisis estricto de dominio, y deducción analítica de log(75) y log₆(15)).",
@@ -936,7 +936,7 @@ window.TEMAS_DATA[1] = {
     {
       "numero": 20,
       "fecha": "Lunes 26 de Octubre de 2026",
-      "titulo": "Examen Oficial del Tema 1: Herramientas del Álgebra (Enunciados y Soluciones)",
+      "titulo": "Examen del Tema 1: Herramientas del Álgebra (Enunciados y Soluciones)",
       "ejercicios": [
         {
           "numero": 1,

@@ -212,7 +212,7 @@ function renderAlDia() {
         testNoticeEl.innerHTML = `
           <span>✅</span>
           <span id="heroTestTexto">
-            <strong>${tTest.titulo || 'Examen Oficial'}:</strong> ${tTest.aviso || 'Enunciado oficial y solucionario resuelto disponibles para auto-corrección.'}
+            <strong>${tTest.titulo || 'Examen'}:</strong> ${tTest.aviso || 'Enunciado y solucionario resuelto disponibles para auto-corrección.'}
             <span class="test-link-btn">Ver en Temario →</span>
           </span>
         `;
@@ -242,7 +242,7 @@ function renderAlDia() {
 
     if (tTest && tTest.pdf_examen) {
       heroBtnsHtml += `
-        <a href="${tTest.pdf_examen}" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); border-color: #be123c;" title="Abrir el Enunciado Oficial del Examen en PDF">
+        <a href="${tTest.pdf_examen}" target="_blank" class="btn-action-primary" style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); border-color: #be123c;" title="Abrir el Enunciado del Examen en PDF">
           <span>📄</span>
           <span>Enunciado Examen Tema ${tTest.tema_id} (PDF)</span>
         </a>
@@ -251,7 +251,7 @@ function renderAlDia() {
 
     if (tTest && tTest.estado === 'solucionario_disponible' && tTest.pdf_solucionario) {
       heroBtnsHtml += `
-        <a href="${tTest.pdf_solucionario}" target="_blank" class="btn-action-emerald" title="Abrir el Solucionario Oficial Resuelto del Examen en PDF">
+        <a href="${tTest.pdf_solucionario}" target="_blank" class="btn-action-emerald" title="Abrir el Solucionario Resuelto del Examen en PDF">
           <span>✅</span>
           <span>Solucionario Examen Tema ${tTest.tema_id} (PDF)</span>
         </a>
@@ -269,7 +269,7 @@ function renderAlDia() {
 
     if (temaActual && temaActual.apuntes_pdf) {
       heroBtnsHtml += `
-        <a href="${temaActual.apuntes_pdf}" target="_blank" class="btn-action-primary" title="Descargar Apuntes Oficiales del Tema ${temaActual.numero}">
+        <a href="${temaActual.apuntes_pdf}" target="_blank" class="btn-action-primary" title="Descargar Apuntes del Tema ${temaActual.numero}">
           <span>📘</span>
           <span>Apuntes Tema ${temaActual.numero} (PDF)</span>
         </a>
@@ -354,7 +354,7 @@ function renderTemasGrid() {
 
     let metaPillsHtml = '';
     if (t.apuntes_listos && t.apuntes_pdf) {
-      metaPillsHtml += `<a href="${t.apuntes_pdf}" target="_blank" class="meta-pill meta-pill-btn meta-pill-apuntes" onclick="event.stopPropagation()" title="Abrir directamente los Apuntes Oficiales en PDF">📘 Apuntes (PDF) ↗</a>`;
+      metaPillsHtml += `<a href="${t.apuntes_pdf}" target="_blank" class="meta-pill meta-pill-btn meta-pill-apuntes" onclick="event.stopPropagation()" title="Abrir directamente los Apuntes en PDF">📘 Apuntes (PDF) ↗</a>`;
     }
     if (t.ejercicios_listos && t.ejercicios_pdf) {
       metaPillsHtml += `<a href="${t.ejercicios_pdf}" target="_blank" class="meta-pill meta-pill-btn meta-pill-hoja" onclick="event.stopPropagation()" title="Abrir directamente la Hoja de Problemas en PDF">📄 Hoja de Problemas (PDF) ↗</a>`;
@@ -469,7 +469,7 @@ function renderTemaDetailHeader(temaId) {
       btnsHtml += `
         <a href="${apuntesUrl}" target="_blank" class="btn-action-primary">
           <span>📘</span>
-          <span>Apuntes Oficiales (PDF)</span>
+          <span>Apuntes del Tema (PDF)</span>
         </a>
       `;
     }
@@ -576,7 +576,7 @@ function renderSemanaHoja(temaId = currentTemaId) {
             <span class="hoja-download-icon">📑</span>
             <div>
               <h4 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">Hoja de Ejercicios: Tema ${t.id}</h4>
-              <p style="color: var(--text-muted); font-size: 0.92rem;">Documento oficial completo en PDF con soluciones finales para contrastar tu trabajo.</p>
+              <p style="color: var(--text-muted); font-size: 0.92rem;">Documento completo en PDF con soluciones finales para contrastar tu trabajo.</p>
             </div>
           </div>
           <a href="${t.ejercicios_pdf}" target="_blank" class="btn-action-purple">
@@ -846,7 +846,7 @@ function renderControlesTest(temaId = currentTemaId) {
           <span class="hoja-download-icon">🎯</span>
           <div>
             <h4 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">Preparación de Examen: Ficha de Repaso (Tema ${t.id})</h4>
-            <p style="color: var(--text-muted); font-size: 0.92rem;">Colección de problemas modelo de examen con solucionario oficial resuelto paso a paso.</p>
+            <p style="color: var(--text-muted); font-size: 0.92rem;">Colección de problemas modelo de examen con solucionario resuelto paso a paso.</p>
           </div>
         </div>
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
@@ -903,7 +903,7 @@ function renderControlesTest(temaId = currentTemaId) {
         ${btnRespuestas}
         <a href="${test.pdf_solucionario}" target="_blank" class="btn-action-emerald">
           <span>✅</span>
-          <span>Descargar Solucionario Oficial Resuelto (PDF)</span>
+          <span>Descargar Solucionario Resuelto (PDF)</span>
         </a>
       `;
     } else {
@@ -917,7 +917,7 @@ function renderControlesTest(temaId = currentTemaId) {
         ${btnRespuestas}
         <a href="${test.pdf_solucionario}" target="_blank" class="btn-action-emerald">
           <span>✅</span>
-          <span>Solucionario Oficial (PDF)</span>
+          <span>Solucionario (PDF)</span>
         </a>
       `;
     }
