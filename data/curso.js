@@ -33,110 +33,114 @@ window.CURSO_CONFIG = {
     "fecha": "Martes 27 de Octubre de 2026",
     "tema_id": 2,
     "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
-    "titulo_sesion": "Sesión 1: Modelado Competencial con Ecuaciones Polinómicas, Bicuadradas y Racionales",
+    "titulo_sesion": "Sesión 1: Problemas Prácticos con Ecuaciones (Polinómicas, Bicuadradas y Racionales)",
     "referencia_apuntes": "Bloque 1: Punto 1.3 (Págs. 6-7)",
-    "mision_semanal": "Dominar la resolución analítica de ecuaciones factorizando identidades notables y verificando siempre los valores prohibidos en denominadores antes de operar.",
-    "trabajo_semanal_pendiente": "Comprobar el modelado de los 4 problemas de pizarra en tu libreta y repasar los Ejemplos 1.1 a 1.3 de las páginas 6 y 7 de los apuntes.",
+    "mision_semanal": "Dominar la resolución de ecuaciones en situaciones prácticas: factorizando identidades notables y vigilando siempre los valores prohibidos en denominadores.",
+    "trabajo_semanal_pendiente": "Copiar en tu libreta los 4 problemas de pizarra y repasar los Ejemplos 1.1, 1.2 y 1.3 de las páginas 6 y 7 de los apuntes.",
     "ejercicios_vistos": [
       {
         "numero": 1,
-        "titulo": "Problema 1: Autonomía de Drones y Factorización Eficiente (Ecuación Polinómica)",
-        "referencia": "Bloque 1: Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🚁</span><div class=\"nota-aula-content\"><strong>Contexto de Ingeniería Aeroespacial:</strong> Dos prototipos de drones para entrega de material médico en zonas rurales, <em>Zephyr</em> y <em>AeroPulse</em>, tienen autonomías de vuelo (en kilómetros) en función de un parámetro dimensional de perfil alar $x$ (en decímetros):<br>• Prototipo Zephyr: $A_1(x) = (x^2 - 9)(3x - 2)$<br>• Prototipo AeroPulse: $A_2(x) = (x - 3)(x^2 + 4x + 3)$<br>Para coordinar una misión conjunta, los ingenieros necesitan hallar qué cotas $x$ proporcionan idéntica autonomía ($A_1(x) = A_2(x)$).</div></div>Plantea la ecuación $(x^2 - 9)(3x - 2) = (x - 3)(x^2 + 4x + 3)$ y resuélvela sin multiplicar paréntesis a lo loco:",
+        "titulo": "Problema 1: Comparar el volumen de dos cajas (Ecuación polinómica)",
+        "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1)",
+        "enunciado": "Una fábrica diseña dos tipos de cajas de cartón para embalaje. El volumen de cada caja (en $\\text{cm}^3$) depende de una medida $x$ (en centímetros): la primera caja tiene un volumen de $V_1 = (x^2 - 9)(3x - 2)$ y la segunda caja tiene un volumen de $V_2 = (x - 3)(x^2 + 4x + 3)$. Queremos averiguar para qué medidas de $x$ tienen ambas cajas exactamente la misma capacidad ($V_1 = V_2$).",
+        "instruccion": "Plantea la ecuación que iguala los dos volúmenes y resuélvela factorizando para no multiplicar paréntesis a lo loco:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Factorización previa:} \\; x^2 - 9 = (x - 3)(x + 3) \\quad \\text{y} \\quad x^2 + 4x + 3 = (x + 1)(x + 3)"
+            "expresion": "\\textbf{Planteamiento:} \\; (x^2 - 9)(3x - 2) = (x - 3)(x^2 + 4x + 3)"
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Pasar a la izquierda y extraer factores comunes:} \\; (x - 3)(x + 3)(3x - 2) - (x - 3)(x + 3)(x + 1) = 0 \\iff (x - 3)(x + 3)\\big[(3x - 2) - (x + 1)\\big] = 0"
+            "expresion": "\\textbf{Factorizar antes de multiplicar:} \\; x^2 - 9 = (x - 3)(x + 3) \\quad \\text{y} \\quad x^2 + 4x + 3 = (x + 1)(x + 3)"
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Regla del producto nulo y soluciones reales:} \\; (x - 3)(x + 3)(2x - 3) = 0 \\implies x_1 = 3, \\quad x_2 = -3, \\quad x_3 = \\dfrac{3}{2} = 1{,}5"
+            "expresion": "\\textbf{Pasar a la izquierda y sacar factor común:} \\; (x - 3)(x + 3)(3x - 2) - (x - 3)(x + 3)(x + 1) = 0 \\iff (x - 3)(x + 3)\\big[(3x - 2) - (x + 1)\\big] = 0"
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Interpretación física de las soluciones:} \\; \\text{La cota es una medida dimensional real } (x > 0), \\text{ por lo que descartamos } x_2 = -3. \\text{ Con } x = 3\\text{ la autonomía colapsa a } 0\\text{ km (ala degenerada), por lo que el diseño operativo óptimo es } x = 1{,}5\\text{ dm} \\; (A = 34{,}375\\text{ km})."
+            "expresion": "\\textbf{Soluciones y sentido real:} \\; (x - 3)(x + 3)(2x - 3) = 0 \\implies x_1 = 3, \\; x_2 = -3, \\; x_3 = 1{,}5. \\text{ Como una longitud no puede ser negativa, descartamos } x = -3. \\text{ Con } x = 3 \\text{ las cajas tendrían volumen cero, luego la única medida útil es } x = 1{,}5\\text{ cm}."
           }
         ],
-        "idea_clave": "Si multiplicas los paréntesis a ambos lados generas un polinomio cúbico y te obligas a hacer Ruffini. Mirando identidades notables antes de operar, sacas factor común $(x - 3)(x + 3)$ y el problema se resuelve en 3 líneas."
+        "idea_clave": "Si multiplicas los paréntesis a ambos lados generas un polinomio de grado 3 y tendrías que usar Ruffini. Reconociendo identidades notables antes de operar, sacas factor común $(x - 3)(x + 3)$ y resuelves la ecuación en tres líneas."
       },
       {
         "numero": 2,
-        "titulo": "Problema 2: Nodos de Vibración en una Pasarela Peatonal (Ecuación Bicuadrada)",
-        "referencia": "Bloque 1: Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 a)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🌉</span><div class=\"nota-aula-content\"><strong>Contexto de Mecánica Estructural:</strong> Al estudiar la resonancia provocada por el paso de peatones sobre una pasarela suspendida, la curva de flexión vertical $y$ (en mm) respecto al centro simétrico ($x = 0$, con $x$ en metros) responde a la función:<br>$$y(x) = x^4 - 10x^2 + 9$$Para anclar los amortiguadores de masa sintonizados (TMD) que eliminen el balanceo sin sufrir fatiga, los técnicos deben ubicarlos exactamente en los <strong>nodos de deformación nula</strong> ($y(x) = 0$).</div></div>Resuelve la ecuación bicuadrada $x^4 - 10x^2 + 9 = 0$ mediante cambio de variable:",
+        "titulo": "Problema 2: Puntos de apoyo en una rampa de skate (Ecuación bicuadrada)",
+        "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 a)",
+        "enunciado": "En el diseño de una rampa para una pista de patinaje (skatepark), la altura $h$ respecto al suelo (en metros) a una distancia horizontal $x$ del centro viene dada por la fórmula $h(x) = x^4 - 10x^2 + 9$. Queremos encontrar en qué puntos la rampa toca exactamente el suelo ($h(x) = 0$).",
+        "instruccion": "Resuelve la ecuación bicuadrada aplicando el cambio de variable $t = x^2$ para hallar todas sus soluciones reales:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Cambio de variable:} \\; \\text{Definimos } t = x^2 \\implies t^2 = x^4, \\text{ transformando la ecuación en } t^2 - 10t + 9 = 0"
+            "expresion": "\\textbf{Ecuación y cambio de variable:} \\; x^4 - 10x^2 + 9 = 0. \\text{ Hacemos } t = x^2 \\implies t^2 - 10t + 9 = 0"
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Resolución en } t: \\; (t - 9)(t - 1) = 0 \\implies t_1 = 9, \\quad t_2 = 1 \\quad (\\text{ambos } > 0, \\text{ luego ambos generan soluciones reales})"
+            "expresion": "\\textbf{Resolver en } t: \\; (t - 9)(t - 1) = 0 \\implies t_1 = 9, \\quad t_2 = 1 \\quad (\\text{ambos positivos, luego darán soluciones reales})"
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Deshacer el cambio con doble signo } \\pm: \\; \\begin{cases} x^2 = 9 \\implies x = \\pm\\sqrt{9} = \\pm 3 \\\\ x^2 = 1 \\implies x = \\pm\\sqrt{1} = \\pm 1 \\end{cases} \\implies S = \\{-3, -1, 1, 3\\}"
+            "expresion": "\\textbf{Deshacer el cambio con } \\pm: \\; \\begin{cases} x^2 = 9 \\implies x = \\pm\\sqrt{9} = \\pm 3 \\\\ x^2 = 1 \\implies x = \\pm\\sqrt{1} = \\pm 1 \\end{cases} \\implies S = \\{-3, -1, 1, 3\\}"
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Conclusión estructural:} \\; \\text{La pasarela presenta 4 nodos de anclaje simétricos a } 1\\text{ m y } 3\\text{ m a ambos lados del centro } (x = \\pm 1\\text{ m},\\; x = \\pm 3\\text{ m})."
+            "expresion": "\\textbf{Interpretación en la pista:} \\; \\text{La rampa toca el suelo en 4 puntos situados simétricamente a } 1\\text{ m y a } 3\\text{ m a la izquierda y a la derecha del centro } (x = -3,\\, -1,\\, 1,\\, 3\\text{ m})."
           }
         ],
-        "idea_clave": "Al terminar la ecuación cuadrática en $t$ no has resuelto el problema: la incógnita era la distancia $x$. Recuerda siempre deshacer el cambio ($x = \\pm\\sqrt{t}$) y tener en cuenta que cada $t > 0$ genera dos soluciones simétricas opuestas."
+        "idea_clave": "No te pares al hallar los valores de $t$: la incógnita que te piden es la distancia $x$. Recuerda siempre deshacer el cambio sacando la raíz cuadrada con el doble signo $\\pm$."
       },
       {
         "numero": 3,
-        "titulo": "Problema 3: Transición de Fase Térmica en Sensores Satelitales (Cambio de Variable Impar)",
-        "referencia": "Bloque 1: Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 b)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🛰️</span><div class=\"nota-aula-content\"><strong>Contexto de Ciencia de Materiales Aeroespaciales:</strong> La conductividad de un nanocompuesto semiconductor para satélites meteorológicos experimenta una transición cuántica de fase cuando la variación térmica relativa $x$ (respecto al punto criogénico base) cumple la ley física no lineal:<br>$$x^6 - 26x^3 = 27 \\iff x^6 - 26x^3 - 27 = 0$$Los ingenieros de instrumentación deben predecir todas las temperaturas reales donde ocurre dicha transición.</div></div>Resuelve la ecuación $x^6 - 26x^3 - 27 = 0$ analizando la particularidad del exponente impar:",
+        "titulo": "Problema 3: Temperatura de equilibrio en el laboratorio (Cambio con exponente impar)",
+        "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 b)",
+        "enunciado": "En una práctica de laboratorio de ciencias, la temperatura $x$ (en grados) a la que se estabiliza una mezcla química cumple la ecuación $x^6 - 26x^3 = 27$, es decir, $x^6 - 26x^3 - 27 = 0$. Averigua todas las temperaturas reales a las que la mezcla puede estar en equilibrio.",
+        "instruccion": "Aplica el cambio de variable con exponente impar y analiza qué ocurre con el signo de las soluciones:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Cambio de variable:} \\; \\text{Definimos } t = x^3 \\implies t^2 = x^6, \\text{ obteniendo la ecuación } t^2 - 26t - 27 = 0"
+            "expresion": "\\textbf{Cambio de variable:} \\; \\text{Hacemos } t = x^3 \\implies t^2 = x^6, \\text{ con lo que queda la ecuación } t^2 - 26t - 27 = 0"
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Resolución en } t: \\; (t - 27)(t + 1) = 0 \\implies t_1 = 27, \\quad t_2 = -1"
+            "expresion": "\\textbf{Resolver en } t: \\; (t - 27)(t + 1) = 0 \\implies t_1 = 27, \\quad t_2 = -1"
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Deshacer el cambio (raíz cúbica real):} \\; \\begin{cases} x^3 = 27 \\implies x_1 = \\sqrt[3]{27} = 3 \\\\ x^3 = -1 \\implies x_2 = \\sqrt[3]{-1} = -1 \\end{cases} \\implies S = \\{-1, 3\\}"
+            "expresion": "\\textbf{Deshacer el cambio con raíz cúbica:} \\; \\begin{cases} x^3 = 27 \\implies x_1 = \\sqrt[3]{27} = 3 \\\\ x^3 = -1 \\implies x_2 = \\sqrt[3]{-1} = -1 \\end{cases} \\implies S = \\{-1, 3\\}"
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Contraste didáctico:} \\; \\text{A diferencia de las bicuadradas pares } (x^2), \\text{ las raíces de índice impar SÍ están definidas para números negativos en } \\mathbb{R}. \\text{ Existen dos temperaturas críticas reales: frío } (x = -1) \\text{ y calor } (x = 3)."
+            "expresion": "\\textbf{Atención al exponente impar:} \\; \\text{A diferencia del exponente par, las raíces cúbicas de números negativos SÍ existen en los números reales } (\\sqrt[3]{-1} = -1). \\text{ Hay dos temperaturas de equilibrio: } -1^\\circ\\text{C y } 3^\\circ\\text{C}."
           }
         ],
-        "idea_clave": "En $x^6 + \\dots + x^3$, el cambio natural es $t = x^3$. Al deshacerlo, cada valor de $t$ (sea positivo o negativo) da una única solución real mediante la raíz cúbica: $\\sqrt[3]{-1} = -1$ es un número real perfectamente válido."
+        "idea_clave": "Fíjate bien en el exponente: al hacer $t = x^3$, la raíz cúbica conserva el signo y admite números negativos ($\\sqrt[3]{-1} = -1$). Cada valor de $t$ produce una única solución real."
       },
       {
         "numero": 4,
-        "titulo": "Problema 4: Control de Presión y Válvulas en Biorreactor (Ecuación Racional y Valores Prohibidos)",
-        "referencia": "Bloque 1: Punto 1.3 (Pág. 7, análogo a Ejemplo 1.3)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🧪</span><div class=\"nota-aula-content\"><strong>Contexto de Ingeniería de Procesos Químicos:</strong> El caudal neto de recirculación en un biorreactor automatizado combina dos líneas de alimentación dependientes de la presión manométrica $x$ (en bares): $T_1(x) = \\dfrac{2x}{x - 1}$ y $T_2(x) = \\dfrac{x + 3}{x + 4}$. Para equilibrar la pérdida de carga en la válvula central, el sistema debe calibrarse según la ecuación:<br>$$\\frac{2x}{x - 1} - \\frac{x + 3}{x + 4} = \\frac{10}{x^2 + 3x - 4}$$</div></div>Aplica el protocolo en 4 pasos para resolver la ecuación racional y evitar soluciones falsas:",
+        "titulo": "Problema 4: Grifos y tuberías en un depósito de agua (Ecuación con fracciones y valores prohibidos)",
+        "referencia": "Punto 1.3 (Pág. 7, análogo a Ejemplo 1.3)",
+        "enunciado": "Un depósito de agua tiene conectadas dos tuberías: la primera introduce agua a un ritmo de $\\dfrac{2x}{x - 1}$ litros por minuto, y la segunda desagua a un ritmo de $\\dfrac{x + 3}{x + 4}$ litros por minuto (donde $x$ es la posición de apertura de las llaves). Para mantener el nivel estable, la diferencia entre lo que entra y lo que sale debe ser igual a $\\dfrac{10}{x^2 + 3x - 4}$. Calcula el valor de $x$ que permite regular el depósito.",
+        "instruccion": "Resuelve la ecuación con fracciones siguiendo el método en 4 pasos y vigila los valores prohibidos:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Paso 0 (Valores prohibidos):} \\; x^2 + 3x - 4 = (x - 1)(x + 4) \\implies \\text{Valores prohibidos: } x = 1 \\text{ y } x = -4 \\quad (\\text{provocan división entre cero / bloqueo hidráulico})"
+            "expresion": "\\textbf{Paso 0 (Valores prohibidos):} \\; x^2 + 3x - 4 = (x - 1)(x + 4). \\text{ Los valores que anulan denominadores son } x = 1 \\text{ y } x = -4 \\text{ (jamás pueden ser solución).}"
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Eliminar denominadores con m.c.m. } (x - 1)(x + 4): \\; 2x(x + 4) - (x + 3)(x - 1) = 10"
+            "expresion": "\\textbf{Quitar denominadores con el m.c.m.:} \\; \\text{Multiplicamos todo por } (x - 1)(x + 4): \\quad 2x(x + 4) - (x + 3)(x - 1) = 10"
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Operar protegiendo con paréntesis:} \\; (2x^2 + 8x) - (x^2 + 2x - 3) = 10 \\iff x^2 + 6x - 7 = 0 \\iff (x - 1)(x + 7) = 0 \\implies x_1 = 1, \\quad x_2 = -7"
+            "expresion": "\\textbf{Operar con cuidado de los signos:} \\; (2x^2 + 8x) - (x^2 + 2x - 3) = 10 \\iff x^2 + 6x - 7 = 0 \\iff (x - 1)(x + 7) = 0 \\implies x_1 = 1, \\; x_2 = -7"
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Auditoría de soluciones frente al Paso 0:} \\; \\begin{cases} x_1 = 1: \\text{ ¡SOLUCIÓN FALSA! Se descarta porque anula el denominador } (x - 1) \\\\ x_2 = -7: \\text{ VÁLIDA. Comprobación: } \\frac{-14}{-8} - \\frac{-4}{-3} = \\frac{7}{4} - \\frac{4}{3} = \\frac{5}{12} = \\frac{10}{24} \\end{cases} \\implies \\text{Solución única: } x = -7\\text{ bares}"
+            "expresion": "\\textbf{Comprobar con el Paso 0:} \\; x_1 = 1 \\text{ es una \\textbf{solución falsa}} \\text{ porque anula el denominador } (x - 1). \\text{ La \\textbf{única solución válida}} \\text{ es } x = -7."
           }
         ],
-        "idea_clave": "Hacer siempre el Paso 0 anotando los valores prohibidos antes de multiplicar por el m.c.m. El álgebra de 2.º grado arroja $x = 1$, pero es un falso positivo producido por la multiplicación que destruiría la instalación por división entre cero."
+        "idea_clave": "Anota siempre los valores prohibidos en el Paso 0 antes de quitar denominadores. El álgebra da $x = 1$, pero si sustituyes en la fracción te quedaría una división entre cero, que es imposible."
       }
     ]
   },

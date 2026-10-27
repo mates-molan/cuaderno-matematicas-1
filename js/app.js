@@ -108,7 +108,7 @@ function parseInstruccionEjercicio(ex) {
       if (iconMatch) icon = iconMatch[1].trim();
       const innerMatch = match[1].match(/<div class="nota-aula-content">([\s\S]*?)$/);
       pistasContent = innerMatch ? innerMatch[1].trim() : match[1].trim();
-      enunciado = raw.replace(match[0], '').trim();
+      if (!enunciado) enunciado = raw.replace(match[0], '').trim();
     } else {
       const matchSimple = raw.match(/<div class="nota-aula-box">([\s\S]*?)<\/div>/);
       if (matchSimple) {
@@ -116,9 +116,13 @@ function parseInstruccionEjercicio(ex) {
         if (iconMatch) icon = iconMatch[1].trim();
         const innerMatch = matchSimple[1].match(/<div class="nota-aula-content">([\s\S]*?)$/);
         pistasContent = innerMatch ? innerMatch[1].trim() : matchSimple[1].trim();
-        enunciado = raw.replace(matchSimple[0], '').trim();
+        if (!enunciado) enunciado = raw.replace(matchSimple[0], '').trim();
       } else {
-        enunciado = raw.trim();
+        if (!enunciado) {
+          enunciado = raw.trim();
+        } else if (raw.trim()) {
+          enunciado = `<div class="exercise-problem-statement">${enunciado}</div><div class="exercise-task-prompt" style="margin-top: 10px; font-weight: 600; color: #334155;">${raw.trim()}</div>`;
+        }
       }
     }
   } else if (!enunciado && raw) {
