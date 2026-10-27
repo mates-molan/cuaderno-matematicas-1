@@ -42,24 +42,24 @@ window.CURSO_CONFIG = {
         "numero": 1,
         "titulo": "Problema 1: Comparar el volumen de dos cajas (Ecuación polinómica)",
         "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1)",
-        "enunciado": "Una fábrica diseña dos tipos de cajas de cartón para embalaje. El volumen de cada caja (en $\\text{cm}^3$) depende de una medida $x$ (en centímetros): la primera caja tiene un volumen de $V_1 = (x^2 - 9)(3x - 2)$ y la segunda caja tiene un volumen de $V_2 = (x - 3)(x^2 + 4x + 3)$. Queremos averiguar para qué medidas de $x$ tienen ambas cajas exactamente la misma capacidad ($V_1 = V_2$).",
+        "enunciado": "Una fábrica diseña dos tipos de cajas de cartón para embalaje. El volumen de cada caja (en $\\text{cm}^3$) depende de una medida $x$ (en centímetros): la primera caja tiene un volumen de $V_1 = (x^2 - 9)(2x - 1)$ y la segunda caja tiene un volumen de $V_2 = (x - 3)(x^2 + 7x + 12)$. Queremos averiguar para qué medidas de $x$ tienen ambas cajas exactamente la misma capacidad ($V_1 = V_2$).",
         "instruccion": "Plantea la ecuación que iguala los dos volúmenes y resuélvela factorizando para no multiplicar paréntesis a lo loco:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Planteamiento:} \\; (x^2 - 9)(3x - 2) = (x - 3)(x^2 + 4x + 3)"
+            "expresion": "\\textbf{Planteamiento:} \\; (x^2 - 9)(2x - 1) = (x - 3)(x^2 + 7x + 12)"
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Factorizar antes de multiplicar:} \\; x^2 - 9 = (x - 3)(x + 3) \\quad \\text{y} \\quad x^2 + 4x + 3 = (x + 1)(x + 3)"
+            "expresion": "\\textbf{Factorizar antes de multiplicar:} \\; x^2 - 9 = (x - 3)(x + 3) \\quad \\text{y} \\quad x^2 + 7x + 12 = (x + 3)(x + 4)"
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Pasar a la izquierda y sacar factor común:} \\; (x - 3)(x + 3)(3x - 2) - (x - 3)(x + 3)(x + 1) = 0 \\iff (x - 3)(x + 3)\\big[(3x - 2) - (x + 1)\\big] = 0"
+            "expresion": "\\textbf{Pasar a la izquierda y sacar factor común:} \\; (x - 3)(x + 3)(2x - 1) - (x - 3)(x + 3)(x + 4) = 0 \\iff (x - 3)(x + 3)\\big[(2x - 1) - (x + 4)\\big] = 0"
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Soluciones y sentido real:} \\; (x - 3)(x + 3)(2x - 3) = 0 \\implies x_1 = 3, \\; x_2 = -3, \\; x_3 = 1{,}5. \\text{ Como una longitud no puede ser negativa, descartamos } x = -3. \\text{ Con } x = 3 \\text{ las cajas tendrían volumen cero, luego la única medida útil es } x = 1{,}5\\text{ cm}."
+            "expresion": "\\textbf{Soluciones y sentido real:} \\; (x - 3)(x + 3)(x - 5) = 0 \\implies x_1 = 3, \\; x_2 = -3, \\; x_3 = 5. \\text{ Si } x = -3 \\text{ las dimensiones serían negativas (imposible). Si } x = 3 \\text{ el volumen sería } 0\\text{ cm}^3. \\text{ Por tanto, la \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 5\\text{ cm}}, \\text{ que da un volumen positivo real de } V_1 = V_2 = 144\\text{ cm}^3 > 0."
           }
         ],
         "idea_clave": "Si multiplicas los paréntesis a ambos lados generas un polinomio de grado 3 y tendrías que usar Ruffini. Reconociendo identidades notables antes de operar, sacas factor común $(x - 3)(x + 3)$ y resuelves la ecuación en tres líneas."
