@@ -19,7 +19,7 @@ window.CURSO_CONFIG = {
     "aviso": "¡Solucionario de la Tarea 2 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
   },
   "control_test_activo": {
-    "existe": true,
+    "existe": false,
     "tema_id": 1,
     "test_id": "Examen-01",
     "titulo": "Examen Tema 1: Herramientas del Álgebra",
@@ -27,101 +27,116 @@ window.CURSO_CONFIG = {
     "estado": "solucionario_disponible",
     "pdf_examen": "pdf/Examen_Tema1_Herramientas_del_Algebra_1Bach.pdf",
     "pdf_solucionario": "pdf/Examen_Tema1_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
-    "aviso": "¡Examen del Tema 1 y su Solucionario resuelto paso a paso disponibles!"
+    "aviso": "Examen del Tema 1 finalizado. Consulta el enunciado y el solucionario resuelto en la pestaña del Tema 1."
   },
   "ultima_clase": {
-    "fecha": "Lunes 26 de Octubre de 2026",
-    "tema_id": 1,
-    "tema_titulo": "Tema 1: Herramientas del Álgebra",
-    "titulo_sesion": "Sesión 20: Examen del Tema 1 (Enunciado y Solucionario Resuelto)",
-    "referencia_apuntes": "Todo el Tema 1 (Págs. 1-33) • Inicio del Tema 2 en la próxima sesión",
-    "mision_semanal": "Revisar y contrastar tu Examen del Tema 1 con el solucionario y traer descargados los Apuntes del Tema 2 (Ecuaciones, Complejos y Sistemas).",
-    "trabajo_semanal_pendiente": "Revisar el solucionario del Examen del Tema 1 y preparar los Apuntes del Tema 2.",
+    "fecha": "Martes 27 de Octubre de 2026",
+    "tema_id": 2,
+    "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
+    "titulo_sesion": "Sesión 1: Modelado Competencial con Ecuaciones Polinómicas, Bicuadradas y Racionales",
+    "referencia_apuntes": "Bloque 1: Punto 1.3 (Págs. 6-7)",
+    "mision_semanal": "Dominar la resolución analítica de ecuaciones factorizando identidades notables y verificando siempre los valores prohibidos en denominadores antes de operar.",
+    "trabajo_semanal_pendiente": "Comprobar el modelado de los 4 problemas de pizarra en tu libreta y repasar los Ejemplos 1.1 a 1.3 de las páginas 6 y 7 de los apuntes.",
     "ejercicios_vistos": [
       {
         "numero": 1,
-        "titulo": "Ejercicio 1 del Examen (1,5 ptos): Valor Absoluto e Intervalos en la Recta Real",
-        "referencia": "Puntos 1.2, 1.3 y 1.4 (Págs. 3-8)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 1:</strong><br>• <strong>Apartado a):</strong> En $|2x - 1| \\le x + 4$, imponemos $x + 4 \\ge 0 \\implies x \\ge -4$ y desdoblamos en $-(x+4) \\le 2x - 1 \\le x + 4$. De $-x - 4 \\le 2x - 1$ obtenemos $x \\ge -1$, y de $2x - 1 \\le x + 4$ obtenemos $x \\le 5$. Intersecando: $S = [-1, 5]$.<br>• <strong>Apartado b):</strong> Dados $A = (-5, 2]$, $B = [-1, 6)$ y $C = (-\\infty, 0]$, al restar $B$ a $A$ retiramos desde $-1$ incluido en adelante, por lo que $A \\setminus B = (-5, -1)$ (abierto en $-1$ porque $-1 \\in B$). Como $C^c = (0, +\\infty)$, la unión queda en dos tramos disjuntos.</div></div>Resuelve razonadamente los dos apartados de intervalos y valor absoluto del examen:",
+        "titulo": "Problema 1: Autonomía de Drones y Factorización Eficiente (Ecuación Polinómica)",
+        "referencia": "Bloque 1: Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🚁</span><div class=\"nota-aula-content\"><strong>Contexto de Ingeniería Aeroespacial:</strong> Dos prototipos de drones para entrega de material médico en zonas rurales, <em>Zephyr</em> y <em>AeroPulse</em>, tienen autonomías de vuelo (en kilómetros) en función de un parámetro dimensional de perfil alar $x$ (en decímetros):<br>• Prototipo Zephyr: $A_1(x) = (x^2 - 9)(3x - 2)$<br>• Prototipo AeroPulse: $A_2(x) = (x - 3)(x^2 + 4x + 3)$<br>Para coordinar una misión conjunta, los ingenieros necesitan hallar qué cotas $x$ proporcionan idéntica autonomía ($A_1(x) = A_2(x)$).</div></div>Plantea la ecuación $(x^2 - 9)(3x - 2) = (x - 3)(x^2 + 4x + 3)$ y resuélvela sin multiplicar paréntesis a lo loco:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "|2x - 1| \\le x + 4 \\iff -(x+4) \\le 2x - 1 \\le x + 4 \\implies \\begin{cases} 3x \\ge -3 \\implies x \\ge -1 \\\\ x \\le 5 \\end{cases} \\implies S = [-1, 5]"
+            "expresion": "\\textbf{Factorización previa:} \\; x^2 - 9 = (x - 3)(x + 3) \\quad \\text{y} \\quad x^2 + 4x + 3 = (x + 1)(x + 3)"
           },
           {
             "letra": "b)",
-            "expresion": "A = (-5, 2],\\; B = [-1, 6),\\; C = (-\\infty, 0] \\implies A \\setminus B = (-5, -1) \\text{ y } C^c = (0, +\\infty) \\implies (A \\setminus B) \\cup C^c = (-5, -1) \\cup (0, +\\infty)"
-          }
-        ],
-        "idea_clave": "En la diferencia $A \\setminus B$, si el extremo frontera $-1$ pertenece al conjunto $B$ que sustraemos, desaparece del resultado y queda abierto: $(-5, -1)$."
-      },
-      {
-        "numero": 2,
-        "titulo": "Ejercicio 2 del Examen (2,5 ptos): Radicales, Conjugados y Racionalización Cúbica",
-        "referencia": "Puntos 2.1 y 2.2 (Págs. 11-15)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 2:</strong><br>• <strong>Apartado a):</strong> Factoriza radicandos en primos ($20=2^2\\cdot 5,\\; 45=3^2\\cdot 5,\\; 125=5^3,\\; 80=2^4\\cdot 5$) para extraer factores y cancelar $\\sqrt{5}$.<br>• <strong>Apartado b):</strong> El denominador común de los conjugados es $(2\\sqrt{5})^2 - (\\sqrt{2})^2 = 20 - 2 = 18$, y en el numerador $(a+b)^2 - (a-b)^2 = 4ab = 8\\sqrt{10}$.<br>• <strong>Apartado c):</strong> Aplica la suma de cubos $(\\sqrt[3]{a} + \\sqrt[3]{b})(\\sqrt[3]{a^2} - \\sqrt[3]{ab} + \\sqrt[3]{b^2}) = a + b = 7 + 3 = 10$.</div></div>Opera, simplifica al máximo y clasifica en los conjuntos numéricos cuando se indique:",
-        "apartados": [
-          {
-            "letra": "a)",
-            "expresion": "A = \\dfrac{3\\sqrt{20} - \\sqrt{45} + 2\\sqrt{125}}{\\sqrt{80}} = \\dfrac{6\\sqrt{5} - 3\\sqrt{5} + 10\\sqrt{5}}{4\\sqrt{5}} = \\dfrac{13\\sqrt{5}}{4\\sqrt{5}} = \\dfrac{13}{4} \\in \\mathbb{Q} \\subset \\mathbb{R} \\subset \\mathbb{C} \\quad (\\text{mcd}(13,4)=1)"
-          },
-          {
-            "letra": "b)",
-            "expresion": "B = \\left( \\dfrac{2\\sqrt{5} + \\sqrt{2}}{2\\sqrt{5} - \\sqrt{2}} - \\dfrac{2\\sqrt{5} - \\sqrt{2}}{2\\sqrt{5} + \\sqrt{2}} \\right) \\cdot \\dfrac{9\\sqrt{10}}{8} = \\dfrac{(22+4\\sqrt{10}) - (22-4\\sqrt{10})}{20 - 2} \\cdot \\dfrac{9\\sqrt{10}}{8} = \\dfrac{8\\sqrt{10}}{18} \\cdot \\dfrac{9\\sqrt{10}}{8} = 5 \\in \\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R} \\subset \\mathbb{C}"
+            "expresion": "\\textbf{Pasar a la izquierda y extraer factores comunes:} \\; (x - 3)(x + 3)(3x - 2) - (x - 3)(x + 3)(x + 1) = 0 \\iff (x - 3)(x + 3)\\big[(3x - 2) - (x + 1)\\big] = 0"
           },
           {
             "letra": "c)",
-            "expresion": "C = \\dfrac{10}{\\sqrt[3]{7} + \\sqrt[3]{3}} = \\dfrac{10(\\sqrt[3]{49} - \\sqrt[3]{21} + \\sqrt[3]{9})}{(\\sqrt[3]{7})^3 + (\\sqrt[3]{3})^3} = \\dfrac{10(\\sqrt[3]{49} - \\sqrt[3]{21} + \\sqrt[3]{9})}{7 + 3} = \\sqrt[3]{49} - \\sqrt[3]{21} + \\sqrt[3]{9}"
+            "expresion": "\\textbf{Regla del producto nulo y soluciones reales:} \\; (x - 3)(x + 3)(2x - 3) = 0 \\implies x_1 = 3, \\quad x_2 = -3, \\quad x_3 = \\dfrac{3}{2} = 1{,}5"
+          },
+          {
+            "letra": "d)",
+            "expresion": "\\textbf{Interpretación física de las soluciones:} \\; \\text{La cota es una medida dimensional real } (x > 0), \\text{ por lo que descartamos } x_2 = -3. \\text{ Con } x = 3\\text{ la autonomía colapsa a } 0\\text{ km (ala degenerada), por lo que el diseño operativo óptimo es } x = 1{,}5\\text{ dm} \\; (A = 34{,}375\\text{ km})."
           }
         ],
-        "idea_clave": "Para racionalizar una suma de raíces cúbicas $\\sqrt[3]{a} + \\sqrt[3]{b}$, multiplica numerador y denominador por $\\sqrt[3]{a^2} - \\sqrt[3]{ab} + \\sqrt[3]{b^2}$ para obtener $a + b$ en el denominador."
+        "idea_clave": "Si multiplicas los paréntesis a ambos lados generas un polinomio cúbico y te obligas a hacer Ruffini. Mirando identidades notables antes de operar, sacas factor común $(x - 3)(x + 3)$ y el problema se resuelve en 3 líneas."
+      },
+      {
+        "numero": 2,
+        "titulo": "Problema 2: Nodos de Vibración en una Pasarela Peatonal (Ecuación Bicuadrada)",
+        "referencia": "Bloque 1: Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 a)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🌉</span><div class=\"nota-aula-content\"><strong>Contexto de Mecánica Estructural:</strong> Al estudiar la resonancia provocada por el paso de peatones sobre una pasarela suspendida, la curva de flexión vertical $y$ (en mm) respecto al centro simétrico ($x = 0$, con $x$ en metros) responde a la función:<br>$$y(x) = x^4 - 10x^2 + 9$$Para anclar los amortiguadores de masa sintonizados (TMD) que eliminen el balanceo sin sufrir fatiga, los técnicos deben ubicarlos exactamente en los <strong>nodos de deformación nula</strong> ($y(x) = 0$).</div></div>Resuelve la ecuación bicuadrada $x^4 - 10x^2 + 9 = 0$ mediante cambio de variable:",
+        "apartados": [
+          {
+            "letra": "a)",
+            "expresion": "\\textbf{Cambio de variable:} \\; \\text{Definimos } t = x^2 \\implies t^2 = x^4, \\text{ transformando la ecuación en } t^2 - 10t + 9 = 0"
+          },
+          {
+            "letra": "b)",
+            "expresion": "\\textbf{Resolución en } t: \\; (t - 9)(t - 1) = 0 \\implies t_1 = 9, \\quad t_2 = 1 \\quad (\\text{ambos } > 0, \\text{ luego ambos generan soluciones reales})"
+          },
+          {
+            "letra": "c)",
+            "expresion": "\\textbf{Deshacer el cambio con doble signo } \\pm: \\; \\begin{cases} x^2 = 9 \\implies x = \\pm\\sqrt{9} = \\pm 3 \\\\ x^2 = 1 \\implies x = \\pm\\sqrt{1} = \\pm 1 \\end{cases} \\implies S = \\{-3, -1, 1, 3\\}"
+          },
+          {
+            "letra": "d)",
+            "expresion": "\\textbf{Conclusión estructural:} \\; \\text{La pasarela presenta 4 nodos de anclaje simétricos a } 1\\text{ m y } 3\\text{ m a ambos lados del centro } (x = \\pm 1\\text{ m},\\; x = \\pm 3\\text{ m})."
+          }
+        ],
+        "idea_clave": "Al terminar la ecuación cuadrática en $t$ no has resuelto el problema: la incógnita era la distancia $x$. Recuerda siempre deshacer el cambio ($x = \\pm\\sqrt{t}$) y tener en cuenta que cada $t > 0$ genera dos soluciones simétricas opuestas."
       },
       {
         "numero": 3,
-        "titulo": "Ejercicio 3 del Examen (2 ptos): Cálculo Analítico de Logaritmos sin Calculadora",
-        "referencia": "Puntos 3.1 y 3.2 (Págs. 17-20)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 3:</strong><br>• <strong>Apartado a):</strong> Expresa todo en base $3$: $81\\cdot\\sqrt[3]{9} = 3^4 \\cdot 3^{2/3} = 3^{14/3}$ y $\\dfrac{\\sqrt{3}}{27} = \\dfrac{3^{1/2}}{3^3} = 3^{-5/2}$. Como la segunda base es $9 = 3^2$, $\\log_9(3^{-5/2}) = -\\dfrac{5}{4}$.<br>• <strong>Apartado b):</strong> Factoriza $90 = 9 \\cdot 10 = 3^2 \\cdot 10$ y usa que $\\log(10) = 1$.</div></div>Calcula el valor exacto sin utilizar calculadora:",
+        "titulo": "Problema 3: Transición de Fase Térmica en Sensores Satelitales (Cambio de Variable Impar)",
+        "referencia": "Bloque 1: Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 b)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🛰️</span><div class=\"nota-aula-content\"><strong>Contexto de Ciencia de Materiales Aeroespaciales:</strong> La conductividad de un nanocompuesto semiconductor para satélites meteorológicos experimenta una transición cuántica de fase cuando la variación térmica relativa $x$ (respecto al punto criogénico base) cumple la ley física no lineal:<br>$$x^6 - 26x^3 = 27 \\iff x^6 - 26x^3 - 27 = 0$$Los ingenieros de instrumentación deben predecir todas las temperaturas reales donde ocurre dicha transición.</div></div>Resuelve la ecuación $x^6 - 26x^3 - 27 = 0$ analizando la particularidad del exponente impar:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "L = \\log_3\\left(81\\cdot\\sqrt[3]{9}\\right) - 2\\log_9\\left(\\dfrac{\\sqrt{3}}{27}\\right) = \\log_3\\left(3^{14/3}\\right) - 2\\log_{3^2}\\left(3^{-5/2}\\right) = \\dfrac{14}{3} - 2\\left(-\\dfrac{5}{4}\\right) = \\dfrac{14}{3} + \\dfrac{5}{2} = \\dfrac{43}{6}"
+            "expresion": "\\textbf{Cambio de variable:} \\; \\text{Definimos } t = x^3 \\implies t^2 = x^6, \\text{ obteniendo la ecuación } t^2 - 26t - 27 = 0"
           },
           {
             "letra": "b)",
-            "expresion": "\\text{Si } \\log(2)=a \\text{ y } \\log(3)=b: \\quad \\log(90) = \\log(3^2 \\cdot 10) = 2\\log(3) + \\log(10) = 2b + 1"
+            "expresion": "\\textbf{Resolución en } t: \\; (t - 27)(t + 1) = 0 \\implies t_1 = 27, \\quad t_2 = -1"
+          },
+          {
+            "letra": "c)",
+            "expresion": "\\textbf{Deshacer el cambio (raíz cúbica real):} \\; \\begin{cases} x^3 = 27 \\implies x_1 = \\sqrt[3]{27} = 3 \\\\ x^3 = -1 \\implies x_2 = \\sqrt[3]{-1} = -1 \\end{cases} \\implies S = \\{-1, 3\\}"
+          },
+          {
+            "letra": "d)",
+            "expresion": "\\textbf{Contraste didáctico:} \\; \\text{A diferencia de las bicuadradas pares } (x^2), \\text{ las raíces de índice impar SÍ están definidas para números negativos en } \\mathbb{R}. \\text{ Existen dos temperaturas críticas reales: frío } (x = -1) \\text{ y calor } (x = 3)."
           }
         ],
-        "idea_clave": "En $\\log(90)$, descomponer como $9 \\cdot 10 = 3^2 \\cdot 10$ evita pasos extra porque en base decimal $\\log(10) = 1$ directamente."
+        "idea_clave": "En $x^6 + \\dots + x^3$, el cambio natural es $t = x^3$. Al deshacerlo, cada valor de $t$ (sea positivo o negativo) da una única solución real mediante la raíz cúbica: $\\sqrt[3]{-1} = -1$ es un número real perfectamente válido."
       },
       {
         "numero": 4,
-        "titulo": "Ejercicio 4 del Examen (2 ptos): Operaciones con Fracciones Algebraicas y Dominio",
-        "referencia": "Puntos 4.2 y 5.2 (Págs. 24-28)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 4:</strong><br>• <strong>1.º Dominio:</strong> Se anulan denominadores cuando $x - 3 = 0$, $x + 3 = 0$ o $2x^2 + 12x = 2x(x+6) = 0 \\implies x \\notin \\{-6, -3, 0, 3\\}$.<br>• <strong>2.º Paréntesis:</strong> $(2x+1)(x+3) - (2x-1)(x-3) = (2x^2+7x+3) - (2x^2-7x+3) = 14x$.<br>• <strong>3.º Producto y simplificación:</strong> Se cancela $(x-3)(x+3) = x^2-9$ y se simplifica $\\dfrac{14x}{2x(x+6)} = \\dfrac{7}{x+6}$.</div></div>Efectúa, simplifica al máximo y explicita los valores excluidos del dominio:",
-        "apartados": [
-          {
-            "letra": "Único",
-            "expresion": "\\left( \\dfrac{2x + 1}{x - 3} - \\dfrac{2x - 1}{x + 3} \\right) \\cdot \\dfrac{x^2 - 9}{2x^2 + 12x} = \\dfrac{14x}{(x-3)(x+3)} \\cdot \\dfrac{(x-3)(x+3)}{2x(x+6)} = \\dfrac{7}{x + 6} \\quad \\forall x \\in \\mathbb{R} \\setminus \\{-6, -3, 0, 3\\}"
-          }
-        ],
-        "idea_clave": "Antes de multiplicar polinomios, factoriza $x^2 - 9 = (x-3)(x+3)$ y $2x^2 + 12x = 2x(x+6)$: los factores comunes se cancelan limpios."
-      },
-      {
-        "numero": 5,
-        "titulo": "Ejercicio 5 del Examen (2 ptos): Binomio de Newton y Análisis del Término Independiente",
-        "referencia": "Puntos 6.1, 6.2 y 6.3 (Págs. 30-33)",
-        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🎯</span><div class=\"nota-aula-content\"><strong>Claves de resolución del Ejercicio 5:</strong><br>• <strong>Apartado a):</strong> Fila $n=5$ de Tartaglia ($1, 5, 10, 10, 5, 1$) alternando signos ($+ - + - + -$).<br>• <strong>Apartado b):</strong> En $T_{k+1} = (-1)^k\\binom{6}{k}2^{6-k}x^{12-3k}$, igualamos el exponente de $x$ a cero: $12 - 3k = 0 \\implies k = 4$ (quinto término $T_5$). Sustituyendo $k=4$, resulta $T_5 = 60 \\ne 40$.</div></div>Desarrolla el binomio y verifica analíticamente la afirmación sobre el término independiente:",
+        "titulo": "Problema 4: Control de Presión y Válvulas en Biorreactor (Ecuación Racional y Valores Prohibidos)",
+        "referencia": "Bloque 1: Punto 1.3 (Pág. 7, análogo a Ejemplo 1.3)",
+        "instruccion": "<div class=\"nota-aula-box\"><span class=\"nota-aula-icon\">🧪</span><div class=\"nota-aula-content\"><strong>Contexto de Ingeniería de Procesos Químicos:</strong> El caudal neto de recirculación en un biorreactor automatizado combina dos líneas de alimentación dependientes de la presión manométrica $x$ (en bares): $T_1(x) = \\dfrac{2x}{x - 1}$ y $T_2(x) = \\dfrac{x + 3}{x + 4}$. Para equilibrar la pérdida de carga en la válvula central, el sistema debe calibrarse según la ecuación:<br>$$\\frac{2x}{x - 1} - \\frac{x + 3}{x + 4} = \\frac{10}{x^2 + 3x - 4}$$</div></div>Aplica el protocolo en 4 pasos para resolver la ecuación racional y evitar soluciones falsas:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "(2x - y^2)^5 = 32x^5 - 80x^4y^2 + 80x^3y^4 - 40x^2y^6 + 10xy^8 - y^{10}"
+            "expresion": "\\textbf{Paso 0 (Valores prohibidos):} \\; x^2 + 3x - 4 = (x - 1)(x + 4) \\implies \\text{Valores prohibidos: } x = 1 \\text{ y } x = -4 \\quad (\\text{provocan división entre cero / bloqueo hidráulico})"
           },
           {
             "letra": "b)",
-            "expresion": "\\text{En } \\left(2x^2 - \\dfrac{1}{x}\\right)^6: \\; T_{k+1} = (-1)^k\\binom{6}{k}2^{6-k}x^{12-3k} \\xrightarrow{12-3k=0} k=4 \\implies T_5 = (-1)^4\\binom{6}{4}2^2 = 15 \\cdot 4 = 60 \\ne 40 \\text{ (Perico se equivoca)}"
+            "expresion": "\\textbf{Eliminar denominadores con m.c.m. } (x - 1)(x + 4): \\; 2x(x + 4) - (x + 3)(x - 1) = 10"
+          },
+          {
+            "letra": "c)",
+            "expresion": "\\textbf{Operar protegiendo con paréntesis:} \\; (2x^2 + 8x) - (x^2 + 2x - 3) = 10 \\iff x^2 + 6x - 7 = 0 \\iff (x - 1)(x + 7) = 0 \\implies x_1 = 1, \\quad x_2 = -7"
+          },
+          {
+            "letra": "d)",
+            "expresion": "\\textbf{Auditoría de soluciones frente al Paso 0:} \\; \\begin{cases} x_1 = 1: \\text{ ¡SOLUCIÓN FALSA! Se descarta porque anula el denominador } (x - 1) \\\\ x_2 = -7: \\text{ VÁLIDA. Comprobación: } \\frac{-14}{-8} - \\frac{-4}{-3} = \\frac{7}{4} - \\frac{4}{3} = \\frac{5}{12} = \\frac{10}{24} \\end{cases} \\implies \\text{Solución única: } x = -7\\text{ bares}"
           }
         ],
-        "idea_clave": "Al igualar a cero el exponente $12 - 3k = 0$, obtenemos $k = 4$, que corresponde al quinto término $T_5 = \\binom{6}{4}\\cdot 2^2 = 15 \\cdot 4 = 60$."
+        "idea_clave": "Hacer siempre el Paso 0 anotando los valores prohibidos antes de multiplicar por el m.c.m. El álgebra de 2.º grado arroja $x = 1$, pero es un falso positivo producido por la multiplicación que destruiría la instalación por división entre cero."
       }
     ]
   },
@@ -152,7 +167,7 @@ window.CURSO_CONFIG = {
       "titulo": "Ecuaciones, Números Complejos y Sistemas",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 0,
+      "sesiones_impartidas": 1,
       "descripcion": "Ecuaciones polinómicas y racionales, ecuaciones con radicales, exponenciales y logarítmicas, números complejos (forma binómica, operaciones y plano complejo), sistemas de ecuaciones algebraicos y geométricos, y Método de Gauss con matrices.",
       "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "ejercicios_pdf": "",

@@ -258,16 +258,14 @@ function renderAlDia() {
       `;
     }
 
-    if (!tTest && temaSesion && temaSesion.apuntes_pdf) {
+    if (temaSesion && temaSesion.apuntes_pdf) {
       heroBtnsHtml += `
-        <a href="${temaSesion.apuntes_pdf}" target="_blank" class="btn-action-primary" title="Abrir los apuntes utilizados en esta sesión de pizarra">
+        <a href="${temaSesion.apuntes_pdf}" target="_blank" class="btn-action-primary" title="Abrir los apuntes del tema en PDF">
           <span>📘</span>
-          <span>Apuntes de esta clase (Tema ${temaSesion.numero})</span>
+          <span>Apuntes Tema ${temaSesion.numero} (PDF)</span>
         </a>
       `;
-    }
-
-    if (temaActual && temaActual.apuntes_pdf) {
+    } else if (temaActual && temaActual.apuntes_pdf) {
       heroBtnsHtml += `
         <a href="${temaActual.apuntes_pdf}" target="_blank" class="btn-action-primary" title="Descargar Apuntes del Tema ${temaActual.numero}">
           <span>📘</span>
@@ -276,12 +274,33 @@ function renderAlDia() {
       `;
     }
 
-    heroBtnsHtml += `
-      <button type="button" class="btn-action-purple" onclick="irATemaSeccion(${u.tema_id}, 'controles-test')" style="cursor: pointer; font-family: inherit;">
-        <span>📂</span>
-        <span>Ir a Exámenes del Tema ${u.tema_id} →</span>
-      </button>
-    `;
+    if (temaSesion && temaSesion.ejercicios_pdf) {
+      heroBtnsHtml += `
+        <a href="${temaSesion.ejercicios_pdf}" target="_blank" class="btn-action-purple" title="Abrir la hoja de problemas en PDF">
+          <span>📄</span>
+          <span>Hoja de Problemas (PDF)</span>
+        </a>
+      `;
+    }
+
+    const temaDataActual = window.TEMAS_DATA && window.TEMAS_DATA[u.tema_id];
+    const tieneExamenes = (temaDataActual && temaDataActual.controles_test && temaDataActual.controles_test.length > 0) || (temaSesion && temaSesion.repaso_pdf);
+
+    if (tieneExamenes) {
+      heroBtnsHtml += `
+        <button type="button" class="btn-action-purple" onclick="irATemaSeccion(${u.tema_id}, 'controles-test')" style="cursor: pointer; font-family: inherit;">
+          <span>📂</span>
+          <span>Ir a Exámenes del Tema ${u.tema_id} →</span>
+        </button>
+      `;
+    } else {
+      heroBtnsHtml += `
+        <button type="button" class="btn-action-purple" onclick="irATemaSeccion(${u.tema_id}, 'pizarra-diario')" style="cursor: pointer; font-family: inherit;">
+          <span>📅</span>
+          <span>Diario de Pizarra (Tema ${u.tema_id}) →</span>
+        </button>
+      `;
+    }
 
     heroBtnsEl.innerHTML = heroBtnsHtml;
   }
