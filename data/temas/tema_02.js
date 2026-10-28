@@ -185,44 +185,44 @@ window.TEMAS_DATA[2] = {
         },
         {
           "numero": 3,
-          "titulo": "Problema 3: Calibración de un sensor perimetral (Ecuación con radical y soluciones falsas)",
+          "titulo": "Problema 3: Longitud del cable de una tirolina (Ecuación con raíz y soluciones falsas)",
           "referencia": "Punto 2.3 (Pág. 13, análogo a Ejemplo 2.1 y 2.2)",
-          "enunciado": "Un equipo de telecomunicaciones calibra un sensor láser y un cable tensor fijado a una distancia horizontal $x$ (en metros) de un mástil. La longitud del cable es $L(x) = \\sqrt{x + 5}\\text{ m}$ y debe coincidir con la lectura del brazo telescópico de seguridad $d(x) = 7 - x\\text{ m}$. Halla la posición $x$ donde ambas lecturas coinciden.",
+          "enunciado": "En un parque multiaventura se va a instalar una tirolina atando un cable desde una torre hasta una pica clavada en el suelo a $x$ metros de distancia de la base. Para que la caída sea segura, la longitud que debe tener el cable viene dada por $\\sqrt{x + 5}\\text{ metros}$, y el rollo de cable que tienen en el parque mide exactamente $7 - x\\text{ metros}$. Queremos saber a qué distancia $x$ hay que colocar la pica en el suelo para que el cable encaje justo:",
           "instruccion": "Resuelve la ecuación con radical aplicando el Paso 0 y comprueba obligatoriamente las soluciones:",
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Paso 0 (Condiciones de existencia y signo):} \\; \\text{Radicando: } x + 5 \\ge 0 \\implies x \\ge -5. \\text{ Como } \\sqrt{x+5} \\ge 0, \\text{ exigimos } 7 - x \\ge 0 \\implies x \\le 7. \\text{ Intervalo admisible: } \\boldsymbol{x \\in [-5, 7]}."
+              "expresion": "\\textbf{Paso 0 (Condiciones para que tenga sentido):} \\; \\text{El interior de la raíz no puede ser negativo: } x + 5 \\ge 0 \\implies x \\ge -5. \\text{ Además, como una raíz da siempre un resultado positivo o cero, la longitud del cable exige: } 7 - x \\ge 0 \\implies x \\le 7. \\text{ Intervalo admisible: } \\boldsymbol{x \\in [-5, 7]}."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Elevar al cuadrado ambos miembros:} \\; (\\sqrt{x + 5})^2 = (7 - x)^2 \\iff x + 5 = 49 - 14x + x^2 \\iff x^2 - 15x + 44 = 0."
+              "expresion": "\\textbf{Elevar al cuadrado para quitar la raíz:} \\; (\\sqrt{x + 5})^2 = (7 - x)^2 \\iff x + 5 = 49 - 14x + x^2 \\iff x^2 - 15x + 44 = 0."
             },
             {
               "letra": "c)",
-              "expresion": "\\textbf{Resolver en } x: \\; (x - 4)(x - 11) = 0 \\implies x_1 = 4, \\quad x_2 = 11."
+              "expresion": "\\textbf{Resolver la ecuación de 2.º grado:} \\; (x - 4)(x - 11) = 0 \\implies x_1 = 4, \\quad x_2 = 11."
             },
             {
               "letra": "d)",
-              "expresion": "\\textbf{Comprobación estricta:} \\; \\text{Para } x = 4: \\sqrt{9} = 3 \\text{ y } 7-4=3 \\text{ (\\textbf{VÁLIDA})}. \\text{ Para } x = 11: \\sqrt{16} = 4 \\text{ pero } 7-11=-4 \\; (4 \\ne -4, \\text{ \\textbf{FALSA}}). \\text{ La única posición válida es } \\boldsymbol{x = 4\\text{ m}}."
+              "expresion": "\\textbf{Comprobar en la ecuación original:} \\; \\text{Para } x = 4: \\sqrt{4+5} = \\sqrt{9} = 3 \\text{ y } 7-4=3 \\text{ (\\textbf{VÁLIDA})}. \\text{ Para } x = 11: \\sqrt{11+5} = \\sqrt{16} = 4, \\text{ pero } 7-11=-4 \\; (4 \\ne -4, \\text{ \\textbf{FALSA}}). \\text{ La pica debe colocarse a } \\boldsymbol{x = 4\\text{ metros}} \\text{ de la base}."
             }
           ],
           "idea_clave": "Al elevar ambos miembros al cuadrado se pierde la información del signo (porque $(-4)^2 = 4^2 = 16$), por lo que pueden colarse soluciones falsas. La comprobación en la ecuación original es un paso algebraico obligatorio e innegociable."
         },
         {
           "numero": 4,
-          "titulo": "Problema 4: Detección y aislamiento de un ciberataque (Ecuación exponencial cuadrática)",
+          "titulo": "Problema 4: Jugadores en un videojuego online (Ecuación exponencial cuadrática)",
           "referencia": "Punto 2.3 (Pág. 14, análogo a Ejemplo 2.3 situación 2)",
-          "enunciado": "Un virus informático infecta servidores en un centro de datos en la nube. El número de servidores infectados en miles tras $t$ horas es $N(t) = 4^t - 3 \\cdot 2^t$. El protocolo de emergencia activa el aislamiento total de la red cuando se alcanzan exactamente 4000 servidores infectados ($N(t) = 4$). ¿A cuántas horas del inicio del ataque se cortará la red?",
+          "enunciado": "Un nuevo videojuego online acaba de salir al mercado. El número de jugadores conectados (en miles) transcurridas $t$ horas desde el estreno viene dado por la fórmula $N(t) = 4^t - 3 \\cdot 2^t$. La empresa necesita encender un servidor de apoyo en cuanto se alcancen los 4000 jugadores conectados a la vez ($N(t) = 4$ miles). ¿A las cuántas horas del estreno tendrán que encender el servidor de apoyo?",
           "instruccion": "Reconoce la misma base de potencias, realiza un cambio de variable y resuelve con rigor:",
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Ecuación y potencias de base 2:} \\; 4^t - 3 \\cdot 2^t = 4. \\text{ Como } 4^t = (2^2)^t = (2^t)^2, \\text{ la ecuación se escribe: } (2^t)^2 - 3 \\cdot (2^t) - 4 = 0."
+              "expresion": "\\textbf{Ecuación y potencias de base 2:} \\; 4^t - 3 \\cdot 2^t = 4. \\text{ Como } 4 = 2^2, \\text{ podemos escribir } 4^t = (2^t)^2, \\text{ quedando: } (2^t)^2 - 3 \\cdot (2^t) - 4 = 0."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Cambio de variable:} \\; \\text{Hacemos } y = 2^t \\; (\\text{con la condición estricta } y > 0). \\text{ Queda: } y^2 - 3y - 4 = 0."
+              "expresion": "\\textbf{Cambio de variable:} \\; \\text{Hacemos } y = 2^t \\; (\\text{con la condición obligatoria } y > 0). \\text{ Queda: } y^2 - 3y - 4 = 0."
             },
             {
               "letra": "c)",
@@ -230,7 +230,7 @@ window.TEMAS_DATA[2] = {
             },
             {
               "letra": "d)",
-              "expresion": "\\textbf{Deshacer el cambio:} \\; \\text{Para } y_1 = 4: 2^t = 4 = 2^2 \\implies \\boldsymbol{t = 2\\text{ horas}}. \\text{ Para } y_2 = -1: 2^t = -1 \\text{ es \\textbf{imposible en }} \\mathbb{R} \\text{ (una potencia de base positiva nunca da negativo)}."
+              "expresion": "\\textbf{Deshacer el cambio para hallar el tiempo } t: \\; \\text{Para } y_1 = 4: 2^t = 4 = 2^2 \\implies \\boldsymbol{t = 2\\text{ horas}}. \\text{ Para } y_2 = -1: 2^t = -1 \\text{ es \\textbf{imposible en }} \\mathbb{R} \\text{ (una potencia de base positiva nunca da negativo)}."
             }
           ],
           "idea_clave": "No intentes aplicar logaritmos término a término en una resta (el logaritmo de una resta NO es la resta de logaritmos). Al observar bases relacionadas como $4^t$ y $2^t$, el método maestro es el cambio de variable $y = 2^t$ y vigilar que $y > 0$."
