@@ -174,11 +174,11 @@ window.CURSO_CONFIG = {
       "sesiones_impartidas": 1,
       "descripcion": "Ecuaciones polinómicas y racionales, ecuaciones con radicales, exponenciales y logarítmicas, números complejos (forma binómica, operaciones y plano complejo), sistemas de ecuaciones algebraicos y geométricos, y Método de Gauss con matrices.",
       "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
-      "ejercicios_pdf": "",
+      "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "repaso_pdf": "",
       "repaso_solucionario_pdf": "",
       "apuntes_listos": true,
-      "ejercicios_listos": false,
+      "ejercicios_listos": true,
       "total_ejercicios_libreta": 0,
       "total_tareas_classroom": 0,
       "total_controles_test": 0

@@ -8,7 +8,7 @@ window.TEMAS_DATA[2] = {
   "evaluacion": "1.ª Evaluación",
   "sesiones_impartidas": 1,
   "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
-  "ejercicios_pdf": "",
+  "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "repaso_pdf": "",
   "repaso_solucionario_pdf": "",
   "tareas_classroom": [],
