@@ -8,7 +8,7 @@ window.CURSO_CONFIG = {
   "ano_academico": "2026-2027",
   "tema_actual_id": 2,
   "tarea_classroom_activa": {
-    "existe": true,
+    "existe": false,
     "tema_id": 1,
     "tarea_id": "Tarea-02",
     "titulo": "Tarea 2: Radicales, Logaritmos, Fracciones Algebraicas y Binomio de Newton",
@@ -35,8 +35,8 @@ window.CURSO_CONFIG = {
     "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
     "titulo_sesion": "Sesión 1: Problemas Prácticos con Ecuaciones (Polinómicas, Bicuadradas y Racionales)",
     "referencia_apuntes": "Bloque 1: Punto 1.3 (Págs. 6-7)",
-    "mision_semanal": "Dominar la resolución de ecuaciones en situaciones prácticas: factorizando identidades notables y vigilando siempre los valores prohibidos en denominadores.",
-    "trabajo_semanal_pendiente": "Copiar en tu libreta los 4 problemas de pizarra y repasar los Ejemplos 1.1, 1.2 y 1.3 de las páginas 6 y 7 de los apuntes.",
+    "mision_semanal": "Empezar a trabajar en la libreta los problemas de la Hoja del Tema 2 (ecuaciones polinómicas, bicuadradas y racionales), comprobando siempre el sentido real de las soluciones y los valores prohibidos.",
+    "trabajo_semanal_pendiente": "Empezar a resolver los problemas de la Hoja del Tema 2 en tu libreta, contrastando las soluciones con la tabla final, y repasar los modelos de pizarra.",
     "ejercicios_vistos": [
       {
         "numero": 1,
