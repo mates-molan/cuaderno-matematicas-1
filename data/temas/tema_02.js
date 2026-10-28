@@ -185,7 +185,7 @@ window.TEMAS_DATA[2] = {
         },
         {
           "numero": 3,
-          "titulo": "Problema 3: Calibración de un sensor perimetral (Ecuación con radical y solución espuria)",
+          "titulo": "Problema 3: Calibración de un sensor perimetral (Ecuación con radical y soluciones falsas)",
           "referencia": "Punto 2.3 (Pág. 13, análogo a Ejemplo 2.1 y 2.2)",
           "enunciado": "Un equipo de telecomunicaciones calibra un sensor láser y un cable tensor fijado a una distancia horizontal $x$ (en metros) de un mástil. La longitud del cable es $L(x) = \\sqrt{x + 5}\\text{ m}$ y debe coincidir con la lectura del brazo telescópico de seguridad $d(x) = 7 - x\\text{ m}$. Halla la posición $x$ donde ambas lecturas coinciden.",
           "instruccion": "Resuelve la ecuación con radical aplicando el Paso 0 y comprueba obligatoriamente las soluciones:",
