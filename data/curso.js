@@ -30,117 +30,117 @@ window.CURSO_CONFIG = {
     "aviso": "Examen del Tema 1 finalizado. Consulta el enunciado y el solucionario resuelto en la pestaña del Tema 1."
   },
   "ultima_clase": {
-    "fecha": "Martes 27 de Octubre de 2026",
+    "fecha": "Jueves 29 de Octubre de 2026",
     "tema_id": 2,
     "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
-    "titulo_sesion": "Sesión 1: Problemas Prácticos con Ecuaciones (Polinómicas, Bicuadradas y Racionales)",
-    "referencia_apuntes": "Bloque 1: Punto 1.3 (Págs. 6-7)",
+    "titulo_sesion": "Sesión 2: Modelado Práctico con Parábolas, Racionales, Radicales y Exponenciales",
+    "referencia_apuntes": "Bloques 1 y 2: Puntos 1.1, 1.3, 1.5 y 2.3 (Págs. 6-14)",
     "mision_semanal": "Empezar a trabajar en la libreta los problemas de la Hoja del Tema 2 (ecuaciones polinómicas, bicuadradas y racionales), comprobando siempre el sentido real de las soluciones y los valores prohibidos.",
-    "trabajo_semanal_pendiente": "Empezar a resolver los problemas de la Hoja del Tema 2 en tu libreta, contrastando las soluciones con la tabla final, y repasar los modelos de pizarra.",
+    "trabajo_semanal_pendiente": "Pasar a limpio los 4 problemas de modelado de la pizarra en tu libreta y resolver los problemas 1 al 8 de la Hoja del Tema 2.",
     "ejercicios_vistos": [
       {
         "numero": 1,
-        "titulo": "Problema 1: Comparar el volumen de dos cajas (Ecuación polinómica)",
-        "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1)",
-        "enunciado": "Una fábrica diseña dos tipos de cajas de cartón para embalaje. El volumen de cada caja (en $\\text{cm}^3$) depende de una medida $x$ (en centímetros): la primera caja tiene un volumen de $V_1 = (x^2 - 9)(2x - 1)$ y la segunda caja tiene un volumen de $V_2 = (x - 3)(x^2 + 7x + 12)$. Queremos averiguar para qué medidas de $x$ tienen ambas cajas exactamente la misma capacidad ($V_1 = V_2$).",
-        "instruccion": "Plantea la ecuación que iguala los dos volúmenes y resuélvela factorizando para no multiplicar paréntesis a lo loco:",
+        "titulo": "Problema 1: Trayectoria de una bengala de socorro (Parábola y cinemática)",
+        "referencia": "Puntos 1.1 y 1.3 (Pág. 6, análogo a Ejemplo 1.1 y caída libre)",
+        "enunciado": "Desde un puesto de vigilancia costera en un acantilado a 45 m sobre el mar, se dispara verticalmente una bengala de socorro cuya altura en metros a los $t$ segundos es $h(t) = -5t^2 + 40t + 45$. El radar marítimo la detecta solo si $h(t) \\ge 120\\text{ m}$. Queremos saber cuándo entra y sale del radar, su altura máxima y cuándo impacta en el mar.",
+        "instruccion": "Resuelve aplicando las propiedades de la función cuadrática y analizando el sentido real de cada resultado:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Planteamiento:} \\; (x^2 - 9)(2x - 1) = (x - 3)(x^2 + 7x + 12)"
+            "expresion": "\\textbf{Zona de radar } (h = 120): \\; -5t^2 + 40t + 45 = 120 \\iff t^2 - 8t + 15 = 0 \\iff (t - 3)(t - 5) = 0 \\implies t_1 = 3\\text{ s (subida)}, \\; t_2 = 5\\text{ s (bajada)}. \\text{ Es visible en el radar durante } 5 - 3 = \\mathbf{2\\text{ segundos}}."
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Factorizar antes de multiplicar:} \\; x^2 - 9 = (x - 3)(x + 3) \\quad \\text{y} \\quad x^2 + 7x + 12 = (x + 3)(x + 4)"
+            "expresion": "\\textbf{Vértice y altura máxima:} \\; t_v = -\\dfrac{b}{2a} = -\\dfrac{40}{2(-5)} = \\mathbf{4\\text{ s}} \\implies h_{\\max} = h(4) = -5(16) + 40(4) + 45 = \\mathbf{125\\text{ metros}}."
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Pasar a la izquierda y sacar factor común:} \\; (x - 3)(x + 3)(2x - 1) - (x - 3)(x + 3)(x + 4) = 0 \\iff (x - 3)(x + 3)\\big[(2x - 1) - (x + 4)\\big] = 0"
+            "expresion": "\\textbf{Impacto en el agua } (h = 0): \\; -5t^2 + 40t + 45 = 0 \\iff t^2 - 8t - 9 = 0 \\iff (t - 9)(t + 1) = 0 \\implies t_1 = 9\\text{ s}, \\; t_2 = -1\\text{ s}."
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Soluciones y sentido real:} \\; (x - 3)(x + 3)(x - 5) = 0 \\implies x_1 = 3, \\; x_2 = -3, \\; x_3 = 5. \\text{ Si } x = -3 \\text{ las dimensiones serían negativas (imposible). Si } x = 3 \\text{ el volumen sería } 0\\text{ cm}^3. \\text{ Por tanto, la \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 5\\text{ cm}}, \\text{ que da un volumen positivo real de } V_1 = V_2 = 144\\text{ cm}^3 > 0."
+            "expresion": "\\textbf{Sentido real del tiempo:} \\; t_2 = -1\\text{ s es una solución matemática imposible en la realidad } (t \\ge 0). \\text{ Por tanto, la bengala cae al mar a los } \\boldsymbol{t = 9\\text{ segundos}}."
           }
         ],
-        "idea_clave": "Si multiplicas los paréntesis a ambos lados generas un polinomio de grado 3 y tendrías que usar Ruffini. Reconociendo identidades notables antes de operar, sacas factor común $(x - 3)(x + 3)$ y resuelves la ecuación en tres líneas."
+        "idea_clave": "El vértice siempre se sitúa exactamente a la mitad entre los dos instantes en que la bengala está a la misma altura (entre $t=3$ y $t=5$, el punto medio es $t=4$). Descarta siempre los tiempos negativos al modelizar magnitudes físicas."
       },
       {
         "numero": 2,
-        "titulo": "Problema 2: Puntos de apoyo en una rampa de skate (Ecuación bicuadrada)",
-        "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 a)",
-        "enunciado": "En el diseño de una rampa para una pista de patinaje (skatepark), la altura $h$ respecto al suelo (en metros) a una distancia horizontal $x$ del centro viene dada por la fórmula $h(x) = x^4 - 10x^2 + 9$. Queremos encontrar en qué puntos la rampa toca exactamente el suelo ($h(x) = 0$).",
-        "instruccion": "Resuelve la ecuación bicuadrada aplicando el cambio de variable $t = x^2$ para hallar todas sus soluciones reales:",
+        "titulo": "Problema 2: Achique de agua en un sótano tras la DANA (Ecuación racional de trabajo conjunto)",
+        "referencia": "Puntos 1.3 y 1.5 (Págs. 7-8, análogo a Ejemplo 1.3 y Problema aplicado 1.4)",
+        "enunciado": "Para evacuar el agua de un sótano inundado tras un temporal en el Campo de Cartagena se emplean dos motobombas. La bomba principal $A$ tardaría $x$ horas sola, y la bomba auxiliar $B$ tarda 5 horas más ($x + 5$ horas). Si funcionan las dos motobombas juntas a la vez, el sótano se vacía en exactamente 6 horas. Calcula el tiempo que tardaría cada una por separado.",
+        "instruccion": "Plantea la ecuación de flujos por unidad de tiempo vigilando los valores prohibidos en el Paso 0:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Ecuación y cambio de variable:} \\; x^4 - 10x^2 + 9 = 0. \\text{ Hacemos } t = x^2 \\implies t^2 - 10t + 9 = 0"
+            "expresion": "\\textbf{Paso 0 y planteamiento de flujos:} \\; \\text{En 1 hora la bomba } A \\text{ achica } \\dfrac{1}{x}, \\text{ la bomba } B \\text{ achica } \\dfrac{1}{x+5} \\text{ y juntas achican } \\dfrac{1}{6}. \\text{ Ecuación: } \\dfrac{1}{x} + \\dfrac{1}{x+5} = \\dfrac{1}{6}. \\text{ Valores prohibidos: } x \\ne 0, \\; x \\ne -5."
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Resolver en } t: \\; (t - 9)(t - 1) = 0 \\implies t_1 = 9, \\quad t_2 = 1 \\quad (\\text{ambos positivos, luego darán soluciones reales})"
+            "expresion": "\\textbf{Quitar denominadores con el m.c.m. } 6x(x+5): \\; 6(x+5) + 6x = x(x+5) \\iff 12x + 30 = x^2 + 5x \\iff x^2 - 7x - 30 = 0."
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Deshacer el cambio con } \\pm: \\; \\begin{cases} x^2 = 9 \\implies x = \\pm\\sqrt{9} = \\pm 3 \\\\ x^2 = 1 \\implies x = \\pm\\sqrt{1} = \\pm 1 \\end{cases} \\implies S = \\{-3, -1, 1, 3\\}"
+            "expresion": "\\textbf{Resolver la ecuación cuadrática:} \\; (x - 10)(x + 3) = 0 \\implies x_1 = 10, \\quad x_2 = -3."
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Interpretación en la pista:} \\; \\text{La rampa toca el suelo en 4 puntos situados simétricamente a } 1\\text{ m y a } 3\\text{ m a la izquierda y a la derecha del centro } (x = -3,\\, -1,\\, 1,\\, 3\\text{ m})."
+            "expresion": "\\textbf{Interpretación en el contexto:} \\; x = -3 \\text{ carece de sentido físico (un tiempo de trabajo no puede ser negativo). La bomba } A \\text{ tarda } \\boldsymbol{10\\text{ horas}} \\text{ y la bomba } B \\text{ tarda } 10 + 5 = \\boldsymbol{15\\text{ horas}}."
           }
         ],
-        "idea_clave": "No te pares al hallar los valores de $t$: la incógnita que te piden es la distancia $x$. Recuerda siempre deshacer el cambio sacando la raíz cuadrada con el doble signo $\\pm$."
+        "idea_clave": "¡Nunca sumes los tiempos directamente ($x + x + 5 = 6$ es un disparate)! En problemas de trabajo conjunto se suman siempre las fracciones de trabajo realizadas en una hora: $\\frac{1}{x} + \\frac{1}{x+5} = \\frac{1}{6}$."
       },
       {
         "numero": 3,
-        "titulo": "Problema 3: Temperatura de equilibrio en el laboratorio (Cambio con exponente impar)",
-        "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 b)",
-        "enunciado": "En una práctica de laboratorio de ciencias, la temperatura $x$ (en grados) a la que se estabiliza una mezcla química cumple la ecuación $x^6 - 26x^3 = 27$, es decir, $x^6 - 26x^3 - 27 = 0$. Averigua todas las temperaturas reales a las que la mezcla puede estar en equilibrio.",
-        "instruccion": "Aplica el cambio de variable con exponente impar y analiza qué ocurre con el signo de las soluciones:",
+        "titulo": "Problema 3: Calibración de un sensor perimetral (Ecuación con radical y solución espuria)",
+        "referencia": "Punto 2.3 (Pág. 13, análogo a Ejemplo 2.1 y 2.2)",
+        "enunciado": "Un equipo de telecomunicaciones calibra un sensor láser y un cable tensor fijado a una distancia horizontal $x$ (en metros) de un mástil. La longitud del cable es $L(x) = \\sqrt{x + 5}\\text{ m}$ y debe coincidir con la lectura del brazo telescópico de seguridad $d(x) = 7 - x\\text{ m}$. Halla la posición $x$ donde ambas lecturas coinciden.",
+        "instruccion": "Resuelve la ecuación con radical aplicando el Paso 0 y comprueba obligatoriamente las soluciones:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Cambio de variable:} \\; \\text{Hacemos } t = x^3 \\implies t^2 = x^6, \\text{ con lo que queda la ecuación } t^2 - 26t - 27 = 0"
+            "expresion": "\\textbf{Paso 0 (Condiciones de existencia y signo):} \\; \\text{Radicando: } x + 5 \\ge 0 \\implies x \\ge -5. \\text{ Como } \\sqrt{x+5} \\ge 0, \\text{ exigimos } 7 - x \\ge 0 \\implies x \\le 7. \\text{ Intervalo admisible: } \\boldsymbol{x \\in [-5, 7]}."
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Resolver en } t: \\; (t - 27)(t + 1) = 0 \\implies t_1 = 27, \\quad t_2 = -1"
+            "expresion": "\\textbf{Elevar al cuadrado ambos miembros:} \\; (\\sqrt{x + 5})^2 = (7 - x)^2 \\iff x + 5 = 49 - 14x + x^2 \\iff x^2 - 15x + 44 = 0."
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Deshacer el cambio con raíz cúbica:} \\; \\begin{cases} x^3 = 27 \\implies x_1 = \\sqrt[3]{27} = 3 \\\\ x^3 = -1 \\implies x_2 = \\sqrt[3]{-1} = -1 \\end{cases} \\implies S = \\{-1, 3\\}"
+            "expresion": "\\textbf{Resolver en } x: \\; (x - 4)(x - 11) = 0 \\implies x_1 = 4, \\quad x_2 = 11."
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Atención al exponente impar:} \\; \\text{A diferencia del exponente par, las raíces cúbicas de números negativos SÍ existen en los números reales } (\\sqrt[3]{-1} = -1). \\text{ Hay dos temperaturas de equilibrio: } -1^\\circ\\text{C y } 3^\\circ\\text{C}."
+            "expresion": "\\textbf{Comprobación estricta:} \\; \\text{Para } x = 4: \\sqrt{9} = 3 \\text{ y } 7-4=3 \\text{ (\\textbf{VÁLIDA})}. \\text{ Para } x = 11: \\sqrt{16} = 4 \\text{ pero } 7-11=-4 \\; (4 \\ne -4, \\text{ \\textbf{FALSA}}). \\text{ La única posición válida es } \\boldsymbol{x = 4\\text{ m}}."
           }
         ],
-        "idea_clave": "Fíjate bien en el exponente: al hacer $t = x^3$, la raíz cúbica conserva el signo y admite números negativos ($\\sqrt[3]{-1} = -1$). Cada valor de $t$ produce una única solución real."
+        "idea_clave": "Al elevar ambos miembros al cuadrado se pierde la información del signo (porque $(-4)^2 = 4^2 = 16$), por lo que pueden colarse soluciones falsas. La comprobación en la ecuación original es un paso algebraico obligatorio e innegociable."
       },
       {
         "numero": 4,
-        "titulo": "Problema 4: Grifos y tuberías en un depósito de agua (Ecuación con fracciones y valores prohibidos)",
-        "referencia": "Punto 1.3 (Pág. 7, análogo a Ejemplo 1.3)",
-        "enunciado": "Un depósito de agua tiene conectadas dos tuberías: la primera introduce agua a un ritmo de $\\dfrac{2x}{x - 1}$ litros por minuto, y la segunda desagua a un ritmo de $\\dfrac{x + 3}{x + 4}$ litros por minuto (donde $x$ es la posición de apertura de las llaves). Para mantener el nivel estable, la diferencia entre lo que entra y lo que sale debe ser igual a $\\dfrac{10}{x^2 + 3x - 4}$. Calcula el valor de $x$ que permite regular el depósito.",
-        "instruccion": "Resuelve la ecuación con fracciones siguiendo el método en 4 pasos y vigila los valores prohibidos:",
+        "titulo": "Problema 4: Detección y aislamiento de un ciberataque (Ecuación exponencial cuadrática)",
+        "referencia": "Punto 2.3 (Pág. 14, análogo a Ejemplo 2.3 situación 2)",
+        "enunciado": "Un virus informático infecta servidores en un centro de datos en la nube. El número de servidores infectados en miles tras $t$ horas es $N(t) = 4^t - 3 \\cdot 2^t$. El protocolo de emergencia activa el aislamiento total de la red cuando se alcanzan exactamente 4000 servidores infectados ($N(t) = 4$). ¿A cuántas horas del inicio del ataque se cortará la red?",
+        "instruccion": "Reconoce la misma base de potencias, realiza un cambio de variable y resuelve con rigor:",
         "apartados": [
           {
             "letra": "a)",
-            "expresion": "\\textbf{Paso 0 (Valores prohibidos):} \\; x^2 + 3x - 4 = (x - 1)(x + 4). \\text{ Los valores que anulan denominadores son } x = 1 \\text{ y } x = -4 \\text{ (jamás pueden ser solución).}"
+            "expresion": "\\textbf{Ecuación y potencias de base 2:} \\; 4^t - 3 \\cdot 2^t = 4. \\text{ Como } 4^t = (2^2)^t = (2^t)^2, \\text{ la ecuación se escribe: } (2^t)^2 - 3 \\cdot (2^t) - 4 = 0."
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Quitar denominadores con el m.c.m.:} \\; \\text{Multiplicamos todo por } (x - 1)(x + 4): \\quad 2x(x + 4) - (x + 3)(x - 1) = 10"
+            "expresion": "\\textbf{Cambio de variable:} \\; \\text{Hacemos } y = 2^t \\; (\\text{con la condición estricta } y > 0). \\text{ Queda: } y^2 - 3y - 4 = 0."
           },
           {
             "letra": "c)",
-            "expresion": "\\textbf{Operar con cuidado de los signos:} \\; (2x^2 + 8x) - (x^2 + 2x - 3) = 10 \\iff x^2 + 6x - 7 = 0 \\iff (x - 1)(x + 7) = 0 \\implies x_1 = 1, \\; x_2 = -7"
+            "expresion": "\\textbf{Resolver en } y: \\; (y - 4)(y + 1) = 0 \\implies y_1 = 4, \\quad y_2 = -1."
           },
           {
             "letra": "d)",
-            "expresion": "\\textbf{Comprobar con el Paso 0:} \\; x_1 = 1 \\text{ es una \\textbf{solución falsa}} \\text{ porque anula el denominador } (x - 1). \\text{ La \\textbf{única solución válida}} \\text{ es } x = -7."
+            "expresion": "\\textbf{Deshacer el cambio:} \\; \\text{Para } y_1 = 4: 2^t = 4 = 2^2 \\implies \\boldsymbol{t = 2\\text{ horas}}. \\text{ Para } y_2 = -1: 2^t = -1 \\text{ es \\textbf{imposible en }} \\mathbb{R} \\text{ (una potencia de base positiva nunca da negativo)}."
           }
         ],
-        "idea_clave": "Anota siempre los valores prohibidos en el Paso 0 antes de quitar denominadores. El álgebra da $x = 1$, pero si sustituyes en la fracción te quedaría una división entre cero, que es imposible."
+        "idea_clave": "No intentes aplicar logaritmos término a término en una resta (el logaritmo de una resta NO es la resta de logaritmos). Al observar bases relacionadas como $4^t$ y $2^t$, el método maestro es el cambio de variable $y = 2^t$ y vigilar que $y > 0$."
       }
     ]
   },
@@ -171,7 +171,7 @@ window.CURSO_CONFIG = {
       "titulo": "Ecuaciones, Números Complejos y Sistemas",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 1,
+      "sesiones_impartidas": 2,
       "descripcion": "Ecuaciones polinómicas y racionales, ecuaciones con radicales, exponenciales y logarítmicas, números complejos (forma binómica, operaciones y plano complejo), sistemas de ecuaciones algebraicos y geométricos, y Método de Gauss con matrices.",
       "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
