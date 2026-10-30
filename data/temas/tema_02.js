@@ -237,33 +237,37 @@ window.TEMAS_DATA[2] = {
         },
         {
           "numero": 5,
-          "titulo": "Problema 5: Los altavoces del concierto de fiestas (Ecuación logarítmica agrupando a ambos lados)",
+          "titulo": "Problema 5: Los altavoces del concierto de fiestas (Ecuación logarítmica con resolución por Ruffini)",
           "referencia": "Puntos 2.2 C y 2.3 (Págs. 12-14, análogo a Ejemplo 2.4 y decibelios)",
-          "enunciado": "En el concierto de las fiestas patronales se colocan dos torres de altavoces. La fuerza del sonido que llega desde la torre principal a una distancia de $x$ metros es de $20\\log(x - 3)\\text{ decibelios}$, y la que llega desde la torre de apoyo es de $10\\big[\\log(x + 9) + \\log 2\\big]\\text{ decibelios}$. ¿A qué distancia $x$ (en metros) debemos colocarnos para escuchar la música exactamente al mismo volumen desde ambas torres?",
-          "instruccion": "Plantea la ecuación igualando ambas expresiones, aplica el Paso 0 de valores permitidos, simplifica entre 10, junta los logaritmos a ambos lados y comprueba si las soluciones tienen sentido en la realidad:",
+          "enunciado": "En el concierto de las fiestas patronales se colocan dos torres de altavoces. La fuerza del sonido que llega desde la torre principal a una distancia de $x$ metros es de $20\\log(x^2 - 2x - 8)\\text{ decibelios}$, y la que llega desde la torre de apoyo es de $10\\big[\\log(x + 2) + \\log(x + 26)\\big]\\text{ decibelios}$. ¿A qué distancia $x$ (en metros) debemos colocarnos para escuchar la música exactamente al mismo volumen desde ambas torres?",
+          "instruccion": "Plantea la ecuación igualando ambas expresiones, aplica el Paso 0 de valores permitidos, simplifica entre 10, junta los logaritmos a ambos lados, resuelve la ecuación de 4.º grado resultante mediante Ruffini y comprueba qué soluciones tienen sentido en la realidad:",
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento:} \\; \\text{Para escuchar ambas torres con la misma intensidad, igualamos ambas expresiones: } 20\\log(x - 3) = 10\\big[\\log(x + 9) + \\log 2\\big]."
+              "expresion": "\\textbf{Planteamiento:} \\; \\text{Para escuchar ambas torres con la misma intensidad, igualamos ambas expresiones: } 20\\log(x^2 - 2x - 8) = 10\\big[\\log(x + 2) + \\log(x + 26)\\big]."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Paso 0 (Valores permitidos en } \\mathbb{R}\\textbf{):} \\; \\text{Dentro de un logaritmo no puede haber negativos ni cero: } x - 3 > 0 \\implies x > 3 \\quad \\text{y} \\quad x + 9 > 0 \\implies x > -9. \\text{ Zona permitida: } \\boldsymbol{x > 3}."
+              "expresion": "\\textbf{Paso 0 (Valores permitidos en } \\mathbb{R}\\textbf{):} \\; \\text{Los argumentos de los logaritmos deben ser estrictamente positivos: } x^2 - 2x - 8 > 0 \\iff (x - 4)(x + 2) > 0 \\implies x \\in (-\\infty, -2) \\cup (4, +\\infty); \\; x + 2 > 0 \\implies x > -2; \\; x + 26 > 0 \\implies x > -26. \\text{ Zona permitida (intersección): } \\boldsymbol{x > 4}."
             },
             {
               "letra": "c)",
-              "expresion": "\\textbf{Simplificar y agrupar a ambos lados:} \\; \\text{Dividiendo entre 10: } 2\\log(x - 3) = \\log(x + 9) + \\log 2. \\text{ Subimos el 2 al exponente y pasamos la suma a multiplicación: } \\log\\big((x - 3)^2\\big) = \\log\\big(2(x + 9)\\big)."
+              "expresion": "\\textbf{Simplificar y agrupar a ambos lados:} \\; \\text{Dividiendo entre 10: } 2\\log(x^2 - 2x - 8) = \\log(x + 2) + \\log(x + 26). \\text{ Subimos el 2 al exponente y agrupamos la suma en un producto: } \\log\\big((x^2 - 2x - 8)^2\\big) = \\log\\big((x + 2)(x + 26)\\big)."
             },
             {
               "letra": "d)",
-              "expresion": "\\textbf{Igualar lo de dentro y resolver:} \\; (x - 3)^2 = 2(x + 9) \\iff x^2 - 6x + 9 = 2x + 18 \\iff x^2 - 8x - 9 = 0 \\iff (x - 9)(x + 1) = 0 \\implies x_1 = 9, \\; x_2 = -1."
+              "expresion": "\\textbf{Igualar argumentos y obtener la ecuación de 4.º grado:} \\; (x^2 - 2x - 8)^2 = (x + 2)(x + 26) \\iff x^4 - 4x^3 - 12x^2 + 32x + 64 = x^2 + 28x + 52 \\iff \\boldsymbol{x^4 - 4x^3 - 13x^2 + 4x + 12 = 0}."
             },
             {
               "letra": "e)",
-              "expresion": "\\textbf{Filtro del Paso 0 y solución final:} \\; x_2 = -1 \\text{ es una \\textbf{solución falsa}} \\text{ (no cumple } x > 3 \\text{ y haría que nos quedara } \\log(-4)\\text{). La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 9\\text{ metros}}."
+              "expresion": "\\textbf{Resolución por Ruffini (divisores de 12):} \\; \\text{Probamos } x = 1: \\; (1)^4 - 4(1)^3 - 13(1)^2 + 4(1) + 12 = 0 \\implies \\text{Ruffini por } (x - 1) \\text{ da cociente } x^3 - 3x^2 - 16x - 12 = 0. \\text{ En el cociente probamos } x = -1: \\; (-1)^3 - 3(-1)^2 - 16(-1) - 12 = 0 \\implies \\text{Ruffini por } (x + 1) \\text{ da } x^2 - 4x - 12 = 0 \\iff (x - 6)(x + 2) = 0. \\text{ Cuatro soluciones exactas: } x_1 = 6, \\; x_2 = 1, \\; x_3 = -1, \\; x_4 = -2."
+            },
+            {
+              "letra": "f)",
+              "expresion": "\\textbf{Filtro del Paso 0 y solución final:} \\; \\text{Contrastamos con } x > 4: \\; x_2 = 1, \\; x_3 = -1 \\text{ y } x_4 = -2 \\text{ son \\textbf{soluciones falsas}} \\text{ (hacen negativos o cero los argumentos de los logaritmos). La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 6\\text{ metros}}."
             }
           ],
-          "idea_clave": "No intentes quitar logaritmos «a trozos» ni multiplicar por dentro: sube primero los números que multiplican delante como exponentes ($2\\log A = \\log(A^2)$) y une las sumas en productos ($\\log A + \\log B = \\log(AB)$). Al tener un solo logaritmo a cada lado, igualas argumentos y compruebas siempre que las soluciones caigan dentro del Paso 0 ($x > 3$)."
+          "idea_clave": "Al simplificar entre 10 y subir el coeficiente $2$ al exponente ($2\\log A = \\log(A^2)$), el argumento cuadrático se eleva al cuadrado produciendo un polinomio de 4.º grado. Se igualan argumentos, se pasa todo a un miembro y se aplica la regla de Ruffini dos veces hasta llegar a una ecuación de 2.º grado. Es imprescindible contrastar siempre los 4 candidatos con el Paso 0 ($x > 4$): las tres raíces falsas quedan descartadas, sobreviviendo únicamente la distancia real $x = 6\\text{ m}$."
         }
       ]
     }
