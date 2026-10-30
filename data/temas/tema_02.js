@@ -128,8 +128,8 @@ window.TEMAS_DATA[2] = {
     },
     {
       "numero": 2,
-      "fecha": "Jueves 29 y Viernes 30 de Octubre de 2026",
-      "titulo": "Modelado Práctico con Parábolas, Racionales, Radicales, Exponenciales y Logaritmos",
+      "fecha": "Jueves 29 de Octubre de 2026",
+      "titulo": "Modelado Práctico con Parábolas y Ecuaciones Racionales",
       "ejercicios": [
         {
           "numero": 1,
@@ -182,7 +182,14 @@ window.TEMAS_DATA[2] = {
             }
           ],
           "idea_clave": "¡Nunca sumes los tiempos directamente ($x + x + 5 = 6$ es un disparate)! En problemas de trabajo conjunto se suman siempre las fracciones de trabajo realizadas en una hora: $\\frac{1}{x} + \\frac{1}{x+5} = \\frac{1}{6}$."
-        },
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "fecha": "Viernes 30 de Octubre de 2026",
+      "titulo": "Modelado Práctico con Radicales, Exponenciales y Logaritmos",
+      "ejercicios": [
         {
           "numero": 3,
           "titulo": "Problema 3: Longitud del cable de una tirolina (Ecuación con raíz y soluciones falsas)",
