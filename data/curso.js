@@ -30,13 +30,13 @@ window.CURSO_CONFIG = {
     "aviso": "Examen del Tema 1 finalizado. Consulta el enunciado y el solucionario resuelto en la pestaña del Tema 1."
   },
   "ultima_clase": {
-    "fecha": "Jueves 29 de Octubre de 2026",
+    "fecha": "Jueves 29 y Viernes 30 de Octubre de 2026",
     "tema_id": 2,
     "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
-    "titulo_sesion": "Sesión 2: Modelado Práctico con Parábolas, Racionales, Radicales y Exponenciales",
-    "referencia_apuntes": "Bloques 1 y 2: Puntos 1.1, 1.3, 1.5 y 2.3 (Págs. 6-14)",
+    "titulo_sesion": "Sesión 2: Modelado Práctico con Parábolas, Racionales, Radicales, Exponenciales y Logaritmos",
+    "referencia_apuntes": "Bloques 1 y 2: Puntos 1.1, 1.3, 1.5, 2.2 C y 2.3 (Págs. 6-15)",
     "mision_semanal": "Empezar a trabajar en la libreta los problemas de la Hoja del Tema 2 (ecuaciones polinómicas, bicuadradas y racionales), comprobando siempre el sentido real de las soluciones y los valores prohibidos.",
-    "trabajo_semanal_pendiente": "Pasar a limpio los 4 problemas de modelado de la pizarra en tu libreta y resolver los problemas 1 al 8 de la Hoja del Tema 2.",
+    "trabajo_semanal_pendiente": "Pasar a limpio los 5 problemas de modelado de la pizarra en tu libreta y resolver los problemas 1 al 8 de la Hoja del Tema 2.",
     "ejercicios_vistos": [
       {
         "numero": 1,
@@ -141,6 +141,36 @@ window.CURSO_CONFIG = {
           }
         ],
         "idea_clave": "No intentes aplicar logaritmos término a término en una resta (el logaritmo de una resta NO es la resta de logaritmos). Al observar bases relacionadas como $4^t$ y $2^t$, el método maestro es el cambio de variable $y = 2^t$ y vigilar que $y > 0$."
+      },
+      {
+        "numero": 5,
+        "titulo": "Problema 5: Los altavoces del concierto de fiestas (Ecuación logarítmica agrupando a ambos lados)",
+        "referencia": "Puntos 2.2 C y 2.3 (Págs. 12-14, análogo a Ejemplo 2.4 y decibelios)",
+        "enunciado": "En el concierto de las fiestas patronales se colocan dos torres de altavoces. La fuerza del sonido que llega desde la torre principal a una distancia de $x$ metros es de $20\\log(x - 3)\\text{ decibelios}$, y la que llega desde la torre de apoyo es de $10\\big[\\log(x + 9) + \\log 2\\big]\\text{ decibelios}$. ¿A qué distancia $x$ (en metros) debemos colocarnos para escuchar la música exactamente al mismo volumen desde ambas torres?",
+        "instruccion": "Plantea la ecuación igualando ambas expresiones, aplica el Paso 0 de valores permitidos, simplifica entre 10, junta los logaritmos a ambos lados y comprueba si las soluciones tienen sentido en la realidad:",
+        "apartados": [
+          {
+            "letra": "a)",
+            "expresion": "\\textbf{Planteamiento:} \\; \\text{Para escuchar ambas torres con la misma intensidad, igualamos ambas expresiones: } 20\\log(x - 3) = 10\\big[\\log(x + 9) + \\log 2\\big]."
+          },
+          {
+            "letra": "b)",
+            "expresion": "\\textbf{Paso 0 (Valores permitidos en } \\mathbb{R}\\textbf{):} \\; \\text{Dentro de un logaritmo no puede haber negativos ni cero: } x - 3 > 0 \\implies x > 3 \\quad \\text{y} \\quad x + 9 > 0 \\implies x > -9. \\text{ Zona permitida: } \\boldsymbol{x > 3}."
+          },
+          {
+            "letra": "c)",
+            "expresion": "\\textbf{Simplificar y agrupar a ambos lados:} \\; \\text{Dividiendo entre 10: } 2\\log(x - 3) = \\log(x + 9) + \\log 2. \\text{ Subimos el 2 al exponente y pasamos la suma a multiplicación: } \\log\\big((x - 3)^2\\big) = \\log\\big(2(x + 9)\\big)."
+          },
+          {
+            "letra": "d)",
+            "expresion": "\\textbf{Igualar lo de dentro y resolver:} \\; (x - 3)^2 = 2(x + 9) \\iff x^2 - 6x + 9 = 2x + 18 \\iff x^2 - 8x - 9 = 0 \\iff (x - 9)(x + 1) = 0 \\implies x_1 = 9, \\; x_2 = -1."
+          },
+          {
+            "letra": "e)",
+            "expresion": "\\textbf{Filtro del Paso 0 y solución final:} \\; x_2 = -1 \\text{ es una \\textbf{solución falsa}} \\text{ (no cumple } x > 3 \\text{ y haría que nos quedara } \\log(-4)\\text{). La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 9\\text{ metros}}."
+          }
+        ],
+        "idea_clave": "No intentes quitar logaritmos «a trozos» ni multiplicar por dentro: sube primero los números que multiplican delante como exponentes ($2\\log A = \\log(A^2)$) y une las sumas en productos ($\\log A + \\log B = \\log(AB)$). Al tener un solo logaritmo a cada lado, igualas argumentos y compruebas siempre que las soluciones caigan dentro del Paso 0 ($x > 3$)."
       }
     ]
   },
@@ -171,7 +201,7 @@ window.CURSO_CONFIG = {
       "titulo": "Ecuaciones, Números Complejos y Sistemas",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 2,
+      "sesiones_impartidas": 3,
       "descripcion": "Ecuaciones polinómicas y racionales, ecuaciones con radicales, exponenciales y logarítmicas, números complejos (forma binómica, operaciones y plano complejo), sistemas de ecuaciones algebraicos y geométricos, y Método de Gauss con matrices.",
       "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
