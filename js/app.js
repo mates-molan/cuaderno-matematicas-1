@@ -5,8 +5,14 @@
 
 let currentTemaId = 1;
 
+// Convierte negritas Markdown (**texto**) en etiquetas HTML <strong>texto</strong>
+function formatInlineMd(str) {
+  if (!str) return '';
+  return String(str).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+}
+
 // Renderizador de apartados en carrusel / slider horizontal deslizable (izquierda ↔ derecha)
-function renderApartadosSlider(apartados, enunciadoBase = null) {
+function renderApartadosSlider(apartados, enunciadoBase = null, esProblema = false) {
   if (!apartados || apartados.length === 0) return '';
 
   let baseHtml = '';
@@ -27,9 +33,16 @@ function renderApartadosSlider(apartados, enunciadoBase = null) {
   });
 
   const num = apartados.length;
-  const hintText = num > 1 
-    ? `↔ Desliza los <strong>${num} apartados</strong> (${apartados[0].letra} a ${apartados[num - 1].letra})`
-    : `Apartado ${apartados[0].letra}`;
+  let hintText = '';
+  if (esProblema) {
+    hintText = num > 1
+      ? `🛠️ <strong>Resolución paso a paso</strong> — Desliza los <strong>${num} pasos</strong> (${apartados[0].letra} a ${apartados[num - 1].letra})`
+      : `🛠️ <strong>Resolución:</strong> ${apartados[0].letra}`;
+  } else {
+    hintText = num > 1 
+      ? `↔ Desliza los <strong>${num} apartados</strong> (${apartados[0].letra} a ${apartados[num - 1].letra})`
+      : `Apartado ${apartados[0].letra}`;
+  }
 
   return `
     <div class="apartados-slider-wrapper">
@@ -96,10 +109,32 @@ function initDragToScroll() {
 // 1. Enunciado matemático principal (en negrita y tamaño destacado)
 // 2. Desplegable de pistas didácticas (plegado por defecto para no saturar al alumnado)
 function parseInstruccionEjercicio(ex) {
-  let raw = ex.instruccion || '';
+  let raw = formatInlineMd(ex.instruccion || '');
   let pistasContent = ex.pistas || null;
-  let enunciado = ex.enunciado || '';
+  let enunciado = formatInlineMd(ex.enunciado || '');
+  let preguntas = Array.isArray(ex.preguntas) ? ex.preguntas : null;
   let icon = '💡';
+
+  let questionsBoxHtml = '';
+  if (preguntas && preguntas.length > 0) {
+    const itemsHtml = preguntas.map(q => `
+      <div class="exercise-question-item">
+        <span class="exercise-question-badge">${q.letra || '❓'}</span>
+        <div class="exercise-question-text">${formatInlineMd(q.texto)}</div>
+      </div>
+    `).join('');
+    questionsBoxHtml = `
+      <div class="exercise-questions-box">
+        <div class="exercise-questions-header">
+          <span class="exercise-questions-icon">🎯</span>
+          <span class="exercise-questions-title">¿Qué nos pide el problema?</span>
+        </div>
+        <div class="exercise-questions-list">
+          ${itemsHtml}
+        </div>
+      </div>
+    `;
+  }
 
   if (!pistasContent && raw) {
     const match = raw.match(/<div class="nota-aula-box">([\s\S]*?)<\/div><\/div>/);
@@ -120,11 +155,29 @@ function parseInstruccionEjercicio(ex) {
       } else {
         if (!enunciado) {
           enunciado = raw.trim();
+        } else if (questionsBoxHtml) {
+          enunciado = `<div class="exercise-problem-statement">${enunciado}</div>${questionsBoxHtml}`;
         } else if (raw.trim()) {
-          enunciado = `<div class="exercise-problem-statement">${enunciado}</div><div class="exercise-task-prompt" style="margin-top: 10px; font-weight: 600; color: #334155;">${raw.trim()}</div>`;
+          enunciado = `
+            <div class="exercise-problem-statement">${enunciado}</div>
+            <div class="exercise-questions-box">
+              <div class="exercise-questions-header">
+                <span class="exercise-questions-icon">🎯</span>
+                <span class="exercise-questions-title">¿Qué nos pide el problema?</span>
+              </div>
+              <div class="exercise-questions-list">
+                <div class="exercise-question-item">
+                  <span class="exercise-question-badge">❓</span>
+                  <div class="exercise-question-text">${raw.trim()}</div>
+                </div>
+              </div>
+            </div>
+          `;
         }
       }
     }
+  } else if (enunciado && questionsBoxHtml) {
+    enunciado = `<div class="exercise-problem-statement">${enunciado}</div>${questionsBoxHtml}`;
   } else if (!enunciado && raw) {
     enunciado = raw.trim();
   }
@@ -316,7 +369,7 @@ function renderAlDia() {
   u.ejercicios_vistos.forEach(ex => {
     let apartadosHtml = '';
     if (ex.apartados && ex.apartados.length > 0) {
-      apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base);
+      apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base, Boolean(ex.enunciado || ex.preguntas));
     }
 
     const { enunciado, pistasHtml } = parseInstruccionEjercicio(ex);
@@ -531,7 +584,7 @@ function renderDiarioPlegado(temaId = currentTemaId) {
     s.ejercicios.forEach(ex => {
       let apartadosHtml = '';
       if (ex.apartados && ex.apartados.length > 0) {
-        apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base);
+        apartadosHtml = renderApartadosSlider(ex.apartados, ex.enunciado_base, Boolean(ex.enunciado || ex.preguntas));
       }
 
       const { enunciado, pistasHtml } = parseInstruccionEjercicio(ex);
