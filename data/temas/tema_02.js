@@ -479,6 +479,44 @@ window.TEMAS_DATA[2] = {
             }
           ],
           "idea_clave": "Cuando el enunciado dice «el doble de un logaritmo» o «el triple de un logaritmo», se traduce como un coeficiente multiplicando por fuera ($2\\log A$ o $3\\log B$). Para poder agrupar o igualar logaritmos, la regla de oro es meter primero esos coeficientes dentro como exponentes ($2\\log A = \\log(A^2)$ y $3\\log 2 = \\log(2^3) = \\log 8$). El filtro con la región factible ($x > 2$) descarta de raíz la solución falsa negativa."
+        },
+        {
+          "numero": 7,
+          "titulo": "Problema 7: Fuente circular y paseo de adoquines (Ecuación con círculos y corona circular)",
+          "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1 y cálculo con áreas circulares)",
+          "enunciado": "En el centro de una plaza se construye una fuente circular de radio $x\\text{ metros}$. Alrededor de la fuente se instala un paseo circular de adoquines (corona circular) con una anchura fija de $4\\text{ metros}$, de modo que el radio exterior total es $(x + 4)\\text{ metros}$. El ayuntamiento exige que la superficie del paseo de adoquines sea exactamente el triple de la superficie ocupada por el agua de la fuente.",
+          "instruccion": "Escribe la fórmula del área del círculo y de la corona circular, plantea la ecuación que hace el paseo el triple de la fuente, simplifica $\\pi$ dividiendo a ambos lados, resuelve la ecuación de segundo grado y calcula los radios y las áreas de ambas zonas:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "expresion": "\\textbf{Fórmulas de áreas:} \\; \\text{Área fuente: } A_{\\text{fuente}} = \\pi x^2. \\; \\text{Radio exterior: } R = x + 4. \\; \\text{Área del paseo (corona): } A_{\\text{paseo}} = \\pi(x + 4)^2 - \\pi x^2."
+            },
+            {
+              "letra": "b)",
+              "expresion": "\\textbf{Planteamiento de la condición } (A_{\\text{paseo}} = 3 A_{\\text{fuente}}): \\; \\pi(x + 4)^2 - \\pi x^2 = 3\\pi x^2."
+            },
+            {
+              "letra": "c)",
+              "expresion": "\\textbf{Paso 0 y simplificación de } \\pi: \\; \\text{El radio debe ser positivo: } \\boldsymbol{x > 0}. \\text{ Dividiendo toda la ecuación entre } \\pi \\text{ (no hace falta usar decimales): } (x + 4)^2 - x^2 = 3x^2."
+            },
+            {
+              "letra": "d)",
+              "expresion": "\\textbf{Desarrollar y agrupar en ecuación de 2.º grado:} \\; x^2 + 8x + 16 - x^2 = 3x^2 \\iff 8x + 16 = 3x^2 \\iff \\boldsymbol{3x^2 - 8x - 16 = 0}."
+            },
+            {
+              "letra": "e)",
+              "expresion": "\\textbf{Resolución de la cuadrática:} \\; x = \\dfrac{8 \\pm \\sqrt{(-8)^2 - 4(3)(-16)}}{2(3)} = \\dfrac{8 \\pm \\sqrt{64 + 192}}{6} = \\dfrac{8 \\pm \\sqrt{256}}{6} = \\dfrac{8 \\pm 16}{6} \\implies x_1 = \\dfrac{24}{6} = 4, \\; x_2 = -\\dfrac{8}{6} = -\\dfrac{4}{3}."
+            },
+            {
+              "letra": "f)",
+              "expresion": "\\textbf{Filtro con el Paso 0 y sentido real:} \\; x_2 = -4/3 \\text{ queda \\textbf{descartada}} \\text{ porque un radio no puede ser negativo } (x > 0). \\text{ Por tanto, la \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 4\\text{ metros}}."
+            },
+            {
+              "letra": "g)",
+              "expresion": "\\textbf{Dimensiones y áreas finales:} \\; \\text{Radio de la fuente: } r = \\mathbf{4\\text{ m}} \\implies A_{\\text{fuente}} = \\pi(4^2) = \\mathbf{16\\pi\\text{ m}^2} \\approx 50{,}27\\text{ m}^2. \\; \\text{Radio exterior: } R = 4 + 4 = \\mathbf{8\\text{ m}}. \\; \\text{Área del paseo: } \\pi(8^2) - 16\\pi = 64\\pi - 16\\pi = \\mathbf{48\\pi\\text{ m}^2} \\approx 150{,}80\\text{ m}^2. \\text{ (Comprobación: } 48\\pi = 3 \\times 16\\pi)."
+            }
+          ],
+          "idea_clave": "Al calcular el área de una corona circular restando el círculo interior del exterior ($A = \\pi R^2 - \\pi r^2$), el número $\\pi$ multiplica a todos los términos de la igualdad y se cancela dividiendo entre $\\pi$. Esto evita operar con decimales infinitos y conduce a una ecuación de segundo grado limpia y exacta."
         }
       ]
     }
