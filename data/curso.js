@@ -40,20 +40,20 @@ window.CURSO_CONFIG = {
     "ejercicios_vistos": [
       {
         "numero": 1,
-        "titulo": "Problema 1: Capacidad de dos depósitos de agua (Ecuación polinómica por factor común)",
+        "titulo": "Problema 1: Capacidad de dos depósitos de agua (Ecuación polinómica)",
         "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1 y cálculo de volúmenes)",
         "enunciado": "Una empresa agrícola instala dos depósitos de agua con forma de prisma rectangular. El primer depósito tiene una altura de $(x + 4)\\text{ m}$, un ancho de $(x + 2)\\text{ m}$ y un largo de $(2x + 1)\\text{ m}$. El segundo depósito comparte la misma altura $(x + 4)\\text{ m}$ y el mismo ancho $(x + 2)\\text{ m}$, pero su largo mide $(x + 6)\\text{ m}$. Queremos saber para qué medida de $x$ tienen exactamente la misma capacidad de agua ($V_1 = V_2$).",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Plantea la ecuación que iguala la capacidad de ambos depósitos ($V_1 = V_2$), pasa todo al primer miembro y resuélvela sacando factor común para hallar el valor de $x$."
+            "texto": "Plantea la ecuación que iguala la capacidad de ambos depósitos ($V_1 = V_2$) y resuélvela para hallar el valor de $x$."
           },
           {
             "letra": "b)",
             "texto": "Calcula las tres dimensiones reales (largo, ancho y alto) de cada depósito y su volumen común en metros cúbicos."
           }
         ],
-        "instruccion": "Plantea la ecuación que iguala ambos volúmenes, pasa todo al primer miembro y saca factor común para hallar $x$, las dimensiones y el volumen:",
+        "instruccion": "Plantea la ecuación que iguala ambos volúmenes, resuélvela y calcula las dimensiones y el volumen común:",
         "apartados": [
           {
             "letra": "a)",
@@ -80,20 +80,20 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 2,
-        "titulo": "Problema 2: Fuente circular y paseo de adoquines (Ecuación con círculos y corona circular)",
+        "titulo": "Problema 2: Fuente circular y paseo de adoquines (Círculos y corona circular)",
         "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1 y cálculo con áreas circulares)",
         "enunciado": "En el centro de una plaza se construye una fuente circular de radio $x\\text{ metros}$. Alrededor de la fuente se instala un paseo circular de adoquines (corona circular) con una anchura fija de $4\\text{ metros}$, de modo que el radio exterior total del conjunto es $(x + 4)\\text{ metros}$. El ayuntamiento exige que la superficie del paseo de adoquines sea exactamente el triple de la superficie ocupada por el agua de la fuente.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Expresa en función de $x$ el área de la fuente central y el área del paseo circular de adoquines, y plantea la ecuación para que el paseo tenga el triple de superficie que la fuente."
+            "texto": "Expresa en función de $x$ el área de la fuente central y el área del paseo de adoquines, y plantea la ecuación correspondiente."
           },
           {
             "letra": "b)",
-            "texto": "Resuelve la ecuación para hallar el radio de la fuente, el radio total exterior y la superficie de cada zona."
+            "texto": "Resuelve la ecuación para hallar el radio de la fuente, el radio exterior del conjunto y la superficie de cada zona."
           }
         ],
-        "instruccion": "Plantea las áreas de la fuente y de la corona circular, resuelve la ecuación de segundo grado resultante y calcula los radios y las superficies:",
+        "instruccion": "Plantea la ecuación que relaciona ambas superficies, resuélvela y calcula los radios y las áreas:",
         "apartados": [
           {
             "letra": "a)",
@@ -128,20 +128,20 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 3,
-        "titulo": "Problema 3: Pantalla panorámica y diagonal (Ecuación bicuadrada con coeficiente distinto de 1)",
+        "titulo": "Problema 3: Pantalla panorámica y diagonal (Ecuación bicuadrada)",
         "referencia": "Punto 1.3 (Pág. 7, análogo a Ejemplo 1.2 y Teorema de Pitágoras)",
         "enunciado": "Un fabricante diseña una pantalla rectangular con una superficie fija de $48\\text{ cm}^2$. Para mantener esa área, la base mide $2x\\text{ cm}$ y la altura mide $\\dfrac{24}{x}\\text{ cm}$. La empresa necesita que la diagonal entre esquinas opuestas de la pantalla mida exactamente $10\\text{ cm}$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Aplica el Teorema de Pitágoras para relacionar la base, la altura y la diagonal de la pantalla y comprueba que al quitar denominadores se obtiene la ecuación bicuadrada $4x^4 - 100x^2 + 576 = 0$."
+            "texto": "Aplica el Teorema de Pitágoras para plantear la ecuación que relaciona la base, la altura y la diagonal de la pantalla."
           },
           {
             "letra": "b)",
-            "texto": "Resuelve la ecuación bicuadrada mediante el cambio de variable $z = x^2$ y calcula las posibles dimensiones reales (base y altura) de la pantalla."
+            "texto": "Resuelve la ecuación obtenida y calcula las posibles dimensiones reales (base y altura) de la pantalla."
           }
         ],
-        "instruccion": "Aplica el Teorema de Pitágoras para relacionar la base, la altura y la diagonal, obtén la ecuación bicuadrada y calcula las medidas de la pantalla:",
+        "instruccion": "Aplica el Teorema de Pitágoras para relacionar los lados con la diagonal, resuelve la ecuación y calcula las medidas de la pantalla:",
         "apartados": [
           {
             "letra": "a)",
@@ -168,20 +168,20 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 4,
-        "titulo": "Problema 4: Carteles publicitarios y proporciones (Ecuación racional con x en numerador y denominador)",
+        "titulo": "Problema 4: Carteles publicitarios y proporciones (Ecuación racional)",
         "referencia": "Punto 1.3 (Pág. 8, análogo a Ejemplo 1.3 y fracciones algebraicas)",
         "enunciado": "Un diseñador crea dos carteles publicitarios rectangulares. El primer cartel tiene un largo de $(x + 3)\\text{ m}$ y un alto de $(x - 1)\\text{ m}$. El segundo cartel invierte la orientación para un espacio vertical: su largo mide $(x - 1)\\text{ m}$ y su alto mide $(x + 3)\\text{ m}$. Queremos que la suma de las proporciones de ambos carteles (largo dividido entre alto de cada uno) sea exactamente igual a $2{,}5 = \\dfrac{5}{2}$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Indica qué valores de $x$ tienen sentido real (Paso 0) y plantea la ecuación que suma las proporciones (largo dividido entre alto) de ambos carteles igualándola a $2{,}5 = \\dfrac{5}{2}$."
+            "texto": "Indica qué condiciones deben cumplir las medidas (Paso 0) y plantea la ecuación correspondiente a la suma de las proporciones de ambos carteles."
           },
           {
             "letra": "b)",
-            "texto": "Resuelve la ecuación eliminando los denominadores con el mínimo común múltiplo y calcula el largo y el alto de cada cartel."
+            "texto": "Resuelve la ecuación y calcula el largo y el alto de cada uno de los carteles."
           }
         ],
-        "instruccion": "Plantea la ecuación de proporciones, escribe el Paso 0 de valores prohibidos y medidas reales, multiplica por el m.c.m. y halla las dimensiones del cartel:",
+        "instruccion": "Plantea la ecuación de proporciones teniendo en cuenta el Paso 0, resuélvela y halla las medidas de cada cartel:",
         "apartados": [
           {
             "letra": "a)",
@@ -212,20 +212,20 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 5,
-        "titulo": "Problema 5: Tirantes de sujeción de una carpa (Ecuación radical con dos raíces y región factible)",
+        "titulo": "Problema 5: Tirantes de sujeción de una carpa (Ecuación con radicales)",
         "referencia": "Punto 2.2 A (Pág. 11, análogo a Ejemplo 2.1 y eliminación de raíces)",
         "enunciado": "Para sujetar la estructura triangular del techo de una carpa de eventos se instalan dos cables tensores de acero. La longitud del primer tirante es de $L_1 = \\sqrt{2x + 7}\\text{ metros}$ y la del segundo tirante es de $L_2 = \\sqrt{x + 3}\\text{ metros}$. El equipo de montaje dispone de un cable continuo de exactamente $5\\text{ metros}$ para fabricar ambos tirantes sin que sobre material ($L_1 + L_2 = 5$).",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Determina primero la región factible (Paso 0) de la ecuación $\\sqrt{2x + 7} + \\sqrt{x + 3} = 5$ y resuélvela aislando una raíz y elevando al cuadrado las veces necesarias."
+            "texto": "Determina la región factible (Paso 0), plantea la ecuación y halla sus posibles soluciones."
           },
           {
             "letra": "b)",
-            "texto": "Comprueba las soluciones obtenidas para descartar la solución falsa y calcula cuántos metros mide cada uno de los dos tirantes de acero."
+            "texto": "Comprueba las soluciones obtenidas y calcula cuántos metros mide cada uno de los dos tirantes de acero."
           }
         ],
-        "instruccion": "Escribe la ecuación, determina la región factible en el Paso 0, aísla una raíz y eleva al cuadrado dos veces para hallar $x$ y la longitud de cada tirante:",
+        "instruccion": "Determina la región factible (Paso 0), resuelve la ecuación y halla la longitud de cada tirante:",
         "apartados": [
           {
             "letra": "a)",
@@ -260,20 +260,20 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 6,
-        "titulo": "Problema 6: Superficie de columnas y paneles (Ecuación exponencial con base 3 y coeficiente distinto de 1)",
+        "titulo": "Problema 6: Superficie de columnas y paneles (Ecuación exponencial)",
         "referencia": "Punto 2.2 B (Pág. 12, análogo a Ejemplo 2.2 y cambio de variable)",
         "enunciado": "En el diseño de una pérgola metálica para un parque se instalan dos tipos de elementos de apoyo: 2 columnas cuadradas cuya base tiene una superficie de $9^x = 3^{2x}\\text{ m}^2$ cada una, y 5 paneles rectangulares de apoyo cuya base mide $3^x\\text{ m}^2$ cada uno. Entre las dos columnas y los cinco paneles ocupan una superficie total de suelo de exactamente $33\\text{ m}^2$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Plantea la ecuación exponencial que suma la superficie de las 2 columnas y los 5 paneles igualándola a $33\\text{ m}^2$, y resuélvela aplicando el cambio de variable $t = 3^x$."
+            "texto": "Plantea la ecuación que suma la superficie de las dos columnas y los cinco paneles, y resuélvela para hallar el valor de $x$."
           },
           {
             "letra": "b)",
-            "texto": "Halla el valor de $x$ y calcula la superficie que ocupa cada columna y cada panel por separado."
+            "texto": "Calcula la superficie que ocupa cada columna y cada panel por separado."
           }
         ],
-        "instruccion": "Plantea la ecuación exponencial de la superficie total, realiza el cambio de variable $t = 3^x$ y calcula el área de cada columna y de cada panel:",
+        "instruccion": "Plantea la ecuación de la superficie total, resuélvela y calcula el área de cada columna y de cada panel:",
         "apartados": [
           {
             "letra": "a)",
@@ -304,20 +304,20 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 7,
-        "titulo": "Problema 7: Pista deportiva y zona de césped (Ecuación logarítmica con números multiplicando)",
+        "titulo": "Problema 7: Pista deportiva y zona de césped (Ecuación logarítmica)",
         "referencia": "Puntos 2.2 C y 2.3 (Págs. 12-14, análogo a Ejemplo 2.4 y propiedades de potencias)",
         "enunciado": "En un polideportivo municipal se diseña una pista cuadrada de patinaje de lado $(x - 2)\\text{ metros}$ y una zona de césped rectangular de $8\\text{ metros}$ de ancho por $(x + 4)\\text{ metros}$ de largo. Para equilibrar el diseño de ambas zonas, el arquitecto establece que <strong>el doble del logaritmo del lado de la pista</strong> debe ser igual a <strong>el triple del logaritmo de 2 más el logaritmo del largo de la zona de césped</strong>.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Traduce la condición del arquitecto a una ecuación logarítmica colocando los números correspondientes delante de cada logaritmo e indica la región factible (Paso 0)."
+            "texto": "Traduce la condición del arquitecto a una ecuación matemática e indica su región factible (Paso 0)."
           },
           {
             "letra": "b)",
-            "texto": "Resuelve la ecuación pasando los números que multiplican como exponentes para agrupar los logaritmos y calcula las dimensiones y el área de la pista y del césped."
+            "texto": "Resuelve la ecuación obtenida y calcula las dimensiones y el área de ambas zonas."
           }
         ],
-        "instruccion": "Traduce el texto del arquitecto a una ecuación matemática colocando tú mismo los números multiplicando delante de los logaritmos, halla la región factible y calcula las dimensiones y áreas:",
+        "instruccion": "Traduce la condición a una ecuación matemática con su región factible (Paso 0), resuélvela y calcula las dimensiones y áreas:",
         "apartados": [
           {
             "letra": "a)",
