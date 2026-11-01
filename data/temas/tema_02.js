@@ -500,7 +500,7 @@ window.TEMAS_DATA[2] = {
           "numero": 6,
           "titulo": "Problema 6: Superficie de columnas y paneles (Ecuación exponencial)",
           "referencia": "Punto 2.2 B (Pág. 12, análogo a Ejemplo 2.2 y cambio de variable)",
-          "enunciado": "En el diseño de una pérgola metálica para un parque se instalan dos tipos de elementos de apoyo: 2 columnas cuadradas cuya base tiene una superficie de $9^x = 3^{2x}\\text{ m}^2$ cada una, y 5 paneles rectangulares de apoyo cuya base mide $3^x\\text{ m}^2$ cada uno. Entre las dos columnas y los cinco paneles ocupan una superficie total de suelo de exactamente $33\\text{ m}^2$.",
+          "enunciado": "En el diseño de una pérgola metálica para un parque se instalan dos tipos de elementos de apoyo: 2 columnas cuadradas cuya base tiene una superficie de $9^x\\text{ m}^2$ cada una, y 5 paneles rectangulares de apoyo cuya base mide $3^x\\text{ m}^2$ cada uno. Entre las dos columnas y los cinco paneles ocupan una superficie total de suelo de exactamente $33\\text{ m}^2$.",
           "preguntas": [
             {
               "letra": "a)",
@@ -515,7 +515,7 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento de la superficie total:} \\; 2 \\cdot 3^{2x} + 5 \\cdot 3^x = 33 \\iff \\mathbf{2(3^x)^2 + 5 \\cdot 3^x - 33 = 0}."
+              "expresion": "\\textbf{Planteamiento de la superficie total:} \\; 2 \\cdot 9^x + 5 \\cdot 3^x = 33 \\iff 2(3^2)^x + 5 \\cdot 3^x = 33 \\iff \\mathbf{2(3^x)^2 + 5 \\cdot 3^x - 33 = 0}."
             },
             {
               "letra": "b)",
