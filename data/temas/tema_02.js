@@ -25,7 +25,7 @@ window.TEMAS_DATA[2] = {
           "titulo": "Problema 1: Comparar el volumen de dos cajas (Ecuación polinómica)",
           "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.1)",
           "enunciado": "Una fábrica diseña dos tipos de cajas de cartón para embalaje. El volumen de cada caja (en $\\text{cm}^3$) depende de una medida $x$ (en centímetros): la primera caja tiene un volumen de $V_1 = (x^2 - 9)(2x - 1)$ y la segunda caja tiene un volumen de $V_2 = (x - 3)(x^2 + 7x + 12)$. Queremos averiguar para qué medidas de $x$ tienen ambas cajas exactamente la misma capacidad ($V_1 = V_2$).",
-          "instruccion": "Plantea la ecuación que iguala los dos volúmenes y resuélvela factorizando para no multiplicar paréntesis a lo loco:",
+          "instruccion": "Plantea la ecuación que iguala ambos volúmenes y resuélvela para hallar las medidas posibles:",
           "apartados": [
             {
               "letra": "a)",
@@ -51,7 +51,7 @@ window.TEMAS_DATA[2] = {
           "titulo": "Problema 2: Puntos de apoyo en una rampa de skate (Ecuación bicuadrada)",
           "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 a)",
           "enunciado": "En el diseño de una rampa para una pista de patinaje (skatepark), la altura $h$ respecto al suelo (en metros) a una distancia horizontal $x$ del centro viene dada por la fórmula $h(x) = x^4 - 10x^2 + 9$. Queremos encontrar en qué puntos la rampa toca exactamente el suelo ($h(x) = 0$).",
-          "instruccion": "Resuelve la ecuación bicuadrada aplicando el cambio de variable $t = x^2$ para hallar todas sus soluciones reales:",
+          "instruccion": "Plantea la ecuación $h(x) = 0$ y resuélvela para hallar los puntos de contacto con el suelo:",
           "apartados": [
             {
               "letra": "a)",
@@ -74,10 +74,10 @@ window.TEMAS_DATA[2] = {
         },
         {
           "numero": 3,
-          "titulo": "Problema 3: Temperatura de equilibrio en el laboratorio (Cambio con exponente impar)",
+          "titulo": "Problema 3: Temperatura de equilibrio en el laboratorio (Ecuación con exponente 6)",
           "referencia": "Punto 1.3 (Pág. 6, análogo a Ejemplo 1.2 b)",
           "enunciado": "En una práctica de laboratorio de ciencias, la temperatura $x$ (en grados) a la que se estabiliza una mezcla química cumple la ecuación $x^6 - 26x^3 = 27$, es decir, $x^6 - 26x^3 - 27 = 0$. Averigua todas las temperaturas reales a las que la mezcla puede estar en equilibrio.",
-          "instruccion": "Aplica el cambio de variable con exponente impar y analiza qué ocurre con el signo de las soluciones:",
+          "instruccion": "Resuelve la ecuación y halla las temperaturas reales a las que la mezcla está en equilibrio:",
           "apartados": [
             {
               "letra": "a)",
@@ -103,7 +103,7 @@ window.TEMAS_DATA[2] = {
           "titulo": "Problema 4: Grifos y tuberías en un depósito de agua (Ecuación con fracciones y valores prohibidos)",
           "referencia": "Punto 1.3 (Pág. 7, análogo a Ejemplo 1.3)",
           "enunciado": "Un depósito de agua tiene conectadas dos tuberías: la primera introduce agua a un ritmo de $\\dfrac{2x}{x - 1}$ litros por minuto, y la segunda desagua a un ritmo de $\\dfrac{x + 3}{x + 4}$ litros por minuto (donde $x$ es la posición de apertura de las llaves). Para mantener el nivel estable, la diferencia entre lo que entra y lo que sale debe ser igual a $\\dfrac{10}{x^2 + 3x - 4}$. Calcula el valor de $x$ que permite regular el depósito.",
-          "instruccion": "Resuelve la ecuación con fracciones siguiendo el método en 4 pasos y vigila los valores prohibidos:",
+          "instruccion": "Plantea la ecuación de equilibrio teniendo en cuenta el Paso 0 y calcula el valor de $x$:",
           "apartados": [
             {
               "letra": "a)",
@@ -162,7 +162,7 @@ window.TEMAS_DATA[2] = {
           "titulo": "Problema 2: Achique de agua en un sótano tras la DANA (Ecuación racional de trabajo conjunto)",
           "referencia": "Puntos 1.3 y 1.5 (Págs. 7-8, análogo a Ejemplo 1.3 y Problema aplicado 1.4)",
           "enunciado": "Para evacuar el agua de un sótano inundado tras un temporal en el Campo de Cartagena se emplean dos motobombas. La bomba principal $A$ tardaría $x$ horas sola, y la bomba auxiliar $B$ tarda 5 horas más ($x + 5$ horas). Si funcionan las dos motobombas juntas a la vez, el sótano se vacía en exactamente 6 horas. Calcula el tiempo que tardaría cada una por separado.",
-          "instruccion": "Plantea la ecuación de flujos por unidad de tiempo vigilando los valores prohibidos en el Paso 0:",
+          "instruccion": "Plantea la ecuación de trabajo conjunto y calcula el tiempo que tardaría cada motobomba por separado:",
           "apartados": [
             {
               "letra": "a)",
@@ -185,10 +185,10 @@ window.TEMAS_DATA[2] = {
         },
         {
           "numero": 3,
-          "titulo": "Problema 3: Longitud del cable de una tirolina (Ecuación con raíz y soluciones falsas)",
+          "titulo": "Problema 3: Longitud del cable de una tirolina (Ecuación con radical)",
           "referencia": "Punto 2.3 (Pág. 13, análogo a Ejemplo 2.1 y 2.2)",
           "enunciado": "En un parque multiaventura se va a instalar una tirolina atando un cable desde una torre hasta una pica clavada en el suelo a $x$ metros de distancia de la base. Para que la caída sea segura, la longitud que debe tener el cable viene dada por $\\sqrt{x + 5}\\text{ metros}$, y el rollo de cable que tienen en el parque mide exactamente $7 - x\\text{ metros}$. Queremos saber a qué distancia $x$ hay que colocar la pica en el suelo para que el cable encaje justo:",
-          "instruccion": "Resuelve la ecuación con radical aplicando el Paso 0 y comprueba obligatoriamente las soluciones:",
+          "instruccion": "Determina la región factible (Paso 0), resuelve la ecuación y halla a qué distancia se debe colocar la pica:",
           "apartados": [
             {
               "letra": "a)",
@@ -211,10 +211,10 @@ window.TEMAS_DATA[2] = {
         },
         {
           "numero": 4,
-          "titulo": "Problema 4: Jugadores en un videojuego online (Ecuación exponencial cuadrática)",
+          "titulo": "Problema 4: Jugadores en un videojuego online (Ecuación exponencial)",
           "referencia": "Punto 2.3 (Pág. 14, análogo a Ejemplo 2.3 situación 2)",
           "enunciado": "Un nuevo videojuego online acaba de salir al mercado. El número de jugadores conectados (en miles) transcurridas $t$ horas desde el estreno viene dado por la fórmula $N(t) = 4^t - 3 \\cdot 2^t$. La empresa necesita encender un servidor de apoyo en cuanto se alcancen los 4000 jugadores conectados a la vez ($N(t) = 4$ miles). ¿A las cuántas horas del estreno tendrán que encender el servidor de apoyo?",
-          "instruccion": "Reconoce la misma base de potencias, realiza un cambio de variable y resuelve con rigor:",
+          "instruccion": "Plantea la ecuación que iguala el número de jugadores a 4000 ($N(t) = 4$) y resuélvela para hallar las horas transcurridas:",
           "apartados": [
             {
               "letra": "a)",
@@ -237,10 +237,10 @@ window.TEMAS_DATA[2] = {
         },
         {
           "numero": 5,
-          "titulo": "Problema 5: Los altavoces del concierto de fiestas (Ecuación logarítmica con resolución por Ruffini)",
+          "titulo": "Problema 5: Los altavoces del concierto de fiestas (Ecuación logarítmica)",
           "referencia": "Puntos 2.2 C y 2.3 (Págs. 12-14, análogo a Ejemplo 2.4 y decibelios)",
           "enunciado": "En el concierto de las fiestas patronales se colocan dos torres de altavoces. La fuerza del sonido que llega desde la torre principal a una distancia de $x$ metros es de $20\\log(x^2 - 2x - 8)\\text{ decibelios}$, y la que llega desde la torre de apoyo es de $10\\big[\\log(x + 2) + \\log(x + 26)\\big]\\text{ decibelios}$. ¿A qué distancia $x$ (en metros) debemos colocarnos para escuchar la música exactamente al mismo volumen desde ambas torres?",
-          "instruccion": "Plantea la ecuación igualando ambas expresiones, aplica el Paso 0 de valores permitidos, simplifica entre 10, junta los logaritmos a ambos lados, resuelve la ecuación de 4.º grado resultante mediante Ruffini y comprueba qué soluciones tienen sentido en la realidad:",
+          "instruccion": "Plantea la ecuación que iguala el nivel de sonido de ambas torres, resuélvela y determina la distancia $x$:",
           "apartados": [
             {
               "letra": "a)",
@@ -267,7 +267,17 @@ window.TEMAS_DATA[2] = {
               "expresion": "\\textbf{Filtro del Paso 0 y solución final:} \\; \\text{Contrastamos con } x > 4: \\; x_2 = 1, \\; x_3 = -1 \\text{ y } x_4 = -2 \\text{ son \\textbf{soluciones falsas}} \\text{ (hacen negativos o cero los argumentos de los logaritmos). La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 6\\text{ metros}}."
             }
           ],
-          "idea_clave": "Al simplificar entre 10 y subir el coeficiente $2$ al exponente ($2\\log A = \\log(A^2)$), el argumento cuadrático se eleva al cuadrado produciendo un polinomio de 4.º grado. Se igualan argumentos, se pasa todo a un miembro y se aplica la regla de Ruffini dos veces hasta llegar a una ecuación de 2.º grado. Es imprescindible contrastar siempre los 4 candidatos con el Paso 0 ($x > 4$): las tres raíces falsas quedan descartadas, sobreviviendo únicamente la distancia real $x = 6\\text{ m}$."
+          "idea_clave": "Al simplificar entre 10 y subir el coeficiente $2$ al exponente ($2\\log A = \\log(A^2)$), el argumento cuadrático se eleva al cuadrado produciendo un polinomio de 4.º grado. Se igualan argumentos, se pasa todo a un miembro y se aplica la regla de Ruffini dos veces hasta llegar a una ecuación de 2.º grado. Es imprescindible contrastar siempre los 4 candidatos con el Paso 0 ($x > 4$): las tres raíces falsas quedan descartadas, sobreviviendo únicamente la distancia real $x = 6\\text{ m}$.",
+          "preguntas": [
+            {
+              "letra": "a)",
+              "texto": "Plantea la ecuación que iguala el nivel de sonido de ambas torres e indica su región factible (Paso 0)."
+            },
+            {
+              "letra": "b)",
+              "texto": "Resuelve la ecuación y calcula a qué distancia $x$ debemos colocarnos."
+            }
+          ]
         }
       ]
     },
