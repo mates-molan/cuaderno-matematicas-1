@@ -6,7 +6,7 @@ window.TEMAS_DATA[2] = {
   "id": 2,
   "titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 5,
+  "sesiones_impartidas": 6,
   "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "repaso_pdf": "",
@@ -282,8 +282,8 @@ window.TEMAS_DATA[2] = {
       ]
     },
     {
-      "numero": "4 y 5",
-      "fecha": "Lunes 2 y Martes 3 de Noviembre de 2026",
+      "numero": "4, 5 y 6",
+      "fecha": "Lunes 2, Martes 3 y Jueves 5 de Noviembre de 2026",
       "titulo": "Modelado Geométrico con Ecuaciones (Prismas, Círculos, Rectángulos y Áreas)",
       "ejercicios": [
         {

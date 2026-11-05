@@ -30,10 +30,10 @@ window.CURSO_CONFIG = {
     "aviso": "Examen del Tema 1 finalizado. Consulta el enunciado y el solucionario resuelto en la pestaña del Tema 1."
   },
   "ultima_clase": {
-    "fecha": "Lunes 2 y Martes 3 de Noviembre de 2026",
+    "fecha": "Lunes 2, Martes 3 y Jueves 5 de Noviembre de 2026",
     "tema_id": 2,
     "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
-    "titulo_sesion": "Sesiones 4 y 5: Modelado Geométrico con Ecuaciones (Prismas, Círculos, Rectángulos y Áreas)",
+    "titulo_sesion": "Sesiones 4, 5 y 6: Modelado Geométrico con Ecuaciones (Prismas, Círculos, Rectángulos y Áreas)",
     "referencia_apuntes": "Bloques 1 y 2: Puntos 1.3, 1.5, 2.2 y 2.3 (Págs. 6-16)",
     "mision_semanal": "Trabajar en la libreta los problemas de la Hoja del Tema 2.",
     "trabajo_semanal_pendiente": "Pasar a limpio los 7 problemas de modelado de la pizarra en tu libreta y continuar trabajando los problemas de la Hoja del Tema 2.",
@@ -379,7 +379,7 @@ window.CURSO_CONFIG = {
       "titulo": "Ecuaciones, Números Complejos y Sistemas",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 5,
+      "sesiones_impartidas": 6,
       "descripcion": "Ecuaciones polinómicas y racionales, ecuaciones con radicales, exponenciales y logarítmicas, números complejos (forma binómica, operaciones y plano complejo), sistemas de ecuaciones algebraicos y geométricos, y Método de Gauss con matrices.",
       "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
