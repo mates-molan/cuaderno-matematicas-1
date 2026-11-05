@@ -233,7 +233,7 @@ window.CURSO_CONFIG = {
           },
           {
             "letra": "b)",
-            "expresion": "\\textbf{Paso 0 (Región factible estricta):} \\; \\text{Para que existan las raíces: } 2x + 7 \\ge 0 \\implies x \\ge -3{,}5; \\; x + 3 \\ge 0 \\implies x \\ge -3 \\text{ (al ser longitud, } x > 0\\text{)}. \\text{ Al aislar la primera raíz: } \\sqrt{2x+7} = 5 - \\sqrt{x+3} \\ge 0 \\implies \\sqrt{x+3} \\le 5 \\implies x + 3 \\le 25 \\implies x \\le 22. \\text{ Al aislar la segunda raíz en el siguiente paso: } 21 - x \\ge 0 \\implies x \\le 21. \\text{ Por tanto, la \\textbf{región factible estricta}} \\text{ es } \\boldsymbol{x \\in [0, 21]}."
+            "expresion": "\\textbf{Paso 0 (Región factible estricta):} \\; \\text{Las longitudes de los cables son las raíces } L_1 \\text{ y } L_2, \\text{ por lo que } x \\text{ no representa una longitud directa ni tiene por qué ser positiva; solo debe garantizar radicandos no negativos: } 2x + 7 \\ge 0 \\implies x \\ge -3{,}5; \\; x + 3 \\ge 0 \\implies x \\ge -3 \\implies x \\ge -3. \\text{ Al aislar la primera raíz: } \\sqrt{2x+7} = 5 - \\sqrt{x+3} \\ge 0 \\implies \\sqrt{x+3} \\le 5 \\implies x + 3 \\le 25 \\implies x \\le 22. \\text{ Al aislar la segunda raíz en el siguiente paso: } 21 - x \\ge 0 \\implies x \\le 21. \\text{ Por tanto, la \\textbf{región factible estricta}} \\text{ es } \\boldsymbol{x \\in [-3, 21]}."
           },
           {
             "letra": "c)",
@@ -249,14 +249,14 @@ window.CURSO_CONFIG = {
           },
           {
             "letra": "f)",
-            "expresion": "\\textbf{Filtro con la región factible y comprobación:} \\; \\text{El valor } x_2 = 141 \\text{ queda \\textbf{descartado de inmediato}} \\text{ porque cae fuera de la región factible } (141 > 21) \\text{ y genera una solución falsa: } \\sqrt{289} + \\sqrt{144} = 17 + 12 = 29 \\ne 5. \\text{ La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 1\\text{ metro}}."
+            "expresion": "\\textbf{Filtro con la región factible y comprobación:} \\; \\text{El valor } x_2 = 141 \\text{ queda \\textbf{descartado de inmediato}} \\text{ porque cae fuera de la región factible } (141 > 21) \\text{ y genera una solución falsa: } \\sqrt{289} + \\sqrt{144} = 17 + 12 = 29 \\ne 5. \\text{ La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 1}."
           },
           {
             "letra": "g)",
             "expresion": "\\textbf{Longitud de los tirantes:} \\; L_1 = \\sqrt{2(1) + 7} = \\sqrt{9} = \\mathbf{3\\text{ m}}, \\; L_2 = \\sqrt{1 + 3} = \\sqrt{4} = \\mathbf{2\\text{ m}}. \\; \\text{Comprobación: } 3 + 2 = \\mathbf{5\\text{ m}}."
           }
         ],
-        "idea_clave": "Al tener dos raíces, es imprescindible aislar una de ellas antes de elevar al cuadrado para que solo quede un radical en el siguiente paso. Al elevar dos veces al cuadrado se pueden introducir soluciones falsas; la región factible del Paso 0 ($x \\le 21$) permite detectar y eliminar la raíz espuria $x=141$ al instante sin dudas."
+        "idea_clave": "Al tener dos raíces, es imprescindible aislar una de ellas antes de elevar al cuadrado para que solo quede un radical en el siguiente paso. Al elevar dos veces al cuadrado se pueden introducir soluciones falsas; la región factible del Paso 0 ($x \\in [-3, 21]$) permite detectar y eliminar la raíz espuria $x=141$ al instante sin dudas."
       },
       {
         "numero": 6,
