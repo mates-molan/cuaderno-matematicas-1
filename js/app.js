@@ -11,7 +11,7 @@ function formatInlineMd(str) {
   return String(str).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 }
 
-// Renderizador de apartados en carrusel / slider horizontal deslizable (izquierda ↔ derecha)
+// Renderizador de apartados (carrusel para ejercicios breves o pestaña plegable para resolución de problemas)
 function renderApartadosSlider(apartados, enunciadoBase = null, esProblema = false) {
   if (!apartados || apartados.length === 0) return '';
 
@@ -21,6 +21,44 @@ function renderApartadosSlider(apartados, enunciadoBase = null, esProblema = fal
   }
 
   const badgeColors = ['badge-blue', 'badge-purple', 'badge-emerald', 'badge-amber', 'badge-rose', 'badge-cyan'];
+
+  // Si es un problema con resolución (Tema 2 en adelante): pestaña plegada por defecto con los pasos esenciales en vertical
+  if (esProblema) {
+    let stepsHtml = '';
+    apartados.forEach((ap, idx) => {
+      const colorClass = badgeColors[idx % badgeColors.length];
+      const content = ap.texto
+        ? formatInlineMd(ap.texto)
+        : (String(ap.expresion || '').includes('$') ? formatInlineMd(ap.expresion) : `$${ap.expresion}$`);
+      stepsHtml += `
+        <div class="resolucion-step-item ${colorClass}-step">
+          <span class="apartado-badge ${colorClass}">${ap.letra}</span>
+          <div class="resolucion-step-content">${content}</div>
+        </div>
+      `;
+    });
+
+    const num = apartados.length;
+    return `
+      ${baseHtml}
+      <details class="resolucion-accordion" ontoggle="onAccordionToggle()">
+        <summary class="resolucion-summary">
+          <div class="resolucion-summary-left">
+            <span class="resolucion-icon">🛠️</span>
+            <span class="resolucion-title">Ver resolución y resultados</span>
+            <span class="resolucion-sub">${num} ${num === 1 ? 'paso clave' : 'pasos clave'}</span>
+          </div>
+          <span class="resolucion-toggle-icon">▼</span>
+        </summary>
+        <div class="resolucion-body">
+          <div class="resolucion-steps-list">
+            ${stepsHtml}
+          </div>
+        </div>
+      </details>
+    `;
+  }
+
   let cardsHtml = '';
   apartados.forEach((ap, idx) => {
     const colorClass = badgeColors[idx % badgeColors.length];
@@ -33,16 +71,9 @@ function renderApartadosSlider(apartados, enunciadoBase = null, esProblema = fal
   });
 
   const num = apartados.length;
-  let hintText = '';
-  if (esProblema) {
-    hintText = num > 1
-      ? `🛠️ <strong>Resolución paso a paso</strong> — Desliza los <strong>${num} pasos</strong> (${apartados[0].letra} a ${apartados[num - 1].letra})`
-      : `🛠️ <strong>Resolución:</strong> ${apartados[0].letra}`;
-  } else {
-    hintText = num > 1 
-      ? `↔ Desliza los <strong>${num} apartados</strong> (${apartados[0].letra} a ${apartados[num - 1].letra})`
-      : `Apartado ${apartados[0].letra}`;
-  }
+  const hintText = num > 1 
+    ? `↔ Desliza los <strong>${num} apartados</strong> (${apartados[0].letra} a ${apartados[num - 1].letra})`
+    : `Apartado ${apartados[0].letra}`;
 
   return `
     <div class="apartados-slider-wrapper">

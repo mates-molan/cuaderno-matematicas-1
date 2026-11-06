@@ -916,6 +916,151 @@ body {
   font-weight: 600;
 }
 
+/* ========================================================================= */
+/* DESPLEGABLE DE RESOLUCIÓN Y RESULTADOS (PLEGADO POR DEFECTO)              */
+/* ========================================================================= */
+.resolucion-accordion {
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-left: 5px solid #4f46e5;
+  border-radius: var(--radius-md);
+  margin: 14px 0 18px 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.resolucion-accordion:hover {
+  border-color: #94a3b8;
+  box-shadow: 0 3px 8px rgba(79, 70, 229, 0.1);
+}
+
+.resolucion-accordion[open] {
+  background: #ffffff;
+  border-color: #c7d2fe;
+  border-left: 5px solid #4338ca;
+  box-shadow: 0 4px 12px rgba(67, 56, 202, 0.08);
+}
+
+.resolucion-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  transition: background 0.15s ease;
+  gap: 12px;
+}
+
+.resolucion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.resolucion-summary:hover {
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+}
+
+.resolucion-accordion[open] .resolucion-summary {
+  border-bottom: 1.5px solid #e0e7ff;
+  background: #f5f3ff;
+}
+
+.resolucion-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.resolucion-icon {
+  font-size: 1.18rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.resolucion-title {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: #312e81;
+  letter-spacing: -0.01em;
+}
+
+.resolucion-sub {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #4338ca;
+  background: rgba(79, 70, 229, 0.12);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.resolucion-toggle-icon {
+  font-size: 0.75rem;
+  color: #4338ca;
+  background: #ffffff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c7d2fe;
+  transition: transform 0.25s ease, background 0.15s ease;
+  flex-shrink: 0;
+}
+
+.resolucion-accordion[open] .resolucion-toggle-icon {
+  transform: rotate(180deg);
+  background: #e0e7ff;
+  color: #312e81;
+}
+
+.resolucion-body {
+  padding: 16px 18px;
+  background: #ffffff;
+}
+
+.resolucion-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resolucion-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 11px 15px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-sm);
+  line-height: 1.65;
+}
+
+.resolucion-step-item.badge-blue-step { border-left: 3.5px solid #2563eb; }
+.resolucion-step-item.badge-purple-step { border-left: 3.5px solid #7c3aed; }
+.resolucion-step-item.badge-emerald-step { border-left: 3.5px solid #059669; }
+.resolucion-step-item.badge-amber-step { border-left: 3.5px solid #d97706; }
+.resolucion-step-item.badge-rose-step { border-left: 3.5px solid #e11d48; }
+.resolucion-step-item.badge-cyan-step { border-left: 3.5px solid #0891b2; }
+
+.resolucion-step-content {
+  flex: 1;
+  min-width: 0;
+  font-size: 1.03rem;
+  color: #0f172a;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.resolucion-step-content strong {
+  color: #1e293b;
+  font-weight: 700;
+}
+
 
 /* Nota Didáctica del Profesor (Aviso Empático de Aula) */
 .nota-aula-box {

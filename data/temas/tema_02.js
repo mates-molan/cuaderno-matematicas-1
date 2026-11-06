@@ -6,7 +6,7 @@ window.TEMAS_DATA[2] = {
   "id": 2,
   "titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 6,
+  "sesiones_impartidas": 7,
   "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "repaso_pdf": "",
@@ -29,19 +29,15 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento:} \\; (x^2 - 9)(2x - 1) = (x - 3)(x^2 + 7x + 12)"
+              "texto": "<strong>Planteamiento y factorización:</strong> $(x^2 - 9)(2x - 1) = (x - 3)(x^2 + 7x + 12) \\iff (x - 3)(x + 3)(2x - 1) - (x - 3)(x + 3)(x + 4) = 0$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Factorizar antes de multiplicar:} \\; x^2 - 9 = (x - 3)(x + 3) \\quad \\text{y} \\quad x^2 + 7x + 12 = (x + 3)(x + 4)"
+              "texto": "<strong>Factor común y soluciones:</strong> $(x - 3)(x + 3)(x - 5) = 0 \\implies x_1 = 3, \\; x_2 = -3, \\; x_3 = 5$."
             },
             {
               "letra": "c)",
-              "expresion": "\\textbf{Pasar a la izquierda y sacar factor común:} \\; (x - 3)(x + 3)(2x - 1) - (x - 3)(x + 3)(x + 4) = 0 \\iff (x - 3)(x + 3)\\big[(2x - 1) - (x + 4)\\big] = 0"
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Soluciones y sentido real:} \\; (x - 3)(x + 3)(x - 5) = 0 \\implies x_1 = 3, \\; x_2 = -3, \\; x_3 = 5. \\text{ Si } x = -3 \\text{ las dimensiones serían negativas (imposible). Si } x = 3 \\text{ el volumen sería } 0\\text{ cm}^3. \\text{ Por tanto, la \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 5\\text{ cm}}, \\text{ que da un volumen positivo real de } V_1 = V_2 = 144\\text{ cm}^3 > 0."
+              "texto": "<strong>Sentido real:</strong> Descartamos $x = -3$ (medida negativa) y $x = 3$ ($V = 0$). Única solución válida: $\\boldsymbol{x = 5\\text{ cm}}$ ($V = 144\\text{ cm}^3$)."
             }
           ],
           "idea_clave": "Si multiplicas los paréntesis a ambos lados generas un polinomio de grado 3 y tendrías que usar Ruffini. Reconociendo identidades notables antes de operar, sacas factor común $(x - 3)(x + 3)$ y resuelves la ecuación en tres líneas."
@@ -55,19 +51,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Ecuación y cambio de variable:} \\; x^4 - 10x^2 + 9 = 0. \\text{ Hacemos } t = x^2 \\implies t^2 - 10t + 9 = 0"
+              "texto": "<strong>Cambio de variable ($t = x^2$):</strong> $x^4 - 10x^2 + 9 = 0 \\implies t^2 - 10t + 9 = 0 \\implies (t - 9)(t - 1) = 0 \\implies t_1 = 9, \\; t_2 = 1$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Resolver en } t: \\; (t - 9)(t - 1) = 0 \\implies t_1 = 9, \\quad t_2 = 1 \\quad (\\text{ambos positivos, luego darán soluciones reales})"
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Deshacer el cambio con } \\pm: \\; \\begin{cases} x^2 = 9 \\implies x = \\pm\\sqrt{9} = \\pm 3 \\\\ x^2 = 1 \\implies x = \\pm\\sqrt{1} = \\pm 1 \\end{cases} \\implies S = \\{-3, -1, 1, 3\\}"
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Interpretación en la pista:} \\; \\text{La rampa toca el suelo en 4 puntos situados simétricamente a } 1\\text{ m y a } 3\\text{ m a la izquierda y a la derecha del centro } (x = -3,\\, -1,\\, 1,\\, 3\\text{ m})."
+              "texto": "<strong>Deshacer el cambio ($x = \\pm\\sqrt{t}$):</strong> $x = \\pm 3$ y $x = \\pm 1$. La rampa toca el suelo en $\\boldsymbol{x \\in \\{-3, -1, 1, 3\\}\\text{ m}}$."
             }
           ],
           "idea_clave": "No te pares al hallar los valores de $t$: la incógnita que te piden es la distancia $x$. Recuerda siempre deshacer el cambio sacando la raíz cuadrada con el doble signo $\\pm$."
@@ -81,19 +69,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Cambio de variable:} \\; \\text{Hacemos } t = x^3 \\implies t^2 = x^6, \\text{ con lo que queda la ecuación } t^2 - 26t - 27 = 0"
+              "texto": "<strong>Cambio de variable ($t = x^3$):</strong> $t^2 - 26t - 27 = 0 \\implies (t - 27)(t + 1) = 0 \\implies t_1 = 27, \\; t_2 = -1$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Resolver en } t: \\; (t - 27)(t + 1) = 0 \\implies t_1 = 27, \\quad t_2 = -1"
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Deshacer el cambio con raíz cúbica:} \\; \\begin{cases} x^3 = 27 \\implies x_1 = \\sqrt[3]{27} = 3 \\\\ x^3 = -1 \\implies x_2 = \\sqrt[3]{-1} = -1 \\end{cases} \\implies S = \\{-1, 3\\}"
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Atención al exponente impar:} \\; \\text{A diferencia del exponente par, las raíces cúbicas de números negativos SÍ existen en los números reales } (\\sqrt[3]{-1} = -1). \\text{ Hay dos temperaturas de equilibrio: } -1^\\circ\\text{C y } 3^\\circ\\text{C}."
+              "texto": "<strong>Deshacer el cambio ($x = \\sqrt[3]{t}$):</strong> $x_1 = \\sqrt[3]{27} = \\mathbf{3^\\circ\\text{C}}$ y $x_2 = \\sqrt[3]{-1} = \\mathbf{-1^\\circ\\text{C}}$."
             }
           ],
           "idea_clave": "Fíjate bien en el exponente: al hacer $t = x^3$, la raíz cúbica conserva el signo y admite números negativos ($\\sqrt[3]{-1} = -1$). Cada valor de $t$ produce una única solución real."
@@ -107,19 +87,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Paso 0 (Valores prohibidos):} \\; x^2 + 3x - 4 = (x - 1)(x + 4). \\text{ Los valores que anulan denominadores son } x = 1 \\text{ y } x = -4 \\text{ (jamás pueden ser solución).}"
+              "texto": "<strong>Paso 0 (Valores prohibidos):</strong> $x^2 + 3x - 4 = (x - 1)(x + 4) \\neq 0 \\implies \\boldsymbol{x \\neq 1, \\; x \\neq -4}$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Quitar denominadores con el m.c.m.:} \\; \\text{Multiplicamos todo por } (x - 1)(x + 4): \\quad 2x(x + 4) - (x + 3)(x - 1) = 10"
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Operar con cuidado de los signos:} \\; (2x^2 + 8x) - (x^2 + 2x - 3) = 10 \\iff x^2 + 6x - 7 = 0 \\iff (x - 1)(x + 7) = 0 \\implies x_1 = 1, \\; x_2 = -7"
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Comprobar con el Paso 0:} \\; x_1 = 1 \\text{ es una \\textbf{solución falsa}} \\text{ porque anula el denominador } (x - 1). \\text{ La \\textbf{única solución válida}} \\text{ es } x = -7."
+              "texto": "<strong>Quitar denominadores y resolver:</strong> $2x(x + 4) - (x + 3)(x - 1) = 10 \\iff x^2 + 6x - 7 = 0 \\implies x_1 = 1\\text{ (falsa por Paso 0)}, \\; \\boldsymbol{x_2 = -7\\text{ (válida)}}$."
             }
           ],
           "idea_clave": "Anota siempre los valores prohibidos en el Paso 0 antes de quitar denominadores. El álgebra da $x = 1$, pero si sustituyes en la fracción te quedaría una división entre cero, que es imposible."
@@ -140,19 +112,15 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Zona de radar } (h = 120): \\; -5t^2 + 40t + 45 = 120 \\iff t^2 - 8t + 15 = 0 \\iff (t - 3)(t - 5) = 0 \\implies t_1 = 3\\text{ s (subida)}, \\; t_2 = 5\\text{ s (bajada)}. \\text{ Es visible en el radar durante } 5 - 3 = \\mathbf{2\\text{ segundos}}."
+              "texto": "<strong>Zona de radar ($h = 120$):</strong> $-5t^2 + 40t + 45 = 120 \\iff t^2 - 8t + 15 = 0 \\implies t_1 = 3\\text{ s}, \\; t_2 = 5\\text{ s}$ (visible durante $\\mathbf{2\\text{ s}}$)."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Vértice y altura máxima:} \\; t_v = -\\dfrac{b}{2a} = -\\dfrac{40}{2(-5)} = \\mathbf{4\\text{ s}} \\implies h_{\\max} = h(4) = -5(16) + 40(4) + 45 = \\mathbf{125\\text{ metros}}."
+              "texto": "<strong>Altura máxima (vértice):</strong> $t_v = -\\dfrac{40}{2(-5)} = \\mathbf{4\\text{ s}} \\implies h_{\\max} = h(4) = \\mathbf{125\\text{ m}}$."
             },
             {
               "letra": "c)",
-              "expresion": "\\textbf{Impacto en el agua } (h = 0): \\; -5t^2 + 40t + 45 = 0 \\iff t^2 - 8t - 9 = 0 \\iff (t - 9)(t + 1) = 0 \\implies t_1 = 9\\text{ s}, \\; t_2 = -1\\text{ s}."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Sentido real del tiempo:} \\; t_2 = -1\\text{ s es una solución matemática imposible en la realidad } (t \\ge 0). \\text{ Por tanto, la bengala cae al mar a los } \\boldsymbol{t = 9\\text{ segundos}}."
+              "texto": "<strong>Impacto en el mar ($h = 0$):</strong> $-5t^2 + 40t + 45 = 0 \\iff t^2 - 8t - 9 = 0 \\implies \\boldsymbol{t = 9\\text{ s}}$ ($t = -1\\text{ s}$ descartado)."
             }
           ],
           "idea_clave": "El vértice siempre se sitúa exactamente a la mitad entre los dos instantes en que la bengala está a la misma altura (entre $t=3$ y $t=5$, el punto medio es $t=4$). Descarta siempre los tiempos negativos al modelizar magnitudes físicas."
@@ -166,19 +134,15 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Paso 0 y planteamiento de flujos:} \\; \\text{En 1 hora la bomba } A \\text{ achica } \\dfrac{1}{x}, \\text{ la bomba } B \\text{ achica } \\dfrac{1}{x+5} \\text{ y juntas achican } \\dfrac{1}{6}. \\text{ Ecuación: } \\dfrac{1}{x} + \\dfrac{1}{x+5} = \\dfrac{1}{6}. \\text{ Valores prohibidos: } x \\ne 0, \\; x \\ne -5."
+              "texto": "<strong>Planteamiento de caudales ($x > 0$):</strong> $\\dfrac{1}{x} + \\dfrac{1}{x+5} = \\dfrac{1}{6}$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Quitar denominadores con el m.c.m. } 6x(x+5): \\; 6(x+5) + 6x = x(x+5) \\iff 12x + 30 = x^2 + 5x \\iff x^2 - 7x - 30 = 0."
+              "texto": "<strong>Quitar denominadores y resolver:</strong> $6(x+5) + 6x = x(x+5) \\iff x^2 - 7x - 30 = 0 \\implies x_1 = 10, \\; x_2 = -3\\text{ (descartado)}$."
             },
             {
               "letra": "c)",
-              "expresion": "\\textbf{Resolver la ecuación cuadrática:} \\; (x - 10)(x + 3) = 0 \\implies x_1 = 10, \\quad x_2 = -3."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Interpretación en el contexto:} \\; x = -3 \\text{ carece de sentido físico (un tiempo de trabajo no puede ser negativo). La bomba } A \\text{ tarda } \\boldsymbol{10\\text{ horas}} \\text{ y la bomba } B \\text{ tarda } 10 + 5 = \\boldsymbol{15\\text{ horas}}."
+              "texto": "<strong>Solución:</strong> La bomba $A$ tarda $\\mathbf{10\\text{ h}}$ y la bomba $B$ tarda $\\mathbf{15\\text{ h}}$."
             }
           ],
           "idea_clave": "¡Nunca sumes los tiempos directamente ($x + x + 5 = 6$ es un disparate)! En problemas de trabajo conjunto se suman siempre las fracciones de trabajo realizadas en una hora: $\\frac{1}{x} + \\frac{1}{x+5} = \\frac{1}{6}$."
@@ -192,19 +156,15 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Paso 0 (Condiciones para que tenga sentido):} \\; \\text{El interior de la raíz no puede ser negativo: } x + 5 \\ge 0 \\implies x \\ge -5. \\text{ Además, como una raíz da siempre un resultado positivo o cero, la longitud del cable exige: } 7 - x \\ge 0 \\implies x \\le 7. \\text{ Intervalo admisible: } \\boldsymbol{x \\in [-5, 7]}."
+              "texto": "<strong>Paso 0 (Región factible):</strong> $x + 5 \\ge 0$ y $7 - x \\ge 0 \\implies \\boldsymbol{x \\in [-5, 7]}$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Elevar al cuadrado para quitar la raíz:} \\; (\\sqrt{x + 5})^2 = (7 - x)^2 \\iff x + 5 = 49 - 14x + x^2 \\iff x^2 - 15x + 44 = 0."
+              "texto": "<strong>Elevar al cuadrado y resolver:</strong> $x + 5 = (7 - x)^2 \\iff x^2 - 15x + 44 = 0 \\implies x_1 = 4, \\; x_2 = 11\\text{ (falsa, } 11 \\notin [-5, 7])$."
             },
             {
               "letra": "c)",
-              "expresion": "\\textbf{Resolver la ecuación de 2.º grado:} \\; (x - 4)(x - 11) = 0 \\implies x_1 = 4, \\quad x_2 = 11."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Comprobar en la ecuación original:} \\; \\text{Para } x = 4: \\sqrt{4+5} = \\sqrt{9} = 3 \\text{ y } 7-4=3 \\text{ (\\textbf{VÁLIDA})}. \\text{ Para } x = 11: \\sqrt{11+5} = \\sqrt{16} = 4, \\text{ pero } 7-11=-4 \\; (4 \\ne -4, \\text{ \\textbf{FALSA}}). \\text{ La pica debe colocarse a } \\boldsymbol{x = 4\\text{ metros}} \\text{ de la base}."
+              "texto": "<strong>Solución válida:</strong> La pica debe colocarse a $\\boldsymbol{x = 4\\text{ metros}}$."
             }
           ],
           "idea_clave": "Al elevar ambos miembros al cuadrado se pierde la información del signo (porque $(-4)^2 = 4^2 = 16$), por lo que pueden colarse soluciones falsas. La comprobación en la ecuación original es un paso algebraico obligatorio e innegociable."
@@ -218,19 +178,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Ecuación y potencias de base 2:} \\; 4^t - 3 \\cdot 2^t = 4. \\text{ Como } 4 = 2^2, \\text{ podemos escribir } 4^t = (2^t)^2, \\text{ quedando: } (2^t)^2 - 3 \\cdot (2^t) - 4 = 0."
+              "texto": "<strong>Cambio de variable ($y = 2^t > 0$):</strong> $(2^t)^2 - 3\\cdot 2^t - 4 = 0 \\iff y^2 - 3y - 4 = 0 \\implies y_1 = 4, \\; y_2 = -1\\text{ (imposible)}$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Cambio de variable:} \\; \\text{Hacemos } y = 2^t \\; (\\text{con la condición obligatoria } y > 0). \\text{ Queda: } y^2 - 3y - 4 = 0."
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Resolver en } y: \\; (y - 4)(y + 1) = 0 \\implies y_1 = 4, \\quad y_2 = -1."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Deshacer el cambio para hallar el tiempo } t: \\; \\text{Para } y_1 = 4: 2^t = 4 = 2^2 \\implies \\boldsymbol{t = 2\\text{ horas}}. \\text{ Para } y_2 = -1: 2^t = -1 \\text{ es \\textbf{imposible en }} \\mathbb{R} \\text{ (una potencia de base positiva nunca da negativo)}."
+              "texto": "<strong>Deshacer el cambio:</strong> $2^t = 4 = 2^2 \\implies \\boldsymbol{t = 2\\text{ horas}}$."
             }
           ],
           "idea_clave": "No intentes aplicar logaritmos término a término en una resta (el logaritmo de una resta NO es la resta de logaritmos). Al observar bases relacionadas como $4^t$ y $2^t$, el método maestro es el cambio de variable $y = 2^t$ y vigilar que $y > 0$."
@@ -244,27 +196,15 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento:} \\; \\text{Para escuchar ambas torres con la misma intensidad, igualamos ambas expresiones: } 20\\log(x^2 - 2x - 8) = 10\\big[\\log(x + 2) + \\log(x + 26)\\big]."
+              "texto": "<strong>Planteamiento y Paso 0:</strong> $2\\log(x^2 - 2x - 8) = \\log(x + 2) + \\log(x + 26)$. Argumentos $> 0 \\implies \\boldsymbol{x > 4}$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Paso 0 (Valores permitidos en } \\mathbb{R}\\textbf{):} \\; \\text{Los argumentos de los logaritmos deben ser estrictamente positivos: } x^2 - 2x - 8 > 0 \\iff (x - 4)(x + 2) > 0 \\implies x \\in (-\\infty, -2) \\cup (4, +\\infty); \\; x + 2 > 0 \\implies x > -2; \\; x + 26 > 0 \\implies x > -26. \\text{ Zona permitida (intersección): } \\boldsymbol{x > 4}."
+              "texto": "<strong>Agrupar e igualar argumentos:</strong> $(x^2 - 2x - 8)^2 = (x + 2)(x + 26) \\iff x^4 - 4x^3 - 13x^2 + 4x + 12 = 0$."
             },
             {
               "letra": "c)",
-              "expresion": "\\textbf{Simplificar y agrupar a ambos lados:} \\; \\text{Dividiendo entre 10: } 2\\log(x^2 - 2x - 8) = \\log(x + 2) + \\log(x + 26). \\text{ Subimos el 2 al exponente y agrupamos la suma en un producto: } \\log\\big((x^2 - 2x - 8)^2\\big) = \\log\\big((x + 2)(x + 26)\\big)."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Igualar argumentos y obtener la ecuación de 4.º grado:} \\; (x^2 - 2x - 8)^2 = (x + 2)(x + 26) \\iff x^4 - 4x^3 - 12x^2 + 32x + 64 = x^2 + 28x + 52 \\iff \\boldsymbol{x^4 - 4x^3 - 13x^2 + 4x + 12 = 0}."
-            },
-            {
-              "letra": "e)",
-              "expresion": "\\textbf{Resolución por Ruffini (divisores de 12):} \\; \\text{Probamos } x = 1: \\; (1)^4 - 4(1)^3 - 13(1)^2 + 4(1) + 12 = 0 \\implies \\text{Ruffini por } (x - 1) \\text{ da cociente } x^3 - 3x^2 - 16x - 12 = 0. \\text{ En el cociente probamos } x = -1: \\; (-1)^3 - 3(-1)^2 - 16(-1) - 12 = 0 \\implies \\text{Ruffini por } (x + 1) \\text{ da } x^2 - 4x - 12 = 0 \\iff (x - 6)(x + 2) = 0. \\text{ Cuatro soluciones exactas: } x_1 = 6, \\; x_2 = 1, \\; x_3 = -1, \\; x_4 = -2."
-            },
-            {
-              "letra": "f)",
-              "expresion": "\\textbf{Filtro del Paso 0 y solución final:} \\; \\text{Contrastamos con } x > 4: \\; x_2 = 1, \\; x_3 = -1 \\text{ y } x_4 = -2 \\text{ son \\textbf{soluciones falsas}} \\text{ (hacen negativos o cero los argumentos de los logaritmos). La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 6\\text{ metros}}."
+              "texto": "<strong>Ruffini y filtro con Paso 0:</strong> Raíces $x \\in \\{1, -1, -2, 6\\}$. Como $x > 4$, la única solución válida es $\\boldsymbol{x = 6\\text{ metros}}$."
             }
           ],
           "idea_clave": "Al simplificar entre 10 y subir el coeficiente $2$ al exponente ($2\\log A = \\log(A^2)$), el argumento cuadrático se eleva al cuadrado produciendo un polinomio de 4.º grado. Se igualan argumentos, se pasa todo a un miembro y se aplica la regla de Ruffini dos veces hasta llegar a una ecuación de 2.º grado. Es imprescindible contrastar siempre los 4 candidatos con el Paso 0 ($x > 4$): las tres raíces falsas quedan descartadas, sobreviviendo únicamente la distancia real $x = 6\\text{ m}$.",
@@ -305,23 +245,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento de volúmenes } (V_1 = V_2): \\; (x + 4)(x + 2)(2x + 1) = (x + 4)(x + 2)(x + 6)"
+              "texto": "<strong>Planteamiento y factor común ($x > 0$):</strong> $(x + 4)(x + 2)(2x + 1) = (x + 4)(x + 2)(x + 6) \\iff (x + 4)(x + 2)(x - 5) = 0$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Paso 0 (Medidas reales):} \\; \\text{Todas las dimensiones deben ser estrictamente positivas: } x + 4 > 0, \\; x + 2 > 0, \\; 2x + 1 > 0, \\; x + 6 > 0 \\implies \\boldsymbol{x > -1/2} \\text{ (y en la práctica física, } x > 0\\text{)}."
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Pasar todo a la izquierda y sacar factor común:} \\; (x + 4)(x + 2)(2x + 1) - (x + 4)(x + 2)(x + 6) = 0 \\iff (x + 4)(x + 2)\\big[(2x + 1) - (x + 6)\\big] = 0 \\iff \\boldsymbol{(x + 4)(x + 2)(x - 5) = 0}."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Soluciones y sentido físico:} \\; x_1 = -4, \\; x_2 = -2, \\; x_3 = 5. \\text{ Las opciones } x = -4 \\text{ y } x = -2 \\text{ son \\textbf{imposibles}} \\text{ (darían altura o ancho nulo o negativo). Por tanto, la \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 5\\text{ metros}}."
-            },
-            {
-              "letra": "e)",
-              "expresion": "\\textbf{Dimensiones y volumen final:} \\; \\text{Alto } = 5 + 4 = \\mathbf{9\\text{ m}}, \\; \\text{Ancho } = 5 + 2 = \\mathbf{7\\text{ m}}, \\; \\text{Largo } = 2(5) + 1 = 5 + 6 = \\mathbf{11\\text{ m}}. \\; \\text{Volumen común: } V = 11 \\times 7 \\times 9 = \\mathbf{693\\text{ m}^3}."
+              "texto": "<strong>Solución válida y dimensiones:</strong> $\\boldsymbol{x = 5\\text{ m}}$ ($-4$ y $-2$ descartadas). Dimensiones: $11\\text{ m} \\times 7\\text{ m} \\times 9\\text{ m} \\implies V = \\mathbf{693\\text{ m}^3}$."
             }
           ],
           "idea_clave": "Si multiplicas los tres paréntesis a cada lado generas polinomios de grado 3 y te verías obligado a pasar todo a un miembro y aplicar la regla de Ruffini. Al observar que ambos depósitos comparten la altura $(x+4)$ y el ancho $(x+2)$, sacas directamente factor común $(x+4)(x+2)$ y la ecuación se resuelve en dos pasos simples."
@@ -345,31 +273,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Fórmulas de áreas:} \\; \\text{Área fuente: } A_{\\text{fuente}} = \\pi x^2. \\; \\text{Radio exterior: } R = x + 4. \\; \\text{Área del paseo (corona): } A_{\\text{paseo}} = \\pi(x + 4)^2 - \\pi x^2."
+              "texto": "<strong>Planteamiento ($x > 0$) y simplificación de $\\pi$:</strong> $\\pi(x + 4)^2 - \\pi x^2 = 3\\pi x^2 \\iff (x + 4)^2 - x^2 = 3x^2 \\iff 3x^2 - 8x - 16 = 0$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Planteamiento de la condición } (A_{\\text{paseo}} = 3 A_{\\text{fuente}}): \\; \\pi(x + 4)^2 - \\pi x^2 = 3\\pi x^2."
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Paso 0 y simplificación de } \\pi: \\; \\text{El radio debe ser positivo: } \\boldsymbol{x > 0}. \\text{ Dividiendo toda la ecuación entre } \\pi \\text{ (no hace falta usar decimales): } (x + 4)^2 - x^2 = 3x^2."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Desarrollar y agrupar en ecuación de 2.º grado:} \\; x^2 + 8x + 16 - x^2 = 3x^2 \\iff 8x + 16 = 3x^2 \\iff \\boldsymbol{3x^2 - 8x - 16 = 0}."
-            },
-            {
-              "letra": "e)",
-              "expresion": "\\textbf{Resolución de la cuadrática:} \\; x = \\dfrac{8 \\pm \\sqrt{(-8)^2 - 4(3)(-16)}}{2(3)} = \\dfrac{8 \\pm \\sqrt{64 + 192}}{6} = \\dfrac{8 \\pm \\sqrt{256}}{6} = \\dfrac{8 \\pm 16}{6} \\implies x_1 = \\dfrac{24}{6} = 4, \\; x_2 = -\\dfrac{8}{6} = -\\dfrac{4}{3}."
-            },
-            {
-              "letra": "f)",
-              "expresion": "\\textbf{Filtro con el Paso 0 y sentido real:} \\; x_2 = -4/3 \\text{ queda \\textbf{descartada}} \\text{ porque un radio no puede ser negativo } (x > 0). \\text{ Por tanto, la \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 4\\text{ metros}}."
-            },
-            {
-              "letra": "g)",
-              "expresion": "\\textbf{Dimensiones y áreas finales:} \\; \\text{Radio de la fuente: } r = \\mathbf{4\\text{ m}} \\implies A_{\\text{fuente}} = \\pi(4^2) = \\mathbf{16\\pi\\text{ m}^2} \\approx 50{,}27\\text{ m}^2. \\; \\text{Radio exterior: } R = 4 + 4 = \\mathbf{8\\text{ m}}. \\; \\text{Área del paseo: } \\pi(8^2) - 16\\pi = 64\\pi - 16\\pi = \\mathbf{48\\pi\\text{ m}^2} \\approx 150{,}80\\text{ m}^2. \\text{ (Comprobación: } 48\\pi = 3 \\times 16\\pi)."
+              "texto": "<strong>Solución y áreas:</strong> $\\boldsymbol{x = 4\\text{ m}}$ ($-4/3$ descartada). Radio exterior $R = \\mathbf{8\\text{ m}}$, $A_{\\text{fuente}} = \\mathbf{16\\pi\\text{ m}^2}$ y $A_{\\text{paseo}} = \\mathbf{48\\pi\\text{ m}^2}$."
             }
           ],
           "idea_clave": "Al calcular el área de una corona circular restando el círculo interior del exterior ($A = \\pi R^2 - \\pi r^2$), el número $\\pi$ multiplica a todos los términos de la igualdad y se cancela dividiendo entre $\\pi$. Esto evita operar con decimales infinitos y conduce a una ecuación de segundo grado limpia y exacta."
@@ -393,23 +301,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento por Pitágoras:} \\; (\\text{base})^2 + (\\text{altura})^2 = (\\text{diagonal})^2 \\iff (2x)^2 + \\left(\\frac{24}{x}\\right)^2 = 10^2 \\iff 4x^2 + \\frac{576}{x^2} = 100."
+              "texto": "<strong>Pitágoras y bicuadrada ($x > 0$):</strong> $(2x)^2 + \\left(\\dfrac{24}{x}\\right)^2 = 10^2 \\iff 4x^4 - 100x^2 + 576 = 0 \\iff x^4 - 25x^2 + 144 = 0$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Obtención de la ecuación bicuadrada:} \\; \\text{Multiplicamos toda la ecuación por } x^2 \\text{ (con } x > 0\\text{)}: \\; 4x^4 + 576 = 100x^2 \\iff \\boldsymbol{4x^4 - 100x^2 + 576 = 0}."
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Cambio de variable } z = x^2: \\; 4z^2 - 100z + 576 = 0. \\text{ Dividiendo entre 4 para simplificar el cálculo: } z^2 - 25z + 144 = 0."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Resolución de la cuadrática:} \\; z = \\dfrac{25 \\pm \\sqrt{625 - 576}}{2} = \\dfrac{25 \\pm 7}{2} \\implies z_1 = 16, \\; z_2 = 9."
-            },
-            {
-              "letra": "e)",
-              "expresion": "\\textbf{Deshacer el cambio y dimensiones reales:} \\; \\text{Para } z = 16: x^2 = 16 \\implies x = 4\\text{ cm } (x = -4 \\text{ descartado por ser longitud}). \\text{ Base } = 2(4) = \\mathbf{8\\text{ cm}}, \\; \\text{Altura } = 24/4 = \\mathbf{6\\text{ cm}}. \\; \\text{Para } z = 9: x^2 = 9 \\implies x = 3\\text{ cm}. \\text{ Base } = 2(3) = \\mathbf{6\\text{ cm}}, \\; \\text{Altura } = 24/3 = \\mathbf{8\\text{ cm}}."
+              "texto": "<strong>Cambio $z = x^2$ y dimensiones:</strong> $z_1 = 16 \\implies x = 4\\text{ cm}$ (pantalla de $\\mathbf{8\\text{ cm} \\times 6\\text{ cm}}$); $z_2 = 9 \\implies x = 3\\text{ cm}$ (pantalla de $\\mathbf{6\\text{ cm} \\times 8\\text{ cm}}$)."
             }
           ],
           "idea_clave": "Al elevar la fracción al cuadrado y multiplicar por $x^2$ aparece una ecuación bicuadrada pura con coeficiente principal 4. Las cuatro soluciones matemáticas ($\\pm 4$ y $\\pm 3$) se reducen a dos dimensiones físicas positivas: $8 \\times 6\\text{ cm}$ (pantalla horizontal) o $6 \\times 8\\text{ cm}$ (pantalla vertical), ambas con la misma diagonal de 10 cm."
@@ -433,27 +329,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento:} \\; \\frac{\\text{Largo } 1}{\\text{Alto } 1} + \\frac{\\text{Largo } 2}{\\text{Alto } 2} = \\frac{5}{2} \\iff \\frac{x + 3}{x - 1} + \\frac{x - 1}{x + 3} = \\frac{5}{2}."
+              "texto": "<strong>Planteamiento y Paso 0 ($x > 1$):</strong> $\\dfrac{x + 3}{x - 1} + \\dfrac{x - 1}{x + 3} = \\dfrac{5}{2} \\iff 2(x + 3)^2 + 2(x - 1)^2 = 5(x - 1)(x + 3)$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Paso 0 (Valores prohibidos y medidas reales):} \\; \\text{Los denominadores no pueden anularse: } x \\ne 1, \\; x \\ne -3. \\text{ Además, para que el alto sea positivo: } x - 1 > 0 \\implies \\boldsymbol{x > 1}."
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Eliminar denominadores con el m.c.m. } 2(x - 1)(x + 3): \\; 2(x + 3)^2 + 2(x - 1)^2 = 5(x - 1)(x + 3)."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Desarrollar y agrupar:} \\; 2(x^2 + 6x + 9) + 2(x^2 - 2x + 1) = 5(x^2 + 2x - 3) \\iff 4x^2 + 8x + 20 = 5x^2 + 10x - 15 \\iff \\boldsymbol{x^2 + 2x - 35 = 0}."
-            },
-            {
-              "letra": "e)",
-              "expresion": "\\textbf{Soluciones y filtro con el Paso 0:} \\; (x + 7)(x - 5) = 0 \\implies x_1 = 5, \\; x_2 = -7. \\text{ Descartamos } x_2 = -7 \\text{ porque queda fuera de la zona permitida } (x > 1). \\text{ La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 5\\text{ metros}}."
-            },
-            {
-              "letra": "f)",
-              "expresion": "\\textbf{Dimensiones de los carteles:} \\; \\text{Cartel 1: Largo } = 5 + 3 = \\mathbf{8\\text{ m}}, \\; \\text{Alto } = 5 - 1 = \\mathbf{4\\text{ m}} \\text{ (proporción } 8/4 = 2). \\; \\text{Cartel 2: Largo } = \\mathbf{4\\text{ m}}, \\; \\text{Alto } = \\mathbf{8\\text{ m}} \\text{ (proporción } 4/8 = 0{,}5). \\; \\text{Suma: } 2 + 0{,}5 = \\mathbf{2{,}5}."
+              "texto": "<strong>Resolución y medidas:</strong> $x^2 + 2x - 35 = 0 \\implies \\boldsymbol{x = 5\\text{ m}}$ ($x = -7$ descartada). Cartel 1 de $\\mathbf{8\\text{ m} \\times 4\\text{ m}}$ y Cartel 2 de $\\mathbf{4\\text{ m} \\times 8\\text{ m}}$."
             }
           ],
           "idea_clave": "En una ecuación racional con la incógnita en numeradores y denominadores, es obligatorio fijar primero el Paso 0 ($x > 1$). Al multiplicar por el m.c.m. se transforma en una ecuación de segundo grado donde la raíz negativa se descarta por anular el sentido físico de las longitudes."
@@ -477,31 +357,15 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento:} \\; \\sqrt{2x + 7} + \\sqrt{x + 3} = 5."
+              "texto": "<strong>Planteamiento y Paso 0:</strong> $\\sqrt{2x + 7} + \\sqrt{x + 3} = 5$. Radicandos $\\ge 0 \\implies x \\ge -3$; al aislar raíces $\\implies x \\le 21$. Región factible: $\\boldsymbol{x \\in [-3, 21]}$ ($x$ no es longitud directa, las longitudes son las raíces)."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Paso 0 (Región factible estricta):} \\; \\text{Las longitudes de los cables son las raíces } L_1 \\text{ y } L_2, \\text{ por lo que } x \\text{ no representa una longitud directa ni tiene por qué ser positiva; solo debe garantizar radicandos no negativos: } 2x + 7 \\ge 0 \\implies x \\ge -3{,}5; \\; x + 3 \\ge 0 \\implies x \\ge -3 \\implies x \\ge -3. \\text{ Al aislar la primera raíz: } \\sqrt{2x+7} = 5 - \\sqrt{x+3} \\ge 0 \\implies \\sqrt{x+3} \\le 5 \\implies x + 3 \\le 25 \\implies x \\le 22. \\text{ Al aislar la segunda raíz en el siguiente paso: } 21 - x \\ge 0 \\implies x \\le 21. \\text{ Por tanto, la \\textbf{región factible estricta}} \\text{ es } \\boldsymbol{x \\in [-3, 21]}."
+              "texto": "<strong>Aislar, elevar al cuadrado y resolver:</strong> $\\sqrt{2x + 7} = 5 - \\sqrt{x + 3} \\implies 10\\sqrt{x + 3} = 21 - x \\implies x^2 - 142x + 141 = 0 \\implies x_1 = 1, \\; x_2 = 141\\text{ (falsa, } 141 \\notin [-3, 21])$."
             },
             {
               "letra": "c)",
-              "expresion": "\\textbf{Primer aislamiento y cuadrado:} \\; \\sqrt{2x + 7} = 5 - \\sqrt{x + 3} \\implies (\\sqrt{2x + 7})^2 = (5 - \\sqrt{x + 3})^2 \\iff 2x + 7 = 25 - 10\\sqrt{x + 3} + (x + 3)."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Segundo aislamiento y cuadrado:} \\; 2x + 7 = x + 28 - 10\\sqrt{x + 3} \\iff 10\\sqrt{x + 3} = 21 - x \\implies \\big(10\\sqrt{x + 3}\\big)^2 = (21 - x)^2."
-            },
-            {
-              "letra": "e)",
-              "expresion": "\\textbf{Resolución de la cuadrática:} \\; 100(x + 3) = 441 - 42x + x^2 \\iff 100x + 300 = x^2 - 42x + 441 \\iff \\boldsymbol{x^2 - 142x + 141 = 0} \\iff (x - 1)(x - 141) = 0 \\implies x_1 = 1, \\; x_2 = 141."
-            },
-            {
-              "letra": "f)",
-              "expresion": "\\textbf{Filtro con la región factible y comprobación:} \\; \\text{El valor } x_2 = 141 \\text{ queda \\textbf{descartado de inmediato}} \\text{ porque cae fuera de la región factible } (141 > 21) \\text{ y genera una solución falsa: } \\sqrt{289} + \\sqrt{144} = 17 + 12 = 29 \\ne 5. \\text{ La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 1}."
-            },
-            {
-              "letra": "g)",
-              "expresion": "\\textbf{Longitud de los tirantes:} \\; L_1 = \\sqrt{2(1) + 7} = \\sqrt{9} = \\mathbf{3\\text{ m}}, \\; L_2 = \\sqrt{1 + 3} = \\sqrt{4} = \\mathbf{2\\text{ m}}. \\; \\text{Comprobación: } 3 + 2 = \\mathbf{5\\text{ m}}."
+              "texto": "<strong>Solución y longitud de tirantes:</strong> $\\boldsymbol{x = 1} \\implies L_1 = \\sqrt{9} = \\mathbf{3\\text{ m}}$ y $L_2 = \\sqrt{4} = \\mathbf{2\\text{ m}}$."
             }
           ],
           "idea_clave": "Al tener dos raíces, es imprescindible aislar una de ellas antes de elevar al cuadrado para que solo quede un radical en el siguiente paso. Al elevar dos veces al cuadrado se pueden introducir soluciones falsas; la región factible del Paso 0 ($x \\in [-3, 21]$) permite detectar y eliminar la raíz espuria $x=141$ al instante sin dudas."
@@ -525,27 +389,11 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Planteamiento de la superficie total:} \\; 2 \\cdot 9^x + 5 \\cdot 3^x = 33 \\iff 2(3^2)^x + 5 \\cdot 3^x = 33 \\iff \\mathbf{2(3^x)^2 + 5 \\cdot 3^x - 33 = 0}."
+              "texto": "<strong>Planteamiento y cambio ($t = 3^x > 0$):</strong> $2\\cdot 9^x + 5\\cdot 3^x = 33 \\iff 2t^2 + 5t - 33 = 0 \\implies t_1 = 3, \\; t_2 = -11/2\\text{ (imposible)}$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Cambio de variable } t = 3^x \\text{ (con } t > 0\\text{):} \\; 2t^2 + 5t - 33 = 0."
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Resolución de la cuadrática con coeficiente 2:} \\; t = \\dfrac{-5 \\pm \\sqrt{5^2 - 4(2)(-33)}}{2(2)} = \\dfrac{-5 \\pm \\sqrt{25 + 264}}{4} = \\dfrac{-5 \\pm \\sqrt{289}}{4} = \\dfrac{-5 \\pm 17}{4}."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Valores de } t \\textbf{ y filtro real:} \\; t_1 = \\dfrac{12}{4} = 3, \\quad t_2 = \\dfrac{-22}{4} = -\\dfrac{11}{2}. \\text{ Descartamos } t_2 = -11/2 \\text{ porque una potencia de base positiva nunca puede dar un valor negativo } (3^x > 0)."
-            },
-            {
-              "letra": "e)",
-              "expresion": "\\textbf{Deshacer el cambio y hallar } x: \\; 3^x = 3 = 3^1 \\implies \\boldsymbol{x = 1}."
-            },
-            {
-              "letra": "f)",
-              "expresion": "\\textbf{Superficie de los elementos:} \\; \\text{Área de cada columna: } 9^1 = 3^{2(1)} = \\mathbf{9\\text{ m}^2} \\text{ (las dos suman } 2 \\times 9 = 18\\text{ m}^2). \\; \\text{Área de cada panel: } 3^1 = \\mathbf{3\\text{ m}^2} \\text{ (los cinco suman } 5 \\times 3 = 15\\text{ m}^2). \\; \\text{Total: } 18 + 15 = \\mathbf{33\\text{ m}^2}."
+              "texto": "<strong>Deshacer cambio y superficies:</strong> $3^x = 3 \\implies \\boldsymbol{x = 1}$. Cada columna ocupa $9^1 = \\mathbf{9\\text{ m}^2}$ y cada panel $3^1 = \\mathbf{3\\text{ m}^2}$."
             }
           ],
           "idea_clave": "Al expresar $9^x$ como $(3^x)^2$, la ecuación se reduce a una cuadrática con coeficiente principal 2. Al deshacer el cambio $t = 3^x$, cualquier valor negativo se descarta directamente porque la función exponencial de base positiva siempre toma valores estrictamente mayores que cero."
@@ -569,34 +417,169 @@ window.TEMAS_DATA[2] = {
           "apartados": [
             {
               "letra": "a)",
-              "expresion": "\\textbf{Traducción del texto a ecuación matemática:} \\; \\text{«El doble del logaritmo de } (x - 2)\\text{»} \\to 2\\log(x - 2); \\; \\text{«el triple del logaritmo de 2»} \\to 3\\log(2); \\; \\text{«más el logaritmo de } (x + 4)\\text{»} \\to +\\log(x + 4): \\; \\mathbf{2\\log(x - 2) = 3\\log(2) + \\log(x + 4)}."
+              "texto": "<strong>Planteamiento y Paso 0 ($x > 2$):</strong> $2\\log(x - 2) = 3\\log(2) + \\log(x + 4) \\iff \\log\\big((x - 2)^2\\big) = \\log\\big(8(x + 4)\\big)$."
             },
             {
               "letra": "b)",
-              "expresion": "\\textbf{Paso 0 (Región factible estricta):} \\; \\text{Los argumentos deben ser estrictamente positivos: } x - 2 > 0 \\implies x > 2; \\; x + 4 > 0 \\implies x > -4. \\text{ Por tanto, la \\textbf{región factible}} \\text{ es } \\boldsymbol{x > 2}."
-            },
-            {
-              "letra": "c)",
-              "expresion": "\\textbf{Meter los números multiplicando como exponentes:} \\; 2\\log(x - 2) = \\log\\big((x - 2)^2\\big) \\quad \\text{y} \\quad 3\\log(2) = \\log(2^3) = \\log(8). \\text{ La ecuación queda: } \\log\\big((x - 2)^2\\big) = \\log(8) + \\log(x + 4)."
-            },
-            {
-              "letra": "d)",
-              "expresion": "\\textbf{Agrupar la suma en un producto e igualar argumentos:} \\; \\log\\big((x - 2)^2\\big) = \\log\\big(8(x + 4)\\big) \\iff (x - 2)^2 = 8(x + 4)."
-            },
-            {
-              "letra": "e)",
-              "expresion": "\\textbf{Resolución de la ecuación de segundo grado:} \\; x^2 - 4x + 4 = 8x + 32 \\iff \\boldsymbol{x^2 - 12x - 28 = 0} \\iff (x - 14)(x + 2) = 0 \\implies x_1 = 14, \\; x_2 = -2."
-            },
-            {
-              "letra": "f)",
-              "expresion": "\\textbf{Filtro con la región factible y sentido real:} \\; x_2 = -2 \\text{ queda \\textbf{descartada}} \\text{ porque cae fuera de la región factible } (x > 2) \\text{ y generaría } \\log(-4) \\text{ (imposible en } \\mathbb{R}\\text{)}. \\text{ La \\textbf{única solución válida}} \\text{ es } \\boldsymbol{x = 14\\text{ metros}}."
-            },
-            {
-              "letra": "g)",
-              "expresion": "\\textbf{Dimensiones y áreas de ambas zonas:} \\; \\text{Pista cuadrada: Lado } = 14 - 2 = \\mathbf{12\\text{ m}} \\implies \\text{Área } = 12^2 = \\mathbf{144\\text{ m}^2}. \\; \\text{Zona de césped: Ancho } = \\mathbf{8\\text{ m}}, \\; \\text{Largo } = 14 + 4 = \\mathbf{18\\text{ m}} \\implies \\text{Área } = 8 \\times 18 = \\mathbf{144\\text{ m}^2}."
+              "texto": "<strong>Resolución y áreas:</strong> $(x - 2)^2 = 8(x + 4) \\iff x^2 - 12x - 28 = 0 \\implies \\boldsymbol{x = 14\\text{ m}}$ ($x = -2$ descartada). Pista de lado $\\mathbf{12\\text{ m}}$ ($144\\text{ m}^2$) y césped de $\\mathbf{8\\text{ m} \\times 18\\text{ m}}$ ($144\\text{ m}^2$)."
             }
           ],
           "idea_clave": "Cuando el enunciado dice «el doble de un logaritmo» o «el triple de un logaritmo», se traduce como un coeficiente multiplicando por fuera ($2\\log A$ o $3\\log B$). Para poder agrupar o igualar logaritmos, la regla de oro es meter primero esos coeficientes dentro como exponentes ($2\\log A = \\log(A^2)$ y $3\\log 2 = \\log(2^3) = \\log 8$). El filtro con la región factible ($x > 2$) descarta de raíz la solución falsa negativa."
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "fecha": "Viernes 6 de Noviembre de 2026",
+      "titulo": "Introducción a los Números Complejos (Ecuaciones con Discriminante Negativo, Plano de Argand, Operaciones y Parámetros)",
+      "ejercicios": [
+        {
+          "numero": 1,
+          "titulo": "Ejercicio 1: El «crash» del discriminante y el nacimiento de la unidad imaginaria $i$",
+          "referencia": "Bloque 3: Puntos 3.1 y 3.3 (Págs. 11-12)",
+          "enunciado": "Cuando una ecuación de segundo grado tiene discriminante negativo ($\\Delta < 0$), no existen soluciones en $\\mathbb{R}$, pero sí en el cuerpo de los números complejos $\\mathbb{C}$ definiendo la unidad imaginaria $\\boldsymbol{i = \\sqrt{-1}}$ (con $\\boldsymbol{i^2 = -1}$).",
+          "preguntas": [
+            {
+              "letra": "a)",
+              "texto": "Resuelve en $\\mathbb{C}$ la ecuación incompleta $x^2 + 16 = 0$ e indica la parte real e imaginaria de sus soluciones."
+            },
+            {
+              "letra": "b)",
+              "texto": "Resuelve en $\\mathbb{C}$ la ecuación completa $x^2 - 6x + 25 = 0$ y expresa sus soluciones en forma binómica $a + bi$."
+            }
+          ],
+          "instruccion": "Resuelve ambas ecuaciones en $\\mathbb{C}$ identificando la parte real e imaginaria:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "texto": "<strong>Incompleta:</strong> $x^2 = -16 \\implies x = \\pm\\sqrt{-16} = \\pm\\sqrt{16}\\cdot\\sqrt{-1} = \\boldsymbol{\\pm 4i}$ (imaginarios puros: $\\text{Re} = 0, \\; \\text{Im} = \\pm 4$)."
+            },
+            {
+              "letra": "b)",
+              "texto": "<strong>Completa ($\\Delta = 36 - 100 = -64 < 0$):</strong> $x = \\dfrac{6 \\pm \\sqrt{-64}}{2} = \\dfrac{6 \\pm 8i}{2} = \\boldsymbol{3 \\pm 4i}$ (pareja conjugada: $x_1 = 3 + 4i, \\; x_2 = 3 - 4i$)."
+            }
+          ],
+          "idea_clave": "En cualquier ecuación polinómica con coeficientes reales, si el discriminante es negativo ($\\Delta < 0$), las soluciones complejas aparecen siempre en parejas de números complejos conjugados ($a + bi$ y $a - bi$). Recuerda que la parte imaginaria $\\text{Im}(z) = b$ es solo el coeficiente real que multiplica a la $i$, sin incluir la $i$."
+        },
+        {
+          "numero": 2,
+          "titulo": "Ejercicio 2: Geometría en el plano de Argand, conjugado y módulo",
+          "referencia": "Bloque 3: Punto 3.1 (Pág. 11, plano complejo)",
+          "enunciado": "Considera los números complejos obtenidos en el ejercicio anterior: $z_1 = 3 + 4i$, su conjugado $\\overline{z_1} = 3 - 4i$, el imaginario puro $z_2 = 4i$ y el número real $z_3 = -5$.",
+          "preguntas": [
+            {
+              "letra": "a)",
+              "texto": "Representa sus afijos en el plano complejo de Argand (eje real horizontal y eje imaginario vertical) y explica la simetría entre $z_1$ y $\\overline{z_1}$."
+            },
+            {
+              "letra": "b)",
+              "texto": "Calcula el módulo $|z_1|$ e interpreta geométricamente su valor mediante el Teorema de Pitágoras."
+            }
+          ],
+          "instruccion": "Representa los afijos en el plano complejo y calcula el módulo:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "texto": "<strong>Afijos y simetría:</strong> $z_1(3, 4)$, $\\overline{z_1}(3, -4)$, $z_2(0, 4)$ (en el eje vertical) y $z_3(-5, 0)$ (en el eje horizontal). Un complejo y su conjugado son <strong>simétricos respecto del eje real</strong>."
+            },
+            {
+              "letra": "b)",
+              "texto": "<strong>Módulo (distancia al origen):</strong> $|z_1| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = \\boldsymbol{5}$."
+            }
+          ],
+          "idea_clave": "Cada número complejo $z = a + bi$ se identifica con el punto o vector $(a, b)$ del plano: los números reales viven sobre el eje horizontal y los imaginarios puros sobre el eje vertical. Su módulo $|z| = \\sqrt{a^2 + b^2}$ es la hipotenusa del triángulo rectángulo de catetos $|a|$ y $|b|$."
+        },
+        {
+          "numero": 3,
+          "titulo": "Ejercicio 3: Operaciones en forma binómica y división por el conjugado",
+          "referencia": "Bloque 3: Puntos 3.2 y 3.4 (Págs. 12-13)",
+          "enunciado": "Dados los números complejos $z_1 = 3 + 2i$ y $z_2 = 1 - 2i$, se pide operar en forma binómica recordando sustituir siempre $i^2 = -1$:",
+          "preguntas": [
+            {
+              "letra": "a)",
+              "texto": "Calcula la combinación lineal $2z_1 - 3z_2$."
+            },
+            {
+              "letra": "b)",
+              "texto": "Calcula el producto $z_1 \\cdot z_2$ y la potencia $(z_1)^2$."
+            },
+            {
+              "letra": "c)",
+              "texto": "Efectúa el cociente $\\dfrac{z_1}{z_2}$ multiplicando por el conjugado del denominador."
+            }
+          ],
+          "instruccion": "Opera en forma binómica y simplifica sustituyendo $i^2 = -1$:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "texto": "<strong>Combinada:</strong> $2(3 + 2i) - 3(1 - 2i) = (6 - 3) + (4 + 6)i = \\boldsymbol{3 + 10i}$."
+            },
+            {
+              "letra": "b)",
+              "texto": "<strong>Producto y cuadrado:</strong> $z_1 \\cdot z_2 = 3 - 6i + 2i - 4i^2 = 3 - 4i + 4 = \\boldsymbol{7 - 4i}$. Para el cuadrado: $(3 + 2i)^2 = 9 + 12i + 4i^2 = 9 + 12i - 4 = \\boldsymbol{5 + 12i}$."
+            },
+            {
+              "letra": "c)",
+              "texto": "<strong>Cociente (por el conjugado $1 + 2i$):</strong> $\\dfrac{3 + 2i}{1 - 2i} = \\dfrac{(3 + 2i)(1 + 2i)}{1^2 + 2^2} = \\dfrac{3 + 8i + 4i^2}{5} = \\dfrac{-1 + 8i}{5} = \\boldsymbol{-\\dfrac{1}{5} + \\dfrac{8}{5}i}$."
+            }
+          ],
+          "idea_clave": "Al elevar un complejo al cuadrado $(a + bi)^2$, no olvides nunca el doble producto $2abi$. Para dividir complejos, multiplicar arriba y abajo por el conjugado del denominador ($c - di \\to c + di$) equivale a racionalizar con suma por diferencia: el denominador se convierte siempre en el número real positivo $c^2 + d^2$."
+        },
+        {
+          "numero": 4,
+          "titulo": "Ejercicio 4: El reloj de las potencias de $i$ y sumas cíclicas",
+          "referencia": "Bloque 3: Punto 3.2 (Pág. 12)",
+          "enunciado": "Las potencias de la unidad imaginaria se repiten periódicamente en ciclos de 4 ($i^0 = 1, \\; i^1 = i, \\; i^2 = -1, \\; i^3 = -i$). Para calcular $i^n$, basta dividir $n$ entre 4 y quedarse con el resto $r$ ($i^n = i^r$).",
+          "preguntas": [
+            {
+              "letra": "a)",
+              "texto": "Calcula el valor simplificado de $i^{27}$, $i^{68}$ y la potencia del año actual $i^{2026}$."
+            },
+            {
+              "letra": "b)",
+              "texto": "Comprueba que cuatro potencias consecutivas suman cero ($i^1 + i^2 + i^3 + i^4 = 0$) y deduce el valor de $S = i^1 + i^2 + i^3 + \\dots + i^{100}$."
+            }
+          ],
+          "instruccion": "Aplica la regla del resto módulo 4 para simplificar las potencias:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "texto": "<strong>Regla del resto ($\\div 4$):</strong> $27 = 4\\cdot 6 + 3 \\implies i^{27} = i^3 = \\boldsymbol{-i}$; $\\; 68 = 4\\cdot 17 + 0 \\implies i^{68} = i^0 = \\boldsymbol{1}$; $\\; 2026 = 4\\cdot 506 + 2 \\implies i^{2026} = i^2 = \\boldsymbol{-1}$."
+            },
+            {
+              "letra": "b)",
+              "texto": "<strong>Suma cíclica:</strong> $i + (-1) + (-i) + 1 = 0$. Como 100 términos forman 25 bloques exactos de 4 potencias consecutivas: $S = 25 \\cdot 0 = \\boldsymbol{0}$."
+            }
+          ],
+          "idea_clave": "Para dividir mentalmente entre 4 un número grande como $2026$, basta fijarse solo en sus dos últimas cifras ($26 = 4 \\cdot 6 + 2$, resto $2$). Además, cada ciclo completo de 4 potencias consecutivas de $i$ se neutraliza sumando exactamente $0$."
+        },
+        {
+          "numero": 5,
+          "titulo": "Ejercicio 5: El reto del parámetro $k$ (Número real puro e imaginario puro)",
+          "referencia": "Bloque 3: Puntos 3.1 y 3.2 (Págs. 11-12)",
+          "enunciado": "Considera el siguiente cociente de números complejos que depende de un parámetro real $k \\in \\mathbb{R}$: $$z = \\frac{2 + ki}{1 - i}$$",
+          "preguntas": [
+            {
+              "letra": "a)",
+              "texto": "Efectúa la división multiplicando por el conjugado y expresa $z$ en forma binómica $A + Bi$ en función de $k$."
+            },
+            {
+              "letra": "b)",
+              "texto": "Determina el valor de $k$ para que $z$ sea un <strong>número real puro</strong> y el valor de $k$ para que sea un <strong>imaginario puro</strong>."
+            }
+          ],
+          "instruccion": "Expresa el cociente en forma binómica e impón las condiciones sobre sus partes real e imaginaria:",
+          "apartados": [
+            {
+              "letra": "a)",
+              "texto": "<strong>Forma binómica (conjugado $1 + i$):</strong> $z = \\dfrac{(2 + ki)(1 + i)}{1^2 + 1^2} = \\dfrac{(2 - k) + (2 + k)i}{2} = \\boldsymbol{\\dfrac{2 - k}{2} + \\dfrac{2 + k}{2}i}$."
+            },
+            {
+              "letra": "b)",
+              "texto": "<strong>Real puro ($\\text{Im}(z) = 0$):</strong> $\\dfrac{2 + k}{2} = 0 \\implies \\boldsymbol{k = -2}$ (queda $z = 2$). <strong>Imaginario puro ($\\text{Re}(z) = 0$):</strong> $\\dfrac{2 - k}{2} = 0 \\implies \\boldsymbol{k = 2}$ (queda $z = 2i$)."
+            }
+          ],
+          "idea_clave": "En los problemas con parámetro $k$ dentro de una fracción, nunca impongas condiciones antes de quitar la $i$ del denominador. Primero multiplica por el conjugado, separa con nitidez la fracción de $\\text{Re}(z)$ y la de $\\text{Im}(z)$, e iguala a cero la que corresponda."
         }
       ]
     }
