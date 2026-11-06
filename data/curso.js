@@ -8,15 +8,15 @@ window.CURSO_CONFIG = {
   "ano_academico": "2026-2027",
   "tema_actual_id": 2,
   "tarea_classroom_activa": {
-    "existe": false,
-    "tema_id": 1,
-    "tarea_id": "Tarea-02",
-    "titulo": "Tarea 2: Radicales, Logaritmos, Fracciones Algebraicas y Binomio de Newton",
-    "fecha_limite": "Domingo 25 de Octubre de 2026 (20:00 h) - Plazo Finalizado",
-    "estado": "solucionario_disponible",
-    "pdf_tarea": "pdf/Tarea2_Herramientas_del_Algebra_1Bach.pdf",
-    "pdf_solucionario": "pdf/Tarea2_Herramientas_del_Algebra_1Bach_Solucionario.pdf",
-    "aviso": "¡Solucionario de la Tarea 2 disponible! Consulta las soluciones resueltas paso a paso para auto-corregir tu libreta."
+    "existe": true,
+    "tema_id": 2,
+    "tarea_id": "Tarea-03",
+    "titulo": "Tarea 3: Ecuaciones y Modelado (Problemas 1 al 12 de la Hoja)",
+    "fecha_limite": "Jueves 12 de Noviembre de 2026 (23:59 h)",
+    "estado": "activa",
+    "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
+    "pdf_solucionario": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach_Solucionario.pdf",
+    "aviso": "¡Nueva tarea en Classroom! Resuelve los 12 primeros problemas de la hoja (Ecuaciones) en tu libreta antes del Jueves 12 de Noviembre a las 23:59 h."
   },
   "control_test_activo": {
     "existe": false,
@@ -224,7 +224,7 @@ window.CURSO_CONFIG = {
       "apuntes_listos": true,
       "ejercicios_listos": true,
       "total_ejercicios_libreta": 0,
-      "total_tareas_classroom": 0,
+      "total_tareas_classroom": 1,
       "total_controles_test": 0
     }
   ]

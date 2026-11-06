@@ -11,7 +11,33 @@ window.TEMAS_DATA[2] = {
   "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "repaso_pdf": "",
   "repaso_solucionario_pdf": "",
-  "tareas_classroom": [],
+  "tareas_classroom": [
+    {
+      "id": "Tarea-03",
+      "numero": 3,
+      "titulo": "Tarea 3: Ecuaciones y Modelado (Problemas 1 al 12 de la Hoja)",
+      "fecha_asignacion": "5 de Noviembre de 2026",
+      "fecha_limite": "Jueves 12 de Noviembre de 2026 (23:59 h)",
+      "estado": "activa",
+      "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
+      "pdf_solucionario": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach_Solucionario.pdf",
+      "criterios_entrega": "Resuelve los problemas 1 al 12 de la hoja en tu libreta a mano, con orden, limpieza y todos los pasos algebraicos bien explicados (planteamiento, resolución y sentido real). Sube fotos claras o PDF escaneado a Google Classroom antes del jueves 12 a las 23:59 h.",
+      "ejercicios_incluidos": [
+        "Problema 1: El cohete de agua (Ecuación de 2.º grado y cinemática).",
+        "Problema 2: La pizza monstruo (Ecuación cuadrática y comparación de áreas).",
+        "Problema 3: La caja de los auriculares (Ecuación polinómica de volumen y Ruffini).",
+        "Problema 4: La pecera (Ecuación polinómica y dimensiones).",
+        "Problema 5: La placa solar de la autocaravana (Ecuación bicuadrada con cambio de variable).",
+        "Problema 6: El dron de la farmacia (Ecuación reducible a cuadrática).",
+        "Problema 7: La casa rural de fin de curso (Ecuación racional y reparto de gastos).",
+        "Problema 8: La escalera de los bomberos (Ecuación con radical y Teorema de Pitágoras).",
+        "Problema 9: La cuerda del campamento (Ecuación con dos radicales y comprobación).",
+        "Problema 10: El vídeo viral (Ecuación exponencial de base común).",
+        "Problema 11: Los servidores del juego online (Ecuación exponencial con cambio de variable).",
+        "Problema 12: Logaritmos en el juego y en el festival (Ecuaciones logarítmicas con propiedades)."
+      ]
+    }
+  ],
   "controles_test": [],
   "semanas_ejercicios": [],
   "sesiones": [
