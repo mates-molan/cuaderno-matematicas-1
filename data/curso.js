@@ -33,14 +33,14 @@ window.CURSO_CONFIG = {
     "fecha": "Viernes 6 de Noviembre de 2026",
     "tema_id": 2,
     "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
-    "titulo_sesion": "Sesión 7: Introducción a los Números Complejos (Ecuaciones con Discriminante Negativo, Plano de Argand, Operaciones y Parámetros)",
+    "titulo_sesion": "Sesión 7: Introducción a los Números Complejos (Ecuaciones con Discriminante Negativo, Representación en el Plano, Operaciones y Parámetros)",
     "referencia_apuntes": "Bloque 3: Puntos 3.1 a 3.4 (Págs. 11-13)",
     "mision_semanal": "Repasar los ejercicios de Números Complejos vistos en pizarra y avanzar con la Hoja del Tema 2.",
     "trabajo_semanal_pendiente": "Pasar a limpio los 5 ejercicios de Números Complejos de la pizarra en tu libreta y practicar las operaciones en forma binómica.",
     "ejercicios_vistos": [
       {
         "numero": 1,
-        "titulo": "Ejercicio 1: El «crash» del discriminante y el nacimiento de la unidad imaginaria $i$",
+        "titulo": "Ejercicio 1: Ecuaciones con raíz negativa y la unidad imaginaria $i$",
         "referencia": "Bloque 3: Puntos 3.1 y 3.3 (Págs. 11-12)",
         "enunciado": "Cuando una ecuación de segundo grado tiene discriminante negativo ($\\Delta < 0$), no existen soluciones en $\\mathbb{R}$, pero sí en el cuerpo de los números complejos $\\mathbb{C}$ definiendo la unidad imaginaria $\\boldsymbol{i = \\sqrt{-1}}$ (con $\\boldsymbol{i^2 = -1}$).",
         "preguntas": [
@@ -68,24 +68,24 @@ window.CURSO_CONFIG = {
       },
       {
         "numero": 2,
-        "titulo": "Ejercicio 2: Geometría en el plano de Argand, conjugado y módulo",
+        "titulo": "Ejercicio 2: Dibujar números complejos en el plano, conjugado y módulo",
         "referencia": "Bloque 3: Punto 3.1 (Pág. 11, plano complejo)",
         "enunciado": "Considera los números complejos obtenidos en el ejercicio anterior: $z_1 = 3 + 4i$, su conjugado $\\overline{z_1} = 3 - 4i$, el imaginario puro $z_2 = 4i$ y el número real $z_3 = -5$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Representa sus afijos en el plano complejo de Argand (eje real horizontal y eje imaginario vertical) y explica la simetría entre $z_1$ y $\\overline{z_1}$."
+            "texto": "Dibuja los puntos correspondientes en el plano complejo (eje real horizontal y eje imaginario vertical) y explica la simetría entre $z_1$ y $\\overline{z_1}$."
           },
           {
             "letra": "b)",
             "texto": "Calcula el módulo $|z_1|$ e interpreta geométricamente su valor mediante el Teorema de Pitágoras."
           }
         ],
-        "instruccion": "Representa los afijos en el plano complejo y calcula el módulo:",
+        "instruccion": "Dibuja los números en el plano complejo y calcula el módulo:",
         "apartados": [
           {
             "letra": "a)",
-            "texto": "<strong>Afijos y simetría:</strong> $z_1(3, 4)$, $\\overline{z_1}(3, -4)$, $z_2(0, 4)$ (en el eje vertical) y $z_3(-5, 0)$ (en el eje horizontal). Un complejo y su conjugado son <strong>simétricos respecto del eje real</strong>."
+            "texto": "<strong>Puntos en el plano y simetría:</strong> $z_1(3, 4)$, $\\overline{z_1}(3, -4)$, $z_2(0, 4)$ (en el eje vertical) y $z_3(-5, 0)$ (en el eje horizontal). Un número y su conjugado son <strong>simétricos respecto del eje real</strong>."
           },
           {
             "letra": "b)",
