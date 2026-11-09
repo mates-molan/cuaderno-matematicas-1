@@ -6,7 +6,7 @@ window.TEMAS_DATA[2] = {
   "id": 2,
   "titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 7,
+  "sesiones_impartidas": 8,
   "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "repaso_pdf": "",
@@ -455,8 +455,8 @@ window.TEMAS_DATA[2] = {
       ]
     },
     {
-      "numero": 7,
-      "fecha": "Viernes 6 de Noviembre de 2026",
+      "numero": "7 y 8",
+      "fecha": "Viernes 6 y Lunes 9 de Noviembre de 2026",
       "titulo": "Introducción a los Números Complejos (Ecuaciones con Discriminante Negativo, Representación en el Plano, Operaciones y Parámetros)",
       "ejercicios": [
         {
