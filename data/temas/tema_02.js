@@ -21,7 +21,7 @@ window.TEMAS_DATA[2] = {
       "estado": "activa",
       "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "pdf_solucionario": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach_Solucionario.pdf",
-      "criterios_entrega": "Resuelve los problemas 1 al 12 de la hoja en tu libreta a mano, con orden, limpieza y todos los pasos algebraicos bien explicados (planteamiento, resolución y sentido real). Sube fotos claras o PDF escaneado a Google Classroom antes del jueves 12 a las 20:00 h.",
+      "criterios_entrega": "Resuelve los problemas 1 al 12 de la hoja en tu libreta a mano, con orden, limpieza y todos los pasos algebraicos bien explicados (planteamiento, resolución y sentido real). Sube un único archivo PDF escaneado a Google Classroom (no se admiten fotos sueltas ni más de un archivo) antes del jueves 12 de Noviembre a las 20:00 h.",
       "ejercicios_incluidos": [
         "Problema 1: El cohete de agua (Ecuación de 2.º grado y cinemática).",
         "Problema 2: La pizza monstruo (Ecuación cuadrática y comparación de áreas).",
