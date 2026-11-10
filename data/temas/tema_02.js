@@ -612,147 +612,147 @@ window.TEMAS_DATA[2] = {
     {
       "numero": 9,
       "fecha": "Martes 10 de Noviembre de 2026",
-      "titulo": "Problemas con Sistemas de Ecuaciones Lineales ($2 \\times 2$): Solución Única (SCD), Infinitas Soluciones (SCI) y Sin Solución (SI)",
+      "titulo": "Problemas con Sistemas de Ecuaciones Lineales ($2 \\times 2$)",
       "ejercicios": [
         {
           "numero": 1,
-          "titulo": "Problema 1: Alquiler de tablas de paddle surf y punto de equilibrio (SCD por igualación)",
-          "referencia": "Bloque 4: Puntos 4.1, 4.3 y 4.4 (Págs. 22-24, análogo a Ejemplo 4.1 y Problema 17)",
+          "titulo": "Problema 1: Alquiler de tablas de paddle surf",
+          "referencia": "Bloque 4: Puntos 4.1, 4.3 y 4.4 (Págs. 22-24)",
           "enunciado": "Una escuela náutica del Mar Menor alquila tablas de paddle surf cobrando una tarifa fija inicial por el seguro y el chaleco más un precio fijo por cada hora de navegación. Ayer un grupo alquiló una tabla durante $2\\text{ horas}$ y pagó $19\\text{ €}$; hoy otro grupo ha navegado durante $5\\text{ horas}$ y ha pagado $37\\text{ €}$.",
           "preguntas": [
             {
               "letra": "a)",
-              "texto": "Llamando $x$ a la tarifa fija inicial (en €) e $y$ al precio por hora (en €/h), plantea y resuelve un sistema lineal $2 \\times 2$ para hallar ambos importes."
+              "texto": "Plantea y resuelve un sistema de ecuaciones para calcular la tarifa fija inicial y el precio por hora de navegación."
             },
             {
               "letra": "b)",
               "texto": "Una segunda escuela ofrece las tablas sin tarifa fija inicial, cobrando directamente a $9{,}50\\text{ €/h}$. ¿Con cuántas horas de alquiler cuestan lo mismo ambas escuelas y a partir de cuántas horas compensa elegir la primera?"
             }
           ],
-          "instruccion": "Plantea el sistema lineal, halla la tarifa fija y por hora, y compara ambas escuelas por igualación:",
+          "instruccion": "Definición de incógnitas, planteamiento y resolución del sistema:",
           "apartados": [
             {
               "letra": "a)",
-              "texto": "<strong>Sistema y resolución (SCD):</strong> $\\begin{cases} x + 2y = 19 \\\\ x + 5y = 37 \\end{cases} \\implies 3y = 18 \\implies \\boldsymbol{y = 6\\text{ €/h}}$ (precio por hora) y $\\boldsymbol{x = 7\\text{ €}}$ (tarifa fija)."
+              "texto": "<strong>Incógnitas y sistema (SCD):</strong> Llamando $x$ a la tarifa fija (€) e $y$ al precio por hora (€/h): $\\begin{cases} x + 2y = 19 \\\\ x + 5y = 37 \\end{cases} \\implies 3y = 18 \\implies \\boldsymbol{y = 6\\text{ €/h}}$ y $\\boldsymbol{x = 7\\text{ €}}$."
             },
             {
               "letra": "b)",
-              "texto": "<strong>Punto de corte (igualación de costes para $t$ horas):</strong> $7 + 6t = 9{,}5t \\implies 3{,}5t = 7 \\implies \\boldsymbol{t = 2\\text{ horas}}$ (ambas cuestan $19\\text{ €}$, punto $P(2, 19)$). Para <strong>más de 2 horas</strong> sale más barata la primera escuela."
+              "texto": "<strong>Comparativa de tarifas ($t$ horas):</strong> $7 + 6t = 9{,}5t \\implies 3{,}5t = 7 \\implies \\boldsymbol{t = 2\\text{ horas}}$ (ambas cuestan $19\\text{ €}$, punto de corte $P(2, 19)$). Para <strong>más de 2 horas</strong> sale más barata la primera escuela."
             }
           ],
-          "idea_clave": "Cada tarifa lineal con coste fijo $x$ y coste por hora $y$ es una recta en el plano. Cuando dos rectas tienen distinta pendiente (distinto precio por hora), forman un Sistema Compatible Determinado (SCD) y se cortan en un único punto $(t_0, C_0)$ que marca la frontera exacta donde una tarifa pasa a superar a la otra."
+          "idea_clave": "Cada tarifa lineal con coste fijo y coste por hora es una recta en el plano. Cuando dos rectas tienen distinta pendiente (distinto precio por hora), forman un Sistema Compatible Determinado (SCD) y se cortan en un único punto $(t_0, C_0)$ que marca la frontera exacta donde una tarifa pasa a superar a la otra."
         },
         {
           "numero": 2,
-          "titulo": "Problema 2: Mezcla de cafés de especialidad (SCD por sustitución)",
-          "referencia": "Bloque 4: Puntos 4.3 y 4.4 (Págs. 23-24, sistemas lineales y problemas de mezclas)",
+          "titulo": "Problema 2: Mezcla de cafés de especialidad",
+          "referencia": "Bloque 4: Puntos 4.3 y 4.4 (Págs. 23-24)",
           "enunciado": "Una cafetería quiere preparar un lote de $10\\text{ kg}$ de café mezclando grano natural de Colombia (que cuesta a $14\\text{ €/kg}$) y grano de Brasil (a $9\\text{ €/kg}$), de manera que el precio medio de la mezcla resultante sea exactamente de $11\\text{ €/kg}$.",
           "preguntas": [
             {
               "letra": "a)",
-              "texto": "Llamando $x$ a los kilos de café de Colombia e $y$ a los kilos de café de Brasil, plantea las dos ecuaciones del sistema (peso total y valor total de la mezcla) y resuélvelo por sustitución."
+              "texto": "Plantea y resuelve un sistema de ecuaciones para averiguar cuántos kilos de cada tipo de café debe llevar la mezcla."
             },
             {
               "letra": "b)",
-              "texto": "Interpreta geométricamente las dos ecuaciones en el plano indicando las coordenadas del punto de corte."
+              "texto": "Interpreta geométricamente las dos ecuaciones en el plano indicando las coordenadas de su punto de corte."
             }
           ],
-          "instruccion": "Plantea el sistema de peso total y coste total, y resuélvelo despejando en la ecuación de coeficiente 1:",
+          "instruccion": "Definición de incógnitas, planteamiento y resolución del sistema:",
           "apartados": [
             {
               "letra": "a)",
-              "texto": "<strong>Planteamiento y sustitución ($y = 10 - x$):</strong> $\\begin{cases} x + y = 10 \\\\ 14x + 9y = 110 \\end{cases} \\implies 14x + 9(10 - x) = 110 \\iff 5x = 20$."
+              "texto": "<strong>Incógnitas y planteamiento:</strong> Llamando $x$ a los kg de Colombia e $y$ a los kg de Brasil: $\\begin{cases} x + y = 10 \\\\ 14x + 9y = 110 \\end{cases} \\implies 14x + 9(10 - x) = 110 \\iff 5x = 20$."
             },
             {
               "letra": "b)",
               "texto": "<strong>Solución única (SCD):</strong> $\\boldsymbol{x = 4\\text{ kg de Colombia}}$ e $\\boldsymbol{y = 6\\text{ kg de Brasil}}$. Geométricamente son dos <strong>rectas secantes</strong> que se cortan en el único punto $\\boldsymbol{P(4, 6)}$."
             }
           ],
-          "idea_clave": "En los problemas de mezclas, la segunda ecuación nunca suma los precios por kilo sueltos ($14 + 9 \\neq 11$), sino el coste total en euros de cada ingrediente: $(\\text{kg de A}\\cdot\\text{precio de A}) + (\\text{kg de B}\\cdot\\text{precio de B}) = (\\text{kg totales}\\cdot\\text{precio medio})$. Como en la primera ecuación las incógnitas tienen coeficiente 1, el método de sustitución evita cualquier fracción."
+          "idea_clave": "En los problemas de mezclas, la segunda ecuación nunca suma los precios por kilo sueltos ($14 + 9 \\neq 11$), sino el coste total en euros de cada ingrediente: $(\\text{kg de A}\\cdot\\text{precio de A}) + (\\text{kg de B}\\cdot\\text{precio de B}) = (\\text{kg totales}\\cdot\\text{precio medio})$."
         },
         {
           "numero": 3,
-          "titulo": "Problema 3: Navegación a favor y en contra de la corriente (SCD por reducción)",
-          "referencia": "Bloque 4: Puntos 4.3 y 4.4 (Págs. 23-24, análogo a Ejemplo 4.2 por reducción)",
+          "titulo": "Problema 3: Navegación a favor y en contra de la corriente",
+          "referencia": "Bloque 4: Puntos 4.3 y 4.4 (Págs. 23-24)",
           "enunciado": "Una embarcación turística recorre un tramo recto de $24\\text{ km}$ por un río. A la ida navega a favor de la corriente y completa el recorrido en $2\\text{ horas}$; a la vuelta navega en contra de la misma corriente y tarda $3\\text{ horas}$ en regresar al punto de partida.",
           "preguntas": [
             {
               "letra": "a)",
-              "texto": "Llamando $x$ a la velocidad propia del barco en agua tranquila e $y$ a la velocidad de la corriente del río (en $\\text{km/h}$), calcula la velocidad real a la ida y a la vuelta y plantea el sistema lineal."
+              "texto": "Plantea y resuelve un sistema de ecuaciones para hallar la velocidad propia del barco en agua tranquila y la velocidad de la corriente del río."
             },
             {
               "letra": "b)",
-              "texto": "Resuelve el sistema por el método de reducción y explica por qué es la vía más directa en este problema."
+              "texto": "¿Cuánto tiempo tardaría el barco en recorrer esos mismos $24\\text{ km}$ si navegara por un lago sin corriente?"
             }
           ],
-          "instruccion": "Plantea el sistema de velocidades a la ida y a la vuelta y resuélvelo sumando ambas ecuaciones:",
+          "instruccion": "Definición de incógnitas, planteamiento y resolución del sistema:",
           "apartados": [
             {
               "letra": "a)",
-              "texto": "<strong>Velocidades ($v = e/t$):</strong> A la ida $x + y = \\dfrac{24}{2} = 12\\text{ km/h}$; a la vuelta $x - y = \\dfrac{24}{3} = 8\\text{ km/h} \\implies \\begin{cases} x + y = 12 \\\\ x - y = 8 \\end{cases}$."
+              "texto": "<strong>Incógnitas y velocidades ($v = e/t$):</strong> Llamando $x$ a la velocidad del barco e $y$ a la de la corriente (en km/h), a la ida $x + y = \\dfrac{24}{2} = 12$ y a la vuelta $x - y = \\dfrac{24}{3} = 8 \\implies \\begin{cases} x + y = 12 \\\\ x - y = 8 \\end{cases} \\implies \\boldsymbol{x = 10\\text{ km/h}}$ (barco) e $\\boldsymbol{y = 2\\text{ km/h}}$ (corriente)."
             },
             {
               "letra": "b)",
-              "texto": "<strong>Reducción directa (sumando filas):</strong> $2x = 20 \\implies \\boldsymbol{x = 10\\text{ km/h}}$ (velocidad del barco) y $\\boldsymbol{y = 2\\text{ km/h}}$ (velocidad de la corriente)."
+              "texto": "<strong>Tiempo en agua tranquila ($y = 0$):</strong> $t = \\dfrac{24\\text{ km}}{10\\text{ km/h}} = \\boldsymbol{2{,}4\\text{ horas}}$ ($2\\text{ horas y } 24\\text{ minutos}$)."
             }
           ],
-          "idea_clave": "Cuando una corriente o el viento actúa a favor ($x + y$) y en contra ($x - y$), la incógnita $y$ aparece automáticamente con coeficientes opuestos ($+1$ y $-1$). Sumando ambas ecuaciones por reducción desaparece la $y$ en un solo paso sin necesidad de despejar ni multiplicar filas."
+          "idea_clave": "Al navegar a favor de la corriente las velocidades se suman ($x + y$) y al navegar en contra se restan ($x - y$). Conocer la distancia y el tiempo de cada trayecto permite obtener directamente la velocidad real de ida y de vuelta antes de resolver el sistema."
         },
         {
           "numero": 4,
-          "titulo": "Problema 4: Las cajas de envío de la tienda online (SCI — Infinitas soluciones)",
-          "referencia": "Bloque 4: Puntos 4.1 y 4.4 (Págs. 22 y 24, rectas coincidentes e infinitas soluciones)",
+          "titulo": "Problema 4: Las cajas de envío de la tienda online",
+          "referencia": "Bloque 4: Puntos 4.1 y 4.4 (Págs. 22 y 24)",
           "enunciado": "Una tienda de informática prepara un envío de $18\\text{ tarjetas gráficas}$ repartidas en cajas pequeñas (con capacidad para $2\\text{ tarjetas}$ cada una) y cajas grandes (con capacidad para $3\\text{ tarjetas}$ cada una), llenando todas las cajas al máximo. En la nota del almacén figura además que el cuádruple de cajas pequeñas más el séxtuple de cajas grandes es igual a $36$.",
           "preguntas": [
             {
               "letra": "a)",
-              "texto": "Llamando $x$ al número de cajas pequeñas e $y$ al de cajas grandes, plantea el sistema lineal, resuélvelo y clasifícalo. ¿Qué posición tienen las dos rectas en el plano?"
+              "texto": "Plantea el sistema de ecuaciones correspondiente, resuélvelo y clasifícalo según su número de soluciones. ¿Qué posición tienen las dos rectas en el plano?"
             },
             {
               "letra": "b)",
-              "texto": "Expresa la solución general con un parámetro y escribe todas las combinaciones reales posibles sabiendo que el número de cajas debe ser entero y no negativo ($x, y \\ge 0$)."
+              "texto": "Escribe todas las combinaciones reales de cajas pequeñas y grandes que pudo utilizar la tienda para enviar el pedido."
             }
           ],
-          "instruccion": "Plantea el sistema, comprueba qué ocurre al reducir las ecuaciones y halla las soluciones enteras no negativas:",
+          "instruccion": "Definición de incógnitas, clasificación del sistema y soluciones enteras:",
           "apartados": [
             {
               "letra": "a)",
-              "texto": "<strong>Planteamiento y clasificación:</strong> $\\begin{cases} 2x + 3y = 18 \\\\ 4x + 6y = 36 \\end{cases} \\xrightarrow{F_2 - 2F_1} \\boldsymbol{0 = 0}$. Es un <strong>Sistema Compatible Indeterminado (SCI)</strong>: la 2.ª ecuación es el doble de la 1.ª ($\\frac{2}{4} = \\frac{3}{6} = \\frac{18}{36}$) y representan <strong>la misma recta (rectas coincidentes)</strong> con infinitos puntos."
+              "texto": "<strong>Incógnitas y clasificación:</strong> Llamando $x$ a las cajas pequeñas e $y$ a las grandes: $\\begin{cases} 2x + 3y = 18 \\\\ 4x + 6y = 36 \\end{cases} \\implies \\boldsymbol{0 = 0}$. Es un <strong>Sistema Compatible Indeterminado (SCI)</strong>: la 2.ª ecuación es el doble de la 1.ª ($\\frac{2}{4} = \\frac{3}{6} = \\frac{18}{36}$) y representan <strong>la misma recta (rectas coincidentes)</strong> con infinitos puntos."
             },
             {
               "letra": "b)",
-              "texto": "<strong>Parámetro ($y = \\lambda$) y soluciones reales enteras:</strong> $x = 9 - \\dfrac{3}{2}\\lambda$. Para que $x, y \\ge 0$ sean números enteros de cajas, $\\lambda$ debe ser par entre $0$ y $6$: $\\boldsymbol{(x, y) \\in \\{(9, 0), \\; (6, 2), \\; (3, 4), \\; (0, 6)\\}}$ (4 formas posibles)."
+              "texto": "<strong>Soluciones reales enteras ($x, y \\in \\mathbb{N} \\cup \\{0\\}$):</strong> Con $y = \\lambda$, queda $x = 9 - \\dfrac{3}{2}\\lambda$. Para que $x, y \\ge 0$ sean números enteros de cajas, $\\lambda$ debe ser par entre $0$ y $6$: $\\boldsymbol{(x, y) \\in \\{(9, 0), \\; (6, 2), \\; (3, 4), \\; (0, 6)\\}}$ (4 combinaciones)."
             }
           ],
-          "idea_clave": "Cuando al resolver un sistema desaparecen las dos incógnitas y queda una igualdad cierta ($0 = 0$), no significa que no haya solución, sino todo lo contrario: la segunda condición no aportaba información nueva (rectas coincidentes, SCI). En el plano real hay infinitos puntos sobre la recta, pero al exigir que las incógnitas sean cajas enteras y positivas solo sobreviven 4 parejas exactas."
+          "idea_clave": "Cuando al resolver un sistema desaparecen las dos incógnitas y queda una igualdad cierta ($0 = 0$), no significa que no haya solución, sino todo lo contrario: la segunda ecuación no aportaba información nueva (rectas coincidentes, SCI). En la recta real hay infinitos puntos, pero como el número de cajas tiene que ser entero y no negativo solo existen 4 formas reales de preparar el envío."
         },
         {
           "numero": 5,
-          "titulo": "Problema 5: El presupuesto imposible del viaje de estudios (SI — Sin solución)",
-          "referencia": "Bloque 4: Puntos 4.1 y 4.4 (Págs. 22 y 24, rectas paralelas y sistema incompatible)",
+          "titulo": "Problema 5: El presupuesto del viaje de estudios",
+          "referencia": "Bloque 4: Puntos 4.1 y 4.4 (Págs. 22 y 24)",
           "enunciado": "Para recaudar fondos para el viaje de estudios, dos comisiones de alumnos encargan lotes de camisetas y lotes de sudaderas al mismo proveedor (a precio fijo sin descuentos). La comisión A encarga $2\\text{ lotes de camisetas}$ y $3\\text{ de sudaderas}$ y paga $130\\text{ €}$. La comisión B encarga $4\\text{ lotes de camisetas}$ y $6\\text{ de sudaderas}$, y apunta en la pizarra que su factura ha sido de $250\\text{ €}$.",
           "preguntas": [
             {
               "letra": "a)",
-              "texto": "Llamando $x$ al precio de un lote de camisetas e $y$ al de un lote de sudaderas, plantea el sistema, intenta resolverlo y clasifícalo. ¿Cómo son geométricamente las dos rectas?"
+              "texto": "Plantea un sistema de ecuaciones para hallar el precio de cada lote, intenta resolverlo y clasifícalo. ¿Cómo son geométricamente las dos rectas?"
             },
             {
               "letra": "b)",
               "texto": "Explica de forma razonada por qué la comisión B ha apuntado mal el importe y calcula cuánto debería haber pagado exactamente para que las cuentas cuadren."
             }
           ],
-          "instruccion": "Plantea el sistema, analiza la contradicción algebraica y geométrica, y corrige el dato erróneo:",
+          "instruccion": "Definición de incógnitas, análisis de la contradicción y corrección del dato:",
           "apartados": [
             {
               "letra": "a)",
-              "texto": "<strong>Planteamiento y clasificación:</strong> $\\begin{cases} 2x + 3y = 130 \\\\ 4x + 6y = 250 \\end{cases} \\xrightarrow{F_2 - 2F_1} \\boldsymbol{0 = -10\\text{ (imposible)}}$. Es un <strong>Sistema Incompatible (SI, sin solución)</strong>: $\\frac{2}{4} = \\frac{3}{6} \\neq \\frac{130}{250}$, por lo que en el plano son <strong>dos rectas paralelas</strong> que jamás se cortan."
+              "texto": "<strong>Incógnitas y clasificación:</strong> Llamando $x$ al precio del lote de camisetas e $y$ al de sudaderas: $\\begin{cases} 2x + 3y = 130 \\\\ 4x + 6y = 250 \\end{cases} \\implies \\boldsymbol{0 = -10\\text{ (imposible)}}$. Es un <strong>Sistema Incompatible (SI, sin solución)</strong>: $\\frac{2}{4} = \\frac{3}{6} \\neq \\frac{130}{250}$, por lo que en el plano son <strong>dos rectas paralelas</strong> que jamás se cortan."
             },
             {
               "letra": "b)",
               "texto": "<strong>Corrección del error:</strong> Como la comisión B encarga exactamente el doble de camisetas y el doble de sudaderas que la A, su factura tiene que ser obligatoriamente el doble: $2 \\cdot 130 = \\boldsymbol{260\\text{ €}}$ (en lugar de $250\\text{ €}$)."
             }
           ],
-          "idea_clave": "Si al despejar o hacer reducción desaparecen las incógnitas y queda una igualdad falsa como $0 = -10$, el sistema es Incompatible (SI) y no tiene ninguna solución. Geométricamente las dos ecuaciones tienen la misma inclinación (pendiente $m = -2/3$) pero distinta altura, formando dos rectas paralelas separadas."
+          "idea_clave": "Si al resolver el sistema desaparecen las incógnitas y llegas a una contradicción como $0 = -10$, el sistema es Incompatible (SI) y no tiene ninguna solución. Geométricamente las dos ecuaciones tienen la misma inclinación (pendiente $m = -2/3$) pero distinta ordenada en el origen, formando dos rectas paralelas separadas."
         }
       ]
     }
