@@ -137,7 +137,7 @@ window.CURSO_CONFIG = {
             "texto": "Escribe todas las combinaciones reales de cajas pequeñas y grandes que pudo utilizar la tienda para enviar el pedido."
           }
         ],
-        "instruccion": "Definición de incógnitas, clasificación del sistema y soluciones enteras:",
+        "instruccion": "Definición de incógnitas, clasificación del sistema y soluciones naturales:",
         "apartados": [
           {
             "letra": "a)",
@@ -145,10 +145,10 @@ window.CURSO_CONFIG = {
           },
           {
             "letra": "b)",
-            "texto": "<strong>Soluciones reales enteras ($x, y \\in \\mathbb{N} \\cup \\{0\\}$):</strong> Con $y = \\lambda$, queda $x = 9 - \\dfrac{3}{2}\\lambda$. Para que $x, y \\ge 0$ sean números enteros de cajas, $\\lambda$ debe ser par entre $0$ y $6$: $\\boldsymbol{(x, y) \\in \\{(9, 0), \\; (6, 2), \\; (3, 4), \\; (0, 6)\\}}$ (4 combinaciones)."
+            "texto": "<strong>Soluciones en los números naturales ($x, y \\in \\mathbb{N}$):</strong> Con $y = \\lambda$, queda $x = 9 - \\dfrac{3}{2}\\lambda$. Para que las cantidades de cajas sean naturales ($x, y \\in \\mathbb{N}$), $\\lambda$ debe ser un número par entre $0$ y $6$: $\\boldsymbol{(x, y) \\in \\{(9, 0), \\; (6, 2), \\; (3, 4), \\; (0, 6)\\}}$ (4 combinaciones)."
           }
         ],
-        "idea_clave": "Cuando al resolver un sistema desaparecen las dos incógnitas y queda una igualdad cierta ($0 = 0$), no significa que no haya solución, sino todo lo contrario: la segunda ecuación no aportaba información nueva (rectas coincidentes, SCI). En la recta real hay infinitos puntos, pero como el número de cajas tiene que ser entero y no negativo solo existen 4 formas reales de preparar el envío."
+        "idea_clave": "Cuando al resolver un sistema desaparecen las dos incógnitas y queda una igualdad cierta ($0 = 0$), no significa que no haya solución, sino todo lo contrario: la segunda ecuación no aportaba información nueva (rectas coincidentes, SCI). En la recta real hay infinitos puntos, pero como el número de cajas tiene que ser un número natural ($x, y \\in \\mathbb{N}$) solo existen 4 formas reales de preparar el envío."
       },
       {
         "numero": 5,
