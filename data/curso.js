@@ -30,153 +30,153 @@ window.CURSO_CONFIG = {
     "aviso": "Examen del Tema 1 finalizado. Consulta el enunciado y el solucionario resuelto en la pestaña del Tema 1."
   },
   "ultima_clase": {
-    "fecha": "Martes 10 de Noviembre de 2026",
+    "fecha": "Jueves 12 de Noviembre de 2026",
     "tema_id": 2,
     "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
-    "titulo_sesion": "Sesión 9: Problemas con Sistemas de Ecuaciones Lineales ($2 \\times 2$)",
-    "referencia_apuntes": "Bloque 4: Puntos 4.1 a 4.4 y 4.8 (Págs. 22-24 y 29)",
-    "mision_semanal": "Repasar los 5 problemas de Sistemas Lineales $2 \\times 2$ vistos en pizarra y completar la Tarea 3 de Classroom (Problemas 1 al 12).",
-    "trabajo_semanal_pendiente": "Pasar a limpio los 5 problemas de Sistemas Lineales $2 \\times 2$ en tu libreta y entregar la Tarea 3 en un único archivo PDF antes del jueves 12 a las 20:00 h.",
+    "titulo_sesion": "Sesión 10: Problemas con Sistemas de Ecuaciones No Lineales, Exponenciales y Logarítmicos",
+    "referencia_apuntes": "Bloque 4: Puntos 4.2, 4.3 y 4.5 a 4.8 (Págs. 22, 23 y 25-29)",
+    "mision_semanal": "Repasar los 5 problemas de Sistemas No Lineales, Exponenciales y Logarítmicos vistos en pizarra y practicar los problemas 19 al 23 de la hoja.",
+    "trabajo_semanal_pendiente": "Pasar a limpio los 5 problemas de Sistemas No Lineales en tu libreta y entregar la Tarea 3 en un único archivo PDF antes de hoy jueves 12 a las 20:00 h.",
     "ejercicios_vistos": [
       {
         "numero": 1,
-        "titulo": "Problema 1: Alquiler de tablas de paddle surf",
-        "referencia": "Bloque 4: Puntos 4.1, 4.3 y 4.4 (Págs. 22-24)",
-        "enunciado": "Una escuela náutica del Mar Menor alquila tablas de paddle surf cobrando una tarifa fija inicial por el seguro y el chaleco más un precio fijo por cada hora de navegación. Ayer un grupo alquiló una tabla durante $2\\text{ horas}$ y pagó $19\\text{ €}$; hoy otro grupo ha navegado durante $5\\text{ horas}$ y ha pagado $37\\text{ €}$.",
+        "titulo": "Problema 1: El salto de motocross y el cañón láser (Parábola y recta)",
+        "referencia": "Bloque 4: Puntos 4.2, 4.3 y 4.5 (Págs. 22, 23 y 25, análogo a Ejemplo 4.3)",
+        "enunciado": "En una exhibición nocturna de motocross estilo libre, un piloto salta desde una rampa situada en el origen $(0, 0)$ siguiendo la trayectoria parabólica $y = -\\dfrac{x^2}{4} + 3x$ (donde $x$ es la distancia horizontal e $y$ la altura sobre la pista, ambas en metros). Desde una grada lateral, un cañón proyecta un haz de luz láser en línea recta siguiendo la ecuación $y = \\dfrac{x}{2} + 4$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Plantea y resuelve un sistema de ecuaciones para calcular la tarifa fija inicial y el precio por hora de navegación."
+            "texto": "Plantea y resuelve un sistema de ecuaciones para calcular las coordenadas de los puntos en los que la moto atraviesa el haz de luz láser."
           },
           {
             "letra": "b)",
-            "texto": "Una segunda escuela ofrece las tablas sin tarifa fija inicial, cobrando directamente a $9{,}50\\text{ €/h}$. ¿Con cuántas horas de alquiler cuestan lo mismo ambas escuelas y a partir de cuántas horas compensa elegir la primera?"
+            "texto": "Sabiendo que el piloto alcanza su altura máxima a mitad del salto ($x = 6\\text{ m}$), indica en cuál de los dos puntos de corte atraviesa el láser mientras va subiendo y en cuál mientras va cayendo."
           }
         ],
-        "instruccion": "Definición de incógnitas, planteamiento y resolución del sistema:",
+        "instruccion": "Planteamiento del sistema, cálculo de los puntos de corte e interpretación de la trayectoria:",
         "apartados": [
           {
             "letra": "a)",
-            "texto": "<strong>Incógnitas y sistema (SCD):</strong> Llamando $x$ a la tarifa fija (€) e $y$ al precio por hora (€/h): $\\begin{cases} x + 2y = 19 \\\\ x + 5y = 37 \\end{cases} \\implies 3y = 18 \\implies \\boldsymbol{y = 6\\text{ €/h}}$ y $\\boldsymbol{x = 7\\text{ €}}$."
+            "texto": "<strong>Sistema y puntos de corte:</strong> $\\begin{cases} y = -\\dfrac{x^2}{4} + 3x \\\\ y = \\dfrac{x}{2} + 4 \\end{cases} \\implies -\\dfrac{x^2}{4} + 3x = \\dfrac{x}{2} + 4 \\xrightarrow{\\cdot 4} x^2 - 10x + 16 = 0 \\implies x_1 = 2, \\; x_2 = 8$. Sustituyendo en la recta ($y = \\frac{x}{2} + 4$): $\\boldsymbol{P_1(2, 5)}$ y $\\boldsymbol{P_2(8, 8)}$."
           },
           {
             "letra": "b)",
-            "texto": "<strong>Comparativa de tarifas ($t$ horas):</strong> $7 + 6t = 9{,}5t \\implies 3{,}5t = 7 \\implies \\boldsymbol{t = 2\\text{ horas}}$ (ambas cuestan $19\\text{ €}$, punto de corte $P(2, 19)$). Para <strong>más de 2 horas</strong> sale más barata la primera escuela."
+            "texto": "<strong>Sentido físico del salto:</strong> Como el vértice (altura máxima de $9\\text{ m}$) se alcanza en $x = 6\\text{ m}$, en $\\boldsymbol{P_1(2, 5)}$ el piloto corta el láser <strong>mientras sube</strong> ($2 < 6$) y en $\\boldsymbol{P_2(8, 8)}$ lo vuelve a cortar <strong>mientras baja</strong> ($8 > 6$)."
           }
         ],
-        "idea_clave": "Cada tarifa lineal con coste fijo y coste por hora es una recta en el plano. Cuando dos rectas tienen distinta pendiente (distinto precio por hora), forman un Sistema Compatible Determinado (SCD) y se cortan en un único punto $(t_0, C_0)$ que marca la frontera exacta donde una tarifa pasa a superar a la otra."
+        "idea_clave": "Una parábola y una recta pueden cortarse en 2 puntos (secante), en 1 punto (tangente) o en ninguno (exterior). Al igualar ambas expresiones de $y$ y quitar denominadores multiplicando toda la ecuación por el m.c.m., el problema se reduce a una ecuación de segundo grado cuyas soluciones dan las abscisas $x$ de los puntos de impacto."
       },
       {
         "numero": 2,
-        "titulo": "Problema 2: Mezcla de cafés de especialidad",
-        "referencia": "Bloque 4: Puntos 4.3 y 4.4 (Págs. 23-24)",
-        "enunciado": "Una cafetería quiere preparar un lote de $10\\text{ kg}$ de café mezclando grano natural de Colombia (que cuesta a $14\\text{ €/kg}$) y grano de Brasil (a $9\\text{ €/kg}$), de manera que el precio medio de la mezcla resultante sea exactamente de $11\\text{ €/kg}$.",
+        "titulo": "Problema 2: El radar del puerto y el rumbo del yate (Circunferencia y recta)",
+        "referencia": "Bloque 4: Puntos 4.2, 4.5 y 4.7 (Págs. 22, 25 y 28, análogo a Ejemplo 4.4)",
+        "enunciado": "Un radar costero situado en el origen de coordenadas $(0, 0)$ de una carta náutica (con las distancias en kilómetros) detecta cualquier embarcación en un radio de $5\\text{ km}$. Un yate navega en línea recta siguiendo el rumbo de ecuación $y = 2x - 5$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Plantea y resuelve un sistema de ecuaciones para averiguar cuántos kilos de cada tipo de café debe llevar la mezcla."
+            "texto": "¿Qué curva geométrica forma el límite de alcance del radar? Escribe su ecuación y calcula las coordenadas de los puntos donde el yate entra y sale de la zona del radar."
           },
           {
             "letra": "b)",
-            "texto": "Interpreta geométricamente las dos ecuaciones en el plano indicando las coordenadas de su punto de corte."
+            "texto": "¿Cuántos kilómetros recorre el yate dentro de la zona del radar? Si navega a una velocidad constante de $20\\text{ km/h}$, ¿durante cuántos minutos aparece en la pantalla?"
           }
         ],
-        "instruccion": "Definición de incógnitas, planteamiento y resolución del sistema:",
+        "instruccion": "Ecuación de la circunferencia, puntos de entrada y salida, distancia recorrida y tiempo:",
         "apartados": [
           {
             "letra": "a)",
-            "texto": "<strong>Incógnitas y planteamiento:</strong> Llamando $x$ a los kg de Colombia e $y$ a los kg de Brasil: $\\begin{cases} x + y = 10 \\\\ 14x + 9y = 110 \\end{cases} \\implies 14x + 9(10 - x) = 110 \\iff 5x = 20$."
+            "texto": "<strong>Circunferencia y puntos de corte:</strong> El borde es la circunferencia $x^2 + y^2 = 25$. Sustituyendo la recta $y = 2x - 5$: $x^2 + (2x - 5)^2 = 25 \\implies 5x^2 - 20x = 0 \\implies 5x(x - 4) = 0 \\implies x_1 = 0, \\; x_2 = 4$. Sustituyendo en la recta: entra y sale en $\\boldsymbol{P_1(0, -5)}$ y $\\boldsymbol{P_2(4, 3)}$."
           },
           {
             "letra": "b)",
-            "texto": "<strong>Solución única (SCD):</strong> $\\boldsymbol{x = 4\\text{ kg de Colombia}}$ e $\\boldsymbol{y = 6\\text{ kg de Brasil}}$. Geométricamente son dos <strong>rectas secantes</strong> que se cortan en el único punto $\\boldsymbol{P(4, 6)}$."
+            "texto": "<strong>Distancia (Pitágoras) y tiempo:</strong> $d = \\sqrt{(4 - 0)^2 + (3 - (-5))^2} = \\sqrt{16 + 64} = \\sqrt{80} = \\boldsymbol{4\\sqrt{5} \\approx 8{,}94\\text{ km}}$. A $20\\text{ km/h}$: $t = \\dfrac{4\\sqrt{5}}{20}\\text{ h} \\cdot 60 = 12\\sqrt{5} \\approx \\boldsymbol{26{,}8\\text{ minutos}}$."
           }
         ],
-        "idea_clave": "En los problemas de mezclas, la segunda ecuación nunca suma los precios por kilo sueltos ($14 + 9 \\neq 11$), sino el coste total en euros de cada ingrediente: $(\\text{kg de A}\\cdot\\text{precio de A}) + (\\text{kg de B}\\cdot\\text{precio de B}) = (\\text{kg totales}\\cdot\\text{precio medio})$."
+        "idea_clave": "Al resolver una circunferencia con una recta hay dos trampas clásicas que debes evitar (Pág. 28): no olvidar nunca el doble producto al elevar $(2x - 5)^2 = 4x^2 - 20x + 25$, y sustituir los valores de $x$ al final siempre en la ecuación de grado 1 (la recta $y = 2x - 5$), nunca en la circunferencia, para no inventar puntos falsos."
       },
       {
         "numero": 3,
-        "titulo": "Problema 3: Navegación a favor y en contra de la corriente",
-        "referencia": "Bloque 4: Puntos 4.3 y 4.4 (Págs. 23-24)",
-        "enunciado": "Una embarcación turística recorre un tramo recto de $24\\text{ km}$ por un río. A la ida navega a favor de la corriente y completa el recorrido en $2\\text{ horas}$; a la vuelta navega en contra de la misma corriente y tarda $3\\text{ horas}$ en regresar al punto de partida.",
+        "titulo": "Problema 3: La pantalla gigante LED del escenario (Hipérbola y recta)",
+        "referencia": "Bloque 4: Puntos 4.2, 4.5 y 4.8 (Págs. 22, 26 y 29, análogo a Ejemplo 4.5)",
+        "enunciado": "Para el escenario principal de un concierto se quiere montar una pantalla gigante rectangular con paneles LED que tenga una superficie exacta de $48\\text{ m}^2$. Los técnicos calculan que, si se añadieran $2\\text{ m}$ al ancho y $1\\text{ m}$ al alto, la superficie de la pantalla pasaría a ser de $70\\text{ m}^2$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Plantea y resuelve un sistema de ecuaciones para hallar la velocidad propia del barco en agua tranquila y la velocidad de la corriente del río."
+            "texto": "Plantea un sistema de ecuaciones y resuélvelo para averiguar qué dimensiones iniciales puede tener la pantalla LED. ¿Cuántos diseños distintos cumplen las condiciones?"
           },
           {
             "letra": "b)",
-            "texto": "¿Cuánto tiempo tardaría el barco en recorrer esos mismos $24\\text{ km}$ si navegara por un lago sin corriente?"
+            "texto": "Explica qué tipo de curva representa la ecuación del área inicial y qué figura representa la segunda ecuación una vez simplificada."
           }
         ],
-        "instruccion": "Definición de incógnitas, planteamiento y resolución del sistema:",
+        "instruccion": "Definición de incógnitas, simplificación del sistema, dimensiones posibles e interpretación geométrica:",
         "apartados": [
           {
             "letra": "a)",
-            "texto": "<strong>Incógnitas y velocidades ($v = e/t$):</strong> Llamando $x$ a la velocidad del barco e $y$ a la de la corriente (en km/h), a la ida $x + y = \\dfrac{24}{2} = 12$ y a la vuelta $x - y = \\dfrac{24}{3} = 8 \\implies \\begin{cases} x + y = 12 \\\\ x - y = 8 \\end{cases} \\implies \\boldsymbol{x = 10\\text{ km/h}}$ (barco) e $\\boldsymbol{y = 2\\text{ km/h}}$ (corriente)."
+            "texto": "<strong>Planteamiento y resolución:</strong> Llamando $x$ al ancho e $y$ al alto (en m): $\\begin{cases} x \\cdot y = 48 \\\\ (x + 2)(y + 1) = 70 \\end{cases}$. Como $xy + x + 2y + 2 = 70$ y $xy = 48$, queda $x + 2y = 20 \\implies x = 20 - 2y$. Sustituyendo: $(20 - 2y)y = 48 \\iff y^2 - 10y + 24 = 0 \\implies y_1 = 4, \\; y_2 = 6$. Hay <strong>2 diseños válidos</strong>: uno panorámico de $\\boldsymbol{12\\text{ m} \\times 4\\text{ m}}$ y otro de $\\boldsymbol{8\\text{ m} \\times 6\\text{ m}}$."
           },
           {
             "letra": "b)",
-            "texto": "<strong>Tiempo en agua tranquila ($y = 0$):</strong> $t = \\dfrac{24\\text{ km}}{10\\text{ km/h}} = \\boldsymbol{2{,}4\\text{ horas}}$ ($2\\text{ horas y } 24\\text{ minutos}$)."
+            "texto": "<strong>Curvas en el plano:</strong> La ecuación $x \\cdot y = 48$ es una <strong>hipérbola equilátera</strong> y $x + 2y = 20$ es una <strong>recta</strong> que la corta en dos puntos del primer cuadrante: $P_1(12, 4)$ y $P_2(8, 6)$."
           }
         ],
-        "idea_clave": "Al navegar a favor de la corriente las velocidades se suman ($x + y$) y al navegar en contra se restan ($x - y$). Conocer la distancia y el tiempo de cada trayecto permite obtener directamente la velocidad real de ida y de vuelta antes de resolver el sistema."
+        "idea_clave": "Cuando una ecuación multiplica los lados modificados $(x + 2)(y + 1) = 70$, al quitar paréntesis aparece el bloque $x \\cdot y$. Sustituyendo ahí el área conocida ($x \\cdot y = 48$), los términos de grado 2 desaparecen y obtienes directamente la ecuación de una recta ($x + 2y = 20$)."
       },
       {
         "numero": 4,
-        "titulo": "Problema 4: Las cajas de envío de la tienda online",
-        "referencia": "Bloque 4: Puntos 4.1 y 4.4 (Págs. 22 y 24)",
-        "enunciado": "Una tienda de informática prepara un envío de $18\\text{ tarjetas gráficas}$ repartidas en cajas pequeñas (con capacidad para $2\\text{ tarjetas}$ cada una) y cajas grandes (con capacidad para $3\\text{ tarjetas}$ cada una), llenando todas las cajas al máximo. En la nota del almacén figura además que el cuádruple de cajas pequeñas más el séxtuple de cajas grandes es igual a $36$.",
+        "titulo": "Problema 4: Los dos centros de datos de Inteligencia Artificial (Sistema exponencial)",
+        "referencia": "Bloque 4: Puntos 4.3, 4.6 y 4.8 (Págs. 23, 27 y 29, análogo a Ejemplo 4.7)",
+        "enunciado": "Una empresa tecnológica entrena un modelo de Inteligencia Artificial con dos centros de datos (Norte y Sur) que se encendieron en momentos distintos. Cuando el centro Norte lleva activo cierto número de horas, su potencia de cálculo es de $2^{\\,\\text{horas}}$ millones de operaciones por segundo, mientras que la del centro Sur es de $3^{\\,\\text{horas}}$ millones según las horas que lleva encendido. Ahora mismo, entre los dos centros suman $43\\text{ millones}$ de operaciones por segundo; pero si el centro Norte llevara $1\\text{ hora más}$ funcionando y el Sur llevara $1\\text{ hora menos}$, entre los dos sumarían $41\\text{ millones}$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Plantea el sistema de ecuaciones correspondiente, resuélvelo y clasifícalo según su número de soluciones. ¿Qué posición tienen las dos rectas en el plano?"
+            "texto": "Plantea un sistema de ecuaciones exponenciales y resuélvelo para calcular cuántas horas lleva funcionando cada centro de datos."
           },
           {
             "letra": "b)",
-            "texto": "Escribe todas las combinaciones reales de cajas pequeñas y grandes que pudo utilizar la tienda para enviar el pedido."
+            "texto": "¿Cuántos millones de operaciones por segundo está procesando ahora mismo cada centro por separado?"
           }
         ],
-        "instruccion": "Definición de incógnitas, clasificación del sistema y soluciones naturales:",
+        "instruccion": "Definición de incógnitas, propiedades de las potencias, cambio de variable y solución:",
         "apartados": [
           {
             "letra": "a)",
-            "texto": "<strong>Incógnitas y clasificación:</strong> Llamando $x$ a las cajas pequeñas e $y$ a las grandes: $\\begin{cases} 2x + 3y = 18 \\\\ 4x + 6y = 36 \\end{cases} \\implies \\boldsymbol{0 = 0}$. Es un <strong>Sistema Compatible Indeterminado (SCI)</strong>: la 2.ª ecuación es el doble de la 1.ª ($\\frac{2}{4} = \\frac{3}{6} = \\frac{18}{36}$) y representan <strong>la misma recta (rectas coincidentes)</strong> con infinitos puntos."
+            "texto": "<strong>Sistema y cambio ($u = 2^x > 0, \\; v = 3^y > 0$):</strong> Llamando $x$ a las horas del centro Norte e $y$ a las del Sur: $\\begin{cases} 2^x + 3^y = 43 \\\\ 2^{x+1} + 3^{y-1} = 41 \\end{cases} \\iff \\begin{cases} u + v = 43 \\\\ 2u + \\dfrac{v}{3} = 41 \\end{cases} \\xrightarrow{\\text{2.ª}\\cdot 3} \\begin{cases} u + v = 43 \\\\ 6u + v = 123 \\end{cases} \\implies 5u = 80 \\implies u = 16, \\; v = 27$. Deshaciendo el cambio: $2^x = 16 = 2^4 \\implies \\boldsymbol{x = 4\\text{ h}}$ y $3^y = 27 = 3^3 \\implies \\boldsymbol{y = 3\\text{ h}}$."
           },
           {
             "letra": "b)",
-            "texto": "<strong>Soluciones en los números naturales ($x, y \\in \\mathbb{N}$):</strong> Con $y = \\lambda$, queda $x = 9 - \\dfrac{3}{2}\\lambda$. Para que las cantidades de cajas sean naturales ($x, y \\in \\mathbb{N}$), $\\lambda$ debe ser un número par entre $0$ y $6$: $\\boldsymbol{(x, y) \\in \\{(9, 0), \\; (6, 2), \\; (3, 4), \\; (0, 6)\\}}$ (4 combinaciones)."
+            "texto": "<strong>Potencia actual de cada centro:</strong> El centro Norte procesa $\\boldsymbol{u = 16\\text{ millones}}$ de operaciones/s y el centro Sur procesa $\\boldsymbol{v = 27\\text{ millones}}$ ($16 + 27 = 43$)."
           }
         ],
-        "idea_clave": "Cuando al resolver un sistema desaparecen las dos incógnitas y queda una igualdad cierta ($0 = 0$), no significa que no haya solución, sino todo lo contrario: la segunda ecuación no aportaba información nueva (rectas coincidentes, SCI). En la recta real hay infinitos puntos, pero como el número de cajas tiene que ser un número natural ($x, y \\in \\mathbb{N}$) solo existen 4 formas reales de preparar el envío."
+        "idea_clave": "En los sistemas donde se suman potencias de distinta base ($2^x$ y $3^y$), primero separa los números sumados o restados en el exponente aplicando las propiedades de las potencias ($2^{x+1} = 2 \\cdot 2^x$ y $3^{y-1} = \\frac{3^y}{3}$). Así puedes hacer el cambio de variable $u = 2^x$ y $v = 3^y$ y resolver un sistema lineal sencillo."
       },
       {
         "numero": 5,
-        "titulo": "Problema 5: El presupuesto del viaje de estudios",
-        "referencia": "Bloque 4: Puntos 4.1 y 4.4 (Págs. 22 y 24)",
-        "enunciado": "Para recaudar fondos para el viaje de estudios, dos comisiones de alumnos encargan lotes de camisetas y lotes de sudaderas al mismo proveedor (a precio fijo sin descuentos). La comisión A encarga $2\\text{ lotes de camisetas}$ y $3\\text{ de sudaderas}$ y paga $130\\text{ €}$. La comisión B encarga $4\\text{ lotes de camisetas}$ y $6\\text{ de sudaderas}$, y apunta en la pizarra que su factura ha sido de $250\\text{ €}$.",
+        "titulo": "Problema 5: Los dos temblores y el sismógrafo (Sistema logarítmico)",
+        "referencia": "Bloque 4: Puntos 4.3, 4.6 y 4.8 (Págs. 23, 27 y 29, análogo a Ejemplo 4.8)",
+        "enunciado": "Un observatorio sísmico registra dos temblores leves. Cuando la amplitud máxima de las ondas en el sismógrafo es de $A$ micrómetros, su magnitud en la escala de Richter viene dada por su logaritmo decimal, $M = \\log A$. Sabemos que el primer temblor tuvo $15\\text{ micrómetros}$ más de amplitud que el segundo, y que la suma de las magnitudes de ambos temblores en la escala de Richter es exactamente igual a $3$.",
         "preguntas": [
           {
             "letra": "a)",
-            "texto": "Plantea un sistema de ecuaciones para hallar el precio de cada lote, intenta resolverlo y clasifícalo. ¿Cómo son geométricamente las dos rectas?"
+            "texto": "Plantea el sistema de ecuaciones indicando previamente las condiciones de existencia de los logaritmos (Paso 0) y calcula la amplitud en micrómetros de cada temblor."
           },
           {
             "letra": "b)",
-            "texto": "Explica de forma razonada por qué la comisión B ha apuntado mal el importe y calcula cuánto debería haber pagado exactamente para que las cuentas cuadren."
+            "texto": "Sabiendo que $\\log 2 \\approx 0{,}30$, calcula sin usar la tecla $\\log$ de la calculadora cuál fue la magnitud de cada temblor en la escala de Richter."
           }
         ],
-        "instruccion": "Definición de incógnitas, análisis de la contradicción y corrección del dato:",
+        "instruccion": "Condiciones de existencia (Paso 0), transformación a sistema algebraico y cálculo de magnitudes:",
         "apartados": [
           {
             "letra": "a)",
-            "texto": "<strong>Incógnitas y clasificación:</strong> Llamando $x$ al precio del lote de camisetas e $y$ al de sudaderas: $\\begin{cases} 2x + 3y = 130 \\\\ 4x + 6y = 250 \\end{cases} \\implies \\boldsymbol{0 = -10\\text{ (imposible)}}$. Es un <strong>Sistema Incompatible (SI, sin solución)</strong>: $\\frac{2}{4} = \\frac{3}{6} \\neq \\frac{130}{250}$, por lo que en el plano son <strong>dos rectas paralelas</strong> que jamás se cortan."
+            "texto": "<strong>Paso 0 ($x > 0, \\; y > 0$) y resolución:</strong> Llamando $x$ e $y$ a las amplitudes: $\\begin{cases} x - y = 15 \\\\ \\log x + \\log y = 3 \\end{cases}$. Agrupando logaritmos: $\\log(x \\cdot y) = 3 \\implies x \\cdot y = 10^3 = 1000$. Con $x = y + 15$: $(y + 15)y = 1000 \\iff y^2 + 15y - 1000 = 0 \\implies y_1 = 25, \\; y_2 = -40\\text{ (descartada por Paso 0)}$. Amplitudes: $\\boldsymbol{x = 40\\text{ }\\mu\\text{m}}$ e $\\boldsymbol{y = 25\\text{ }\\mu\\text{m}}$."
           },
           {
             "letra": "b)",
-            "texto": "<strong>Corrección del error:</strong> Como la comisión B encarga exactamente el doble de camisetas y el doble de sudaderas que la A, su factura tiene que ser obligatoriamente el doble: $2 \\cdot 130 = \\boldsymbol{260\\text{ €}}$ (en lugar de $250\\text{ €}$)."
+            "texto": "<strong>Magnitudes aplicando propiedades de logaritmos:</strong> $M_1 = \\log(40) = \\log(2^2 \\cdot 10) = 2\\log 2 + 1 \\approx \\boldsymbol{1{,}60}$, y $M_2 = \\log(25) = \\log(100/4) = 2 - 2\\log 2 \\approx \\boldsymbol{1{,}40}$ (suman $1{,}60 + 1{,}40 = 3$)."
           }
         ],
-        "idea_clave": "Si al resolver el sistema desaparecen las incógnitas y llegas a una contradicción como $0 = -10$, el sistema es Incompatible (SI) y no tiene ninguna solución. Geométricamente las dos ecuaciones tienen la misma inclinación (pendiente $m = -2/3$) pero distinta ordenada en el origen, formando dos rectas paralelas separadas."
+        "idea_clave": "Al agrupar $\\log x + \\log y = \\log(x \\cdot y) = 3$ y pasar a $x \\cdot y = 1000$, transformas el sistema logarítmico en el corte de una recta y una hipérbola. La pareja negativa $(-25, -40)$ cumple $x \\cdot y = 1000$, pero el Paso 0 ($x > 0, y > 0$) es indispensable para descartarla porque en $\\mathbb{R}$ no existen logaritmos de números negativos."
       }
     ]
   },
@@ -207,7 +207,7 @@ window.CURSO_CONFIG = {
       "titulo": "Ecuaciones, Números Complejos y Sistemas",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 9,
+      "sesiones_impartidas": 10,
       "descripcion": "Ecuaciones polinómicas y racionales, ecuaciones con radicales, exponenciales y logarítmicas, números complejos (forma binómica, operaciones y plano complejo), sistemas de ecuaciones algebraicos y geométricos, y Método de Gauss con matrices.",
       "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
