@@ -30,13 +30,13 @@ window.CURSO_CONFIG = {
     "aviso": "Examen del Tema 1 finalizado. Consulta el enunciado y el solucionario resuelto en la pestaña del Tema 1."
   },
   "ultima_clase": {
-    "fecha": "Jueves 12 de Noviembre de 2026",
+    "fecha": "Viernes 13 de Noviembre de 2026",
     "tema_id": 2,
     "tema_titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
-    "titulo_sesion": "Sesión 10: Problemas con Sistemas de Ecuaciones No Lineales, Exponenciales y Logarítmicos",
+    "titulo_sesion": "Sesión 11: Problemas con Sistemas de Ecuaciones No Lineales, Exponenciales y Logarítmicos",
     "referencia_apuntes": "Bloque 4: Puntos 4.2, 4.3 y 4.5 a 4.8 (Págs. 22, 23 y 25-29)",
     "mision_semanal": "Repasar los 5 problemas de Sistemas No Lineales, Exponenciales y Logarítmicos vistos en pizarra y practicar los problemas 19 al 23 de la hoja.",
-    "trabajo_semanal_pendiente": "Pasar a limpio los 5 problemas de Sistemas No Lineales en tu libreta y entregar la Tarea 3 en un único archivo PDF antes de hoy jueves 12 a las 20:00 h.",
+    "trabajo_semanal_pendiente": "Pasar a limpio los 5 problemas de Sistemas No Lineales en tu libreta y repasar los problemas 19 al 23 de la hoja.",
     "ejercicios_vistos": [
       {
         "numero": 1,
@@ -207,7 +207,7 @@ window.CURSO_CONFIG = {
       "titulo": "Ecuaciones, Números Complejos y Sistemas",
       "evaluacion": "1.ª Evaluación",
       "estado": "en_curso",
-      "sesiones_impartidas": 10,
+      "sesiones_impartidas": 11,
       "descripcion": "Ecuaciones polinómicas y racionales, ecuaciones con radicales, exponenciales y logarítmicas, números complejos (forma binómica, operaciones y plano complejo), sistemas de ecuaciones algebraicos y geométricos, y Método de Gauss con matrices.",
       "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",

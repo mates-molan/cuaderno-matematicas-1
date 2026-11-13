@@ -6,7 +6,7 @@ window.TEMAS_DATA[2] = {
   "id": 2,
   "titulo": "Tema 2: Ecuaciones, Números Complejos y Sistemas",
   "evaluacion": "1.ª Evaluación",
-  "sesiones_impartidas": 10,
+  "sesiones_impartidas": 11,
   "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "repaso_pdf": "",
@@ -610,8 +610,8 @@ window.TEMAS_DATA[2] = {
       ]
     },
     {
-      "numero": 9,
-      "fecha": "Martes 10 de Noviembre de 2026",
+      "numero": "9 y 10",
+      "fecha": "Martes 10 y Jueves 12 de Noviembre de 2026",
       "titulo": "Problemas con Sistemas de Ecuaciones Lineales ($2 \\times 2$)",
       "ejercicios": [
         {
@@ -757,8 +757,8 @@ window.TEMAS_DATA[2] = {
       ]
     },
     {
-      "numero": 10,
-      "fecha": "Jueves 12 de Noviembre de 2026",
+      "numero": 11,
+      "fecha": "Viernes 13 de Noviembre de 2026",
       "titulo": "Problemas con Sistemas de Ecuaciones No Lineales, Exponenciales y Logarítmicos",
       "ejercicios": [
         {
