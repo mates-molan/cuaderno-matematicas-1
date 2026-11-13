@@ -18,7 +18,7 @@ window.TEMAS_DATA[2] = {
       "titulo": "Tarea 3: Ecuaciones y Modelado (Problemas 1 al 12 de la Hoja)",
       "fecha_asignacion": "5 de Noviembre de 2026",
       "fecha_limite": "Jueves 12 de Noviembre de 2026 (20:00 h)",
-      "estado": "activa",
+      "estado": "cerrada",
       "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "pdf_solucionario": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach_Solucionario.pdf",
       "criterios_entrega": "Resuelve los problemas 1 al 12 de la hoja en tu libreta a mano, con orden, limpieza y todos los pasos algebraicos bien explicados (planteamiento, resolución y sentido real). Sube un único archivo PDF escaneado a Google Classroom (no se admiten fotos sueltas ni más de un archivo) antes del jueves 12 de Noviembre a las 20:00 h.",

@@ -8,12 +8,12 @@ window.CURSO_CONFIG = {
   "ano_academico": "2026-2027",
   "tema_actual_id": 2,
   "tarea_classroom_activa": {
-    "existe": true,
+    "existe": false,
     "tema_id": 2,
     "tarea_id": "Tarea-03",
     "titulo": "Tarea 3: Ecuaciones y Modelado (Problemas 1 al 12 de la Hoja)",
     "fecha_limite": "Jueves 12 de Noviembre de 2026 (20:00 h)",
-    "estado": "activa",
+    "estado": "cerrada",
     "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
     "pdf_solucionario": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach_Solucionario.pdf",
     "aviso": "¡Nueva tarea en Classroom! Resuelve los 12 primeros problemas de la hoja (Ecuaciones) en tu libreta antes del Jueves 12 de Noviembre a las 20:00 h."
