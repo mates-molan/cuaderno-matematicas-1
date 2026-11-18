@@ -8,15 +8,15 @@ window.CURSO_CONFIG = {
   "ano_academico": "2026-2027",
   "tema_actual_id": 2,
   "tarea_classroom_activa": {
-    "existe": true,
+    "existe": false,
     "tema_id": 2,
     "tarea_id": "Tarea-04",
     "titulo": "Tarea 4: Números Complejos (Problemas 13 al 16 de la Hoja)",
-    "fecha_limite": "Lunes 23 de Noviembre de 2026 (20:00 h)",
-    "estado": "activa",
+    "fecha_limite": "Lunes 16 de Noviembre de 2026 (20:00 h)",
+    "estado": "cerrada",
     "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
     "pdf_solucionario": null,
-    "aviso": "¡Nueva tarea en Classroom! Resuelve los problemas 13 al 16 de la hoja (Números Complejos) en tu libreta y súbelos antes del Lunes 23 de Noviembre a las 20:00 h."
+    "aviso": "Plazo de entrega finalizado el Lunes 16 de Noviembre a las 20:00 h."
   },
   "control_test_activo": {
     "existe": false,
