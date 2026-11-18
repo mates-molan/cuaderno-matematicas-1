@@ -8,15 +8,15 @@ window.CURSO_CONFIG = {
   "ano_academico": "2026-2027",
   "tema_actual_id": 2,
   "tarea_classroom_activa": {
-    "existe": false,
+    "existe": true,
     "tema_id": 2,
-    "tarea_id": "Tarea-03",
-    "titulo": "Tarea 3: Ecuaciones y Modelado (Problemas 1 al 12 de la Hoja)",
-    "fecha_limite": "Jueves 12 de Noviembre de 2026 (20:00 h)",
-    "estado": "cerrada",
+    "tarea_id": "Tarea-04",
+    "titulo": "Tarea 4: Números Complejos (Problemas 13 al 16 de la Hoja)",
+    "fecha_limite": "Lunes 23 de Noviembre de 2026 (20:00 h)",
+    "estado": "activa",
     "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
-    "pdf_solucionario": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach_Solucionario.pdf",
-    "aviso": "¡Nueva tarea en Classroom! Resuelve los 12 primeros problemas de la hoja (Ecuaciones) en tu libreta antes del Jueves 12 de Noviembre a las 20:00 h."
+    "pdf_solucionario": null,
+    "aviso": "¡Nueva tarea en Classroom! Resuelve los problemas 13 al 16 de la hoja (Números Complejos) en tu libreta y súbelos antes del Lunes 23 de Noviembre a las 20:00 h."
   },
   "control_test_activo": {
     "existe": false,
@@ -216,7 +216,7 @@ window.CURSO_CONFIG = {
       "apuntes_listos": true,
       "ejercicios_listos": true,
       "total_ejercicios_libreta": 0,
-      "total_tareas_classroom": 1,
+      "total_tareas_classroom": 2,
       "total_controles_test": 0
     }
   ]

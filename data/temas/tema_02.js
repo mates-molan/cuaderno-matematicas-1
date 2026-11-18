@@ -36,6 +36,23 @@ window.TEMAS_DATA[2] = {
         "Problema 11: Los servidores del juego online (Ecuación exponencial con cambio de variable).",
         "Problema 12: Logaritmos en el juego y en el festival (Ecuaciones logarítmicas con propiedades)."
       ]
+    },
+    {
+      "id": "Tarea-04",
+      "numero": 4,
+      "titulo": "Tarea 4: Números Complejos (Problemas 13 al 16 de la Hoja)",
+      "fecha_asignacion": "18 de Noviembre de 2026",
+      "fecha_limite": "Lunes 23 de Noviembre de 2026 (20:00 h)",
+      "estado": "activa",
+      "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
+      "pdf_solucionario": null,
+      "criterios_entrega": "Resuelve los problemas 13 al 16 de la hoja (Bloque II: Números complejos) en tu libreta a mano, con orden, limpieza, operaciones paso a paso en forma binómica y representaciones gráficas claras en el plano complejo. Sube un único archivo PDF escaneado a Google Classroom (no se admiten fotos sueltas ni más de un archivo) antes del lunes 23 de Noviembre a las 20:00 h.",
+      "ejercicios_incluidos": [
+        "Problema 13: El problema «inútil» de Cardano (Ecuación de 2.º grado en ℂ y raíces complejas conjugadas).",
+        "Problema 14: Los circuitos eléctricos (Operaciones e impedancias en forma binómica y producto z·z̄).",
+        "Problema 15: El mapa del videojuego (Giros de 90° con potencias de i y simetría del conjugado en el plano complejo).",
+        "Problema 16: El robot aspirador (Potencias altas de i módulo 4 y suma de potencias consecutivas)."
+      ]
     }
   ],
   "controles_test": [],
