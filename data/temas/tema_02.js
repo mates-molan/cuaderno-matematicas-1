@@ -41,7 +41,7 @@ window.TEMAS_DATA[2] = {
       "id": "Tarea-04",
       "numero": 4,
       "titulo": "Tarea 4: Números Complejos (Problemas 13 al 16 de la Hoja)",
-      "fecha_asignacion": "9 de Noviembre de 2026",
+      "fecha_asignacion": "13 de Noviembre de 2026",
       "fecha_limite": "Lunes 16 de Noviembre de 2026 (20:00 h)",
       "estado": "cerrada",
       "pdf_tarea": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
