@@ -1130,7 +1130,7 @@ window.TEMAS_DATA[2] = {
         },
         {
           "numero": 3,
-          "titulo": "Problema 3: El torneo de tiro con arco (SI no trivial, fallo de marcador y paso a SCI)",
+          "titulo": "Problema 3: El torneo de tiro con arco (SI, fallo de marcador y paso a SCI)",
           "referencia": "Bloque 5: Puntos 5.4, 5.5 y Cuadro Resumen (Págs. 33–35)",
           "enunciado": "En un torneo de tiro con arco por equipos, las dianas Roja, Azul y Verde otorgan distintas puntuaciones fijas por acierto. El Tirador 1 acierta $1\\text{ Roja}$, $2\\text{ Azules}$ y $1\\text{ Verde}$, y suma $30\\text{ puntos}$. El Tirador 2 acierta $2\\text{ Rojas}$, $1\\text{ Azul}$ y $3\\text{ Verdes}$, y suma $45\\text{ puntos}$. La aplicación del torneo registra que el Tirador 3 acertó $4\\text{ Rojas}$, $5\\text{ Azules}$ y $5\\text{ Verdes}$, con un total de $100\\text{ puntos}$.",
           "preguntas": [
