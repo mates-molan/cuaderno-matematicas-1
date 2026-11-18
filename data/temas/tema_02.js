@@ -9,8 +9,8 @@ window.TEMAS_DATA[2] = {
   "sesiones_impartidas": 13,
   "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
   "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
-  "repaso_pdf": "",
-  "repaso_solucionario_pdf": "",
+  "repaso_pdf": "pdf/Ficha_Repaso_Examen_Tema2_Ecuaciones_Sistemas_Gauss_1Bach.pdf",
+  "repaso_solucionario_pdf": "pdf/Ficha_Repaso_Examen_Tema2_Ecuaciones_Sistemas_Gauss_1Bach_Solucionario.pdf",
   "tareas_classroom": [
     {
       "id": "Tarea-03",
