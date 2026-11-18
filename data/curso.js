@@ -212,7 +212,7 @@ window.CURSO_CONFIG = {
       "apuntes_pdf": "pdf/Apuntes_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "ejercicios_pdf": "pdf/Ficha_Problemas_Tema2_Ecuaciones_Complejos_Sistemas_1Bach.pdf",
       "repaso_pdf": "pdf/Ficha_Repaso_Examen_Tema2_Ecuaciones_Sistemas_Gauss_1Bach.pdf",
-      "repaso_solucionario_pdf": "pdf/Ficha_Repaso_Examen_Tema2_Ecuaciones_Sistemas_Gauss_1Bach_Solucionario.pdf",
+      "repaso_solucionario_pdf": null,
       "apuntes_listos": true,
       "ejercicios_listos": true,
       "total_ejercicios_libreta": 0,

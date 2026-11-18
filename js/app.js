@@ -700,7 +700,7 @@ function renderSemanaHoja(temaId = currentTemaId) {
             <span class="hoja-download-icon">🎯</span>
             <div>
               <h4 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">Ficha de Repaso de Examen: Tema ${t.id}</h4>
-              <p style="color: var(--text-muted); font-size: 0.92rem;">Selección de ejercicios de preparación de examen con su solucionario resuelto paso a paso.</p>
+              <p style="color: var(--text-muted); font-size: 0.92rem;">${t.repaso_solucionario_pdf ? 'Selección de ejercicios de preparación de examen con su solucionario resuelto paso a paso.' : 'Selección de ejercicios de preparación de examen.'}</p>
             </div>
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap;">
@@ -953,7 +953,7 @@ function renderControlesTest(temaId = currentTemaId) {
           <span class="hoja-download-icon">🎯</span>
           <div>
             <h4 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin-bottom: 2px;">Preparación de Examen: Ficha de Repaso (Tema ${t.id})</h4>
-            <p style="color: var(--text-muted); font-size: 0.92rem;">Colección de problemas modelo de examen con solucionario resuelto paso a paso.</p>
+            <p style="color: var(--text-muted); font-size: 0.92rem;">${t.repaso_solucionario_pdf ? 'Colección de problemas modelo de examen con solucionario resuelto paso a paso.' : 'Colección de problemas modelo de examen para practicar por tu cuenta.'}</p>
           </div>
         </div>
         <div style="display: flex; gap: 10px; flex-wrap: wrap;">
